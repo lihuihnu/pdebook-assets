@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "article_id": "pde-001",
+      "source": "figures/pde-001/exports/fig-001-function-to-field.svg",
+      "source_blob_sha": "3bc3e46bdb9a4289d10eef3cb60eb8218b1d8929",
+      "output": "assets/pde-001/fig-001-function-to-field.png",
+      "width_px": 1920,
+      "height_px": 902,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-001-function-to-field.png"
+    },
+    {
+      "article_id": "pde-001",
+      "source": "figures/pde-001/exports/fig-002-heat-solution.svg",
+      "source_blob_sha": "fe6ae2ae16c5167845cfb83ab731579572e659ef",
+      "output": "assets/pde-001/fig-002-heat-solution.png",
+      "width_px": 1920,
+      "height_px": 1110,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-002-heat-solution.png"
+    }
+  ]
+}
