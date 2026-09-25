@@ -1,0 +1,37 @@
+name: Temporary rasterize pde-001 figures
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  rasterize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SVG rasterizer and CJK fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin fonts-noto-cjk
+
+      - name: Download private SVG sources through temporary signed URLs
+        run: |
+          mkdir -p src out
+          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-001-function-to-field.svg?token=CNX2V6GTKXNO45HESDB75YDKW2LDNAA'             -o src/fig-001-function-to-field.svg
+          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-002-heat-solution.svg?token=CNX2V6D75AB6RPLXPGEN6NDKW2LDNAA'             -o src/fig-002-heat-solution.svg
+
+      - name: Rasterize to 1920px PNG
+        run: |
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-001-function-to-field.svg             --output out/fig-001-function-to-field.png
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-002-heat-solution.svg             --output out/fig-002-heat-solution.png
+          file out/*.png
+
+      - name: Upload PNG artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pde-001-png
+          path: out/*.png
+          if-no-files-found: error
