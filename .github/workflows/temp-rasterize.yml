@@ -1,4 +1,4 @@
-name: Temporary rasterize pde-001 figures
+name: Temporary publish pde-001 PNGs
 
 on:
   push:
@@ -6,12 +6,15 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  rasterize:
+  publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out public asset repository
+        uses: actions/checkout@v4
+
       - name: Install SVG rasterizer and CJK fonts
         run: |
           sudo apt-get update
@@ -19,19 +22,51 @@ jobs:
 
       - name: Download private SVG sources through temporary signed URLs
         run: |
-          mkdir -p src out
+          mkdir -p src assets/pde-001
           curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-001-function-to-field.svg?token=CNX2V6GTKXNO45HESDB75YDKW2LDNAA'             -o src/fig-001-function-to-field.svg
           curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-002-heat-solution.svg?token=CNX2V6D75AB6RPLXPGEN6NDKW2LDNAA'             -o src/fig-002-heat-solution.svg
 
       - name: Rasterize to 1920px PNG
         run: |
-          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-001-function-to-field.svg             --output out/fig-001-function-to-field.png
-          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-002-heat-solution.svg             --output out/fig-002-heat-solution.png
-          file out/*.png
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-001-function-to-field.svg             --output assets/pde-001/fig-001-function-to-field.png
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-002-heat-solution.svg             --output assets/pde-001/fig-002-heat-solution.png
 
-      - name: Upload PNG artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: pde-001-png
-          path: out/*.png
-          if-no-files-found: error
+      - name: Write manifest
+        run: |
+          cat > manifest.json <<'JSON'
+          {
+            "schema_version": 1,
+            "assets": [
+              {
+                "article_id": "pde-001",
+                "source": "figures/pde-001/exports/fig-001-function-to-field.svg",
+                "source_blob_sha": "3bc3e46bdb9a4289d10eef3cb60eb8218b1d8929",
+                "output": "assets/pde-001/fig-001-function-to-field.png",
+                "width_px": 1920,
+                "height_px": 902,
+                "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-001-function-to-field.png"
+              },
+              {
+                "article_id": "pde-001",
+                "source": "figures/pde-001/exports/fig-002-heat-solution.svg",
+                "source_blob_sha": "fe6ae2ae16c5167845cfb83ab731579572e659ef",
+                "output": "assets/pde-001/fig-002-heat-solution.png",
+                "width_px": 1920,
+                "height_px": 1110,
+                "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-002-heat-solution.png"
+              }
+            ]
+          }
+          JSON
+
+      - name: Commit generated PNGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/pde-001 manifest.json
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+            exit 0
+          fi
+          git commit -m "assets: add pde-001 Zhihu PNGs"
+          git push
