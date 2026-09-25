@@ -23,8 +23,8 @@ jobs:
       - name: Download private SVG sources through temporary signed URLs
         run: |
           mkdir -p src assets/pde-001
-          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-001-function-to-field.svg?token=CNX2V6GTKXNO45HESDB75YDKW2LDNAA'             -o src/fig-001-function-to-field.svg
-          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-002-heat-solution.svg?token=CNX2V6D75AB6RPLXPGEN6NDKW2LDNAA'             -o src/fig-002-heat-solution.svg
+          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-001-function-to-field.svg?token=CNX2V6CCDDEOX77GJZINRXTKW2LW3AA'             -o src/fig-001-function-to-field.svg
+          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-002-heat-solution.svg?token=CNX2V6AHIYYQWLVBDFK3BWDKW2LW3AA'             -o src/fig-002-heat-solution.svg
 
       - name: Rasterize to 1920px PNG
         run: |
