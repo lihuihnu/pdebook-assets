@@ -1,4 +1,4 @@
-name: Temporary publish pde-001 PNGs
+name: Temporary commit pde-001 PNGs
 
 on:
   push:
@@ -6,30 +6,47 @@ on:
       - main
 
 permissions:
+  actions: read
   contents: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+
     steps:
       - name: Check out public asset repository
         uses: actions/checkout@v4
 
-      - name: Install SVG rasterizer and CJK fonts
+      - name: Download already-rendered PNG artifact
         run: |
-          sudo apt-get update
-          sudo apt-get install -y librsvg2-bin fonts-noto-cjk
+          mkdir -p /tmp/pde001 assets/pde-001
+          gh api             repos/${GITHUB_REPOSITORY}/actions/artifacts/10873427798/zip             > /tmp/pde001.zip
+          unzip -o /tmp/pde001.zip -d /tmp/pde001
+          find /tmp/pde001 -maxdepth 2 -type f -print
+          cp /tmp/pde001/fig-001-function-to-field.png assets/pde-001/
+          cp /tmp/pde001/fig-002-heat-solution.png assets/pde-001/
 
-      - name: Download private SVG sources through temporary signed URLs
+      - name: Verify PNG dimensions
         run: |
-          mkdir -p src assets/pde-001
-          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-001-function-to-field.svg?token=CNX2V6CCDDEOX77GJZINRXTKW2LW3AA'             -o src/fig-001-function-to-field.svg
-          curl --fail --location --silent --show-error             'https://raw.githubusercontent.com/lihuihnu/pdebook/article/pde-001-from-functions-to-pde/figures/pde-001/exports/fig-002-heat-solution.svg?token=CNX2V6AHIYYQWLVBDFK3BWDKW2LW3AA'             -o src/fig-002-heat-solution.svg
-
-      - name: Rasterize to 1920px PNG
-        run: |
-          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-001-function-to-field.svg             --output assets/pde-001/fig-001-function-to-field.png
-          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             src/fig-002-heat-solution.svg             --output assets/pde-001/fig-002-heat-solution.png
+          file assets/pde-001/*.png
+          python - <<'PY'
+          import struct
+          from pathlib import Path
+          expected = {
+              "fig-001-function-to-field.png": (1920, 902),
+              "fig-002-heat-solution.png": (1920, 1110),
+          }
+          for path in sorted(Path("assets/pde-001").glob("*.png")):
+              with path.open("rb") as f:
+                  assert f.read(8) == b"\x89PNG\r\n\x1a\n"
+                  length = struct.unpack(">I", f.read(4))[0]
+                  assert f.read(4) == b"IHDR"
+                  width, height = struct.unpack(">II", f.read(8))
+              assert (width, height) == expected[path.name], (path, width, height)
+              print(path, width, height)
+          PY
 
       - name: Write manifest
         run: |
