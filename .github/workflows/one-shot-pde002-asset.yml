@@ -1,0 +1,88 @@
+name: One-shot pde-002 asset sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - staging/pde-002-fig-001.svg
+      - .github/workflows/one-shot-pde002-asset.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install rasterizer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin fonts-noto-cjk python3-pil
+
+      - name: Validate staging SVG
+        run: |
+          grep -q 'y="410"' staging/pde-002-fig-001.svg
+          ! grep -q 'y="477"' staging/pde-002-fig-001.svg
+
+      - name: Build 1920 px PNG
+        run: |
+          mkdir -p assets/pde-002
+          rsvg-convert -w 1920 \
+            -o assets/pde-002/fig-001-initial-boundary-domain.png \
+            staging/pde-002-fig-001.svg
+          python3 - <<'PY'
+          from PIL import Image
+          p = "assets/pde-002/fig-001-initial-boundary-domain.png"
+          im = Image.open(p)
+          assert im.size == (1920, 980), im.size
+          im.verify()
+          print("validated", p, "1920x980")
+          PY
+
+      - name: Update manifest
+        env:
+          SOURCE_BLOB_SHA: 7acdfef3121bf91a604d4c77fd37ca782fe5fdd1
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+
+          manifest = Path("manifest.json")
+          data = json.loads(manifest.read_text(encoding="utf-8"))
+          output = "assets/pde-002/fig-001-initial-boundary-domain.png"
+          output_sha = subprocess.check_output(
+              ["git", "hash-object", output], text=True
+          ).strip()
+
+          found = False
+          for asset in data["assets"]:
+              if asset.get("article_id") == "pde-002" and asset.get("output") == output:
+                  asset["source_blob_sha"] = os.environ["SOURCE_BLOB_SHA"]
+                  asset["output_blob_sha"] = output_sha
+                  asset["width_px"] = 1920
+                  asset["height_px"] = 980
+                  found = True
+                  break
+          if not found:
+              raise SystemExit("pde-002 manifest entry not found")
+
+          manifest.write_text(
+              json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print("output_blob_sha", output_sha)
+          PY
+
+      - name: Commit final asset and self-clean
+        run: |
+          rm -f staging/pde-002-fig-001.svg
+          rmdir staging 2>/dev/null || true
+          rm -f .github/workflows/one-shot-pde002-asset.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "assets: sync corrected pde-002 figure [skip ci]"
+          git push origin HEAD:main
