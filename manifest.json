@@ -38,6 +38,16 @@
       "width_px": 1920,
       "height_px": 1312,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-003/fig-001-four-model-behaviors.png"
+    },
+    {
+      "article_id": "pde-004",
+      "source": "figures/pde-004/exports/fig-001-continuous-to-algebraic.svg",
+      "source_blob_sha": "15ec64a509a229a1ee8ca72e9d8c2288699f52e1",
+      "output": "assets/pde-004/fig-001-continuous-to-algebraic.png",
+      "output_blob_sha": "6e917dd154fb2f35c77ccc8797cc0bdc08d52606",
+      "width_px": 1920,
+      "height_px": 800,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-004/fig-001-continuous-to-algebraic.png"
     }
   ]
 }
