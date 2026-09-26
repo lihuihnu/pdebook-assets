@@ -24,9 +24,9 @@
       "source": "figures/pde-002/exports/fig-001-initial-boundary-domain.svg",
       "source_blob_sha": "fdf6873ce5e9c5f953c2841ddf29f884a8c7dfe8",
       "output": "assets/pde-002/fig-001-initial-boundary-domain.png",
-      "output_blob_sha": "ba6152995799369034c1b88bca4dd4278a4670b7",
+      "output_blob_sha": "187e9069eeeb89dbf68cd42908025fd7f3a8dcaf",
       "width_px": 1920,
-      "height_px": 980,
+      "height_px": 700,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-002/fig-001-initial-boundary-domain.png"
     }
   ]
