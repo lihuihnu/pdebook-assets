@@ -32,5 +32,6 @@ Current published article assets:
 
 - `assets/pde-001/fig-001-function-to-field.png` — 1920 × 902
 - `assets/pde-001/fig-002-heat-solution.png` — 1920 × 1110
+- `assets/pde-002/fig-001-initial-boundary-domain.png` — 1920 × 980
 
 Metadata is recorded in `manifest.json`.
