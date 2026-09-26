@@ -18,6 +18,16 @@
       "width_px": 1920,
       "height_px": 1110,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-002-heat-solution.png"
+    },
+    {
+      "article_id": "pde-002",
+      "source": "figures/pde-002/exports/fig-001-initial-boundary-domain.svg",
+      "source_blob_sha": "fdf6873ce5e9c5f953c2841ddf29f884a8c7dfe8",
+      "output": "assets/pde-002/fig-001-initial-boundary-domain.png",
+      "output_blob_sha": "ba6152995799369034c1b88bca4dd4278a4670b7",
+      "width_px": 1920,
+      "height_px": 980,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-002/fig-001-initial-boundary-domain.png"
     }
   ]
 }
