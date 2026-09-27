@@ -48,6 +48,16 @@
       "width_px": 1920,
       "height_px": 800,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-004/fig-001-continuous-to-algebraic.png"
+    },
+    {
+      "article_id": "pde-005",
+      "source": "figures/pde-005/exports/fig-001-grid-nodes-discrete-values.svg",
+      "source_blob_sha": "62e0cc4e01214f73545a62dd909af303b25ad652",
+      "output": "assets/pde-005/fig-001-grid-nodes-discrete-values.png",
+      "output_blob_sha": "8a33aebd8f8d8ffcc2e5c93ec55d5cfce6f4f96e",
+      "width_px": 1920,
+      "height_px": 976,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-005/fig-001-grid-nodes-discrete-values.png"
     }
   ]
 }
