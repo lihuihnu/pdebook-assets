@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "assets": [
     {
       "article_id": "pde-001",
@@ -78,6 +78,40 @@
       "width_px": 1920,
       "height_px": 1088,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-007/fig-001-local-relations-to-tridiagonal-system.png"
+    }
+  ],
+  "code": [
+    {
+      "article_id": "pde-007",
+      "source_root": "experiments/pde-007",
+      "output_root": "code/pde-007",
+      "run_command": "python3 code/pde-007/src/solve_poisson_1d.py",
+      "dependencies": [],
+      "files": [
+        {
+          "role": "reader_readme",
+          "source": "experiments/pde-007/README.md",
+          "source_blob_sha": "dd84ba486c777d836d5d536ad9d725a86199e2a9",
+          "output": "code/pde-007/README.md",
+          "transformed_for_public_paths": true,
+          "output_blob_sha": "aa461c3f587e1699a1717c579192c59c819a5c5f"
+        },
+        {
+          "role": "solver",
+          "source": "experiments/pde-007/src/solve_poisson_1d.py",
+          "source_blob_sha": "a816b4624e144b44523946fb0c6699adff6306d0",
+          "output": "code/pde-007/src/solve_poisson_1d.py",
+          "output_blob_sha": "a816b4624e144b44523946fb0c6699adff6306d0"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-007/results/n4_solution.csv",
+          "source_blob_sha": "242925ba283c16bb820699703cb060f65b674200",
+          "output": "code/pde-007/results/n4_solution.csv",
+          "output_blob_sha": "242925ba283c16bb820699703cb060f65b674200"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-007"
     }
   ]
 }

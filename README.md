@@ -1,8 +1,8 @@
 # pdebook-assets
 
-Public image assets for **《把方程算明白》**.
+Public publishing assets and reader-facing companion code for **《把方程算明白》**.
 
-This repository contains **generated publishing assets only**. The canonical manuscript, source SVG files, notes, references, code, and review materials remain in the private `lihuihnu/pdebook` repository.
+The canonical manuscript, source SVG files, authoring notes, references, review materials, and development history remain in the private `lihuihnu/pdebook` repository. This public repository contains only material intended for readers and publishing platforms.
 
 ## Layout
 
@@ -10,28 +10,46 @@ This repository contains **generated publishing assets only**. The canonical man
 assets/
   pde-NNN/
     *.png
+
+code/
+  pde-NNN/
+    README.md
+    src/
+      *.py
+    results/
+      *.csv
+
 manifest.json
 ```
 
-The public image URLs used by Zhihu publish views follow:
+### Public figures
+
+Zhihu publish views use public figure URLs of the form:
 
 ```text
 https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-NNN/<figure>.png
 ```
 
-Do not edit generated PNG files by hand. They are derived from the canonical SVG figures in the private book repository.
+Generated PNG files are derived from canonical SVG figures in the private source repository. Do not edit generated PNG files by hand.
 
+### Public code
+
+When an article contains executable teaching code, its reader-facing copy is published under:
+
+```text
+code/pde-NNN/
+```
+
+Python source and numerical result files are synchronized from the corresponding private `experiments/pde-NNN/` directory. Article-specific public README files may adjust paths and reader instructions for this repository, but do not maintain a second algorithm implementation.
 
 ## Publishing policy
 
-Assets are published directly from the private `lihuihnu/pdebook` source repository by a maintainer/agent that can access both repositories.
+Figures and companion code are published directly from the private `lihuihnu/pdebook` source repository by a maintainer/agent that can access both repositories.
 
 There is no PAT-based cross-repository automation and no persistent publishing workflow in this repository.
 
-Current published article assets:
+Metadata, including source/output blob identities where applicable, is recorded in `manifest.json`.
 
-- `assets/pde-001/fig-001-function-to-field.png` — 1920 × 902
-- `assets/pde-001/fig-002-heat-solution.png` — 1920 × 1110
-- `assets/pde-002/fig-001-initial-boundary-domain.png` — 1920 × 980
+## Current reader code
 
-Metadata is recorded in `manifest.json`.
+- `code/pde-007/` — 一维 Poisson 方程的第一个数值解；Python standard library only.
