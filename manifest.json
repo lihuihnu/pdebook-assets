@@ -58,6 +58,16 @@
       "width_px": 1920,
       "height_px": 976,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-005/fig-001-grid-nodes-discrete-values.png"
+    },
+    {
+      "article_id": "pde-006",
+      "source": "figures/pde-006/exports/fig-001-taylor-centered-differences.svg",
+      "source_blob_sha": "37e28326942caa990627b82c8baa9a0f4a1b78ab",
+      "output": "assets/pde-006/fig-001-taylor-centered-differences.png",
+      "output_blob_sha": "9e93c8493dba0b7be664f97096742939be02ff36",
+      "width_px": 1920,
+      "height_px": 1088,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-006/fig-001-taylor-centered-differences.png"
     }
   ]
 }
