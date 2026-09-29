@@ -13,13 +13,13 @@
     },
     {
       "article_id": "pde-001",
-      "source": "figures/pde-001/exports/fig-002-heat-solution.svg",
-      "source_blob_sha": "d96cae3b275f5d718d9b25e22cce380c2f397966",
+      "source": "figures/pde-001/exports/fig-002-heat-solution.png",
+      "source_blob_sha": "464ba084ee2854830319559b5812ce828234272e",
       "output": "assets/pde-001/fig-002-heat-solution.png",
-      "width_px": 1920,
-      "height_px": 1152,
+      "width_px": 1619,
+      "height_px": 971,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-002-heat-solution.png",
-      "output_blob_sha": "0baba9ec4861fc142b5f1f3e8e5da8670e5daf0b"
+      "output_blob_sha": "464ba084ee2854830319559b5812ce828234272e"
     },
     {
       "article_id": "pde-002",
