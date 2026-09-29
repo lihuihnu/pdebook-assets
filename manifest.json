@@ -33,12 +33,12 @@
     },
     {
       "article_id": "pde-003",
-      "source": "figures/pde-003/exports/fig-001-four-model-behaviors.svg",
-      "source_blob_sha": "ab8bb8b3e7959d51564a9f5bed4448e06be341c6",
+      "source": "figures/pde-003/exports/fig-001-four-model-behaviors.png",
+      "source_blob_sha": "22702ee12d2c3f088964246b50920e32bad2dc6a",
       "output": "assets/pde-003/fig-001-four-model-behaviors.png",
-      "output_blob_sha": "96b5bbf56ebf4b6d8c017a242b7aeaf1ca346316",
-      "width_px": 1920,
-      "height_px": 1312,
+      "output_blob_sha": "22702ee12d2c3f088964246b50920e32bad2dc6a",
+      "width_px": 1619,
+      "height_px": 971,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-003/fig-001-four-model-behaviors.png"
     },
     {
