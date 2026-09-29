@@ -73,12 +73,12 @@
     },
     {
       "article_id": "pde-007",
-      "source": "figures/pde-007/exports/fig-001-local-relations-to-tridiagonal-system.svg",
-      "source_blob_sha": "68d81eee1bc1eedd453ac780e1e1bd4761133f19",
+      "source": "figures/pde-007/exports/fig-001-local-relations-to-tridiagonal-system.png",
+      "source_blob_sha": "1c7e0d37753a0e764c224d8aca9799b4734294cf",
       "output": "assets/pde-007/fig-001-local-relations-to-tridiagonal-system.png",
-      "output_blob_sha": "084390d9e417017e2d77154f51381de80bd6cc5f",
-      "width_px": 1920,
-      "height_px": 1088,
+      "output_blob_sha": "1c7e0d37753a0e764c224d8aca9799b4734294cf",
+      "width_px": 1672,
+      "height_px": 941,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-007/fig-001-local-relations-to-tridiagonal-system.png"
     },
     {
