@@ -94,11 +94,11 @@
     {
       "article_id": "pde-009",
       "source": "figures/pde-009/exports/fig-001-grid-refinement-error-convergence.svg",
-      "source_blob_sha": "9195bb246b9663af35a7a29f2d8251666d6dc884",
+      "source_blob_sha": "03fc4c2c98854c43447dfa3825b0318a6cc4713e",
       "output": "assets/pde-009/fig-001-grid-refinement-error-convergence.png",
-      "output_blob_sha": "2cb7b007290f16417a6ccc8d9a194ade48db9978",
+      "output_blob_sha": "7e5e1135a08a60ac7ec4cda39e19f6274fec92bd",
       "width_px": 1920,
-      "height_px": 1421,
+      "height_px": 1424,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-009/fig-001-grid-refinement-error-convergence.png"
     }
   ],
