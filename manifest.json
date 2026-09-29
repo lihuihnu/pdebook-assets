@@ -43,12 +43,12 @@
     },
     {
       "article_id": "pde-004",
-      "source": "figures/pde-004/exports/fig-001-continuous-to-algebraic.svg",
-      "source_blob_sha": "15ec64a509a229a1ee8ca72e9d8c2288699f52e1",
+      "source": "figures/pde-004/exports/fig-001-continuous-to-algebraic.png",
+      "source_blob_sha": "9f06c00dc7b916f6799ae4462f99a5de63f0c31d",
       "output": "assets/pde-004/fig-001-continuous-to-algebraic.png",
-      "output_blob_sha": "6e917dd154fb2f35c77ccc8797cc0bdc08d52606",
-      "width_px": 1920,
-      "height_px": 800,
+      "output_blob_sha": "9f06c00dc7b916f6799ae4462f99a5de63f0c31d",
+      "width_px": 1774,
+      "height_px": 887,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-004/fig-001-continuous-to-algebraic.png"
     },
     {
