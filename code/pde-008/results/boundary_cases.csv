@@ -1,0 +1,16 @@
+case,i,x,U,exact
+dirichlet,0,0,1,1
+dirichlet,1,0.25,1.1875,1.1875
+dirichlet,2,0.5,1.25,1.25
+dirichlet,3,0.75,1.1875,1.1875
+dirichlet,4,1,1,1
+neumann,0,0,1,1
+neumann,1,0.25,1.1875,1.1875
+neumann,2,0.5,1.25,1.25
+neumann,3,0.75,1.1875,1.1875
+neumann,4,1,1,1
+robin,0,0,1,1
+robin,1,0.25,1.1875,1.1875
+robin,2,0.5,1.25,1.25
+robin,3,0.75,1.1875,1.1875
+robin,4,1,1,1

@@ -122,6 +122,38 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-007"
+    },
+    {
+      "article_id": "pde-008",
+      "source_root": "experiments/pde-008",
+      "output_root": "code/pde-008",
+      "run_command": "python3 code/pde-008/src/solve_boundary_cases.py",
+      "dependencies": [],
+      "files": [
+        {
+          "role": "reader_readme",
+          "source": "experiments/pde-008/README.md",
+          "source_blob_sha": "9712a1eedd2ca85a08a29364b635a91d48b28be3",
+          "output": "code/pde-008/README.md",
+          "transformed_for_public_paths": true,
+          "output_blob_sha": "8c3d92a4a55b48db948bbddaee55f43bdb56b9b7"
+        },
+        {
+          "role": "solver",
+          "source": "experiments/pde-008/src/solve_boundary_cases.py",
+          "source_blob_sha": "514e3dd8b253446b948548941f73b6dd01692761",
+          "output": "code/pde-008/src/solve_boundary_cases.py",
+          "output_blob_sha": "514e3dd8b253446b948548941f73b6dd01692761"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-008/results/boundary_cases.csv",
+          "source_blob_sha": "b477fc3b3c7e346d989cbbd899cbba55fbb1b95c",
+          "output": "code/pde-008/results/boundary_cases.csv",
+          "output_blob_sha": "b477fc3b3c7e346d989cbbd899cbba55fbb1b95c"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-008"
     }
   ]
 }
