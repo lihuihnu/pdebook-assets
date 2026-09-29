@@ -23,12 +23,12 @@
     },
     {
       "article_id": "pde-002",
-      "source": "figures/pde-002/exports/fig-001-initial-boundary-domain.svg",
-      "source_blob_sha": "7acdfef3121bf91a604d4c77fd37ca782fe5fdd1",
+      "source": "figures/pde-002/exports/fig-001-initial-boundary-domain.png",
+      "source_blob_sha": "a51ae3abcf2091d6d35757b5fbbcba70387f8feb",
       "output": "assets/pde-002/fig-001-initial-boundary-domain.png",
-      "output_blob_sha": "7b6cc9a7e8fd9ee1ae70cd2dbf07881a838f514e",
-      "width_px": 1920,
-      "height_px": 980,
+      "output_blob_sha": "a51ae3abcf2091d6d35757b5fbbcba70387f8feb",
+      "width_px": 1586,
+      "height_px": 992,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-002/fig-001-initial-boundary-domain.png"
     },
     {
