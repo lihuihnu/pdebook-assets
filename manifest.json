@@ -83,12 +83,12 @@
     },
     {
       "article_id": "pde-008",
-      "source": "figures/pde-008/exports/fig-001-boundary-conditions-to-system.svg",
-      "source_blob_sha": "008537c9e2d2e01a00b899b1d47286971ad83427",
+      "source": "figures/pde-008/exports/fig-001-boundary-conditions-to-system.png",
+      "source_blob_sha": "774e73ed53721f3080942907380fd070ca26d064",
       "output": "assets/pde-008/fig-001-boundary-conditions-to-system.png",
-      "output_blob_sha": "2e449f3dabfcbd41331b6fe834804b8823dcd219",
-      "width_px": 1920,
-      "height_px": 1152,
+      "output_blob_sha": "774e73ed53721f3080942907380fd070ca26d064",
+      "width_px": 1672,
+      "height_px": 941,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-008/fig-001-boundary-conditions-to-system.png"
     }
   ],
