@@ -3,12 +3,13 @@
   "assets": [
     {
       "article_id": "pde-001",
-      "source": "figures/pde-001/exports/fig-001-function-to-field.svg",
-      "source_blob_sha": "3bc3e46bdb9a4289d10eef3cb60eb8218b1d8929",
+      "source": "figures/pde-001/exports/fig-001-function-to-field.png",
+      "source_blob_sha": "251570e270e239dd0a1791a862fd76adf8f05ffa",
       "output": "assets/pde-001/fig-001-function-to-field.png",
-      "width_px": 1920,
-      "height_px": 902,
-      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-001-function-to-field.png"
+      "width_px": 1619,
+      "height_px": 971,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-001/fig-001-function-to-field.png",
+      "output_blob_sha": "251570e270e239dd0a1791a862fd76adf8f05ffa"
     },
     {
       "article_id": "pde-001",
