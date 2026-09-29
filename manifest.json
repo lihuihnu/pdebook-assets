@@ -156,6 +156,38 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-008"
+    },
+    {
+      "article_id": "pde-009",
+      "source_root": "experiments/pde-009",
+      "output_root": "code/pde-009",
+      "run_command": "python3 code/pde-009/src/poisson_refinement.py",
+      "dependencies": [],
+      "files": [
+        {
+          "role": "reader_readme",
+          "source": "experiments/pde-009/README.md",
+          "source_blob_sha": "b07bff4f723453fe4391ccb445edca3af9f4a137",
+          "output": "code/pde-009/README.md",
+          "transformed_for_public_paths": true,
+          "output_blob_sha": "e2f3444e25b734a3bd3fbf19a17b4be6e8e49b0a"
+        },
+        {
+          "role": "solver",
+          "source": "experiments/pde-009/src/poisson_refinement.py",
+          "source_blob_sha": "b4a03abfd5d27700138c3b1d583e80d966c34d4d",
+          "output": "code/pde-009/src/poisson_refinement.py",
+          "output_blob_sha": "b4a03abfd5d27700138c3b1d583e80d966c34d4d"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-009/results/convergence.csv",
+          "source_blob_sha": "3a1ef51526b07c47cb4410f0a2072a6c08858016",
+          "output": "code/pde-009/results/convergence.csv",
+          "output_blob_sha": "3a1ef51526b07c47cb4410f0a2072a6c08858016"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-009"
     }
   ]
 }
