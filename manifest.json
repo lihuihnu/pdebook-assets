@@ -63,12 +63,12 @@
     },
     {
       "article_id": "pde-006",
-      "source": "figures/pde-006/exports/fig-001-taylor-centered-differences.svg",
-      "source_blob_sha": "37e28326942caa990627b82c8baa9a0f4a1b78ab",
+      "source": "figures/pde-006/exports/fig-001-taylor-centered-differences.png",
+      "source_blob_sha": "a162385abaf4d5c67c86473c61f2a3d7ff65efe3",
       "output": "assets/pde-006/fig-001-taylor-centered-differences.png",
-      "output_blob_sha": "9e93c8493dba0b7be664f97096742939be02ff36",
-      "width_px": 1920,
-      "height_px": 1088,
+      "output_blob_sha": "a162385abaf4d5c67c86473c61f2a3d7ff65efe3",
+      "width_px": 1672,
+      "height_px": 941,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-006/fig-001-taylor-centered-differences.png"
     },
     {
