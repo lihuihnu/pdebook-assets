@@ -90,6 +90,16 @@
       "width_px": 1672,
       "height_px": 941,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-008/fig-001-boundary-conditions-to-system.png"
+    },
+    {
+      "article_id": "pde-009",
+      "source": "figures/pde-009/exports/fig-001-grid-refinement-error-convergence.svg",
+      "source_blob_sha": "9195bb246b9663af35a7a29f2d8251666d6dc884",
+      "output": "assets/pde-009/fig-001-grid-refinement-error-convergence.png",
+      "output_blob_sha": "699a090b8e159cde0524b1aa81af7102349dd0c9",
+      "width_px": 1920,
+      "height_px": 1400,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-009/fig-001-grid-refinement-error-convergence.png"
     }
   ],
   "code": [
