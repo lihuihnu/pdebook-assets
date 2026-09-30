@@ -1,0 +1,15 @@
+Python 3.12.14; standard-library solver
+N=20, alpha=1.0, epsilon=1e-06, mode=19, T=0.09
+r04: n= 0, t=0.000, error_inf=0.000000000e+00, min=0.000000000e+00, max=9.999990000e-01
+r04: n=30, t=0.030, error_inf=6.366941424e-04, min=0.000000000e+00, max=7.430851853e-01
+r04: n=60, t=0.060, error_inf=9.466413487e-04, min=0.000000000e+00, max=5.521755926e-01
+r04: n=63, t=0.063, error_inf=9.649331636e-04, min=0.000000000e+00, max=5.360200886e-01
+r04: n=90, t=0.090, error_inf=1.055604848e-03, min=0.000000000e+00, max=4.103135025e-01
+r04: max modal-check discrepancy=1.332267630e-15
+r06: n= 0, t=0.000, error_inf=0.000000000e+00, min=0.000000000e+00, max=9.999990000e-01
+r06: n=20, t=0.030, error_inf=1.862864028e-03, min=0.000000000e+00, max=7.418590154e-01
+r06: n=40, t=0.060, error_inf=4.597207351e-01, min=0.000000000e+00, max=9.968907860e-01
+r06: n=42, t=0.063, error_inf=8.805497850e-01, min=-3.435647632e-01, max=1.396533037e+00
+r06: n=60, t=0.090, error_inf=3.099138494e+02, min=-3.095024803e+02, max=3.065007183e+02
+r06: max modal-check discrepancy=6.164270872e-09
+PASS: hand update, old-layer preservation, N=2 boundary, all 19 sine modes, full trajectory closed form, finite values, zero boundaries, stable-case maximum

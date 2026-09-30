@@ -150,6 +150,26 @@
       "width_px": 1728,
       "height_px": 1296,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-012/fig-001-heat-profiles.png"
+    },
+    {
+      "article_id": "pde-013",
+      "source": "figures/pde-013/exports/fig-001-stable-unstable-profiles.png",
+      "source_blob_sha": "e39bf81df4ea3dfdb7c11144e51998bd451b4394",
+      "output": "assets/pde-013/fig-001-stable-unstable-profiles.png",
+      "output_blob_sha": "e39bf81df4ea3dfdb7c11144e51998bd451b4394",
+      "width_px": 1824,
+      "height_px": 1296,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-013/fig-001-stable-unstable-profiles.png"
+    },
+    {
+      "article_id": "pde-013",
+      "source": "figures/pde-013/exports/fig-002-error-history.png",
+      "source_blob_sha": "166e95eb3802efd5a49c4c27bfe4bff62f49b883",
+      "output": "assets/pde-013/fig-002-error-history.png",
+      "output_blob_sha": "166e95eb3802efd5a49c4c27bfe4bff62f49b883",
+      "width_px": 1824,
+      "height_px": 1296,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-013/fig-002-error-history.png"
     }
   ],
   "code": [
@@ -372,6 +392,64 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-012"
+    },
+    {
+      "article_id": "pde-013",
+      "source_root": "experiments/pde-013",
+      "output_root": "code/pde-013",
+      "run_command": "cd code/pde-013 && python src/heat_stability.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-013/README.md",
+          "source_blob_sha": "0dd87b30d28d10ade6a466232a1aecb2a207618b",
+          "output": "code/pde-013/README.md",
+          "output_blob_sha": "0dd87b30d28d10ade6a466232a1aecb2a207618b"
+        },
+        {
+          "source": "experiments/pde-013/config/stability.json",
+          "source_blob_sha": "6aed3867a8a4e175010367dbbb1e4f339a5284bc",
+          "output": "code/pde-013/config/stability.json",
+          "output_blob_sha": "6aed3867a8a4e175010367dbbb1e4f339a5284bc"
+        },
+        {
+          "source": "experiments/pde-013/results/history.csv",
+          "source_blob_sha": "c4a8864688d1190b3278e158de7abb5012eb8f26",
+          "output": "code/pde-013/results/history.csv",
+          "output_blob_sha": "c4a8864688d1190b3278e158de7abb5012eb8f26"
+        },
+        {
+          "source": "experiments/pde-013/results/modes.csv",
+          "source_blob_sha": "a24acec2bb6cdbe6a583a866e92fdb2baae7d787",
+          "output": "code/pde-013/results/modes.csv",
+          "output_blob_sha": "a24acec2bb6cdbe6a583a866e92fdb2baae7d787"
+        },
+        {
+          "source": "experiments/pde-013/results/nodes.csv",
+          "source_blob_sha": "db4eb5cc0ccb6242cf7e3883b5ca2321507be903",
+          "output": "code/pde-013/results/nodes.csv",
+          "output_blob_sha": "db4eb5cc0ccb6242cf7e3883b5ca2321507be903"
+        },
+        {
+          "source": "experiments/pde-013/results/run.txt",
+          "source_blob_sha": "bb764cf96de61f845a4c4d30ebba4fc3143a068d",
+          "output": "code/pde-013/results/run.txt",
+          "output_blob_sha": "bb764cf96de61f845a4c4d30ebba4fc3143a068d"
+        },
+        {
+          "source": "experiments/pde-013/results/snapshots.csv",
+          "source_blob_sha": "7c7f496820fd096a5800c683e0a98254a0b7073c",
+          "output": "code/pde-013/results/snapshots.csv",
+          "output_blob_sha": "7c7f496820fd096a5800c683e0a98254a0b7073c"
+        },
+        {
+          "source": "experiments/pde-013/src/heat_stability.py",
+          "source_blob_sha": "9aa52c8e155b119b3952e6124d7bb4def4f3d9c6",
+          "output": "code/pde-013/src/heat_stability.py",
+          "output_blob_sha": "9aa52c8e155b119b3952e6124d7bb4def4f3d9c6"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-013"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "intervals": 20,
+  "alpha": 1.0,
+  "epsilon": 0.000001,
+  "perturbation_mode": 19,
+  "final_time": 0.09,
+  "cases": [
+    {"id": "r04", "steps": 90, "expected_ratio": 0.4},
+    {"id": "r06", "steps": 60, "expected_ratio": 0.6}
+  ],
+  "snapshot_times": [0.0, 0.03, 0.06, 0.063, 0.09],
+  "profile_time": 0.063
+}
