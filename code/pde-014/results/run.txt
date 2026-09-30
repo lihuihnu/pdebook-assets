@@ -1,0 +1,25 @@
+pde-014 heat equation implicit stepping
+Python 3.12.14
+Core dependencies: Python standard library only
+Configuration: {"alpha": 1, "cells": 20, "convergence_steps": [5, 10, 20, 40, 80], "damping_modes": [[1, 1], [19, 0.01]], "explicit_steps": 100, "final_time": 0.1, "implicit_steps": 10}
+Self-checks: hand systems, unchanged inputs, zero diffusion, single interior node
+One-step mode/residual checks passed: 132
+All trajectories: zero endpoints, finite values, nonincreasing discrete l2 norm
+All trajectories: node solver agrees with independent fully discrete modal formula
+FE/IE: nonnegative initial data stay nonnegative and below initial maximum
+Time errors compare to exact semidiscrete solution; PDE errors use continuous solution
+Rows: nodes=9303 history=443 modes=566 summary=13 convergence=10
+damping_FE: dt=0.001 r=0.4 E_pde=1.062511783011e-03 E_time=1.819013606516e-03 modal=1.388e-15 residual=0.000e+00
+damping_IE: dt=0.01 r=4 E_pde=1.815643280566e-02 E_time=1.739993098216e-02 modal=8.882e-16 residual=1.340e-16
+damping_CN: dt=0.01 r=4 E_pde=1.240841990730e-03 E_time=1.095163896844e-03 modal=6.661e-16 residual=1.208e-16
+smooth_IE_5: dt=0.02 r=8 E_pde=3.425396236781e-02 E_time=3.349746054431e-02 modal=3.331e-16 residual=1.008e-16
+smooth_IE_10: dt=0.01 r=4 E_pde=1.815643280567e-02 E_time=1.739993098216e-02 modal=1.055e-15 residual=1.283e-16
+smooth_IE_20: dt=0.005 r=2 E_pde=9.630876668273e-03 E_time=8.874374844768e-03 modal=6.661e-16 residual=1.307e-16
+smooth_IE_40: dt=0.0025 r=1 E_pde=5.238880211765e-03 E_time=4.482378388260e-03 modal=6.661e-16 residual=1.580e-16
+smooth_IE_80: dt=0.00125 r=0.5 E_pde=3.009196885454e-03 E_time=2.252695061949e-03 modal=1.887e-15 residual=1.462e-16
+smooth_CN_5: dt=0.02 r=8 E_pde=4.380093411275e-04 E_time=1.194511164632e-03 modal=4.996e-16 residual=1.191e-16
+smooth_CN_10: dt=0.01 r=4 E_pde=4.588235844445e-04 E_time=2.976782390604e-04 modal=6.661e-16 residual=1.082e-16
+smooth_CN_20: dt=0.005 r=2 E_pde=6.821413012623e-04 E_time=7.436052224269e-05 modal=7.216e-16 residual=1.306e-16
+smooth_CN_40: dt=0.0025 r=1 E_pde=7.379153779836e-04 E_time=1.858644552133e-05 modal=1.221e-15 residual=1.205e-16
+smooth_CN_80: dt=0.00125 r=0.5 E_pde=7.518554423658e-04 E_time=4.646381139117e-06 modal=1.277e-15 residual=1.737e-16
+PASS
