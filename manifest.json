@@ -100,6 +100,26 @@
       "width_px": 1920,
       "height_px": 1424,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-009/fig-001-grid-refinement-error-convergence.png"
+    },
+    {
+      "article_id": "pde-010",
+      "source": "figures/pde-010/exports/fig-001-five-point-stencil-origin.png",
+      "source_blob_sha": "70215b8037667105acc24e01ac55339447bcb3c1",
+      "output": "assets/pde-010/fig-001-five-point-stencil-origin.png",
+      "output_blob_sha": "70215b8037667105acc24e01ac55339447bcb3c1",
+      "width_px": 1491,
+      "height_px": 1055,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-010/fig-001-five-point-stencil-origin.png"
+    },
+    {
+      "article_id": "pde-010",
+      "source": "figures/pde-010/exports/fig-002-grid-indexing-to-vector.png",
+      "source_blob_sha": "b66e5ad96a182b08263bc037450f784306ecf66b",
+      "output": "assets/pde-010/fig-002-grid-indexing-to-vector.png",
+      "output_blob_sha": "b66e5ad96a182b08263bc037450f784306ecf66b",
+      "width_px": 1491,
+      "height_px": 1055,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-010/fig-002-grid-indexing-to-vector.png"
     }
   ],
   "code": [
