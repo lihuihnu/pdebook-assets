@@ -1,0 +1,13 @@
+{
+  "intervals": 20,
+  "steps": 100,
+  "final_time": 0.1,
+  "alpha": 1,
+  "snapshot_steps": [
+    0,
+    20,
+    50,
+    100
+  ]
+}
+

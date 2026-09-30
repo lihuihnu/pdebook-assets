@@ -1,0 +1,7 @@
+Python 3.12.14
+N=20, M=100, h=0.05, dt=0.001, r=0.4
+checks: hand step, unchanged old layer, boundaries, positivity, maximum, discrete sine mode, parameter guard PASS
+n=  0 t=0.000 center=1.000000000 exact=1.000000000 error_inf=0.000000000e+00
+n= 20 t=0.020 center=0.820400158 exact=0.820868717 error_inf=4.685594785e-04
+n= 50 t=0.050 center=0.609627203 exact=0.610498025 error_inf=8.708219108e-04
+n=100 t=0.100 center=0.371645327 exact=0.372707839 error_inf=1.062511783e-03
