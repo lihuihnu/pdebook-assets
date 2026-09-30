@@ -120,6 +120,26 @@
       "width_px": 1491,
       "height_px": 1055,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-010/fig-002-grid-indexing-to-vector.png"
+    },
+    {
+      "article_id": "pde-011",
+      "source": "figures/pde-011/exports/fig-001-jacobi-gauss-seidel-update-mechanism.png",
+      "source_blob_sha": "f4c09f77ed1c2d19e53b4c8bf3cf39947d7e8465",
+      "output": "assets/pde-011/fig-001-jacobi-gauss-seidel-update-mechanism.png",
+      "output_blob_sha": "f4c09f77ed1c2d19e53b4c8bf3cf39947d7e8465",
+      "width_px": 1448,
+      "height_px": 1086,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-011/fig-001-jacobi-gauss-seidel-update-mechanism.png"
+    },
+    {
+      "article_id": "pde-011",
+      "source": "figures/pde-011/exports/fig-002-residual-history.png",
+      "source_blob_sha": "66d910b4eb3aa6450451450d06a65d326745ef8f",
+      "output": "assets/pde-011/fig-002-residual-history.png",
+      "output_blob_sha": "66d910b4eb3aa6450451450d06a65d326745ef8f",
+      "width_px": 1572,
+      "height_px": 1121,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-011/fig-002-residual-history.png"
     }
   ],
   "code": [
