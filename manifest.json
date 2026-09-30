@@ -218,6 +218,45 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-009"
+    },
+    {
+      "article_id": "pde-010",
+      "source_root": "experiments/pde-010",
+      "output_root": "code/pde-010",
+      "run_command": "python3 code/pde-010/src/solve_poisson_2d.py",
+      "dependencies": [],
+      "files": [
+        {
+          "role": "reader_readme",
+          "source": "experiments/pde-010/README.md",
+          "source_blob_sha": "2ae2817936d15a86c11bb05d352e5e82a4444232",
+          "output": "code/pde-010/README.md",
+          "transformed_for_public_paths": true,
+          "output_blob_sha": "e97ce1af5416ee357510bb389499e65ca99cc9a4"
+        },
+        {
+          "role": "solver",
+          "source": "experiments/pde-010/src/solve_poisson_2d.py",
+          "source_blob_sha": "de3318ca11c859c28e7230c010e9e6f9096f7fd3",
+          "output": "code/pde-010/src/solve_poisson_2d.py",
+          "output_blob_sha": "de3318ca11c859c28e7230c010e9e6f9096f7fd3"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-010/results/n4_solution.csv",
+          "source_blob_sha": "7981754cc8698b3fe587ca512235d56a1b5dff70",
+          "output": "code/pde-010/results/n4_solution.csv",
+          "output_blob_sha": "7981754cc8698b3fe587ca512235d56a1b5dff70"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-010/results/n4_stencil_rows.csv",
+          "source_blob_sha": "d1294a233d42d5a98b53aa967721fd5e5879d621",
+          "output": "code/pde-010/results/n4_stencil_rows.csv",
+          "output_blob_sha": "d1294a233d42d5a98b53aa967721fd5e5879d621"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-010"
     }
   ]
 }
