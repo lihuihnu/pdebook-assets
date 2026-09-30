@@ -1,0 +1,17 @@
+Python 3.12.14
+Solver dependencies: standard library only
+Command: python src/wave_centered.py (from companion directory)
+Boundary: homogeneous Dirichlet on [0,1]
+First layer: displacement + dt*velocity + 0.5*courant^2*second_difference
+Self-check: hand calculation, zero state, unchanged inputs, summation by parts, 36 modal trajectories
+Max modal-reference defect: 1.321165399304e-14
+Max self-check relative energy drift: 5.873366024987e-15
+Saved rows: snapshots=804, final_nodes=505, history=550
+All time layers checked; only configured pulse snapshots and terminal nodal fields saved.
+History energy is at half_time; max_error is at time.
+pulse N=200 M=250 nu=0.8 E_final=2.185111040886e-02 energy_drift=1.478283937395e-15
+sine N=20 M=20 nu=0.8 E_final=3.070772429543e-03 energy_drift=1.083137357149e-15
+sine N=40 M=40 nu=0.8 E_final=7.663896767280e-04 energy_drift=9.005882759679e-16
+sine N=80 M=80 nu=0.8 E_final=1.915160594432e-04 energy_drift=1.620147121712e-15
+sine N=160 M=160 nu=0.8 E_final=4.787393151870e-05 energy_drift=2.699865297934e-15
+PASS: finite states, exact boundary assignment, energy and scaled recurrence residual checks

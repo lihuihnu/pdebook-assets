@@ -190,6 +190,26 @@
       "width_px": 1920,
       "height_px": 1440,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-014/fig-002-time-convergence.png"
+    },
+    {
+      "article_id": "pde-015",
+      "source": "figures/pde-015/exports/fig-001-pulse-reflection.png",
+      "source_blob_sha": "0d1a5a3b401f62717ac56abe4f7c1d644709e1e1",
+      "output": "assets/pde-015/fig-001-pulse-reflection.png",
+      "output_blob_sha": "0d1a5a3b401f62717ac56abe4f7c1d644709e1e1",
+      "width_px": 1920,
+      "height_px": 2304,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-015/fig-001-pulse-reflection.png"
+    },
+    {
+      "article_id": "pde-015",
+      "source": "figures/pde-015/exports/fig-002-discrete-energy.png",
+      "source_blob_sha": "ccf38c45a851f2f7d0853c5a5134d6870756f357",
+      "output": "assets/pde-015/fig-002-discrete-energy.png",
+      "output_blob_sha": "ccf38c45a851f2f7d0853c5a5134d6870756f357",
+      "width_px": 1920,
+      "height_px": 1440,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-015/fig-002-discrete-energy.png"
     }
   ],
   "code": [
@@ -534,6 +554,70 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-014"
+    },
+    {
+      "article_id": "pde-015",
+      "source_root": "experiments/pde-015",
+      "output_root": "code/pde-015",
+      "run_command": "cd code/pde-015 && python src/wave_centered.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-015/README.md",
+          "source_blob_sha": "5c6742c0571c981c465ef5b5722972371157ba5b",
+          "output": "code/pde-015/README.md",
+          "output_blob_sha": "5c6742c0571c981c465ef5b5722972371157ba5b"
+        },
+        {
+          "source": "experiments/pde-015/config/wave.json",
+          "source_blob_sha": "35a1166e2f71f59a5daa8cf934d1632235b297f1",
+          "output": "code/pde-015/config/wave.json",
+          "output_blob_sha": "35a1166e2f71f59a5daa8cf934d1632235b297f1"
+        },
+        {
+          "source": "experiments/pde-015/results/convergence.csv",
+          "source_blob_sha": "b1985501b86250de47ea3799c27404bfc52f1c92",
+          "output": "code/pde-015/results/convergence.csv",
+          "output_blob_sha": "b1985501b86250de47ea3799c27404bfc52f1c92"
+        },
+        {
+          "source": "experiments/pde-015/results/final_nodes.csv",
+          "source_blob_sha": "5899171f30e561726585bc0bd071c2219b598bde",
+          "output": "code/pde-015/results/final_nodes.csv",
+          "output_blob_sha": "5899171f30e561726585bc0bd071c2219b598bde"
+        },
+        {
+          "source": "experiments/pde-015/results/history.csv",
+          "source_blob_sha": "9932bc1521bc809428569b661344205dd3f45670",
+          "output": "code/pde-015/results/history.csv",
+          "output_blob_sha": "9932bc1521bc809428569b661344205dd3f45670"
+        },
+        {
+          "source": "experiments/pde-015/results/run.txt",
+          "source_blob_sha": "968e27074edfacfe668ac52ae768de6ba902e2a2",
+          "output": "code/pde-015/results/run.txt",
+          "output_blob_sha": "968e27074edfacfe668ac52ae768de6ba902e2a2"
+        },
+        {
+          "source": "experiments/pde-015/results/snapshots.csv",
+          "source_blob_sha": "9e795ffa3c0943bdc6281cb29e057eb38b0a017d",
+          "output": "code/pde-015/results/snapshots.csv",
+          "output_blob_sha": "9e795ffa3c0943bdc6281cb29e057eb38b0a017d"
+        },
+        {
+          "source": "experiments/pde-015/results/summary.csv",
+          "source_blob_sha": "ca20b044247378d7fbe1114c48380caf3223c316",
+          "output": "code/pde-015/results/summary.csv",
+          "output_blob_sha": "ca20b044247378d7fbe1114c48380caf3223c316"
+        },
+        {
+          "source": "experiments/pde-015/src/wave_centered.py",
+          "source_blob_sha": "db07e2298e7e23bf1e9f33fe1a344aada69c1cc0",
+          "output": "code/pde-015/src/wave_centered.py",
+          "output_blob_sha": "db07e2298e7e23bf1e9f33fe1a344aada69c1cc0"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-015"
     }
   ]
 }

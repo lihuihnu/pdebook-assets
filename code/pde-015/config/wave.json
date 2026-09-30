@@ -1,0 +1,19 @@
+{
+  "wave_speed": 1.0,
+  "pulse": {
+    "cells": 200,
+    "steps": 250,
+    "final_time": 1.0,
+    "center": 0.35,
+    "half_width": 0.1,
+    "power": 6,
+    "snapshot_times": [0.0, 0.4, 0.6, 0.9]
+  },
+  "convergence": {
+    "cells": [20, 40, 80, 160],
+    "final_time": 0.8,
+    "steps_per_cell": 1,
+    "displacement_amplitude": 1.0,
+    "velocity_amplitude": 3.141592653589793
+  }
+}
