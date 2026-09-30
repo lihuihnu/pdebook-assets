@@ -277,6 +277,45 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-010"
+    },
+    {
+      "article_id": "pde-011",
+      "source_root": "experiments/pde-011",
+      "output_root": "code/pde-011",
+      "run_command": "python3 code/pde-011/src/stationary_iterations.py",
+      "dependencies": [],
+      "files": [
+        {
+          "role": "reader_readme",
+          "source": "experiments/pde-011/README.md",
+          "source_blob_sha": "34d8e9348d24125c654804be0959087f4721e493",
+          "output": "code/pde-011/README.md",
+          "transformed_for_public_paths": true,
+          "output_blob_sha": "7d38a29bf493301143c05d57bbcab9c9b95af9d4"
+        },
+        {
+          "role": "solver",
+          "source": "experiments/pde-011/src/stationary_iterations.py",
+          "source_blob_sha": "33a822aceb0f68f2992f34435dc1383067ffcae5",
+          "output": "code/pde-011/src/stationary_iterations.py",
+          "output_blob_sha": "33a822aceb0f68f2992f34435dc1383067ffcae5"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-011/results/iteration_history.csv",
+          "source_blob_sha": "b8b7bcf635c353db098866fe3bb15247d21842d5",
+          "output": "code/pde-011/results/iteration_history.csv",
+          "output_blob_sha": "b8b7bcf635c353db098866fe3bb15247d21842d5"
+        },
+        {
+          "role": "result",
+          "source": "experiments/pde-011/results/final_solutions.csv",
+          "source_blob_sha": "542e01b6e87743ca1a0e51900239841bd6bcdb17",
+          "output": "code/pde-011/results/final_solutions.csv",
+          "output_blob_sha": "542e01b6e87743ca1a0e51900239841bd6bcdb17"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-011"
     }
   ]
 }
