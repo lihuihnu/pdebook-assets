@@ -196,7 +196,7 @@ def self_check():
 
 def write_csv(path, rows):
     with path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({key: format(value, ".17g") if isinstance(value, float) else value
