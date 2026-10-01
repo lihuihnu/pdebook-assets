@@ -1,0 +1,150 @@
+{
+  "domain": [
+    -2.0,
+    2.0
+  ],
+  "final_time": 0.4,
+  "cfl": 0.8,
+  "refinements": [
+    80,
+    160,
+    320,
+    640
+  ],
+  "cases": [
+    {
+      "name": "shock_80",
+      "N": 80,
+      "a": 2.0,
+      "b": 0.0,
+      "method": "godunov"
+    },
+    {
+      "name": "shock_160",
+      "N": 160,
+      "a": 2.0,
+      "b": 0.0,
+      "method": "godunov"
+    },
+    {
+      "name": "shock_320",
+      "N": 320,
+      "a": 2.0,
+      "b": 0.0,
+      "method": "godunov"
+    },
+    {
+      "name": "shock_640",
+      "N": 640,
+      "a": 2.0,
+      "b": 0.0,
+      "method": "godunov"
+    },
+    {
+      "name": "rarefaction_80",
+      "N": 80,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "rarefaction_160",
+      "N": 160,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "rarefaction_320",
+      "N": 320,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "rarefaction_640",
+      "N": 640,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "jump_only_80",
+      "N": 80,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "jump_only"
+    },
+    {
+      "name": "jump_only_160",
+      "N": 160,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "jump_only"
+    },
+    {
+      "name": "jump_only_320",
+      "N": 320,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "jump_only"
+    },
+    {
+      "name": "jump_only_640",
+      "N": 640,
+      "a": -1.0,
+      "b": 1.0,
+      "method": "jump_only"
+    },
+    {
+      "name": "reverse_shock",
+      "N": 160,
+      "a": 0.0,
+      "b": -2.0,
+      "method": "godunov"
+    },
+    {
+      "name": "stationary_shock",
+      "N": 160,
+      "a": 1.0,
+      "b": -1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "negative_fan",
+      "N": 160,
+      "a": -2.0,
+      "b": -1.0,
+      "method": "godunov"
+    },
+    {
+      "name": "positive_fan",
+      "N": 160,
+      "a": 1.0,
+      "b": 2.0,
+      "method": "godunov"
+    },
+    {
+      "name": "constant",
+      "N": 160,
+      "a": -0.7,
+      "b": -0.7,
+      "method": "godunov"
+    },
+    {
+      "name": "zero",
+      "N": 160,
+      "a": 0.0,
+      "b": 0.0,
+      "method": "godunov"
+    }
+  ],
+  "plot": {
+    "width_px": 1920,
+    "height_px": 1320,
+    "window": [
+      -1,
+      1
+    ]
+  }
+}

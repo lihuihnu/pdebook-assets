@@ -290,6 +290,26 @@
       "width_px": 1920,
       "height_px": 1320,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-020/fig-001-upwind-lf.png"
+    },
+    {
+      "article_id": "pde-021",
+      "source": "figures/pde-021/exports/fig-001-shock.png",
+      "source_blob_sha": "7b7f738196bb5aee2a280168feb1c9f99bd54659",
+      "output": "assets/pde-021/fig-001-shock.png",
+      "output_blob_sha": "7b7f738196bb5aee2a280168feb1c9f99bd54659",
+      "width_px": 1920,
+      "height_px": 1320,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-021/fig-001-shock.png"
+    },
+    {
+      "article_id": "pde-021",
+      "source": "figures/pde-021/exports/fig-002-rarefaction-entropy.png",
+      "source_blob_sha": "b149d98bb534dd081abd7b08663f6a5545783557",
+      "output": "assets/pde-021/fig-002-rarefaction-entropy.png",
+      "output_blob_sha": "b149d98bb534dd081abd7b08663f6a5545783557",
+      "width_px": 1920,
+      "height_px": 1320,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-021/fig-002-rarefaction-entropy.png"
     }
   ],
   "code": [
@@ -1072,6 +1092,82 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-020"
+    },
+    {
+      "article_id": "pde-021",
+      "source_root": "experiments/pde-021",
+      "output_root": "code/pde-021",
+      "run_command": "cd code/pde-021 && python src/burgers_volume.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-021/README.md",
+          "source_blob_sha": "a535b87e8f6ce46185a291d1511b11d8dce7e236",
+          "output": "code/pde-021/README.md",
+          "output_blob_sha": "a535b87e8f6ce46185a291d1511b11d8dce7e236"
+        },
+        {
+          "source": "experiments/pde-021/config/burgers.json",
+          "source_blob_sha": "7c3dd3efafa3d1c445234ccbccf6de8258749607",
+          "output": "code/pde-021/config/burgers.json",
+          "output_blob_sha": "7c3dd3efafa3d1c445234ccbccf6de8258749607"
+        },
+        {
+          "source": "experiments/pde-021/results/cells.csv",
+          "source_blob_sha": "f2bfca1444f9c7451f9f702f12f8a4bcc9d3eee8",
+          "output": "code/pde-021/results/cells.csv",
+          "output_blob_sha": "f2bfca1444f9c7451f9f702f12f8a4bcc9d3eee8"
+        },
+        {
+          "source": "experiments/pde-021/results/characteristics.csv",
+          "source_blob_sha": "92a343bb0c9bbaeacbf1222ab7d1dc8171065f79",
+          "output": "code/pde-021/results/characteristics.csv",
+          "output_blob_sha": "92a343bb0c9bbaeacbf1222ab7d1dc8171065f79"
+        },
+        {
+          "source": "experiments/pde-021/results/convergence.csv",
+          "source_blob_sha": "7a13f5f2e9698b21690f841cad5c039c301c3902",
+          "output": "code/pde-021/results/convergence.csv",
+          "output_blob_sha": "7a13f5f2e9698b21690f841cad5c039c301c3902"
+        },
+        {
+          "source": "experiments/pde-021/results/hand.csv",
+          "source_blob_sha": "ac70342c646e0725ee6e4adb52b3ef2fec83189e",
+          "output": "code/pde-021/results/hand.csv",
+          "output_blob_sha": "ac70342c646e0725ee6e4adb52b3ef2fec83189e"
+        },
+        {
+          "source": "experiments/pde-021/results/history.csv",
+          "source_blob_sha": "04ace8786ec62c67b619c7f59b68b84ec3818214",
+          "output": "code/pde-021/results/history.csv",
+          "output_blob_sha": "04ace8786ec62c67b619c7f59b68b84ec3818214"
+        },
+        {
+          "source": "experiments/pde-021/results/jumps.csv",
+          "source_blob_sha": "81f43132a5b84783b78bfc576e66b7b8857d6262",
+          "output": "code/pde-021/results/jumps.csv",
+          "output_blob_sha": "81f43132a5b84783b78bfc576e66b7b8857d6262"
+        },
+        {
+          "source": "experiments/pde-021/results/run.txt",
+          "source_blob_sha": "abd04449e0470fb9bfccd2d984ea288484f82254",
+          "output": "code/pde-021/results/run.txt",
+          "output_blob_sha": "abd04449e0470fb9bfccd2d984ea288484f82254"
+        },
+        {
+          "source": "experiments/pde-021/results/summary.csv",
+          "source_blob_sha": "36b09885f11529691ecfa089027da9d9c6cd6a11",
+          "output": "code/pde-021/results/summary.csv",
+          "output_blob_sha": "36b09885f11529691ecfa089027da9d9c6cd6a11"
+        },
+        {
+          "source": "experiments/pde-021/src/burgers_volume.py",
+          "source_blob_sha": "c21634b00353923e596d12498b66a378c294125b",
+          "output": "code/pde-021/src/burgers_volume.py",
+          "output_blob_sha": "c21634b00353923e596d12498b66a378c294125b"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-021"
     }
   ]
 }
