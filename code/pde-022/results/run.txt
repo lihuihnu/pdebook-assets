@@ -1,0 +1,10 @@
+Python 3.12.14; standard library only
+cases=21; updates=3120
+cells.csv: 2640 data rows
+history.csv: 3141 data rows
+summary.csv: 21 data rows
+convergence.csv: 12 data rows
+hand.csv: 18 data rows
+reconstruction.csv: 18 data rows
+max_mass_drift=2.2204460492503131e-16
+max_local_balance=2.8189256484623115e-18

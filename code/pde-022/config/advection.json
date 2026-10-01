@@ -1,0 +1,176 @@
+{
+  "c": 1.0,
+  "final_time": 0.5,
+  "pulse": [
+    0.2,
+    0.43
+  ],
+  "cosine": {
+    "offset": 1.0,
+    "amplitude": 0.5
+  },
+  "constant": 2.5,
+  "refinements": [
+    40,
+    80,
+    160,
+    320
+  ],
+  "cases": [
+    {
+      "name": "cosine_upwind_40",
+      "N": 40,
+      "steps": 50,
+      "profile": "cosine",
+      "method": "upwind"
+    },
+    {
+      "name": "cosine_upwind_80",
+      "N": 80,
+      "steps": 100,
+      "profile": "cosine",
+      "method": "upwind"
+    },
+    {
+      "name": "cosine_upwind_160",
+      "N": 160,
+      "steps": 200,
+      "profile": "cosine",
+      "method": "upwind"
+    },
+    {
+      "name": "cosine_upwind_320",
+      "N": 320,
+      "steps": 400,
+      "profile": "cosine",
+      "method": "upwind"
+    },
+    {
+      "name": "pulse_upwind",
+      "N": 160,
+      "steps": 200,
+      "profile": "pulse",
+      "method": "upwind"
+    },
+    {
+      "name": "constant_upwind",
+      "N": 40,
+      "steps": 50,
+      "profile": "constant",
+      "method": "upwind"
+    },
+    {
+      "name": "shift_upwind",
+      "N": 80,
+      "steps": 40,
+      "profile": "pulse",
+      "method": "upwind"
+    },
+    {
+      "name": "cosine_centered_40",
+      "N": 40,
+      "steps": 50,
+      "profile": "cosine",
+      "method": "centered"
+    },
+    {
+      "name": "cosine_centered_80",
+      "N": 80,
+      "steps": 100,
+      "profile": "cosine",
+      "method": "centered"
+    },
+    {
+      "name": "cosine_centered_160",
+      "N": 160,
+      "steps": 200,
+      "profile": "cosine",
+      "method": "centered"
+    },
+    {
+      "name": "cosine_centered_320",
+      "N": 320,
+      "steps": 400,
+      "profile": "cosine",
+      "method": "centered"
+    },
+    {
+      "name": "pulse_centered",
+      "N": 160,
+      "steps": 200,
+      "profile": "pulse",
+      "method": "centered"
+    },
+    {
+      "name": "constant_centered",
+      "N": 40,
+      "steps": 50,
+      "profile": "constant",
+      "method": "centered"
+    },
+    {
+      "name": "shift_centered",
+      "N": 80,
+      "steps": 40,
+      "profile": "pulse",
+      "method": "centered"
+    },
+    {
+      "name": "cosine_minmod_40",
+      "N": 40,
+      "steps": 50,
+      "profile": "cosine",
+      "method": "minmod"
+    },
+    {
+      "name": "cosine_minmod_80",
+      "N": 80,
+      "steps": 100,
+      "profile": "cosine",
+      "method": "minmod"
+    },
+    {
+      "name": "cosine_minmod_160",
+      "N": 160,
+      "steps": 200,
+      "profile": "cosine",
+      "method": "minmod"
+    },
+    {
+      "name": "cosine_minmod_320",
+      "N": 320,
+      "steps": 400,
+      "profile": "cosine",
+      "method": "minmod"
+    },
+    {
+      "name": "pulse_minmod",
+      "N": 160,
+      "steps": 200,
+      "profile": "pulse",
+      "method": "minmod"
+    },
+    {
+      "name": "constant_minmod",
+      "N": 40,
+      "steps": 50,
+      "profile": "constant",
+      "method": "minmod"
+    },
+    {
+      "name": "shift_minmod",
+      "N": 80,
+      "steps": 40,
+      "profile": "pulse",
+      "method": "minmod"
+    }
+  ],
+  "plot": {
+    "width_px": 1920,
+    "height_px": 1320,
+    "pulse_window": [
+      0.5,
+      1.0
+    ]
+  }
+}

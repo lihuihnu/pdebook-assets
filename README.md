@@ -57,3 +57,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-019/` — 有限体积格式与数值通量；共享通量、周期推进、波形对照与误差细化；Python standard library only.
 - `code/pde-020/` — 迎风通量重新看线性平流；平移积分、重新求平均、脉冲对照与光滑细化；Python standard library only.
 - `code/pde-021/` — Burgers 方程、激波与弱解；熵通量、激波与稀疏波、非熵反例、误差细化与边界输运；Python standard library only.
+- `code/pde-022/` — 高阶重构与限制器的基本思想；线性重构、时间平均通量、minmod、脉冲振荡与光滑细化；Python standard library only.

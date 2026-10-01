@@ -310,6 +310,26 @@
       "width_px": 1920,
       "height_px": 1320,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-021/fig-002-rarefaction-entropy.png"
+    },
+    {
+      "article_id": "pde-022",
+      "source": "figures/pde-022/exports/fig-001-pulse-limiters.png",
+      "source_blob_sha": "3197a01e4d26dca8d77ff0f19668f50d3a2c0998",
+      "output": "assets/pde-022/fig-001-pulse-limiters.png",
+      "output_blob_sha": "3197a01e4d26dca8d77ff0f19668f50d3a2c0998",
+      "width_px": 1920,
+      "height_px": 1320,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-022/fig-001-pulse-limiters.png"
+    },
+    {
+      "article_id": "pde-022",
+      "source": "figures/pde-022/exports/fig-002-smooth-convergence.png",
+      "source_blob_sha": "235279ea5b847471ec485461fe08ace3c32db8b1",
+      "output": "assets/pde-022/fig-002-smooth-convergence.png",
+      "output_blob_sha": "235279ea5b847471ec485461fe08ace3c32db8b1",
+      "width_px": 1920,
+      "height_px": 1320,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-022/fig-002-smooth-convergence.png"
     }
   ],
   "code": [
@@ -1168,6 +1188,76 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-021"
+    },
+    {
+      "article_id": "pde-022",
+      "source_root": "experiments/pde-022",
+      "output_root": "code/pde-022",
+      "run_command": "cd code/pde-022 && python src/reconstruction.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-022/README.md",
+          "source_blob_sha": "2ea42d5658d631e682c7058aed8c15f484a4aaac",
+          "output": "code/pde-022/README.md",
+          "output_blob_sha": "2ea42d5658d631e682c7058aed8c15f484a4aaac"
+        },
+        {
+          "source": "experiments/pde-022/config/advection.json",
+          "source_blob_sha": "353e9fd16b1460d9e9d9ff8539bb45da5ac0a204",
+          "output": "code/pde-022/config/advection.json",
+          "output_blob_sha": "353e9fd16b1460d9e9d9ff8539bb45da5ac0a204"
+        },
+        {
+          "source": "experiments/pde-022/results/cells.csv",
+          "source_blob_sha": "403b7d035c36c856c11c17cb74c63c8269f89411",
+          "output": "code/pde-022/results/cells.csv",
+          "output_blob_sha": "403b7d035c36c856c11c17cb74c63c8269f89411"
+        },
+        {
+          "source": "experiments/pde-022/results/convergence.csv",
+          "source_blob_sha": "3dacb45f8ea3151b50794efd533d4f832deb651b",
+          "output": "code/pde-022/results/convergence.csv",
+          "output_blob_sha": "3dacb45f8ea3151b50794efd533d4f832deb651b"
+        },
+        {
+          "source": "experiments/pde-022/results/hand.csv",
+          "source_blob_sha": "6f5e0654c1dfe1ff574732956ec400f71e21163c",
+          "output": "code/pde-022/results/hand.csv",
+          "output_blob_sha": "6f5e0654c1dfe1ff574732956ec400f71e21163c"
+        },
+        {
+          "source": "experiments/pde-022/results/history.csv",
+          "source_blob_sha": "fd46fb0dce18d246b047c4cbaf70c406d7e731e2",
+          "output": "code/pde-022/results/history.csv",
+          "output_blob_sha": "fd46fb0dce18d246b047c4cbaf70c406d7e731e2"
+        },
+        {
+          "source": "experiments/pde-022/results/reconstruction.csv",
+          "source_blob_sha": "a1f5a9235b6356730a24f16b969c3ea4f7afe2d3",
+          "output": "code/pde-022/results/reconstruction.csv",
+          "output_blob_sha": "a1f5a9235b6356730a24f16b969c3ea4f7afe2d3"
+        },
+        {
+          "source": "experiments/pde-022/results/run.txt",
+          "source_blob_sha": "a25a16aeeb283de625149d41eae0346a9349afa7",
+          "output": "code/pde-022/results/run.txt",
+          "output_blob_sha": "a25a16aeeb283de625149d41eae0346a9349afa7"
+        },
+        {
+          "source": "experiments/pde-022/results/summary.csv",
+          "source_blob_sha": "7905accd4eb9ee06598ec512cedbfd2e92de3eb0",
+          "output": "code/pde-022/results/summary.csv",
+          "output_blob_sha": "7905accd4eb9ee06598ec512cedbfd2e92de3eb0"
+        },
+        {
+          "source": "experiments/pde-022/src/reconstruction.py",
+          "source_blob_sha": "80c6e289e68a04ab45f7002a226ccea4ef97213d",
+          "output": "code/pde-022/src/reconstruction.py",
+          "output_blob_sha": "80c6e289e68a04ab45f7002a226ccea4ef97213d"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-022"
     }
   ]
 }
