@@ -1,0 +1,16 @@
+smooth_lf_40: nu=0.5, max_error=1.101793802779e-01, mass_drift=0.000e+00, range=[0.312621810, 1.687378190]
+smooth_lf_80: nu=0.5, max_error=5.709242350801e-02, mass_drift=0.000e+00, range=[0.257801449, 1.742198551]
+smooth_lf_160: nu=0.5, max_error=2.906937200546e-02, mass_drift=0.000e+00, range=[0.229260302, 1.770739698]
+smooth_lf_320: nu=0.5, max_error=1.466849668926e-02, mass_drift=0.000e+00, range=[0.214718032, 1.785281968]
+smooth_central_40: nu=0.5, max_error=4.034322251417e-02, mass_drift=2.220e-16, range=[0.162964183, 1.837035817]
+pulse_central_40: nu=0.5, max_error=1.331665240694e+00, mass_drift=0.000e+00, range=[-1.331665241, 2.017777934]
+pulse_lf_40: nu=0.5, max_error=4.281850191765e-01, mass_drift=0.000e+00, range=[0.000000011, 0.856966308]
+smooth_lf_reverse40: nu=-0.5, max_error=1.101793802779e-01, mass_drift=0.000e+00, range=[0.312621810, 1.687378190]
+pulse_lf_reverse40: nu=-0.5, max_error=4.124568304978e-01, mass_drift=0.000e+00, range=[0.000000002, 0.856966308]
+constant_central40: nu=0.5, max_error=0.000000000000e+00, mass_drift=0.000e+00, range=[2.000000000, 2.000000000]
+constant_lf40: nu=0.5, max_error=0.000000000000e+00, mass_drift=0.000e+00, range=[2.000000000, 2.000000000]
+smooth_lf_shift40: nu=1, max_error=1.110223024625e-15, mass_drift=0.000e+00, range=[0.203285812, 1.796714188]
+pulse_lf_overstep60: nu=1.2, max_error=1.593742993700e+00, mass_drift=2.776e-17, range=[-1.593742994, 2.593742460]
+rows: cells=980, history=383, faces=1986, updates=1960, summary=13, convergence=4, hand=4, boundary_examples=7
+max_mass_drift: 2.220446049250313e-16
+max_balance_residual: 6.938893903907228e-18

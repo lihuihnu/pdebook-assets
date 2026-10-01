@@ -1,0 +1,24 @@
+{
+  "equation": "u_t + c u_x = 0 on [0,1], period 1; nondimensional",
+  "profiles": {
+    "cosine": {"mean": 1.0, "amplitude": 0.8},
+    "pulse": {"start": 0.2, "end": 0.43},
+    "constant": {"value": 2.0}
+  },
+  "cases": [
+    {"id": "smooth_lf_40", "profile": "cosine", "flux": "lf", "N": 40, "c": 1.0, "T": 0.2, "steps": 16, "convergence": true},
+    {"id": "smooth_lf_80", "profile": "cosine", "flux": "lf", "N": 80, "c": 1.0, "T": 0.2, "steps": 32, "convergence": true},
+    {"id": "smooth_lf_160", "profile": "cosine", "flux": "lf", "N": 160, "c": 1.0, "T": 0.2, "steps": 64, "convergence": true},
+    {"id": "smooth_lf_320", "profile": "cosine", "flux": "lf", "N": 320, "c": 1.0, "T": 0.2, "steps": 128, "convergence": true},
+    {"id": "smooth_central_40", "profile": "cosine", "flux": "central", "N": 40, "c": 1.0, "T": 0.2, "steps": 16},
+    {"id": "pulse_central_40", "profile": "pulse", "flux": "central", "N": 40, "c": 1.0, "T": 0.2, "steps": 16},
+    {"id": "pulse_lf_40", "profile": "pulse", "flux": "lf", "N": 40, "c": 1.0, "T": 0.2, "steps": 16},
+    {"id": "smooth_lf_reverse40", "profile": "cosine", "flux": "lf", "N": 40, "c": -1.0, "T": 0.2, "steps": 16},
+    {"id": "pulse_lf_reverse40", "profile": "pulse", "flux": "lf", "N": 40, "c": -1.0, "T": 0.2, "steps": 16},
+    {"id": "constant_central40", "profile": "constant", "flux": "central", "N": 40, "c": 1.0, "T": 0.2, "steps": 16},
+    {"id": "constant_lf40", "profile": "constant", "flux": "lf", "N": 40, "c": 1.0, "T": 0.2, "steps": 16},
+    {"id": "smooth_lf_shift40", "profile": "cosine", "flux": "lf", "N": 40, "c": 1.0, "T": 0.2, "steps": 8},
+    {"id": "pulse_lf_overstep60", "profile": "pulse", "flux": "lf", "N": 60, "c": 1.0, "T": 0.2, "steps": 10, "allow_cfl_violation": true}
+  ],
+  "plot": {"cases": ["pulse_central_40", "pulse_lf_40"], "width_px": 1920, "height_px": 1800}
+}
