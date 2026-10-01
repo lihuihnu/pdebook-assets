@@ -1,0 +1,16 @@
+smooth_up_40: nu=0.5, max_error=3.840047822850e-02, mass_drift=0.000e+00, range=[0.241686290, 1.758313710]
+smooth_up_80: nu=0.5, max_error=1.948258428329e-02, mass_drift=0.000e+00, range=[0.220304798, 1.779695202]
+smooth_up_160: nu=0.5, max_error=9.807078694638e-03, mass_drift=0.000e+00, range=[0.210012680, 1.789987320]
+smooth_up_320: nu=0.5, max_error=4.919375953464e-03, mass_drift=1.110e-16, range=[0.204970779, 1.795029221]
+pulse_up40: nu=0.5, max_error=4.018096923828e-01, mass_drift=0.000e+00, range=[0.000000000, 0.980438232]
+pulse_lf40: nu=0.5, max_error=4.281850191765e-01, mass_drift=0.000e+00, range=[0.000000011, 0.856966308]
+pulse_up_reverse40: nu=-0.5, max_error=4.485815814167e-01, mass_drift=2.776e-17, range=[0.000004497, 0.814788323]
+smooth_up_reverse40: nu=-0.5, max_error=1.097380993927e-01, mass_drift=0.000e+00, range=[0.313023911, 1.686976089]
+smooth_up_shift40: nu=1, max_error=8.881784197001e-16, mass_drift=0.000e+00, range=[0.203285812, 1.796714188]
+pulse_up_shift40: nu=-1, max_error=6.661338147751e-15, mass_drift=0.000e+00, range=[0.000000000, 1.000000000]
+pulse_up_still40: nu=0, max_error=0.000000000000e+00, mass_drift=0.000e+00, range=[0.000000000, 1.000000000]
+constant_up40: nu=0.5, max_error=0.000000000000e+00, mass_drift=0.000e+00, range=[2.000000000, 2.000000000]
+pulse_lf_still40: nu=0, max_error=4.346618652344e-01, mass_drift=0.000e+00, range=[0.000018311, 0.789886475]
+rows: cells=960, history=461, balances=1920, summary=13, convergence=4, hand=12, remap=28, reaverage=20, interpretations=8
+max_mass_drift: 1.1102230246251565e-16
+max_balance_residual: 3.469446951953614e-18

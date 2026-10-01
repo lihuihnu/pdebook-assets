@@ -55,3 +55,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-007/` — 一维 Poisson 方程的第一个数值解；Python standard library only.
 - `code/pde-018/` — 从局部守恒到单元平均；精确积分、中心点比较与局部守恒核对；Python standard library only.
 - `code/pde-019/` — 有限体积格式与数值通量；共享通量、周期推进、波形对照与误差细化；Python standard library only.
+- `code/pde-020/` — 迎风通量重新看线性平流；平移积分、重新求平均、脉冲对照与光滑细化；Python standard library only.

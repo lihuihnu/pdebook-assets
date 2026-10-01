@@ -280,6 +280,16 @@
       "width_px": 1920,
       "height_px": 1800,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-019/fig-001-flux-comparison.png"
+    },
+    {
+      "article_id": "pde-020",
+      "source": "figures/pde-020/exports/fig-001-upwind-lf.png",
+      "source_blob_sha": "c8b930ff149933c02ff06172daf5269d243ad675",
+      "output": "assets/pde-020/fig-001-upwind-lf.png",
+      "output_blob_sha": "c8b930ff149933c02ff06172daf5269d243ad675",
+      "width_px": 1920,
+      "height_px": 1320,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-020/fig-001-upwind-lf.png"
     }
   ],
   "code": [
@@ -974,6 +984,94 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-019"
+    },
+    {
+      "article_id": "pde-020",
+      "source_root": "experiments/pde-020",
+      "output_root": "code/pde-020",
+      "run_command": "cd code/pde-020 && python src/upwind_volume.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-020/README.md",
+          "source_blob_sha": "588f7dec630f825078c25fbf2ec2124bd2907478",
+          "output": "code/pde-020/README.md",
+          "output_blob_sha": "588f7dec630f825078c25fbf2ec2124bd2907478"
+        },
+        {
+          "source": "experiments/pde-020/config/upwind.json",
+          "source_blob_sha": "22b39b617c1a17411677adf3d8e3003fac6d2c3d",
+          "output": "code/pde-020/config/upwind.json",
+          "output_blob_sha": "22b39b617c1a17411677adf3d8e3003fac6d2c3d"
+        },
+        {
+          "source": "experiments/pde-020/results/balances.csv",
+          "source_blob_sha": "8c045bd1c41de72bdda4f9435662a1863c419b0e",
+          "output": "code/pde-020/results/balances.csv",
+          "output_blob_sha": "8c045bd1c41de72bdda4f9435662a1863c419b0e"
+        },
+        {
+          "source": "experiments/pde-020/results/cells.csv",
+          "source_blob_sha": "edbdedc27a9e9e5e47911edb2397fa39da0ae55a",
+          "output": "code/pde-020/results/cells.csv",
+          "output_blob_sha": "edbdedc27a9e9e5e47911edb2397fa39da0ae55a"
+        },
+        {
+          "source": "experiments/pde-020/results/convergence.csv",
+          "source_blob_sha": "3290f77d0b1b657fb5be6fe326ea662e55db2035",
+          "output": "code/pde-020/results/convergence.csv",
+          "output_blob_sha": "3290f77d0b1b657fb5be6fe326ea662e55db2035"
+        },
+        {
+          "source": "experiments/pde-020/results/hand.csv",
+          "source_blob_sha": "43acb3fca7c5f53a385cbf066373b3067f8945dc",
+          "output": "code/pde-020/results/hand.csv",
+          "output_blob_sha": "43acb3fca7c5f53a385cbf066373b3067f8945dc"
+        },
+        {
+          "source": "experiments/pde-020/results/history.csv",
+          "source_blob_sha": "eeb4b69bbb29b6ffd06f8e544fc545256dd2853c",
+          "output": "code/pde-020/results/history.csv",
+          "output_blob_sha": "eeb4b69bbb29b6ffd06f8e544fc545256dd2853c"
+        },
+        {
+          "source": "experiments/pde-020/results/interpretations.csv",
+          "source_blob_sha": "a95d584cf5db771c7f60fec6e6e73b4beac8af23",
+          "output": "code/pde-020/results/interpretations.csv",
+          "output_blob_sha": "a95d584cf5db771c7f60fec6e6e73b4beac8af23"
+        },
+        {
+          "source": "experiments/pde-020/results/reaverage.csv",
+          "source_blob_sha": "2235b41b0abb3e59738e963ab39387b67bc54e1a",
+          "output": "code/pde-020/results/reaverage.csv",
+          "output_blob_sha": "2235b41b0abb3e59738e963ab39387b67bc54e1a"
+        },
+        {
+          "source": "experiments/pde-020/results/remap.csv",
+          "source_blob_sha": "7139ad4d1820856ae7fb7f1c3c0df2c3ddc15577",
+          "output": "code/pde-020/results/remap.csv",
+          "output_blob_sha": "7139ad4d1820856ae7fb7f1c3c0df2c3ddc15577"
+        },
+        {
+          "source": "experiments/pde-020/results/run.txt",
+          "source_blob_sha": "e499be5562fb6fc8559d387b1bf738225e66ac5f",
+          "output": "code/pde-020/results/run.txt",
+          "output_blob_sha": "e499be5562fb6fc8559d387b1bf738225e66ac5f"
+        },
+        {
+          "source": "experiments/pde-020/results/summary.csv",
+          "source_blob_sha": "4036c16ff0a72e28bc999dd5ecd59c668261306a",
+          "output": "code/pde-020/results/summary.csv",
+          "output_blob_sha": "4036c16ff0a72e28bc999dd5ecd59c668261306a"
+        },
+        {
+          "source": "experiments/pde-020/src/upwind_volume.py",
+          "source_blob_sha": "ee2ed74897426aa5631b69d559df09a3590cf3fe",
+          "output": "code/pde-020/src/upwind_volume.py",
+          "output_blob_sha": "ee2ed74897426aa5631b69d559df09a3590cf3fe"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-020"
     }
   ]
 }
