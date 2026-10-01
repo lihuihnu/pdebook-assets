@@ -1,0 +1,5 @@
+{
+  "pulse": {"N": 100, "T": 0.4, "steps": 50, "speeds": [1.0, -1.0], "center": 0.35, "half_width": 0.15, "power": 6},
+  "mode": {"N": 100, "T": 0.8, "steps": 100, "speed": 1.0, "amplitude": 1e-6},
+  "convergence": {"grids": [40, 80, 160, 320], "T": 0.4, "speed": 1.0, "courant": 0.8}
+}

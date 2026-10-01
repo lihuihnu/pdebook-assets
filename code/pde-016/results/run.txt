@@ -1,0 +1,13 @@
+Python 3.12.14
+Solver dependencies: standard library only
+PASS: hand steps, cyclic shifts, 48 binomial checks, 200 modal checks, CFL counterexample, invalid inputs
+Completed 8 cases; 1000 final nodes; 608 history rows.
+pulse_right: max_error=1.678507201e-01; total_drift=1.388e-17; norm_ratio=9.047266855e-01
+pulse_left: max_error=1.678507201e-01; total_drift=1.388e-17; norm_ratio=9.047266855e-01
+mode_centered: max_error=5.509637229e+04; total_drift=0.000e+00; norm_ratio=5.523220764e+10
+mode_upwind: max_error=9.999999966e-07; total_drift=0.000e+00; norm_ratio=4.221294339e-09
+sine_40: max_error=3.870687220e-02; total_drift=2.258e-17; norm_ratio=9.612938688e-01
+sine_80: max_error=1.954531390e-02; total_drift=3.848e-17; norm_ratio=9.804547333e-01
+sine_160: max_error=9.821012385e-03; total_drift=1.759e-17; norm_ratio=9.901789906e-01
+sine_320: max_error=4.922639943e-03; total_drift=1.529e-17; norm_ratio=9.950773602e-01
+All recorded values are from actual time stepping; no timing benchmark is claimed.
