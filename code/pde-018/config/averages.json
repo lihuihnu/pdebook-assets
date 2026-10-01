@@ -1,0 +1,14 @@
+{
+  "domain": [0, 1],
+  "cosine_amplitude": 0.8,
+  "pulse_interval": [0.2, 0.43],
+  "profiles": ["cosine", "pulse"],
+  "velocities": [1, -1, 0],
+  "times": [0, 0.13, 0.31, 0.83, 1.13],
+  "grids": {
+    "uniform": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    "nonuniform": [0, 0.08, 0.2, 0.31, 0.4, 0.55, 0.7, 0.83, 1]
+  },
+  "comparison": {"N": [10, 20, 40, 80, 160], "c": 1, "time": 0.13},
+  "plot": {"grid": "uniform", "c": 1, "time": 0.13, "cosine_points": 1001}
+}

@@ -250,6 +250,26 @@
       "width_px": 1920,
       "height_px": 1920,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-017/fig-002-two-mode-transport.png"
+    },
+    {
+      "article_id": "pde-018",
+      "source": "figures/pde-018/exports/fig-001-shared-flux.png",
+      "source_blob_sha": "414860b86871a1fc7b1cc7a3b9358518232977ee",
+      "output": "assets/pde-018/fig-001-shared-flux.png",
+      "output_blob_sha": "414860b86871a1fc7b1cc7a3b9358518232977ee",
+      "width_px": 1536,
+      "height_px": 1024,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-018/fig-001-shared-flux.png"
+    },
+    {
+      "article_id": "pde-018",
+      "source": "figures/pde-018/exports/fig-002-averages-and-centers.png",
+      "source_blob_sha": "f840b34cec37ff310019ff2bd418df512e18155a",
+      "output": "assets/pde-018/fig-002-averages-and-centers.png",
+      "output_blob_sha": "f840b34cec37ff310019ff2bd418df512e18155a",
+      "width_px": 1920,
+      "height_px": 1728,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-018/fig-002-averages-and-centers.png"
     }
   ],
   "code": [
@@ -792,6 +812,76 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-017"
+    },
+    {
+      "article_id": "pde-018",
+      "source_root": "experiments/pde-018",
+      "output_root": "code/pde-018",
+      "run_command": "python src/cell_averages.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-018/README.md",
+          "source_blob_sha": "1689931d40be117dfd371e7ac2a2a6527124c4e5",
+          "output": "code/pde-018/README.md",
+          "output_blob_sha": "1689931d40be117dfd371e7ac2a2a6527124c4e5"
+        },
+        {
+          "source": "experiments/pde-018/config/averages.json",
+          "source_blob_sha": "232cbc1edef39ac6c0a4ffd6d2ee392622c91a04",
+          "output": "code/pde-018/config/averages.json",
+          "output_blob_sha": "232cbc1edef39ac6c0a4ffd6d2ee392622c91a04"
+        },
+        {
+          "source": "experiments/pde-018/results/balances.csv",
+          "source_blob_sha": "af8424d5f5fb0f95a80a9773ee289ab38fc8a904",
+          "output": "code/pde-018/results/balances.csv",
+          "output_blob_sha": "af8424d5f5fb0f95a80a9773ee289ab38fc8a904"
+        },
+        {
+          "source": "experiments/pde-018/results/cells.csv",
+          "source_blob_sha": "a6a05b86442037ca368c309a611ddb214d2174e8",
+          "output": "code/pde-018/results/cells.csv",
+          "output_blob_sha": "a6a05b86442037ca368c309a611ddb214d2174e8"
+        },
+        {
+          "source": "experiments/pde-018/results/comparison.csv",
+          "source_blob_sha": "85b4cb27cb5a400987276b7c13d5af80f0d6f4f6",
+          "output": "code/pde-018/results/comparison.csv",
+          "output_blob_sha": "85b4cb27cb5a400987276b7c13d5af80f0d6f4f6"
+        },
+        {
+          "source": "experiments/pde-018/results/exact_curve.csv",
+          "source_blob_sha": "95611d05ac22eaa894a73a6844df56e02a7ee928",
+          "output": "code/pde-018/results/exact_curve.csv",
+          "output_blob_sha": "95611d05ac22eaa894a73a6844df56e02a7ee928"
+        },
+        {
+          "source": "experiments/pde-018/results/faces.csv",
+          "source_blob_sha": "ed7ddcf28d03babf577fc1c2036eedda3c941605",
+          "output": "code/pde-018/results/faces.csv",
+          "output_blob_sha": "ed7ddcf28d03babf577fc1c2036eedda3c941605"
+        },
+        {
+          "source": "experiments/pde-018/results/run.txt",
+          "source_blob_sha": "e9a690c7131b6898b613a418ad14b85c4706c75c",
+          "output": "code/pde-018/results/run.txt",
+          "output_blob_sha": "e9a690c7131b6898b613a418ad14b85c4706c75c"
+        },
+        {
+          "source": "experiments/pde-018/results/totals.csv",
+          "source_blob_sha": "98995c62d2409a6bef11a9903029a56f4d245a1f",
+          "output": "code/pde-018/results/totals.csv",
+          "output_blob_sha": "98995c62d2409a6bef11a9903029a56f4d245a1f"
+        },
+        {
+          "source": "experiments/pde-018/src/cell_averages.py",
+          "source_blob_sha": "4387cfd9edaf066ea1efa395cee4fae9a57781ea",
+          "output": "code/pde-018/src/cell_averages.py",
+          "output_blob_sha": "4387cfd9edaf066ea1efa395cee4fae9a57781ea"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-018"
     }
   ]
 }

@@ -1,0 +1,8 @@
+60 snapshots; 540 cells; 480 face integrals; 432 balances
+Max total error: 3.331e-16
+Max space-time balance residual: 1.110e-16
+{'N': 10, 'h': 0.1, 'max_gap': 0.012991430026605133, 'previous_ratio': ''}
+{'N': 20, 'h': 0.05, 'max_gap': 0.003284190455375563, 'previous_ratio': 3.9557480612431477}
+{'N': 40, 'h': 0.025, 'max_gap': 0.0008213006414881652, 'previous_ratio': 3.9987676734608852}
+{'N': 80, 'h': 0.0125, 'max_gap': 0.00020559456337793103, 'previous_ratio': 3.994758557785509}
+{'N': 160, 'h': 0.00625, 'max_gap': 5.139963158468097e-05, 'previous_ratio': 3.99992289904284}

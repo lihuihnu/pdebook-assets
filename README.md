@@ -30,7 +30,7 @@ Zhihu publish views use public figure URLs of the form:
 https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-NNN/<figure>.png
 ```
 
-Generated PNG files are derived from canonical SVG figures in the private source repository. Do not edit generated PNG files by hand.
+Public PNG files are synchronized from reviewed canonical PNGs or rendered from vector figures in the private source repository. Conceptual illustrations and computed quantitative plots are identified in the per-article manifests. Do not edit published PNG files by hand.
 
 ### Public code
 
@@ -53,3 +53,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 ## Current reader code
 
 - `code/pde-007/` — 一维 Poisson 方程的第一个数值解；Python standard library only.
+- `code/pde-018/` — 从局部守恒到单元平均；精确积分、中心点比较与局部守恒核对；Python standard library only.
