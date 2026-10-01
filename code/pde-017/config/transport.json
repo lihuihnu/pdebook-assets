@@ -1,0 +1,461 @@
+{
+  "equation": "u_t+c*u_x=0",
+  "domain": [
+    0,
+    1
+  ],
+  "boundary": "periodic",
+  "scan_intervals": 400,
+  "scan_courant": [
+    0.5,
+    0.8
+  ],
+  "cases": [
+    {
+      "id": "mode_upwind_nu05_m1",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu05_m1",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_upwind_nu05_m4",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu05_m4",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_upwind_nu05_m10",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu05_m10",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 160,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_upwind_nu08_m1",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu08_m1",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_upwind_nu08_m4",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu08_m4",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_upwind_nu08_m10",
+      "group": "modal",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mode_lax_wendroff_nu08_m10",
+      "group": "modal",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "wave_upwind_40",
+      "group": "waveform",
+      "scheme": "upwind",
+      "N": 40,
+      "steps": 50,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_lax_wendroff_40",
+      "group": "waveform",
+      "scheme": "lax_wendroff",
+      "N": 40,
+      "steps": 50,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_upwind_80",
+      "group": "refinement",
+      "scheme": "upwind",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_lax_wendroff_80",
+      "group": "refinement",
+      "scheme": "lax_wendroff",
+      "N": 80,
+      "steps": 100,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_upwind_160",
+      "group": "refinement",
+      "scheme": "upwind",
+      "N": 160,
+      "steps": 200,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_lax_wendroff_160",
+      "group": "refinement",
+      "scheme": "lax_wendroff",
+      "N": 160,
+      "steps": 200,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_upwind_320",
+      "group": "refinement",
+      "scheme": "upwind",
+      "N": 320,
+      "steps": 400,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "wave_lax_wendroff_320",
+      "group": "refinement",
+      "scheme": "lax_wendroff",
+      "N": 320,
+      "steps": 400,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_upwind_-1",
+      "group": "shift",
+      "scheme": "upwind",
+      "N": 40,
+      "steps": 40,
+      "c": -1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_lax_wendroff_-1",
+      "group": "shift",
+      "scheme": "lax_wendroff",
+      "N": 40,
+      "steps": 40,
+      "c": -1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_upwind_0",
+      "group": "shift",
+      "scheme": "upwind",
+      "N": 40,
+      "steps": 40,
+      "c": 0,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_lax_wendroff_0",
+      "group": "shift",
+      "scheme": "lax_wendroff",
+      "N": 40,
+      "steps": 40,
+      "c": 0,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_upwind_1",
+      "group": "shift",
+      "scheme": "upwind",
+      "N": 40,
+      "steps": 40,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "shift_lax_wendroff_1",
+      "group": "shift",
+      "scheme": "lax_wendroff",
+      "N": 40,
+      "steps": 40,
+      "c": 1,
+      "T": 1,
+      "modes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          0.25
+        ]
+      ]
+    }
+  ]
+}

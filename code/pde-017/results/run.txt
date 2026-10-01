@@ -1,0 +1,29 @@
+Python 3.12.14; standard library only
+PASS: hand step, shifts/stationary, non-mutation, CFL counterexamples, alternating-mode annihilation, 100 complex-symbol checks, invalid inputs
+mode_upwind_nu05_m1: max_error=1.160915427e-01; l2_error=8.208911705e-02; total_drift=3.917e-17
+mode_lax_wendroff_nu05_m1: max_error=4.840291796e-03; l2_error=3.424340610e-03; total_drift=8.149e-17
+mode_upwind_nu05_m4: max_error=8.622193179e-01; l2_error=6.096811266e-01; total_drift=3.149e-17
+mode_lax_wendroff_nu05_m4: max_error=3.014611993e-01; l2_error=2.133824524e-01; total_drift=3.965e-17
+mode_upwind_nu05_m10: max_error=9.999968489e-01; l2_error=7.071045531e-01; total_drift=1.384e-17
+mode_lax_wendroff_nu05_m10: max_error=1.052114100e+00; l2_error=7.677598012e-01; total_drift=5.269e-17
+mode_upwind_nu08_m1: max_error=4.814950932e-02; l2_error=3.405084401e-02; total_drift=1.565e-17
+mode_lax_wendroff_nu08_m1: max_error=2.323390357e-03; l2_error=1.643637926e-03; total_drift=3.835e-17
+mode_upwind_nu08_m4: max_error=5.463980507e-01; l2_error=3.866928286e-01; total_drift=3.475e-17
+mode_lax_wendroff_nu08_m4: max_error=1.455770883e-01; l2_error=1.030895924e-01; total_drift=9.286e-17
+mode_upwind_nu08_m10: max_error=9.949041802e-01; l2_error=7.035131720e-01; total_drift=1.357e-17
+mode_lax_wendroff_nu08_m10: max_error=1.158595103e+00; l2_error=8.523571036e-01; total_drift=3.413e-17
+wave_upwind_40: max_error=2.933581719e-01; l2_error=1.560442086e-01; total_drift=9.784e-17
+wave_lax_wendroff_40: max_error=1.324137037e-01; l2_error=9.188043981e-02; total_drift=5.378e-17
+wave_upwind_80: max_error=1.847490220e-01; l2_error=1.024947265e-01; total_drift=1.948e-16
+wave_lax_wendroff_80: max_error=3.856772498e-02; l2_error=2.582475652e-02; total_drift=8.283e-17
+wave_upwind_160: max_error=1.059230615e-01; l2_error=6.020374556e-02; total_drift=3.438e-16
+wave_lax_wendroff_160: max_error=9.802282266e-03; l2_error=6.568472264e-03; total_drift=5.212e-17
+wave_upwind_320: max_error=5.704417377e-02; l2_error=3.283488259e-02; total_drift=6.768e-16
+wave_lax_wendroff_320: max_error=2.457935748e-03; l2_error=1.646572803e-03; total_drift=9.229e-17
+shift_upwind_-1: max_error=2.886579864e-15; l2_error=8.449852119e-16; total_drift=0.000e+00
+shift_lax_wendroff_-1: max_error=2.831068713e-15; l2_error=8.308380171e-16; total_drift=1.874e-17
+shift_upwind_0: max_error=0.000000000e+00; l2_error=0.000000000e+00; total_drift=0.000e+00
+shift_lax_wendroff_0: max_error=0.000000000e+00; l2_error=0.000000000e+00; total_drift=0.000e+00
+shift_upwind_1: max_error=1.776356839e-15; l2_error=4.655785812e-16; total_drift=0.000e+00
+shift_lax_wendroff_1: max_error=1.776356839e-15; l2_error=4.672921325e-16; total_drift=6.592e-18
+Completed 26 cases; 2400 final nodes; 3326 time records; 1776 modal time records; 1604 analytic scan rows.

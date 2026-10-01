@@ -230,6 +230,26 @@
       "width_px": 1920,
       "height_px": 1320,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-016/fig-002-mode-amplification.png"
+    },
+    {
+      "article_id": "pde-017",
+      "source": "figures/pde-017/exports/fig-001-amplitude-phase.png",
+      "source_blob_sha": "00bf893e11d1906e1f79504b5f1d90a7ab55afc6",
+      "output": "assets/pde-017/fig-001-amplitude-phase.png",
+      "output_blob_sha": "00bf893e11d1906e1f79504b5f1d90a7ab55afc6",
+      "width_px": 1920,
+      "height_px": 2040,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-017/fig-001-amplitude-phase.png"
+    },
+    {
+      "article_id": "pde-017",
+      "source": "figures/pde-017/exports/fig-002-two-mode-transport.png",
+      "source_blob_sha": "33e85d4078c4e946a1f2769ac6ecc28600618b77",
+      "output": "assets/pde-017/fig-002-two-mode-transport.png",
+      "output_blob_sha": "33e85d4078c4e946a1f2769ac6ecc28600618b77",
+      "width_px": 1920,
+      "height_px": 1920,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-017/fig-002-two-mode-transport.png"
     }
   ],
   "code": [
@@ -696,6 +716,82 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-016"
+    },
+    {
+      "article_id": "pde-017",
+      "source_root": "experiments/pde-017",
+      "output_root": "code/pde-017",
+      "run_command": "cd code/pde-017 && python src/transport.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-017/README.md",
+          "source_blob_sha": "05fd1c78630ab511e797fd351c293977e0667168",
+          "output": "code/pde-017/README.md",
+          "output_blob_sha": "05fd1c78630ab511e797fd351c293977e0667168"
+        },
+        {
+          "source": "experiments/pde-017/config/transport.json",
+          "source_blob_sha": "152088cfbd27dbedbd0ef75d0d64ebba9152b747",
+          "output": "code/pde-017/config/transport.json",
+          "output_blob_sha": "152088cfbd27dbedbd0ef75d0d64ebba9152b747"
+        },
+        {
+          "source": "experiments/pde-017/results/convergence.csv",
+          "source_blob_sha": "055cd0c36702d6ab1067ce1c5902bf933eb4b593",
+          "output": "code/pde-017/results/convergence.csv",
+          "output_blob_sha": "055cd0c36702d6ab1067ce1c5902bf933eb4b593"
+        },
+        {
+          "source": "experiments/pde-017/results/history.csv",
+          "source_blob_sha": "4e2ec2e4a4d0e5b02c1db030f3d7adfe4576a2d6",
+          "output": "code/pde-017/results/history.csv",
+          "output_blob_sha": "4e2ec2e4a4d0e5b02c1db030f3d7adfe4576a2d6"
+        },
+        {
+          "source": "experiments/pde-017/results/mode_history.csv",
+          "source_blob_sha": "9f3a840920b9886b9dbaa7a830171c7fb5e597a0",
+          "output": "code/pde-017/results/mode_history.csv",
+          "output_blob_sha": "9f3a840920b9886b9dbaa7a830171c7fb5e597a0"
+        },
+        {
+          "source": "experiments/pde-017/results/modes.csv",
+          "source_blob_sha": "ca68dfa989ab0585eb3d574dcd80248567ca8996",
+          "output": "code/pde-017/results/modes.csv",
+          "output_blob_sha": "ca68dfa989ab0585eb3d574dcd80248567ca8996"
+        },
+        {
+          "source": "experiments/pde-017/results/nodes.csv",
+          "source_blob_sha": "63658ad593bff78188acb0efd3836080a6659db9",
+          "output": "code/pde-017/results/nodes.csv",
+          "output_blob_sha": "63658ad593bff78188acb0efd3836080a6659db9"
+        },
+        {
+          "source": "experiments/pde-017/results/run.txt",
+          "source_blob_sha": "b80f13ec38c698e23cffdcc127b0e397a6ee04f7",
+          "output": "code/pde-017/results/run.txt",
+          "output_blob_sha": "b80f13ec38c698e23cffdcc127b0e397a6ee04f7"
+        },
+        {
+          "source": "experiments/pde-017/results/scan.csv",
+          "source_blob_sha": "b68e51afe2b041c122ad33a0b4e34d04f91d82f1",
+          "output": "code/pde-017/results/scan.csv",
+          "output_blob_sha": "b68e51afe2b041c122ad33a0b4e34d04f91d82f1"
+        },
+        {
+          "source": "experiments/pde-017/results/summary.csv",
+          "source_blob_sha": "a51b8431ab5c4a34e2b3d993769ece8dbb540988",
+          "output": "code/pde-017/results/summary.csv",
+          "output_blob_sha": "a51b8431ab5c4a34e2b3d993769ece8dbb540988"
+        },
+        {
+          "source": "experiments/pde-017/src/transport.py",
+          "source_blob_sha": "538f5bdcca5b62fe68ac9d18add8f83dc5fcd29b",
+          "output": "code/pde-017/src/transport.py",
+          "output_blob_sha": "538f5bdcca5b62fe68ac9d18add8f83dc5fcd29b"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-017"
     }
   ]
 }
