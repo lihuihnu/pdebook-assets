@@ -1,0 +1,17 @@
+kind,i,x,solution,residual,mean
+incompatible_pin_one,0,0,0.0,-1.0,0.3203125
+incompatible_pin_one,1,0.25,0.21875,0.0,0.3203125
+incompatible_pin_one,2,0.5,0.375,0.0,0.3203125
+incompatible_pin_one,3,1,0.5,0.0,0.3203125
+incompatible_pin_x,0,0,0.0,-0.5,0.19986979166666666
+incompatible_pin_x,1,0.25,0.12239583333333334,0.0,0.19986979166666666
+incompatible_pin_x,2,0.5,0.22916666666666669,-1.1102230246251565e-16,0.19986979166666666
+incompatible_pin_x,3,1,0.33333333333333337,2.7755575615628914e-17,0.19986979166666666
+lost_dirichlet_columns,0,0,1.0,3.5,0.6953125
+lost_dirichlet_columns,1,0.25,0.09375,-4.0,0.6953125
+lost_dirichlet_columns,2,0.5,0.125,-4.0,0.6953125
+lost_dirichlet_columns,3,1,2.0,3.5,0.6953125
+arithmetic_mean,0,0,-0.0546875,0.0,0.015625
+arithmetic_mean,1,0.25,0.0390625,0.0,0.015625
+arithmetic_mean,2,0.5,0.0703125,0.0,0.015625
+arithmetic_mean,3,1,-0.0546875,0.0,0.015625

@@ -1,0 +1,23 @@
+pde-026 finite-element boundary conditions
+Python 3.12.14
+Equation: -u''=f on (0,1), f=0,1,x; exact element integration, binary float.
+Neumann input: q_left=-u'(0), q_right=u'(1); both add to the boundary load.
+Pure Neumann: check load sum first; no source/load projection; check all original rows.
+Compatibility tolerance: 64*machine_epsilon*max(1,sum(abs(right))).
+Zero mean uses the integral of the continuous P1 function.
+Exact polynomials check computed solutions; they do not set solved nodal values.
+Diagnostic altered systems are not accepted solutions of incompatible Neumann problems.
+Fixed Dirichlet solution: [1.0, 1.34375, 1.625, 2.0]
+matrix.csv: 449 rows
+elements.csv: 114 rows
+loads.csv: 450 rows
+reduced.csv: 3522 rows
+nodes.csv: 450 rows
+slopes.csv: 380 rows
+summary.csv: 70 rows
+profiles.csv: 2005 rows
+rejected.csv: 14 rows
+diagnostics.csv: 16 rows
+Solved cases: 70
+Maximum tested-row residual: 7.105e-15
+Maximum error after aligning the left value: 1.332e-15

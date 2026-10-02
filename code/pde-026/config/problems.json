@@ -1,0 +1,25 @@
+{
+  "meshes": [
+    {"name": "nonuniform", "nodes": [0, 0.25, 0.5, 1]},
+    {"name": "single", "nodes": [0, 1]},
+    {"name": "uniform2", "nodes": [0, 0.5, 1]},
+    {"name": "uniform4", "nodes": [0, 0.25, 0.5, 0.75, 1]},
+    {"name": "uniform8", "nodes": [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1]},
+    {"name": "uniform16", "nodes": [0, 0.0625, 0.125, 0.1875, 0.25, 0.3125, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.6875, 0.75, 0.8125, 0.875, 0.9375, 1]},
+    {"name": "graded4", "nodes": [0, 0.0625, 0.25, 0.5625, 1]}
+  ],
+  "cases": [
+    {"name": "dd_one", "source": "one", "left": {"type": "D", "value": 1}, "right": {"type": "D", "value": 2}},
+    {"name": "dn_one", "source": "one", "left": {"type": "D", "value": 1}, "right": {"type": "N", "value": -0.5}},
+    {"name": "nd_one", "source": "one", "left": {"type": "N", "value": -1}, "right": {"type": "D", "value": 2}},
+    {"name": "nn_pin_one", "source": "one", "left": {"type": "N", "value": -0.5}, "right": {"type": "N", "value": -0.5}, "representative": "pin_left"},
+    {"name": "nn_zero_one", "source": "one", "left": {"type": "N", "value": -0.5}, "right": {"type": "N", "value": -0.5}, "representative": "zero_mean"},
+    {"name": "dn_omitted", "source": "one", "left": {"type": "D", "value": 1}, "right": {"type": "N", "value": 0}},
+    {"name": "dn_wrong_sign", "source": "one", "left": {"type": "D", "value": 1}, "right": {"type": "N", "value": 0.5}},
+    {"name": "dn_zero", "source": "zero", "left": {"type": "D", "value": 1}, "right": {"type": "N", "value": 2}},
+    {"name": "dd_x", "source": "x", "left": {"type": "D", "value": 0}, "right": {"type": "D", "value": 0}},
+    {"name": "nn_zero_x", "source": "x", "left": {"type": "N", "value": 0}, "right": {"type": "N", "value": -0.5}, "representative": "zero_mean"}
+  ],
+  "profile_cases": ["dn_one", "dn_omitted", "dn_wrong_sign", "nn_pin_one", "nn_zero_one"],
+  "profile_intervals": 400
+}

@@ -1,0 +1,15 @@
+mesh,case,load_sum,tolerance,outcome
+nonuniform,incompatible_one,1.0,1.4210854715202004e-14,rejected
+nonuniform,incompatible_x,0.5,1.4210854715202004e-14,rejected
+single,incompatible_one,1.0,1.4210854715202004e-14,rejected
+single,incompatible_x,0.5,1.4210854715202004e-14,rejected
+uniform2,incompatible_one,1.0,1.4210854715202004e-14,rejected
+uniform2,incompatible_x,0.5,1.4210854715202004e-14,rejected
+uniform4,incompatible_one,1.0,1.4210854715202004e-14,rejected
+uniform4,incompatible_x,0.5,1.4210854715202004e-14,rejected
+uniform8,incompatible_one,1.0,1.4210854715202004e-14,rejected
+uniform8,incompatible_x,0.5,1.4210854715202004e-14,rejected
+uniform16,incompatible_one,1.0,1.4210854715202004e-14,rejected
+uniform16,incompatible_x,0.5,1.4210854715202004e-14,rejected
+graded4,incompatible_one,1.0,1.4210854715202004e-14,rejected
+graded4,incompatible_x,0.5,1.4210854715202004e-14,rejected
