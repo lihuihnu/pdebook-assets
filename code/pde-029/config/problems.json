@@ -1,0 +1,13 @@
+{
+  "meshes": [4, 8, 16, 24, 32],
+  "problems": [
+    {"name": "constant", "c": 0, "source": "constant"},
+    {"name": "affine", "c": 0, "source": "affine"},
+    {"name": "convection", "c": 8, "source": "quadratic_solution"}
+  ],
+  "rtol": 1e-8,
+  "atol": 1e-14,
+  "jacobi_maxiter": 40000,
+  "krylov_maxiter": 5000,
+  "restart": 12
+}

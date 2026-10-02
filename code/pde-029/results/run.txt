@@ -1,0 +1,61 @@
+Python 3.12.14
+Core dependencies: standard library
+Row scaling: h^2 times differential equation; zero initial iterate
+Stopping: true Euclidean residual <= max(atol, rtol*norm(b))
+CG: recursive residual updates; true residual used for stopping
+GMRES: two-pass modified Gram-Schmidt, Givens rotations, true residual at each step
+Jacobi: Poisson only; GMRES(1) rotation intentionally reaches maxiter
+four_cell_cg: [0.09375, 0.125, 0.09375]
+rows: {"history": 15964, "iterates": 43601, "loads": 237, "matrix": 679, "nodes": 794, "summary": 52}
+constant N=4 jacobi iterations=54 status=converged
+constant N=4 cg iterations=2 status=converged
+constant N=4 gmres iterations=2 status=converged
+constant N=4 gmres_restart iterations=2 status=converged
+constant N=8 jacobi iterations=233 status=converged
+constant N=8 cg iterations=4 status=converged
+constant N=8 gmres iterations=4 status=converged
+constant N=8 gmres_restart iterations=4 status=converged
+constant N=16 jacobi iterations=946 status=converged
+constant N=16 cg iterations=8 status=converged
+constant N=16 gmres iterations=8 status=converged
+constant N=16 gmres_restart iterations=8 status=converged
+constant N=24 jacobi iterations=2135 status=converged
+constant N=24 cg iterations=12 status=converged
+constant N=24 gmres iterations=12 status=converged
+constant N=24 gmres_restart iterations=12 status=converged
+constant N=32 jacobi iterations=3798 status=converged
+constant N=32 cg iterations=16 status=converged
+constant N=32 gmres iterations=16 status=converged
+constant N=32 gmres_restart iterations=301 status=converged
+affine N=4 jacobi iterations=54 status=converged
+affine N=4 cg iterations=3 status=converged
+affine N=4 gmres iterations=3 status=converged
+affine N=4 gmres_restart iterations=3 status=converged
+affine N=8 jacobi iterations=232 status=converged
+affine N=8 cg iterations=7 status=converged
+affine N=8 gmres iterations=7 status=converged
+affine N=8 gmres_restart iterations=7 status=converged
+affine N=16 jacobi iterations=945 status=converged
+affine N=16 cg iterations=15 status=converged
+affine N=16 gmres iterations=15 status=converged
+affine N=16 gmres_restart iterations=79 status=converged
+affine N=24 jacobi iterations=2133 status=converged
+affine N=24 cg iterations=23 status=converged
+affine N=24 gmres iterations=23 status=converged
+affine N=24 gmres_restart iterations=132 status=converged
+affine N=32 jacobi iterations=3795 status=converged
+affine N=32 cg iterations=31 status=converged
+affine N=32 gmres iterations=31 status=converged
+affine N=32 gmres_restart iterations=339 status=converged
+convection N=4 gmres iterations=3 status=converged
+convection N=4 gmres_restart iterations=3 status=converged
+convection N=8 gmres iterations=7 status=converged
+convection N=8 gmres_restart iterations=7 status=converged
+convection N=16 gmres iterations=15 status=converged
+convection N=16 gmres_restart iterations=75 status=converged
+convection N=24 gmres iterations=23 status=converged
+convection N=24 gmres_restart iterations=110 status=converged
+convection N=32 gmres iterations=31 status=converged
+convection N=32 gmres_restart iterations=176 status=converged
+rotation N=0 gmres_1 iterations=6 status=maxiter
+rotation N=0 gmres_2 iterations=2 status=converged

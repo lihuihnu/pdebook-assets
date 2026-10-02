@@ -434,6 +434,26 @@
       "width_px": 1920,
       "height_px": 2000,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-028/fig-002-reconstruction-errors.png"
+    },
+    {
+      "article_id": "pde-029",
+      "source": "figures/pde-029/exports/fig-001-storage-and-iterations.png",
+      "source_blob_sha": "763f109c10d0c8c283ba0e32bdeb752537c7216f",
+      "output": "assets/pde-029/fig-001-storage-and-iterations.png",
+      "output_blob_sha": "763f109c10d0c8c283ba0e32bdeb752537c7216f",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-029/fig-001-storage-and-iterations.png"
+    },
+    {
+      "article_id": "pde-029",
+      "source": "figures/pde-029/exports/fig-002-true-residuals.png",
+      "source_blob_sha": "a28e79c22d9f584f9ea122923d282cbf90b88d7d",
+      "output": "assets/pde-029/fig-002-true-residuals.png",
+      "output_blob_sha": "a28e79c22d9f584f9ea122923d282cbf90b88d7d",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-029/fig-002-true-residuals.png"
     }
   ],
   "code": [
@@ -1870,6 +1890,86 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-028"
+    },
+    {
+      "article_id": "pde-029",
+      "source_root": "experiments/pde-029",
+      "output_root": "code/pde-029",
+      "run_command": "python code/pde-029/src/sparse_solvers.py",
+      "dependencies": [],
+      "plot_command": "python code/pde-029/src/plot_solvers.py --results code/pde-029/results --output figures/pde-029",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-029/README.md",
+          "source_blob_sha": "b088d2a9c05e3206eb0d4b100a63d456945418e3",
+          "output": "code/pde-029/README.md",
+          "output_blob_sha": "864161d6aa409c296377e3670cc865d09ff72f0b"
+        },
+        {
+          "source": "experiments/pde-029/config/problems.json",
+          "source_blob_sha": "831dac4e7829ec4de57cb42f0277ab820cbc6f9e",
+          "output": "code/pde-029/config/problems.json",
+          "output_blob_sha": "831dac4e7829ec4de57cb42f0277ab820cbc6f9e"
+        },
+        {
+          "source": "experiments/pde-029/results/history.csv",
+          "source_blob_sha": "43e8fb0de48e1dcc6b352c4676f9b0bc4895c6ae",
+          "output": "code/pde-029/results/history.csv",
+          "output_blob_sha": "43e8fb0de48e1dcc6b352c4676f9b0bc4895c6ae"
+        },
+        {
+          "source": "experiments/pde-029/results/iterates.csv",
+          "source_blob_sha": "003eb12e6cf6f747b275381b1161625cf0bb5a83",
+          "output": "code/pde-029/results/iterates.csv",
+          "output_blob_sha": "003eb12e6cf6f747b275381b1161625cf0bb5a83"
+        },
+        {
+          "source": "experiments/pde-029/results/loads.csv",
+          "source_blob_sha": "071455dd8d6bcc72c6564b7680c2d05532de62de",
+          "output": "code/pde-029/results/loads.csv",
+          "output_blob_sha": "071455dd8d6bcc72c6564b7680c2d05532de62de"
+        },
+        {
+          "source": "experiments/pde-029/results/matrix.csv",
+          "source_blob_sha": "f59859c7aab4a5d8508c69b52003fd79478d65cb",
+          "output": "code/pde-029/results/matrix.csv",
+          "output_blob_sha": "f59859c7aab4a5d8508c69b52003fd79478d65cb"
+        },
+        {
+          "source": "experiments/pde-029/results/nodes.csv",
+          "source_blob_sha": "b7e3fc7e1f3f2dc276e559127d9d366d5565f885",
+          "output": "code/pde-029/results/nodes.csv",
+          "output_blob_sha": "b7e3fc7e1f3f2dc276e559127d9d366d5565f885"
+        },
+        {
+          "source": "experiments/pde-029/results/run.txt",
+          "source_blob_sha": "01dc8308cf50838b40c35bb0f15e3800af2e9ba2",
+          "output": "code/pde-029/results/run.txt",
+          "output_blob_sha": "01dc8308cf50838b40c35bb0f15e3800af2e9ba2"
+        },
+        {
+          "source": "experiments/pde-029/results/summary.csv",
+          "source_blob_sha": "840e5180ab1cedcdbee0e3ed20bc05cdcaf10657",
+          "output": "code/pde-029/results/summary.csv",
+          "output_blob_sha": "840e5180ab1cedcdbee0e3ed20bc05cdcaf10657"
+        },
+        {
+          "source": "experiments/pde-029/src/sparse_solvers.py",
+          "source_blob_sha": "7fce1b4f4e53a1a03b9a1af34643bb0637adaf2e",
+          "output": "code/pde-029/src/sparse_solvers.py",
+          "output_blob_sha": "7fce1b4f4e53a1a03b9a1af34643bb0637adaf2e"
+        },
+        {
+          "source": "figures/pde-029/src/plot_solvers.py",
+          "source_blob_sha": "51cd855d441f1be85a83cc811c9cdff58226a78f",
+          "output": "code/pde-029/src/plot_solvers.py",
+          "output_blob_sha": "51cd855d441f1be85a83cc811c9cdff58226a78f"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-029"
     }
   ]
 }
