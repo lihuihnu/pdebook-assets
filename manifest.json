@@ -330,6 +330,16 @@
       "width_px": 1920,
       "height_px": 1320,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-022/fig-002-smooth-convergence.png"
+    },
+    {
+      "article_id": "pde-023",
+      "source": "figures/pde-023/exports/fig-001-profiles-and-slopes.png",
+      "source_blob_sha": "aec9c2c41e878ffaaea90be4106629c7bc617296",
+      "output": "assets/pde-023/fig-001-profiles-and-slopes.png",
+      "output_blob_sha": "aec9c2c41e878ffaaea90be4106629c7bc617296",
+      "width_px": 1920,
+      "height_px": 1680,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-023/fig-001-profiles-and-slopes.png"
     }
   ],
   "code": [
@@ -1258,6 +1268,70 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-022"
+    },
+    {
+      "article_id": "pde-023",
+      "source_root": "experiments/pde-023",
+      "output_root": "code/pde-023",
+      "run_command": "cd code/pde-023 && python src/weak_form.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-023/README.md",
+          "source_blob_sha": "9b570cb1f45af5a963b3632915ec172007608c84",
+          "output": "code/pde-023/README.md",
+          "output_blob_sha": "9b570cb1f45af5a963b3632915ec172007608c84"
+        },
+        {
+          "source": "experiments/pde-023/config/quadrature.json",
+          "source_blob_sha": "eec20cd0194092465bab32d665c88116c5318a9e",
+          "output": "code/pde-023/config/quadrature.json",
+          "output_blob_sha": "eec20cd0194092465bab32d665c88116c5318a9e"
+        },
+        {
+          "source": "experiments/pde-023/results/energies.csv",
+          "source_blob_sha": "43a3c1139bf8e51104058e3f0a18276f2c41c154",
+          "output": "code/pde-023/results/energies.csv",
+          "output_blob_sha": "43a3c1139bf8e51104058e3f0a18276f2c41c154"
+        },
+        {
+          "source": "experiments/pde-023/results/exact_integrals.csv",
+          "source_blob_sha": "6901ad835dcd5d36a4736445e33cfd4adb7e70cd",
+          "output": "code/pde-023/results/exact_integrals.csv",
+          "output_blob_sha": "6901ad835dcd5d36a4736445e33cfd4adb7e70cd"
+        },
+        {
+          "source": "experiments/pde-023/results/integrals.csv",
+          "source_blob_sha": "72d80abfec97338ee01196ee03d9bfa8b3764fb1",
+          "output": "code/pde-023/results/integrals.csv",
+          "output_blob_sha": "72d80abfec97338ee01196ee03d9bfa8b3764fb1"
+        },
+        {
+          "source": "experiments/pde-023/results/profiles.csv",
+          "source_blob_sha": "0980935e6551ba17254cde11b68fbba4e495c475",
+          "output": "code/pde-023/results/profiles.csv",
+          "output_blob_sha": "0980935e6551ba17254cde11b68fbba4e495c475"
+        },
+        {
+          "source": "experiments/pde-023/results/run.txt",
+          "source_blob_sha": "4a71518e966342af9ee00e85e7ed09039ed73839",
+          "output": "code/pde-023/results/run.txt",
+          "output_blob_sha": "4a71518e966342af9ee00e85e7ed09039ed73839"
+        },
+        {
+          "source": "experiments/pde-023/results/slopes.csv",
+          "source_blob_sha": "4097d15b991261194c10ac7ede69af31cf5b87cc",
+          "output": "code/pde-023/results/slopes.csv",
+          "output_blob_sha": "4097d15b991261194c10ac7ede69af31cf5b87cc"
+        },
+        {
+          "source": "experiments/pde-023/src/weak_form.py",
+          "source_blob_sha": "50c78c9efdd2b309d4eebb7e861bdceafd55dd18",
+          "output": "code/pde-023/src/weak_form.py",
+          "output_blob_sha": "50c78c9efdd2b309d4eebb7e861bdceafd55dd18"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-023"
     }
   ]
 }

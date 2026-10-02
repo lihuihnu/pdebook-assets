@@ -1,0 +1,4 @@
+{
+  "midpoint_cells_per_half": [8, 16, 32, 64, 128, 256, 512],
+  "profile_intervals": 400
+}

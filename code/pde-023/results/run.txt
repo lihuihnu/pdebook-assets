@@ -1,0 +1,8 @@
+Python 3.12.14; standard library only
+Problem: -u''=1 on (0,1); u(0)=u(1)=0; prescribed u,w,z
+Quadrature: 84 candidate/test/level combinations
+Energy checks: 21; exact integral pairs: 12
+Profiles: 401; one-sided derivative rows: 402
+Midpoint partitions split at 1/2; local-test endpoints are aligned
+Self-check: constant integral, linear half-integral, invalid m, corner rejection passed
+Finite selected tests do not prove the all-test weak equation
