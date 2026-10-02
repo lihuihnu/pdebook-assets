@@ -360,6 +360,16 @@
       "width_px": 1920,
       "height_px": 1080,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-024/fig-002-interpolation-error.png"
+    },
+    {
+      "article_id": "pde-025",
+      "source": "figures/pde-025/exports/fig-001-assembled-solutions.png",
+      "source_blob_sha": "ae215441f194d5fa5e88b7fe58e92cc284341151",
+      "output": "assets/pde-025/fig-001-assembled-solutions.png",
+      "output_blob_sha": "ae215441f194d5fa5e88b7fe58e92cc284341151",
+      "width_px": 1920,
+      "height_px": 1680,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-025/fig-001-assembled-solutions.png"
     }
   ],
   "code": [
@@ -1428,6 +1438,82 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-024"
+    },
+    {
+      "article_id": "pde-025",
+      "source_root": "experiments/pde-025",
+      "output_root": "code/pde-025",
+      "run_command": "cd code/pde-025 && python src/element_assembly.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-025/README.md",
+          "source_blob_sha": "1b7514c9b7aaef879f384b737a3818f875c748c4",
+          "output": "code/pde-025/README.md",
+          "output_blob_sha": "1b7514c9b7aaef879f384b737a3818f875c748c4"
+        },
+        {
+          "source": "experiments/pde-025/config/meshes.json",
+          "source_blob_sha": "d89ddf503249aa13c7a721423bda15f0ca696da9",
+          "output": "code/pde-025/config/meshes.json",
+          "output_blob_sha": "d89ddf503249aa13c7a721423bda15f0ca696da9"
+        },
+        {
+          "source": "experiments/pde-025/results/assembly_trace.csv",
+          "source_blob_sha": "c66b3a10e249e4cfb290913aa123de9d6744f38d",
+          "output": "code/pde-025/results/assembly_trace.csv",
+          "output_blob_sha": "c66b3a10e249e4cfb290913aa123de9d6744f38d"
+        },
+        {
+          "source": "experiments/pde-025/results/elements.csv",
+          "source_blob_sha": "42e96d957b6267fcb3ff5dfa607a34d1a29a0515",
+          "output": "code/pde-025/results/elements.csv",
+          "output_blob_sha": "42e96d957b6267fcb3ff5dfa607a34d1a29a0515"
+        },
+        {
+          "source": "experiments/pde-025/results/loads.csv",
+          "source_blob_sha": "17848c72a09152abf1e893aeb333eda91a0d8936",
+          "output": "code/pde-025/results/loads.csv",
+          "output_blob_sha": "17848c72a09152abf1e893aeb333eda91a0d8936"
+        },
+        {
+          "source": "experiments/pde-025/results/matrix.csv",
+          "source_blob_sha": "c56e1f7c6c22d5db66ac046e7dfee4d75c9a29f4",
+          "output": "code/pde-025/results/matrix.csv",
+          "output_blob_sha": "c56e1f7c6c22d5db66ac046e7dfee4d75c9a29f4"
+        },
+        {
+          "source": "experiments/pde-025/results/nodes.csv",
+          "source_blob_sha": "42bc431ccf365176d84424ef404fc4cddcfcbff9",
+          "output": "code/pde-025/results/nodes.csv",
+          "output_blob_sha": "42bc431ccf365176d84424ef404fc4cddcfcbff9"
+        },
+        {
+          "source": "experiments/pde-025/results/profiles.csv",
+          "source_blob_sha": "1c8e9a10b5d8bbef3cdd521216f7e8ae355168d2",
+          "output": "code/pde-025/results/profiles.csv",
+          "output_blob_sha": "1c8e9a10b5d8bbef3cdd521216f7e8ae355168d2"
+        },
+        {
+          "source": "experiments/pde-025/results/run.txt",
+          "source_blob_sha": "78b3320bf44b0d7c5477fa405f14f632349416e4",
+          "output": "code/pde-025/results/run.txt",
+          "output_blob_sha": "78b3320bf44b0d7c5477fa405f14f632349416e4"
+        },
+        {
+          "source": "experiments/pde-025/results/summary.csv",
+          "source_blob_sha": "928dcd0ed107d304bbeef5345c34d2aaffa17a51",
+          "output": "code/pde-025/results/summary.csv",
+          "output_blob_sha": "928dcd0ed107d304bbeef5345c34d2aaffa17a51"
+        },
+        {
+          "source": "experiments/pde-025/src/element_assembly.py",
+          "source_blob_sha": "0b145bd5e651b6ed4a20c6212c150d2c729a23e8",
+          "output": "code/pde-025/src/element_assembly.py",
+          "output_blob_sha": "0b145bd5e651b6ed4a20c6212c150d2c729a23e8"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-025"
     }
   ]
 }

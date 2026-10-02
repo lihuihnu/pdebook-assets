@@ -1,0 +1,15 @@
+pde-025 element assembly
+Python 3.12.14
+Equation: -u''=f on (0,1); u(0)=u(1)=0; f=1 or x.
+All element integrals are exact formulas; arithmetic is binary float.
+All mesh cases are assembled and solved; exact solutions only check the result.
+Primary fixed solution: [0.0, 0.09375, 0.125, 0.0]
+elements.csv: 74 rows
+matrix.csv: 890 rows
+loads.csv: 86 rows
+nodes.csv: 86 rows
+summary.csv: 12 rows
+profiles.csv: 802 rows
+assembly_trace.csv: 18 rows
+Maximum nodal error: 1.388e-17
+Maximum retained-row residual: 6.661e-16
