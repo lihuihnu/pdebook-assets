@@ -390,6 +390,28 @@
       "width_px": 1920,
       "height_px": 1680,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-026/fig-002-neumann-representatives.png"
+    },
+    {
+      "article_id": "pde-027",
+      "figure_id": "F027-01",
+      "source": "figures/pde-027/exports/fig-001-center-basis.png",
+      "output": "assets/pde-027/fig-001-center-basis.png",
+      "source_blob_sha": "ffbc28527bee8fe09e98a0fcbaff1f2ab837646c",
+      "output_blob_sha": "ffbc28527bee8fe09e98a0fcbaff1f2ab837646c",
+      "width_px": 1920,
+      "height_px": 1800,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-027/fig-001-center-basis.png"
+    },
+    {
+      "article_id": "pde-027",
+      "figure_id": "F027-02",
+      "source": "figures/pde-027/exports/fig-002-poisson-field-and-errors.png",
+      "output": "assets/pde-027/fig-002-poisson-field-and-errors.png",
+      "source_blob_sha": "cf973dee9c8728caa35ecf73ec600cb020d89f66",
+      "output_blob_sha": "cf973dee9c8728caa35ecf73ec600cb020d89f66",
+      "width_px": 1920,
+      "height_px": 1800,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-027/fig-002-poisson-field-and-errors.png"
     }
   ],
   "code": [
@@ -1628,6 +1650,112 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-026"
+    },
+    {
+      "article_id": "pde-027",
+      "source_root": "experiments/pde-027",
+      "output_root": "code/pde-027",
+      "run_command": "cd code/pde-027 && python src/triangular_poisson.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-027/README.md",
+          "source_blob_sha": "f4e8e56670d8c540b7536b8f154aa257213a98f4",
+          "output": "code/pde-027/README.md",
+          "output_blob_sha": "f4e8e56670d8c540b7536b8f154aa257213a98f4"
+        },
+        {
+          "source": "experiments/pde-027/config/problems.json",
+          "source_blob_sha": "d8fbde86f42356553d24f1a099b3e6609bcabdb8",
+          "output": "code/pde-027/config/problems.json",
+          "output_blob_sha": "d8fbde86f42356553d24f1a099b3e6609bcabdb8"
+        },
+        {
+          "source": "experiments/pde-027/results/basis.csv",
+          "source_blob_sha": "690c67b84bd64a5eff71130f592d091a1a566576",
+          "output": "code/pde-027/results/basis.csv",
+          "output_blob_sha": "690c67b84bd64a5eff71130f592d091a1a566576"
+        },
+        {
+          "source": "experiments/pde-027/results/edges.csv",
+          "source_blob_sha": "9323db41d50e043374f5ec10957f5ca3beafbc25",
+          "output": "code/pde-027/results/edges.csv",
+          "output_blob_sha": "9323db41d50e043374f5ec10957f5ca3beafbc25"
+        },
+        {
+          "source": "experiments/pde-027/results/element_loads.csv",
+          "source_blob_sha": "6f95eedf6d2cba3f560800284f0f78e478079f55",
+          "output": "code/pde-027/results/element_loads.csv",
+          "output_blob_sha": "6f95eedf6d2cba3f560800284f0f78e478079f55"
+        },
+        {
+          "source": "experiments/pde-027/results/element_matrix.csv",
+          "source_blob_sha": "93a49c6f5a1f92b586a958876e12b06a5b6127e0",
+          "output": "code/pde-027/results/element_matrix.csv",
+          "output_blob_sha": "93a49c6f5a1f92b586a958876e12b06a5b6127e0"
+        },
+        {
+          "source": "experiments/pde-027/results/geometry.csv",
+          "source_blob_sha": "b783c93e43775a4f43574911a11d261be4a2d435",
+          "output": "code/pde-027/results/geometry.csv",
+          "output_blob_sha": "b783c93e43775a4f43574911a11d261be4a2d435"
+        },
+        {
+          "source": "experiments/pde-027/results/loads.csv",
+          "source_blob_sha": "87885daee66cf36ea1babc8f8c1794c1e48a9556",
+          "output": "code/pde-027/results/loads.csv",
+          "output_blob_sha": "87885daee66cf36ea1babc8f8c1794c1e48a9556"
+        },
+        {
+          "source": "experiments/pde-027/results/matrix.csv",
+          "source_blob_sha": "4303a6aafd7ee5fd2276e4f78213d0e1e9ffe172",
+          "output": "code/pde-027/results/matrix.csv",
+          "output_blob_sha": "4303a6aafd7ee5fd2276e4f78213d0e1e9ffe172"
+        },
+        {
+          "source": "experiments/pde-027/results/nodes.csv",
+          "source_blob_sha": "603a1ddf130a5139c696d7282c318f4c3d5894de",
+          "output": "code/pde-027/results/nodes.csv",
+          "output_blob_sha": "603a1ddf130a5139c696d7282c318f4c3d5894de"
+        },
+        {
+          "source": "experiments/pde-027/results/orientations.csv",
+          "source_blob_sha": "ca90b29e09511f9bb8b1f7649ef9b7c73d0729a8",
+          "output": "code/pde-027/results/orientations.csv",
+          "output_blob_sha": "ca90b29e09511f9bb8b1f7649ef9b7c73d0729a8"
+        },
+        {
+          "source": "experiments/pde-027/results/profiles.csv",
+          "source_blob_sha": "664cb3a47d059f441879b2bc8d4f572fd1066f23",
+          "output": "code/pde-027/results/profiles.csv",
+          "output_blob_sha": "664cb3a47d059f441879b2bc8d4f572fd1066f23"
+        },
+        {
+          "source": "experiments/pde-027/results/reduced_rhs.csv",
+          "source_blob_sha": "b5c2f510d2620e40238f0a3cfc8e9d4ad06e34a9",
+          "output": "code/pde-027/results/reduced_rhs.csv",
+          "output_blob_sha": "b5c2f510d2620e40238f0a3cfc8e9d4ad06e34a9"
+        },
+        {
+          "source": "experiments/pde-027/results/run.txt",
+          "source_blob_sha": "214c29c6db86ce0278b0003f37f5244e3ec93591",
+          "output": "code/pde-027/results/run.txt",
+          "output_blob_sha": "214c29c6db86ce0278b0003f37f5244e3ec93591"
+        },
+        {
+          "source": "experiments/pde-027/results/summary.csv",
+          "source_blob_sha": "379124ebe946d76ae868815a39e9b0f91e045f06",
+          "output": "code/pde-027/results/summary.csv",
+          "output_blob_sha": "379124ebe946d76ae868815a39e9b0f91e045f06"
+        },
+        {
+          "source": "experiments/pde-027/src/triangular_poisson.py",
+          "source_blob_sha": "bd68d00a42d4a3fcc0986b1b7fd82a72a4ffa3f1",
+          "output": "code/pde-027/src/triangular_poisson.py",
+          "output_blob_sha": "bd68d00a42d4a3fcc0986b1b7fd82a72a4ffa3f1"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-027"
     }
   ]
 }

@@ -66,3 +66,5 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-024/` — 一维线性有限元与“小帐篷”基函数；非均匀帽函数、节点插值、误差与弱积分核对；Python standard library only.
 - `code/pde-025/` — 单元矩阵怎样装配成整体矩阵；逐单元积分、共享项累加、零边界内部系统与12组实际求解；Python standard library only.
 - `code/pde-026/` — 有限元中的边界条件；非零边界值、外法向导数、纯Neumann相容条件与零均值代表；70组实际求解；Python standard library only.
+
+- 第27篇《从一维单元到二维三角形》：[代码、配置与实际结果](code/pde-027/)，七张网格42组求解、24种顶点排列及两幅定量图。核心仅依赖Python标准库。

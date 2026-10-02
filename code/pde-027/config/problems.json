@@ -1,0 +1,13 @@
+{
+  "meshes": [
+    {"id": "fan", "type": "fan", "center": [0.5, 0.5]},
+    {"id": "shifted", "type": "fan", "center": [0.3333333333333333, 0.4]},
+    {"id": "grid2", "type": "grid", "n": 2, "diagonal": "forward"},
+    {"id": "grid4", "type": "grid", "n": 4, "diagonal": "forward"},
+    {"id": "grid8", "type": "grid", "n": 8, "diagonal": "forward"},
+    {"id": "grid16", "type": "grid", "n": 16, "diagonal": "forward"},
+    {"id": "alternate4", "type": "grid", "n": 4, "diagonal": "alternate"}
+  ],
+  "cases": ["constant_zero", "constant_lift", "affine_patch", "linear_source", "quartic", "mixed_affine"],
+  "profile_intervals": 400
+}

@@ -1,0 +1,17 @@
+Python 3.12.14
+core dependencies: standard library
+quadrature: exact through degree 3 for f*N_i
+cases solved: 42
+maximum tested residual: 6.6613381477509392e-15
+geometry rows: 720
+element_matrix rows: 6480
+matrix rows: 2743
+element_loads rows: 12960
+edges rows: 864
+loads rows: 2634
+reduced_rhs rows: 1871
+nodes rows: 2634
+summary rows: 42
+profiles rows: 2807
+basis rows: 401
+orientations rows: 24
