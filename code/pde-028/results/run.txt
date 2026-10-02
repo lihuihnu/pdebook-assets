@@ -1,0 +1,18 @@
+Python 3.12.14
+Model: -u''=f on (0,1), u(0)=u(1)=0
+FV unknowns: nodal values on midpoint dual control volumes
+FE: continuous P1 with accurate polynomial loads
+Function comparison: same piecewise linear reconstruction for all methods
+Gauss5: exact polynomial integration through degree nine, up to roundoff
+Gauss5 moments: ten monomials of degree zero through nine passed
+Meshes: 13; sources: 3; methods: 3
+Solves: 117
+Maximum algebraic residual: 1.7763568394002505e-15
+matrix.csv: 693 rows
+loads.csv: 693 rows
+nodes.csv: 2313 rows
+fluxes.csv: 2196 rows
+balances.csv: 2079 rows
+boundary_balance.csv: 117 rows
+profiles.csv: 3609 rows
+summary.csv: 117 rows

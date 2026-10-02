@@ -68,3 +68,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-026/` — 有限元中的边界条件；非零边界值、外法向导数、纯Neumann相容条件与零均值代表；70组实际求解；Python standard library only.
 
 - 第27篇《从一维单元到二维三角形》：[代码、配置与实际结果](code/pde-027/)，七张网格42组求解、24种顶点排列及两幅定量图。核心仅依赖Python标准库。
+- 第28篇《差分、有限体积和有限元到底差在哪里》：[代码、配置与实际结果](code/pde-028/)，13张网格117组计算、三种源项处理、控制体平衡及同一重构的误差对照。核心仅依赖Python标准库；绘图另用Matplotlib。

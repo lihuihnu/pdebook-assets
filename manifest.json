@@ -412,6 +412,28 @@
       "width_px": 1920,
       "height_px": 1800,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-027/fig-002-poisson-field-and-errors.png"
+    },
+    {
+      "article_id": "pde-028",
+      "figure_id": "F028-01",
+      "source": "figures/pde-028/exports/fig-001-control-volume-balances.png",
+      "output": "assets/pde-028/fig-001-control-volume-balances.png",
+      "source_blob_sha": "26577e86a89bf2eac5a38dd1e9d5f093ae56a40e",
+      "output_blob_sha": "26577e86a89bf2eac5a38dd1e9d5f093ae56a40e",
+      "width_px": 1920,
+      "height_px": 1800,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-028/fig-001-control-volume-balances.png"
+    },
+    {
+      "article_id": "pde-028",
+      "figure_id": "F028-02",
+      "source": "figures/pde-028/exports/fig-002-reconstruction-errors.png",
+      "output": "assets/pde-028/fig-002-reconstruction-errors.png",
+      "source_blob_sha": "e88bad3eb81557207199dd8e82c45ae85d7988e9",
+      "output_blob_sha": "e88bad3eb81557207199dd8e82c45ae85d7988e9",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-028/fig-002-reconstruction-errors.png"
     }
   ],
   "code": [
@@ -1756,6 +1778,98 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-027"
+    },
+    {
+      "article_id": "pde-028",
+      "source_root": "experiments/pde-028",
+      "output_root": "code/pde-028",
+      "run_command": "cd code/pde-028 && python src/compare_poisson.py",
+      "dependencies": [],
+      "plot_command": "cd code/pde-028 && python src/plot_comparison.py --results results --output figures",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-028/README.md",
+          "source_blob_sha": "2959adcc07db3aff704a3bc3ebebb1f30fce0811",
+          "output": "code/pde-028/README.md",
+          "output_blob_sha": "fc58701f75c80cbf301b6a03edee0d941212262d"
+        },
+        {
+          "source": "experiments/pde-028/config/problems.json",
+          "source_blob_sha": "78069c29a1c69fe1def7a3aad4a67867d09b130c",
+          "output": "code/pde-028/config/problems.json",
+          "output_blob_sha": "78069c29a1c69fe1def7a3aad4a67867d09b130c"
+        },
+        {
+          "source": "experiments/pde-028/results/balances.csv",
+          "source_blob_sha": "1032911acc939399c170ad3a33c773fd45ad021e",
+          "output": "code/pde-028/results/balances.csv",
+          "output_blob_sha": "1032911acc939399c170ad3a33c773fd45ad021e"
+        },
+        {
+          "source": "experiments/pde-028/results/boundary_balance.csv",
+          "source_blob_sha": "28b1d13acbe632b8c4f43b87c136552aab0cfd75",
+          "output": "code/pde-028/results/boundary_balance.csv",
+          "output_blob_sha": "28b1d13acbe632b8c4f43b87c136552aab0cfd75"
+        },
+        {
+          "source": "experiments/pde-028/results/fluxes.csv",
+          "source_blob_sha": "67d457c76dcfa92cd4d4f1b5f440b1e4310f839d",
+          "output": "code/pde-028/results/fluxes.csv",
+          "output_blob_sha": "67d457c76dcfa92cd4d4f1b5f440b1e4310f839d"
+        },
+        {
+          "source": "experiments/pde-028/results/loads.csv",
+          "source_blob_sha": "bbc243404ed5a2927dc039479ad760ec3cf6a5fd",
+          "output": "code/pde-028/results/loads.csv",
+          "output_blob_sha": "bbc243404ed5a2927dc039479ad760ec3cf6a5fd"
+        },
+        {
+          "source": "experiments/pde-028/results/matrix.csv",
+          "source_blob_sha": "38e2923d4a93018c28261eb12269696382e3520e",
+          "output": "code/pde-028/results/matrix.csv",
+          "output_blob_sha": "38e2923d4a93018c28261eb12269696382e3520e"
+        },
+        {
+          "source": "experiments/pde-028/results/nodes.csv",
+          "source_blob_sha": "dbddc76e05bb5e4c273b54adb5cdf3e57e9a08b9",
+          "output": "code/pde-028/results/nodes.csv",
+          "output_blob_sha": "dbddc76e05bb5e4c273b54adb5cdf3e57e9a08b9"
+        },
+        {
+          "source": "experiments/pde-028/results/profiles.csv",
+          "source_blob_sha": "69ed6bf3621eea12bd1fc05f09f96d4c5446f23f",
+          "output": "code/pde-028/results/profiles.csv",
+          "output_blob_sha": "69ed6bf3621eea12bd1fc05f09f96d4c5446f23f"
+        },
+        {
+          "source": "experiments/pde-028/results/run.txt",
+          "source_blob_sha": "e131b0acb296f9c3bd66c6f90c58774359a15dc2",
+          "output": "code/pde-028/results/run.txt",
+          "output_blob_sha": "e131b0acb296f9c3bd66c6f90c58774359a15dc2"
+        },
+        {
+          "source": "experiments/pde-028/results/summary.csv",
+          "source_blob_sha": "6dd959cbee024633ac8924354c83459cf420b79f",
+          "output": "code/pde-028/results/summary.csv",
+          "output_blob_sha": "6dd959cbee024633ac8924354c83459cf420b79f"
+        },
+        {
+          "source": "experiments/pde-028/src/compare_poisson.py",
+          "source_blob_sha": "8a68204c364f7469e415462204cf04a235078ac2",
+          "output": "code/pde-028/src/compare_poisson.py",
+          "output_blob_sha": "8a68204c364f7469e415462204cf04a235078ac2"
+        },
+        {
+          "source": "figures/pde-028/src/plot_comparison.py",
+          "source_blob_sha": "128d13862eacc3ad22de5f0e673d5032df19164a",
+          "output": "code/pde-028/src/plot_comparison.py",
+          "output_blob_sha": "128d13862eacc3ad22de5f0e673d5032df19164a"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-028"
     }
   ]
 }
