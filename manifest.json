@@ -340,6 +340,26 @@
       "width_px": 1920,
       "height_px": 1680,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-023/fig-001-profiles-and-slopes.png"
+    },
+    {
+      "article_id": "pde-024",
+      "source": "figures/pde-024/exports/fig-001-hats-and-combination.png",
+      "source_blob_sha": "ae6e6bd5f2596180bdf57dfd86ca30304ab4d7d4",
+      "output": "assets/pde-024/fig-001-hats-and-combination.png",
+      "output_blob_sha": "ae6e6bd5f2596180bdf57dfd86ca30304ab4d7d4",
+      "width_px": 1920,
+      "height_px": 1680,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-024/fig-001-hats-and-combination.png"
+    },
+    {
+      "article_id": "pde-024",
+      "source": "figures/pde-024/exports/fig-002-interpolation-error.png",
+      "source_blob_sha": "d92c9c870e9751bf36607d11847f1097653f15a8",
+      "output": "assets/pde-024/fig-002-interpolation-error.png",
+      "output_blob_sha": "d92c9c870e9751bf36607d11847f1097653f15a8",
+      "width_px": 1920,
+      "height_px": 1080,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-024/fig-002-interpolation-error.png"
     }
   ],
   "code": [
@@ -1332,6 +1352,82 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-023"
+    },
+    {
+      "article_id": "pde-024",
+      "source_root": "experiments/pde-024",
+      "output_root": "code/pde-024",
+      "run_command": "cd code/pde-024 && python src/linear_elements.py",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/pde-024/README.md",
+          "source_blob_sha": "d915d62d62f7c36ca78cff785f11e053cfa155c0",
+          "output": "code/pde-024/README.md",
+          "output_blob_sha": "d915d62d62f7c36ca78cff785f11e053cfa155c0"
+        },
+        {
+          "source": "experiments/pde-024/config/meshes.json",
+          "source_blob_sha": "2ca6fc3bdf648eb2385a3b3460d62f722d6a0c62",
+          "output": "code/pde-024/config/meshes.json",
+          "output_blob_sha": "2ca6fc3bdf648eb2385a3b3460d62f722d6a0c62"
+        },
+        {
+          "source": "experiments/pde-024/results/basis_profiles.csv",
+          "source_blob_sha": "4d58cd85b2e87bff993774b125ad38905194ea8f",
+          "output": "code/pde-024/results/basis_profiles.csv",
+          "output_blob_sha": "4d58cd85b2e87bff993774b125ad38905194ea8f"
+        },
+        {
+          "source": "experiments/pde-024/results/element_errors.csv",
+          "source_blob_sha": "a8d9eedd9861188e78daf06b18522f6feb93252b",
+          "output": "code/pde-024/results/element_errors.csv",
+          "output_blob_sha": "a8d9eedd9861188e78daf06b18522f6feb93252b"
+        },
+        {
+          "source": "experiments/pde-024/results/hand_values.csv",
+          "source_blob_sha": "17bd0d1a69525b9cacd4ec144e025d9d441de662",
+          "output": "code/pde-024/results/hand_values.csv",
+          "output_blob_sha": "17bd0d1a69525b9cacd4ec144e025d9d441de662"
+        },
+        {
+          "source": "experiments/pde-024/results/node_checks.csv",
+          "source_blob_sha": "c2aa5bcd3e07a8afe6ffe02ec289675be78bfeb3",
+          "output": "code/pde-024/results/node_checks.csv",
+          "output_blob_sha": "c2aa5bcd3e07a8afe6ffe02ec289675be78bfeb3"
+        },
+        {
+          "source": "experiments/pde-024/results/refinement.csv",
+          "source_blob_sha": "f1cfa118e99b6efe1d3e435eefa767db48e08230",
+          "output": "code/pde-024/results/refinement.csv",
+          "output_blob_sha": "f1cfa118e99b6efe1d3e435eefa767db48e08230"
+        },
+        {
+          "source": "experiments/pde-024/results/run.txt",
+          "source_blob_sha": "0f9c6438727e20ebaff93bebbc3ced2b54f8daad",
+          "output": "code/pde-024/results/run.txt",
+          "output_blob_sha": "0f9c6438727e20ebaff93bebbc3ced2b54f8daad"
+        },
+        {
+          "source": "experiments/pde-024/results/single_hat.csv",
+          "source_blob_sha": "906f0a5e21b19d0a6770dd173778a7d42a1c7631",
+          "output": "code/pde-024/results/single_hat.csv",
+          "output_blob_sha": "906f0a5e21b19d0a6770dd173778a7d42a1c7631"
+        },
+        {
+          "source": "experiments/pde-024/results/weak_checks.csv",
+          "source_blob_sha": "887138ddb021e63731f272b9a331e21381ed4cf1",
+          "output": "code/pde-024/results/weak_checks.csv",
+          "output_blob_sha": "887138ddb021e63731f272b9a331e21381ed4cf1"
+        },
+        {
+          "source": "experiments/pde-024/src/linear_elements.py",
+          "source_blob_sha": "ac0db9ebfcefb24f12c2be00d56d042cef044082",
+          "output": "code/pde-024/src/linear_elements.py",
+          "output_blob_sha": "ac0db9ebfcefb24f12c2be00d56d042cef044082"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-024"
     }
   ]
 }

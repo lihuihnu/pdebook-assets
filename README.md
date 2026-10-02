@@ -63,3 +63,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-021/` — Burgers 方程、激波与弱解；熵通量、激波与稀疏波、非熵反例、误差细化与边界输运；Python standard library only.
 - `code/pde-022/` — 高阶重构与限制器的基本思想；线性重构、时间平均通量、minmod、脉冲振荡与光滑细化；Python standard library only.
 - `code/pde-023/` — 从 Poisson 方程到弱形式；测试函数、分段积分、弱残差、能量与斜率误差核对；Python standard library only.
+- `code/pde-024/` — 一维线性有限元与“小帐篷”基函数；非均匀帽函数、节点插值、误差与弱积分核对；Python standard library only.

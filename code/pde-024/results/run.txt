@@ -1,0 +1,8 @@
+Python 3.12.14; standard library only
+Problem: -u''=1, zero endpoints; exact u=x(1-x)/2
+Meshes: 8; elements: 133; weak pairs: 125
+Profiles: 401; cardinal checks: 8; hand points: 3
+Single-interior-node scalar equations solved: 3
+General meshes use exact nodal data for interpolation; no matrix solve
+Max error evaluated at proven element maxima; slope error integrated analytically
+Self-check: nonuniform hats, reconstruction, endpoint and invalid meshes passed
