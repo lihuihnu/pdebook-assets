@@ -8,6 +8,8 @@ The canonical manuscript, source SVG files, authoring notes, references, review 
 
 ```text
 assets/
+  cover/
+    zhihu-column-cover.png
   pde-NNN/
     *.png
 
@@ -31,6 +33,8 @@ https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-NNN/<f
 ```
 
 Public PNG files are synchronized from reviewed canonical PNGs or rendered from vector figures in the private source repository. Conceptual illustrations and computed quantitative plots are identified in the per-article manifests. Do not edit published PNG files by hand.
+
+The reviewed Zhihu column cover is published separately at `assets/cover/zhihu-column-cover.png`. It is mirrored byte-for-byte from the private canonical cover and is not associated with a single `pde-NNN` article.
 
 ### Public code
 
