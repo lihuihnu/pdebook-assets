@@ -1,0 +1,30 @@
+{
+  "heat": {
+    "description": "u_t=u_xx on (0,1), t in [0,0.1], zero Dirichlet boundaries, u(x,0)=sin(pi*x); all variables dimensionless",
+    "T": 0.1,
+    "N": [8, 16, 24, 32, 40, 48, 64, 96, 128],
+    "M": [10, 20, 40, 80, 160, 320, 640, 1280, 2560],
+    "target_error": 0.0005,
+    "joint_N": [10, 20, 40, 80, 160],
+    "joint_time_rule": "M=3*N*N/5, dt=h*h/6, both explicit and implicit Euler"
+  },
+  "adaptive_time": {
+    "N": 32,
+    "rates": [0.02, 0.005, 0.001],
+    "initial_dt": 0.02,
+    "safety": 0.9,
+    "factor_min": 0.2,
+    "factor_max": 2.0,
+    "min_dt": 1e-10,
+    "max_trials": 100000,
+    "criterion": "eta <= rate*dt; eta is the max difference of one backward Euler step and two half steps; adopt two half steps"
+  },
+  "adaptive_space": {
+    "description": "-u''=-12*x*x on (0,1), u(0)=0, u(1)=1, u=x^4; linear finite elements with exact polynomial loads",
+    "initial_cells": 4,
+    "targets": [0.02, 0.005, 0.001],
+    "max_cells": 1000,
+    "profile_points": 1001,
+    "indicator": "eta_K=(b-a)^2*max_K(abs(u''))/8=1.5*(b-a)^2*b^2; source-derived curvature bound for interpolation, not a general residual estimator"
+  }
+}

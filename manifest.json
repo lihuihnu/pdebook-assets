@@ -494,6 +494,26 @@
       "width_px": 1920,
       "height_px": 2000,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-031/fig-002-local-and-global-balance.png"
+    },
+    {
+      "article_id": "pde-032",
+      "source": "figures/pde-032/exports/fig-001-error-and-work.png",
+      "source_blob_sha": "f20e95fdaabb96d98e144315a30918adf6de4b5b",
+      "output": "assets/pde-032/fig-001-error-and-work.png",
+      "output_blob_sha": "f20e95fdaabb96d98e144315a30918adf6de4b5b",
+      "width_px": 1920,
+      "height_px": 2304,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-032/fig-001-error-and-work.png"
+    },
+    {
+      "article_id": "pde-032",
+      "source": "figures/pde-032/exports/fig-002-local-refinement.png",
+      "source_blob_sha": "bb58b352f3f35601d7a293e8e1890ababff22b8c",
+      "output": "assets/pde-032/fig-002-local-refinement.png",
+      "output_blob_sha": "bb58b352f3f35601d7a293e8e1890ababff22b8c",
+      "width_px": 1920,
+      "height_px": 1920,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-032/fig-002-local-refinement.png"
     }
   ],
   "code": [
@@ -2201,6 +2221,129 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-031"
+    },
+    {
+      "article_id": "pde-032",
+      "source": "experiments/pde-032",
+      "output": "code/pde-032",
+      "entrypoint": "code/pde-032/src/mesh_timestep.py",
+      "command": "python code/pde-032/src/mesh_timestep.py",
+      "dependencies": [],
+      "plot_command": "python code/pde-032/src/plot_mesh_timestep.py",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-032/README.md",
+          "source_blob_sha": "692da6bc35fc1baace8eea5a0817f6c07d929ee5",
+          "output": "code/pde-032/README.md",
+          "output_blob_sha": "d0bda9275402d416d2e0eec430cbdffae60b8bf4"
+        },
+        {
+          "source": "experiments/pde-032/config/problems.json",
+          "source_blob_sha": "0118a65c86375709dc1db1861fef92f9abc28412",
+          "output": "code/pde-032/config/problems.json",
+          "output_blob_sha": "0118a65c86375709dc1db1861fef92f9abc28412"
+        },
+        {
+          "source": "experiments/pde-032/results/heat_nodes.csv",
+          "source_blob_sha": "8937ddeee57e1a67a11d8a48f5e8d9bafc49773e",
+          "output": "code/pde-032/results/heat_nodes.csv",
+          "output_blob_sha": "8937ddeee57e1a67a11d8a48f5e8d9bafc49773e"
+        },
+        {
+          "source": "experiments/pde-032/results/heat_summary.csv",
+          "source_blob_sha": "32de39f56654393a2eeabaf6aac4208839a910bb",
+          "output": "code/pde-032/results/heat_summary.csv",
+          "output_blob_sha": "32de39f56654393a2eeabaf6aac4208839a910bb"
+        },
+        {
+          "source": "experiments/pde-032/results/last_steps.csv",
+          "source_blob_sha": "8a224685628e0c1fa3db2223ef9ba06dc3400b4a",
+          "output": "code/pde-032/results/last_steps.csv",
+          "output_blob_sha": "8a224685628e0c1fa3db2223ef9ba06dc3400b4a"
+        },
+        {
+          "source": "experiments/pde-032/results/mesh_elements.csv",
+          "source_blob_sha": "ff167e71fc17e64aa8155290a9ec7925e93e039b",
+          "output": "code/pde-032/results/mesh_elements.csv",
+          "output_blob_sha": "ff167e71fc17e64aa8155290a9ec7925e93e039b"
+        },
+        {
+          "source": "experiments/pde-032/results/mesh_history.csv",
+          "source_blob_sha": "a7a575df5eb7cf482acc1350995db4450847ae53",
+          "output": "code/pde-032/results/mesh_history.csv",
+          "output_blob_sha": "a7a575df5eb7cf482acc1350995db4450847ae53"
+        },
+        {
+          "source": "experiments/pde-032/results/mesh_nodes.csv",
+          "source_blob_sha": "e771c0942056cc59f7d37c82e2977133681bcf24",
+          "output": "code/pde-032/results/mesh_nodes.csv",
+          "output_blob_sha": "e771c0942056cc59f7d37c82e2977133681bcf24"
+        },
+        {
+          "source": "experiments/pde-032/results/mesh_profiles.csv",
+          "source_blob_sha": "1f6b8d910e7043aecc904cc3b90e900ce97cea23",
+          "output": "code/pde-032/results/mesh_profiles.csv",
+          "output_blob_sha": "1f6b8d910e7043aecc904cc3b90e900ce97cea23"
+        },
+        {
+          "source": "experiments/pde-032/results/refinement.csv",
+          "source_blob_sha": "dac3209d45636ba29c7b8fd96bb11608a5f6f016",
+          "output": "code/pde-032/results/refinement.csv",
+          "output_blob_sha": "dac3209d45636ba29c7b8fd96bb11608a5f6f016"
+        },
+        {
+          "source": "experiments/pde-032/results/run.txt",
+          "source_blob_sha": "1641622178a1e34dcad7194e0296088dcfbc2855",
+          "output": "code/pde-032/results/run.txt",
+          "output_blob_sha": "1641622178a1e34dcad7194e0296088dcfbc2855"
+        },
+        {
+          "source": "experiments/pde-032/results/space_summary.csv",
+          "source_blob_sha": "376d4d21ed930d6c833771a46f4026f9423d98c8",
+          "output": "code/pde-032/results/space_summary.csv",
+          "output_blob_sha": "376d4d21ed930d6c833771a46f4026f9423d98c8"
+        },
+        {
+          "source": "experiments/pde-032/results/time_nodes.csv",
+          "source_blob_sha": "3230ec9db9c368414a27a5ffc5fe14d74d5e2f3f",
+          "output": "code/pde-032/results/time_nodes.csv",
+          "output_blob_sha": "3230ec9db9c368414a27a5ffc5fe14d74d5e2f3f"
+        },
+        {
+          "source": "experiments/pde-032/results/time_samples.csv",
+          "source_blob_sha": "3dce8a898e37df63f6e304bb798238cde5f60d29",
+          "output": "code/pde-032/results/time_samples.csv",
+          "output_blob_sha": "3dce8a898e37df63f6e304bb798238cde5f60d29"
+        },
+        {
+          "source": "experiments/pde-032/results/time_summary.csv",
+          "source_blob_sha": "1f5983ca879c0b0fe87dcc1dc4049747f5b3e269",
+          "output": "code/pde-032/results/time_summary.csv",
+          "output_blob_sha": "1f5983ca879c0b0fe87dcc1dc4049747f5b3e269"
+        },
+        {
+          "source": "experiments/pde-032/results/time_trials.csv",
+          "source_blob_sha": "932cac83b24530ce555c4066d94db8032645adaa",
+          "output": "code/pde-032/results/time_trials.csv",
+          "output_blob_sha": "932cac83b24530ce555c4066d94db8032645adaa"
+        },
+        {
+          "source": "experiments/pde-032/src/mesh_timestep.py",
+          "source_blob_sha": "262cfc3169695105545d446b49269d89482408c1",
+          "output": "code/pde-032/src/mesh_timestep.py",
+          "output_blob_sha": "262cfc3169695105545d446b49269d89482408c1"
+        },
+        {
+          "source": "figures/pde-032/src/plot_mesh_timestep.py",
+          "source_blob_sha": "5d3c828505d1e345a71db82f5f86c1c0a2ee1f84",
+          "output": "code/pde-032/src/plot_mesh_timestep.py",
+          "output_blob_sha": "5d3c828505d1e345a71db82f5f86c1c0a2ee1f84"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-032"
     }
   ]
 }

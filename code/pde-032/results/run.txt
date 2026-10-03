@@ -1,0 +1,20 @@
+Python 3.12.14; dimensionless T=0.1.
+All heat states evolved by matrix solves or explicit updates; references only measure errors.
+Uniform heat cases: 91; candidate sweeps: 81.
+work_units counts internal-unknown updates/solves, excludes factorization and wall-clock time.
+Least work among candidates meeting 0.0005: sweep-BE-N40-M640, W=24960, error=0.00047240104393136972.
+Time indicators are asymptotic estimates; rate*T is an indicator budget, not a proved global error bound.
+Space indicator uses source-derived curvature; valid for this constant-coefficient exact-load 1D FEM, not a general residual estimator.
+heat_summary.csv: 91 rows
+heat_nodes.csv: 4815 rows
+last_steps.csv: 4633 rows
+refinement.csv: 126 rows
+time_summary.csv: 3 rows
+time_trials.csv: 2157 rows
+time_samples.csv: 279 rows
+time_nodes.csv: 99 rows
+space_summary.csv: 9 rows
+mesh_history.csv: 51 rows
+mesh_elements.csv: 754 rows
+mesh_nodes.csv: 805 rows
+mesh_profiles.csv: 9009 rows

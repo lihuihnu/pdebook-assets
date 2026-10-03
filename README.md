@@ -74,3 +74,5 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-030/` — 非线性方程与 Newton 迭代；三对角修正、减半回溯、60组PDE求解与五组标量计算；Python standard library only.
 
 - `code/pde-031/` — 怎样知道数值解算得对不对；三个已知解、六级网格、18组正确计算与24组故意诊断，完整残差、局部通量和网格间差异；Python standard library only，绘图另用Matplotlib。
+
+- `code/pde-032/` — 网格和时间步应该多细；91组热方程计算、时间步接受与重试、一维有限元局部加密，13份CSV与两幅定量图；核心仅Python标准库，绘图另用Matplotlib。
