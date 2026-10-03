@@ -1,0 +1,15 @@
+{
+  "model": "-kappa*(u_xx+u_yy)+bx*u_x+by*u_y=f on (0,1)^2, full Dirichlet",
+  "bx": 1.0,
+  "by": 0.5,
+  "kappa": 0.05,
+  "smooth_grids": [8, 16, 32, 64],
+  "bilinear_grids": [4, 8, 16],
+  "residual_tolerance": 1e-10,
+  "max_sweeps": 20000,
+  "tolerance_study": {"N": 32, "tolerances": [0.0001, 0.0000001]},
+  "layer": {"N": 10, "kappa": 0.01, "schemes": ["upwind", "central"]},
+  "source_sampling": "point values at interior nodes",
+  "initial_interior": "zero",
+  "flux_region": "[h/2,1-h/2]^2; square dual volumes around interior nodes"
+}

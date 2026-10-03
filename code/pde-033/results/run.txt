@@ -1,0 +1,15 @@
+Python 3.12.14; standard-library numerical core.
+All interior values obtained by Gauss-Seidel or the small central diagnostic solve.
+Residual uses the unscaled PDE stencil; tolerance is absolute.
+Flux balance covers [h/2,1-h/2]^2 and point-sampled source volumes.
+smooth-8: solves=1, sweeps=59, residual=8.0669471e-11, error=0.32822309
+smooth-16: solves=1, sweeps=177, residual=9.868073e-11, error=0.18247946
+smooth-32: solves=1, sweeps=581, residual=9.5597974e-11, error=0.096859332
+smooth-64: solves=1, sweeps=2055, residual=9.9840025e-11, error=0.049952708
+bilinear-4: solves=1, sweeps=20, residual=6.741141e-11, error=2.0028423e-11
+bilinear-8: solves=1, sweeps=58, residual=9.8825836e-11, error=3.126277e-11
+bilinear-16: solves=1, sweeps=175, residual=9.347545e-11, error=2.265077e-11
+tolerance-0.0001: solves=1, sweeps=299, residual=9.8217577e-05, error=0.096874216
+tolerance-1e-07: solves=1, sweeps=440, residual=9.8231085e-08, error=0.096859346
+layer-upwind: solves=1, sweeps=18, residual=8.6108089e-11, error=0.090723198
+layer-central: solves=1, sweeps=1, residual=2.8865799e-15, error=0.77307249

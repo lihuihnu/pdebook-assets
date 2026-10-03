@@ -514,6 +514,26 @@
       "width_px": 1920,
       "height_px": 1920,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-032/fig-002-local-refinement.png"
+    },
+    {
+      "article_id": "pde-033",
+      "source": "figures/pde-033/exports/fig-001-solution-and-error.png",
+      "source_blob_sha": "646fb592664669e5b36846851e9418640d1aad1b",
+      "output": "assets/pde-033/fig-001-solution-and-error.png",
+      "width_px": 1920,
+      "height_px": 2304,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-033/fig-001-solution-and-error.png",
+      "output_blob_sha": "646fb592664669e5b36846851e9418640d1aad1b"
+    },
+    {
+      "article_id": "pde-033",
+      "source": "figures/pde-033/exports/fig-002-layer-profile.png",
+      "source_blob_sha": "9d5e9e2b00846cd5b7759294ece24ac4ab1e5cc0",
+      "output": "assets/pde-033/fig-002-layer-profile.png",
+      "width_px": 1920,
+      "height_px": 1248,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-033/fig-002-layer-profile.png",
+      "output_blob_sha": "9d5e9e2b00846cd5b7759294ece24ac4ab1e5cc0"
     }
   ],
   "code": [
@@ -2344,6 +2364,123 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-032"
+    },
+    {
+      "article_id": "pde-033",
+      "source": "experiments/pde-033",
+      "output": "code/pde-033",
+      "entrypoint": "code/pde-033/src/convection_diffusion.py",
+      "command": "python code/pde-033/src/convection_diffusion.py",
+      "dependencies": [],
+      "plot_command": "python code/pde-033/src/plot_convection_diffusion.py",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-033/README.md",
+          "source_blob_sha": "e6bf3fdfbc99ec41b364fef348715e1e4c53cba7",
+          "output": "code/pde-033/README.md",
+          "output_blob_sha": "b305f7d700705679b81e69434a1f81193d18a8d3"
+        },
+        {
+          "source": "experiments/pde-033/config/problems.json",
+          "source_blob_sha": "3dbd0c952f3bd7e4cb1452a1585238f523db8ae1",
+          "output": "code/pde-033/config/problems.json",
+          "output_blob_sha": "3dbd0c952f3bd7e4cb1452a1585238f523db8ae1"
+        },
+        {
+          "source": "experiments/pde-033/results/balances.csv",
+          "source_blob_sha": "b5953d446d7b7ff39370f55fed24354512f9abfe",
+          "output": "code/pde-033/results/balances.csv",
+          "output_blob_sha": "b5953d446d7b7ff39370f55fed24354512f9abfe"
+        },
+        {
+          "source": "experiments/pde-033/results/faces.csv",
+          "source_blob_sha": "0349739a24dad0725a58d4f56fd9dba30f9c5198",
+          "output": "code/pde-033/results/faces.csv",
+          "output_blob_sha": "0349739a24dad0725a58d4f56fd9dba30f9c5198"
+        },
+        {
+          "source": "experiments/pde-033/results/history.csv",
+          "source_blob_sha": "0542b9454fc7d17574cf42a8e3db8e1fb2b9013d",
+          "output": "code/pde-033/results/history.csv",
+          "output_blob_sha": "0542b9454fc7d17574cf42a8e3db8e1fb2b9013d"
+        },
+        {
+          "source": "experiments/pde-033/results/iteration_states.csv",
+          "source_blob_sha": "01b9301a0f0a6f059d8f04df6aa19f1c2d7d1ff5",
+          "output": "code/pde-033/results/iteration_states.csv",
+          "output_blob_sha": "01b9301a0f0a6f059d8f04df6aa19f1c2d7d1ff5"
+        },
+        {
+          "source": "experiments/pde-033/results/layer_reference.csv",
+          "source_blob_sha": "0c6023b08b08cfb39eef324f89d94484a0924514",
+          "output": "code/pde-033/results/layer_reference.csv",
+          "output_blob_sha": "0c6023b08b08cfb39eef324f89d94484a0924514"
+        },
+        {
+          "source": "experiments/pde-033/results/nodes.csv",
+          "source_blob_sha": "9529ac5f7066f856909ae4b5f61d3a48185886e4",
+          "output": "code/pde-033/results/nodes.csv",
+          "output_blob_sha": "9529ac5f7066f856909ae4b5f61d3a48185886e4"
+        },
+        {
+          "source": "experiments/pde-033/results/operator.csv",
+          "source_blob_sha": "2bc94ad1b5e87932a4f9e8aff1db27e7979d91a7",
+          "output": "code/pde-033/results/operator.csv",
+          "output_blob_sha": "2bc94ad1b5e87932a4f9e8aff1db27e7979d91a7"
+        },
+        {
+          "source": "experiments/pde-033/results/refinement.csv",
+          "source_blob_sha": "0fb9bc6f21b081825ab6fc705b9a723894644600",
+          "output": "code/pde-033/results/refinement.csv",
+          "output_blob_sha": "0fb9bc6f21b081825ab6fc705b9a723894644600"
+        },
+        {
+          "source": "experiments/pde-033/results/run.txt",
+          "source_blob_sha": "ef7291ff5a4f1bfdcd79238395a2b633222ebce1",
+          "output": "code/pde-033/results/run.txt",
+          "output_blob_sha": "ef7291ff5a4f1bfdcd79238395a2b633222ebce1"
+        },
+        {
+          "source": "experiments/pde-033/results/small_matrix.csv",
+          "source_blob_sha": "a205f3ccf137a6352cf7d37eb410f85d4887092e",
+          "output": "code/pde-033/results/small_matrix.csv",
+          "output_blob_sha": "a205f3ccf137a6352cf7d37eb410f85d4887092e"
+        },
+        {
+          "source": "experiments/pde-033/results/small_rhs.csv",
+          "source_blob_sha": "b3c2b9795bde77726ceff54c2451e74663088763",
+          "output": "code/pde-033/results/small_rhs.csv",
+          "output_blob_sha": "b3c2b9795bde77726ceff54c2451e74663088763"
+        },
+        {
+          "source": "experiments/pde-033/results/summary.csv",
+          "source_blob_sha": "ba53168a3bec4332ac6a1c9270676b7056f777be",
+          "output": "code/pde-033/results/summary.csv",
+          "output_blob_sha": "ba53168a3bec4332ac6a1c9270676b7056f777be"
+        },
+        {
+          "source": "experiments/pde-033/results/tolerance.csv",
+          "source_blob_sha": "25243c2650578dd55ecf4e20d63f3a833a66c9e5",
+          "output": "code/pde-033/results/tolerance.csv",
+          "output_blob_sha": "25243c2650578dd55ecf4e20d63f3a833a66c9e5"
+        },
+        {
+          "source": "experiments/pde-033/src/convection_diffusion.py",
+          "source_blob_sha": "9f71c0223a22e1223a205b02e8fa10825c0b894a",
+          "output": "code/pde-033/src/convection_diffusion.py",
+          "output_blob_sha": "9f71c0223a22e1223a205b02e8fa10825c0b894a"
+        },
+        {
+          "source": "figures/pde-033/src/plot_convection_diffusion.py",
+          "source_blob_sha": "cd51e4cad7ba87e11e4abf9f0f1c6600e1f46209",
+          "output": "code/pde-033/src/plot_convection_diffusion.py",
+          "output_blob_sha": "cd51e4cad7ba87e11e4abf9f0f1c6600e1f46209"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-033"
     }
   ]
 }
