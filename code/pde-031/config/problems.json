@@ -1,0 +1,14 @@
+{
+  "article_id": "pde-031",
+  "meshes": [4, 8, 16, 32, 64, 128],
+  "models": ["sine", "quadratic", "quartic"],
+  "quartic_diagnostics": ["biased_source", "omit_right", "fixed_jacobi", "balanced_perturbation"],
+  "source_bias": 0.1,
+  "perturbation_amplitude": 0.02,
+  "jacobi_sweeps": 20,
+  "order_error_floor": 1e-11,
+  "domain": [0, 1],
+  "equation": "-u''=f; all quantities dimensionless",
+  "residual_convention": "b-Au; A has diagonal 2 and adjacent entries -1",
+  "warning": "Diagnostics deliberately alter source, boundary assembly, iteration budget or returned vector. They do not solve the intended problem accurately."
+}

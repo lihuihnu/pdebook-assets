@@ -1,0 +1,14 @@
+pde-031 known-solution verification; all quantities dimensionless
+Residual convention b-Au; all deliberate diagnostics are labeled.
+Fixed Jacobi reports iteration_budget, never inferred convergence.
+Norm l2h is sqrt(h*sum(interior error squared)), not continuous reconstruction error.
+loads: 1722 rows
+history: 162 rows
+iterates: 6642 rows
+nodes: 1806 rows
+fluxes: 1764 rows
+balances: 1722 rows
+summary: 42 rows
+refinement: 35 rows
+cases: 42
+four-cell solution: 1.296875, 1.578125, 1.796875

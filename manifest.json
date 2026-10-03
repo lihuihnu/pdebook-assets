@@ -474,6 +474,26 @@
       "width_px": 1920,
       "height_px": 2000,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-030/fig-002-backtracking-and-local-errors.png"
+    },
+    {
+      "article_id": "pde-031",
+      "source": "figures/pde-031/exports/fig-001-error-and-grid-difference.png",
+      "source_blob_sha": "ef94f03cd0018e3901a55692a093b1cebf19b390",
+      "output": "assets/pde-031/fig-001-error-and-grid-difference.png",
+      "output_blob_sha": "ef94f03cd0018e3901a55692a093b1cebf19b390",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-031/fig-001-error-and-grid-difference.png"
+    },
+    {
+      "article_id": "pde-031",
+      "source": "figures/pde-031/exports/fig-002-local-and-global-balance.png",
+      "source_blob_sha": "4a5e4978b029523e47a75d1e6c580361fbc35c7d",
+      "output": "assets/pde-031/fig-002-local-and-global-balance.png",
+      "output_blob_sha": "4a5e4978b029523e47a75d1e6c580361fbc35c7d",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-031/fig-002-local-and-global-balance.png"
     }
   ],
   "code": [
@@ -2088,6 +2108,99 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-030"
+    },
+    {
+      "article_id": "pde-031",
+      "source": "experiments/pde-031",
+      "output": "code/pde-031",
+      "entrypoint": "code/pde-031/src/verify_poisson.py",
+      "command": "python code/pde-031/src/verify_poisson.py",
+      "dependencies": [],
+      "plot_command": "python code/pde-031/src/plot_verification.py",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-031/README.md",
+          "source_blob_sha": "88dd4aae3519522fa0d0a03b46ed92a10f08ef07",
+          "output": "code/pde-031/README.md",
+          "output_blob_sha": "f0930d3da7296583fab9fe61846dd3f9ec7b365a"
+        },
+        {
+          "source": "experiments/pde-031/config/problems.json",
+          "source_blob_sha": "a2598555c8e4763ffff45f3d1024633594e37b34",
+          "output": "code/pde-031/config/problems.json",
+          "output_blob_sha": "a2598555c8e4763ffff45f3d1024633594e37b34"
+        },
+        {
+          "source": "experiments/pde-031/results/balances.csv",
+          "source_blob_sha": "f4684507e8faa387e87e01df34d1e190ce099143",
+          "output": "code/pde-031/results/balances.csv",
+          "output_blob_sha": "f4684507e8faa387e87e01df34d1e190ce099143"
+        },
+        {
+          "source": "experiments/pde-031/results/fluxes.csv",
+          "source_blob_sha": "ff8a39f1fab471074ae998c3a674e70fb6bb5b48",
+          "output": "code/pde-031/results/fluxes.csv",
+          "output_blob_sha": "ff8a39f1fab471074ae998c3a674e70fb6bb5b48"
+        },
+        {
+          "source": "experiments/pde-031/results/history.csv",
+          "source_blob_sha": "a969ed3d48ee8ad7c004564d189811d54691235d",
+          "output": "code/pde-031/results/history.csv",
+          "output_blob_sha": "a969ed3d48ee8ad7c004564d189811d54691235d"
+        },
+        {
+          "source": "experiments/pde-031/results/iterates.csv",
+          "source_blob_sha": "6b86665c4dd9e9d526f3076cc4e20408bc415c22",
+          "output": "code/pde-031/results/iterates.csv",
+          "output_blob_sha": "6b86665c4dd9e9d526f3076cc4e20408bc415c22"
+        },
+        {
+          "source": "experiments/pde-031/results/loads.csv",
+          "source_blob_sha": "910c476f3ec6b5a77e6e7d0f9e2eb85e6d29ae2a",
+          "output": "code/pde-031/results/loads.csv",
+          "output_blob_sha": "910c476f3ec6b5a77e6e7d0f9e2eb85e6d29ae2a"
+        },
+        {
+          "source": "experiments/pde-031/results/nodes.csv",
+          "source_blob_sha": "b2941f6dde6c4db43fea79c31aad7bb5b8b26f17",
+          "output": "code/pde-031/results/nodes.csv",
+          "output_blob_sha": "b2941f6dde6c4db43fea79c31aad7bb5b8b26f17"
+        },
+        {
+          "source": "experiments/pde-031/results/refinement.csv",
+          "source_blob_sha": "db54e7f54d8597751bb541ecd8ae4d4fdde34b06",
+          "output": "code/pde-031/results/refinement.csv",
+          "output_blob_sha": "db54e7f54d8597751bb541ecd8ae4d4fdde34b06"
+        },
+        {
+          "source": "experiments/pde-031/results/run.txt",
+          "source_blob_sha": "2f7346d46af5f71336efdff92f89e973a9b7ca0d",
+          "output": "code/pde-031/results/run.txt",
+          "output_blob_sha": "2f7346d46af5f71336efdff92f89e973a9b7ca0d"
+        },
+        {
+          "source": "experiments/pde-031/results/summary.csv",
+          "source_blob_sha": "72f070cf4e8e2dffb1bfe79db618adb939c547f0",
+          "output": "code/pde-031/results/summary.csv",
+          "output_blob_sha": "72f070cf4e8e2dffb1bfe79db618adb939c547f0"
+        },
+        {
+          "source": "experiments/pde-031/src/verify_poisson.py",
+          "source_blob_sha": "094541b25875b5239eb42d169601ab111c15fd08",
+          "output": "code/pde-031/src/verify_poisson.py",
+          "output_blob_sha": "094541b25875b5239eb42d169601ab111c15fd08"
+        },
+        {
+          "source": "figures/pde-031/src/plot_verification.py",
+          "source_blob_sha": "7c0012e263cb2363194d1369181b8f52d7f6d939",
+          "output": "code/pde-031/src/plot_verification.py",
+          "output_blob_sha": "7c0012e263cb2363194d1369181b8f52d7f6d939"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-031"
     }
   ]
 }
