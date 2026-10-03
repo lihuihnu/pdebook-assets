@@ -70,3 +70,5 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - 第27篇《从一维单元到二维三角形》：[代码、配置与实际结果](code/pde-027/)，七张网格42组求解、24种顶点排列及两幅定量图。核心仅依赖Python标准库。
 - 第28篇《差分、有限体积和有限元到底差在哪里》：[代码、配置与实际结果](code/pde-028/)，13张网格117组计算、三种源项处理、控制体平衡及同一重构的误差对照。核心仅依赖Python标准库；绘图另用Matplotlib。
 - 第29篇《稀疏线性系统与迭代求解》：[代码、配置与真实结果](code/pde-029/)，CSR、Jacobi、CG与GMRES；50组PDE求解和两组重启反例，两幅真实数据图。核心仅依赖Python标准库；绘图另用Matplotlib。
+
+- `code/pde-030/` — 非线性方程与 Newton 迭代；三对角修正、减半回溯、60组PDE求解与五组标量计算；Python standard library only.

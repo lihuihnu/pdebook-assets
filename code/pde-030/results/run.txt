@@ -1,0 +1,85 @@
+pde-030 Newton experiment
+Python 3.12.14
+Core dependencies: Python standard library
+Domain (0,1); homogeneous Dirichlet; n=N-1; all equations scaled by h^2
+Exact nodes 4*x*(1-x); diagnostic only, not solver input
+F=A*U+mu*h^2*U^3-b; J diagonal 2+3*mu*h^2*U^2, off-diagonals -1
+Outer threshold max(atol,rtol*norm(b)); scalar residual scale 2
+Halving trials include lambda=1 through 2^(-max_backtracks)
+Linear solves: tridiagonal forward elimination and back substitution
+one_node_newton() = 1.0000000000001019
+Configuration: {"atol": 1e-13, "initial_values": [0, 4], "max_backtracks": 20, "maxiter": 80, "meshes": [2, 4, 8, 16, 32], "methods": ["full", "damped"], "mu_values": [0, 10, 1000], "rtol": 1e-10, "scalar_cases": [{"equation": "sqrt2", "initial": 1, "maxiter": 80, "name": "sqrt2_positive"}, {"equation": "sqrt2", "initial": 10, "maxiter": 80, "name": "sqrt2_far"}, {"equation": "sqrt2", "initial": -1, "maxiter": 80, "name": "sqrt2_negative"}, {"equation": "sqrt2", "initial": 0, "maxiter": 80, "name": "sqrt2_zero_derivative"}, {"equation": "cycle", "initial": 0, "maxiter": 6, "name": "cubic_cycle"}], "sigma": 0.0001, "step_tol": 1e-14}
+loads rows: 171
+history rows: 413
+iterates rows: 4813
+linear_steps rows: 4129
+trials rows: 397
+nodes rows: 804
+summary rows: 60
+scalar_history rows: 26
+scalar_summary rows: 5
+mu=0 N=2 initial=0 full: converged iterations=1 evaluations=2
+mu=0 N=2 initial=0 damped: converged iterations=1 evaluations=2
+mu=0 N=2 initial=4 full: converged iterations=1 evaluations=2
+mu=0 N=2 initial=4 damped: converged iterations=1 evaluations=2
+mu=0 N=4 initial=0 full: converged iterations=1 evaluations=2
+mu=0 N=4 initial=0 damped: converged iterations=1 evaluations=2
+mu=0 N=4 initial=4 full: converged iterations=1 evaluations=2
+mu=0 N=4 initial=4 damped: converged iterations=1 evaluations=2
+mu=0 N=8 initial=0 full: converged iterations=1 evaluations=2
+mu=0 N=8 initial=0 damped: converged iterations=1 evaluations=2
+mu=0 N=8 initial=4 full: converged iterations=1 evaluations=2
+mu=0 N=8 initial=4 damped: converged iterations=1 evaluations=2
+mu=0 N=16 initial=0 full: converged iterations=1 evaluations=2
+mu=0 N=16 initial=0 damped: converged iterations=1 evaluations=2
+mu=0 N=16 initial=4 full: converged iterations=1 evaluations=2
+mu=0 N=16 initial=4 damped: converged iterations=1 evaluations=2
+mu=0 N=32 initial=0 full: converged iterations=1 evaluations=2
+mu=0 N=32 initial=0 damped: converged iterations=1 evaluations=2
+mu=0 N=32 initial=4 full: converged iterations=1 evaluations=2
+mu=0 N=32 initial=4 damped: converged iterations=1 evaluations=2
+mu=10 N=2 initial=0 full: converged iterations=7 evaluations=8
+mu=10 N=2 initial=0 damped: converged iterations=5 evaluations=7
+mu=10 N=2 initial=4 full: converged iterations=7 evaluations=8
+mu=10 N=2 initial=4 damped: converged iterations=7 evaluations=8
+mu=10 N=4 initial=0 full: converged iterations=6 evaluations=7
+mu=10 N=4 initial=0 damped: converged iterations=5 evaluations=7
+mu=10 N=4 initial=4 full: converged iterations=8 evaluations=9
+mu=10 N=4 initial=4 damped: converged iterations=8 evaluations=9
+mu=10 N=8 initial=0 full: converged iterations=6 evaluations=7
+mu=10 N=8 initial=0 damped: converged iterations=5 evaluations=7
+mu=10 N=8 initial=4 full: converged iterations=8 evaluations=9
+mu=10 N=8 initial=4 damped: converged iterations=8 evaluations=9
+mu=10 N=16 initial=0 full: converged iterations=6 evaluations=7
+mu=10 N=16 initial=0 damped: converged iterations=5 evaluations=7
+mu=10 N=16 initial=4 full: converged iterations=8 evaluations=9
+mu=10 N=16 initial=4 damped: converged iterations=8 evaluations=9
+mu=10 N=32 initial=0 full: converged iterations=6 evaluations=7
+mu=10 N=32 initial=0 damped: converged iterations=5 evaluations=7
+mu=10 N=32 initial=4 full: converged iterations=8 evaluations=9
+mu=10 N=32 initial=4 damped: converged iterations=8 evaluations=9
+mu=1000 N=2 initial=0 full: converged iterations=17 evaluations=18
+mu=1000 N=2 initial=0 damped: converged iterations=4 evaluations=12
+mu=1000 N=2 initial=4 full: converged iterations=8 evaluations=9
+mu=1000 N=2 initial=4 damped: converged iterations=8 evaluations=9
+mu=1000 N=4 initial=0 full: converged iterations=16 evaluations=17
+mu=1000 N=4 initial=0 damped: converged iterations=6 evaluations=15
+mu=1000 N=4 initial=4 full: converged iterations=8 evaluations=9
+mu=1000 N=4 initial=4 damped: converged iterations=8 evaluations=9
+mu=1000 N=8 initial=0 full: converged iterations=16 evaluations=17
+mu=1000 N=8 initial=0 damped: converged iterations=6 evaluations=15
+mu=1000 N=8 initial=4 full: converged iterations=9 evaluations=10
+mu=1000 N=8 initial=4 damped: converged iterations=9 evaluations=10
+mu=1000 N=16 initial=0 full: converged iterations=16 evaluations=17
+mu=1000 N=16 initial=0 damped: converged iterations=6 evaluations=15
+mu=1000 N=16 initial=4 full: converged iterations=10 evaluations=11
+mu=1000 N=16 initial=4 damped: converged iterations=10 evaluations=11
+mu=1000 N=32 initial=0 full: converged iterations=16 evaluations=17
+mu=1000 N=32 initial=0 damped: converged iterations=6 evaluations=15
+mu=1000 N=32 initial=4 full: converged iterations=10 evaluations=11
+mu=1000 N=32 initial=4 damped: converged iterations=10 evaluations=11
+sqrt2_positive: converged iterations=4 value=1.4142135623746899
+sqrt2_far: converged iterations=7 value=1.4142135623730954
+sqrt2_negative: converged iterations=4 value=-1.4142135623746899
+sqrt2_zero_derivative: zero_derivative iterations=0 value=0
+cubic_cycle: maxiter iterations=6 value=0

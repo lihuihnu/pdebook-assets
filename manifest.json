@@ -454,6 +454,26 @@
       "width_px": 1920,
       "height_px": 2000,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-029/fig-002-true-residuals.png"
+    },
+    {
+      "article_id": "pde-030",
+      "source": "figures/pde-030/exports/fig-001-nonlinear-residuals.png",
+      "source_blob_sha": "df5d17bd2965f4cb1677f8d9b5994923706afce3",
+      "output": "assets/pde-030/fig-001-nonlinear-residuals.png",
+      "output_blob_sha": "df5d17bd2965f4cb1677f8d9b5994923706afce3",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-030/fig-001-nonlinear-residuals.png"
+    },
+    {
+      "article_id": "pde-030",
+      "source": "figures/pde-030/exports/fig-002-backtracking-and-local-errors.png",
+      "source_blob_sha": "ad879b985ca7dbefd34cea3a8506f356fcfee1d7",
+      "output": "assets/pde-030/fig-002-backtracking-and-local-errors.png",
+      "output_blob_sha": "ad879b985ca7dbefd34cea3a8506f356fcfee1d7",
+      "width_px": 1920,
+      "height_px": 2000,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-030/fig-002-backtracking-and-local-errors.png"
     }
   ],
   "code": [
@@ -1970,6 +1990,104 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-029"
+    },
+    {
+      "article_id": "pde-030",
+      "source_root": "experiments/pde-030",
+      "output_root": "code/pde-030",
+      "run_command": "python code/pde-030/src/newton.py",
+      "dependencies": [],
+      "plot_command": "python code/pde-030/src/plot_newton.py --results code/pde-030/results --output figures/pde-030",
+      "plot_dependencies": [
+        "matplotlib"
+      ],
+      "files": [
+        {
+          "source": "experiments/pde-030/README.md",
+          "source_blob_sha": "1746279db5c740721401c018d8a2e8bc67373448",
+          "output": "code/pde-030/README.md",
+          "output_blob_sha": "6da8a889b6fae445a37572d73daaabf5746fa5d4"
+        },
+        {
+          "source": "experiments/pde-030/config/problems.json",
+          "source_blob_sha": "f21f1499adf8111c0a31cdcff873397c9a0322cd",
+          "output": "code/pde-030/config/problems.json",
+          "output_blob_sha": "f21f1499adf8111c0a31cdcff873397c9a0322cd"
+        },
+        {
+          "source": "experiments/pde-030/results/history.csv",
+          "source_blob_sha": "8c9f567fa2b4fcc4611cba5582dfa3f8039c497d",
+          "output": "code/pde-030/results/history.csv",
+          "output_blob_sha": "8c9f567fa2b4fcc4611cba5582dfa3f8039c497d"
+        },
+        {
+          "source": "experiments/pde-030/results/iterates.csv",
+          "source_blob_sha": "28c1053fb582dc23e7eb6672d8c91f5f2e596595",
+          "output": "code/pde-030/results/iterates.csv",
+          "output_blob_sha": "28c1053fb582dc23e7eb6672d8c91f5f2e596595"
+        },
+        {
+          "source": "experiments/pde-030/results/linear_steps.csv",
+          "source_blob_sha": "096a39afc9744f99815b780303180fce75698bde",
+          "output": "code/pde-030/results/linear_steps.csv",
+          "output_blob_sha": "096a39afc9744f99815b780303180fce75698bde"
+        },
+        {
+          "source": "experiments/pde-030/results/loads.csv",
+          "source_blob_sha": "af79c2acd74c685b8206a1c6ee7739f646c900f4",
+          "output": "code/pde-030/results/loads.csv",
+          "output_blob_sha": "af79c2acd74c685b8206a1c6ee7739f646c900f4"
+        },
+        {
+          "source": "experiments/pde-030/results/nodes.csv",
+          "source_blob_sha": "55a56a824a33f19510f6400f3729d6bd97a0151e",
+          "output": "code/pde-030/results/nodes.csv",
+          "output_blob_sha": "55a56a824a33f19510f6400f3729d6bd97a0151e"
+        },
+        {
+          "source": "experiments/pde-030/results/run.txt",
+          "source_blob_sha": "e3b38b2c09914c17e1212e4a79217d1a418c104c",
+          "output": "code/pde-030/results/run.txt",
+          "output_blob_sha": "e3b38b2c09914c17e1212e4a79217d1a418c104c"
+        },
+        {
+          "source": "experiments/pde-030/results/scalar_history.csv",
+          "source_blob_sha": "66823d38947044cb9db0030fe0145b29c6b54c68",
+          "output": "code/pde-030/results/scalar_history.csv",
+          "output_blob_sha": "66823d38947044cb9db0030fe0145b29c6b54c68"
+        },
+        {
+          "source": "experiments/pde-030/results/scalar_summary.csv",
+          "source_blob_sha": "b1e5bf875bdfd8bc596503c96a1e824bc504a606",
+          "output": "code/pde-030/results/scalar_summary.csv",
+          "output_blob_sha": "b1e5bf875bdfd8bc596503c96a1e824bc504a606"
+        },
+        {
+          "source": "experiments/pde-030/results/summary.csv",
+          "source_blob_sha": "da4a1229ae01e617f62a696a515fa0c86aba1c7c",
+          "output": "code/pde-030/results/summary.csv",
+          "output_blob_sha": "da4a1229ae01e617f62a696a515fa0c86aba1c7c"
+        },
+        {
+          "source": "experiments/pde-030/results/trials.csv",
+          "source_blob_sha": "266ccaef30a0a5d15b00fa3e6f2d16d73c9de893",
+          "output": "code/pde-030/results/trials.csv",
+          "output_blob_sha": "266ccaef30a0a5d15b00fa3e6f2d16d73c9de893"
+        },
+        {
+          "source": "experiments/pde-030/src/newton.py",
+          "source_blob_sha": "bb789a20ac56bd5398113210b7a59566da5b5b6d",
+          "output": "code/pde-030/src/newton.py",
+          "output_blob_sha": "bb789a20ac56bd5398113210b7a59566da5b5b6d"
+        },
+        {
+          "source": "figures/pde-030/src/plot_newton.py",
+          "source_blob_sha": "81c873afed0676dc3fb0cb9eaabf45353b818913",
+          "output": "code/pde-030/src/plot_newton.py",
+          "output_blob_sha": "81c873afed0676dc3fb0cb9eaabf45353b818913"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-030"
     }
   ]
 }

@@ -1,0 +1,6 @@
+name,equation,initial,maxiter,status,iterations,value,residual
+sqrt2_positive,sqrt2,1,80,converged,4,1.4142135623746899,4.510614104447086e-12
+sqrt2_far,sqrt2,10,80,converged,7,1.4142135623730954,8.8817841970012523e-16
+sqrt2_negative,sqrt2,-1,80,converged,4,-1.4142135623746899,4.510614104447086e-12
+sqrt2_zero_derivative,sqrt2,0,80,zero_derivative,0,0,-2
+cubic_cycle,cycle,0,6,maxiter,6,0,2

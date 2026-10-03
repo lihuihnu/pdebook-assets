@@ -1,0 +1,19 @@
+{
+  "meshes": [2, 4, 8, 16, 32],
+  "mu_values": [0, 10, 1000],
+  "initial_values": [0, 4],
+  "methods": ["full", "damped"],
+  "rtol": 1e-10,
+  "atol": 1e-13,
+  "step_tol": 1e-14,
+  "maxiter": 80,
+  "sigma": 1e-4,
+  "max_backtracks": 20,
+  "scalar_cases": [
+    {"name": "sqrt2_positive", "equation": "sqrt2", "initial": 1, "maxiter": 80},
+    {"name": "sqrt2_far", "equation": "sqrt2", "initial": 10, "maxiter": 80},
+    {"name": "sqrt2_negative", "equation": "sqrt2", "initial": -1, "maxiter": 80},
+    {"name": "sqrt2_zero_derivative", "equation": "sqrt2", "initial": 0, "maxiter": 80},
+    {"name": "cubic_cycle", "equation": "cycle", "initial": 0, "maxiter": 6}
+  ]
+}
