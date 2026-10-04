@@ -10,11 +10,12 @@ The canonical manuscript, source SVG files, authoring notes, references, review 
 assets/
   cover/
     zhihu-column-cover.png
-  pde-NNN/
+  <article-id>/
     *.png
+  # examples: pde-033/, tutorial-001/
 
 code/
-  pde-NNN/
+  <article-id>/
     README.md
     src/
       *.py
@@ -24,27 +25,30 @@ code/
 manifest.json
 ```
 
+
+The first 33 mainline articles keep their existing `pde-NNN` ids. Problem-driven numerical tutorials use independent `tutorial-NNN` ids, so their reader-facing assets and code are published under `assets/tutorial-NNN/` and `code/tutorial-NNN/` without changing any existing mainline paths.
+
 ### Public figures
 
 Zhihu publish views use public figure URLs of the form:
 
 ```text
-https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-NNN/<figure>.png
+https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/<article-id>/<figure>.png
 ```
 
 Public PNG files are synchronized from reviewed canonical PNGs or rendered from vector figures in the private source repository. Conceptual illustrations and computed quantitative plots are identified in the per-article manifests. Do not edit published PNG files by hand.
 
-The reviewed Zhihu column cover is published separately at `assets/cover/zhihu-column-cover.png`. It is mirrored byte-for-byte from the private canonical cover and is not associated with a single `pde-NNN` article.
+The reviewed Zhihu column cover is published separately at `assets/cover/zhihu-column-cover.png`. It is mirrored byte-for-byte from the private canonical cover and is not associated with a single article id.
 
 ### Public code
 
 When an article contains executable teaching code, its reader-facing copy is published under:
 
 ```text
-code/pde-NNN/
+code/<article-id>/
 ```
 
-Python source and numerical result files are synchronized from the corresponding private `experiments/pde-NNN/` directory. Article-specific public README files may adjust paths and reader instructions for this repository, but do not maintain a second algorithm implementation.
+Python source and numerical result files are synchronized from the corresponding private `experiments/<article-id>/` directory. Article-specific public README files may adjust paths and reader instructions for this repository, but do not maintain a second algorithm implementation.
 
 ## Publishing policy
 
