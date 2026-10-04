@@ -20,7 +20,7 @@
 python -m pip install numpy==2.3.5 scipy==1.17.0
 ```
 
-若要重绘文章中的正式图件，还需要 Matplotlib、Pillow、svgwrite、fontTools，以及系统中的 Noto Sans CJK SC / STIX 字体与 `rsvg-convert`。
+若要重绘正式图件，还需要 Matplotlib、Pillow、svgwrite、fontTools，以及系统中的 Noto Sans CJK SC / STIX 字体。
 
 ## 目录
 
@@ -53,7 +53,7 @@ code/tutorial-001/
     et001-06/
 ```
 
-`src/` 中的数值脚本和 `config/` 与私有权威实验源逐字一致；`results/` 是这些脚本实际运行得到并通过文章验收的保存结果。公共同步过程会对结果文件的 Git blob 身份逐项核对。
+`src/` 中的数值脚本、绘图脚本和 `config/` 与私有权威源逐字一致。公开 `results/` 由这些冻结源码在固定 Python / NumPy / SciPy 环境中重新执行得到，并通过与私有验收相同的解析锚点、网格细化和守恒门槛。不同 runner 的稀疏直接求解可能在约 $10^{-13}$ 量级出现舍入差异，因此公开 manifest 同时记录私有源结果 blob 与公开重跑结果 blob，不把浮点字节一致性误当成科学一致性。
 
 ## 六个实验
 
@@ -66,7 +66,7 @@ code/tutorial-001/
 
 ## 从头复现
 
-建议把复现结果写到新的 `reproduced/` 目录，不覆盖仓库中已经验收的 `results/`。
+建议把复现结果写到新的 `reproduced/` 目录，不覆盖仓库中已经发布的 `results/`。
 
 ```bash
 python code/tutorial-001/src/composite_heat.py \
@@ -99,7 +99,7 @@ ET001-04～06 会保存较大的单元/面级 CSV；它们用于流线重构、�
 
 ## 图件
 
-文章中的五幅正式图都来自本教程冻结的几何或实际计算结果：
+文章中的五幅正式图都来自私有仓库经过审校的 canonical SVG；公共 PNG 由这些最终 SVG 以 1920 px 宽度确定性栅格化，不从公开重跑结果另画一套图。
 
 - FT001-01：复合板几何与边界；
 - FT001-02：共享面与两段串联热阻；
@@ -107,4 +107,4 @@ ET001-04～06 会保存较大的单元/面级 CSV；它们用于流线重构、�
 - FT001-04：二维温度场与由保存面通量重构的热流路径；
 - FT001-05：导热率对比度与等效导热系数。
 
-公开文章使用的 PNG 位于仓库根目录的 `assets/tutorial-001/`。
+公开 PNG 位于仓库根目录的 `assets/tutorial-001/`。
