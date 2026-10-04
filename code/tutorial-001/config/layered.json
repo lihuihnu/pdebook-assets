@@ -1,0 +1,22 @@
+{
+  "experiment_id": "ET001-02",
+  "case_name": "two_layer_series",
+  "lx": 0.12,
+  "ly": 0.08,
+  "thickness": 0.01,
+  "t_hot": 100.0,
+  "t_cold": 20.0,
+  "qv": 0.0,
+  "case": {
+    "kind": "layered",
+    "interface_x": 0.06,
+    "k_left": 1.0,
+    "k_right": 10.0
+  },
+  "grids": [
+    [6, 4],
+    [12, 8],
+    [24, 16],
+    [48, 32]
+  ]
+}

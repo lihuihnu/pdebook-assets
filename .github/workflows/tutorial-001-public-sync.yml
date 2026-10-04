@@ -1,0 +1,240 @@
+name: Temporary tutorial-001 public sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/tutorial-001-public-sync.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out public repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install numerical and render dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin fonts-noto-cjk fonts-stix
+          python -m pip install --disable-pip-version-check             numpy==2.3.5 scipy==1.17.0 matplotlib==3.10.8             pillow==11.3.0 svgwrite==1.4.3 fonttools==4.63.0
+
+      - name: Regenerate ET001-01 through ET001-06
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf code/tutorial-001/results
+          mkdir -p code/tutorial-001/results
+
+          python code/tutorial-001/src/composite_heat.py             --config code/tutorial-001/config/uniform.json             --output code/tutorial-001/results/et001-01
+
+          python code/tutorial-001/src/composite_heat.py             --config code/tutorial-001/config/layered.json             --output code/tutorial-001/results/et001-02
+
+          python code/tutorial-001/src/averaging_ablation.py             --config code/tutorial-001/config/averaging_ablation.json             --output code/tutorial-001/results/et001-03
+
+          python code/tutorial-001/src/inclusion_refinement.py             --config code/tutorial-001/config/inclusion.json             --output code/tutorial-001/results/et001-04
+
+          python code/tutorial-001/src/conservation_audit.py             --source code/tutorial-001/results/et001-04             --output code/tutorial-001/results/et001-05
+
+          python code/tutorial-001/src/contrast_sweep.py             --config code/tutorial-001/config/contrast_sweep.json             --et004-summary code/tutorial-001/results/et001-04/summary.csv             --output code/tutorial-001/results/et001-06
+
+      - name: Assert private frozen result identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          check() { test "$(git hash-object "$1")" = "$2"; }
+
+          check code/tutorial-001/results/et001-01/cells.csv 0383eabce154f7db9831e9a5e2b50c4783b88c5e
+          check code/tutorial-001/results/et001-01/run.txt af9bd8bff0cd84fa4c39c1a66c9b342821169663
+          check code/tutorial-001/results/et001-01/summary.csv db85dc5393028e0493d9ebaa5ef189426cb45456
+
+          check code/tutorial-001/results/et001-02/cells.csv 48a0a5fc78801239ed625a83ca34c8d3c221c887
+          check code/tutorial-001/results/et001-02/faces.csv e02a9b1b13ef5ba90f80596228f90db1d138658b
+          check code/tutorial-001/results/et001-02/layered_profile.csv f5e945d28807ceeb417e7bb8616236fa85597b0e
+          check code/tutorial-001/results/et001-02/run.txt 50a91dcc02d41ff043101aff3e0c39b71d164858
+          check code/tutorial-001/results/et001-02/summary.csv 47d6cf3fd88dd895cde601e97bab674a149d2d9a
+
+          check code/tutorial-001/results/et001-03/averaging_ablation.csv 6393d2bc7dcf5b53f5a4731c2e134eb0e9383ac3
+          check code/tutorial-001/results/et001-03/run.txt cb075b912fd8642bbabf26b33d089faca108e2ef
+
+          check code/tutorial-001/results/et001-04/cells.csv 0c6f11ac951bdcdcffaa6b15927735b0976c83a1
+          check code/tutorial-001/results/et001-04/faces.csv c99d0113946203c75de3f4e4a43209b19488bbc5
+          check code/tutorial-001/results/et001-04/refinement.csv a9d79a50551de4a19b9d2c0a6586983089dbf252
+          check code/tutorial-001/results/et001-04/run.txt 187a87a665303e0cf350a7c906cc6a29fb8ef2c0
+          check code/tutorial-001/results/et001-04/summary.csv 814f1c53834ee194074491b2a8c32d3ee07b5568
+
+          check code/tutorial-001/results/et001-05/audit_summary.csv d41f73e77ac166d7922f30c6b287c9cc7cf1255e
+          check code/tutorial-001/results/et001-05/balances.csv 18f9303394a4136b4d21defb002899b373e6e4ca
+          check code/tutorial-001/results/et001-05/run.txt 2daa3049085851c136ba2100ffdef24fdcac2614
+
+          check code/tutorial-001/results/et001-06/balances.csv cbfb4c3682b7d705af18a890b9a6c1e0b5285a0e
+          check code/tutorial-001/results/et001-06/cells.csv 2b941b00c3e651bfee80ee5e2c5a4353f36e99b2
+          check code/tutorial-001/results/et001-06/contrast_sweep.csv 3700c472c370317dc8ba3f8125dfeb3e3b30e252
+          check code/tutorial-001/results/et001-06/faces.csv a37cec85f017a21b5e66fc9f090c4f8fd4d8db63
+          check code/tutorial-001/results/et001-06/run.txt 68f40e8c27127027e552ba2ab00d7e928eb89a21
+
+      - name: Regenerate canonical figure SVGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/tutorial001-figures
+          mkdir -p /tmp/tutorial001-figures/ft003 /tmp/tutorial001-figures/ft004 /tmp/tutorial001-figures/ft005
+
+          python code/tutorial-001/src/make_FT001_01.py
+          python code/tutorial-001/src/make_FT001_02.py
+          python code/tutorial-001/src/make_FT001_03.py             --profile code/tutorial-001/results/et001-02/layered_profile.csv             --ablation code/tutorial-001/results/et001-03/averaging_ablation.csv             --output-dir /tmp/tutorial001-figures/ft003
+          python code/tutorial-001/src/make_FT001_04.py             --cells code/tutorial-001/results/et001-04/cells.csv             --faces code/tutorial-001/results/et001-04/faces.csv             --summary code/tutorial-001/results/et001-04/summary.csv             --output-dir /tmp/tutorial001-figures/ft004
+          python code/tutorial-001/src/make_FT001_05.py             --sweep code/tutorial-001/results/et001-06/contrast_sweep.csv             --output-dir /tmp/tutorial001-figures/ft005
+
+          test "$(git hash-object code/tutorial-001/exports/FT001-01_composite_plate_geometry.svg)" = "af055f3580c04afe54f09c306e0b1102bf39d045"
+          test "$(git hash-object code/tutorial-001/exports/FT001-02_series_resistance.svg)" = "12ecfbe9e0f9f25c79793168804517356daeac02"
+          test "$(git hash-object /tmp/tutorial001-figures/ft003/FT001-03_interface_validation.svg)" = "66198f86063d2d6be9e17c4c75ec69cd4befe539"
+          test "$(git hash-object /tmp/tutorial001-figures/ft004/FT001-04_temperature_and_heatflow.svg)" = "48cb8d1f4f211307f7d2d37a7881a7c51ba435e7"
+          test "$(git hash-object /tmp/tutorial001-figures/ft005/FT001-05_contrast_sweep.svg)" = "f47697929b4b4cb098ba4f141a10729ab72ad7f9"
+
+      - name: Build public 1920px PNGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/tutorial-001
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             --output assets/tutorial-001/FT001-01_composite_plate_geometry.png             code/tutorial-001/exports/FT001-01_composite_plate_geometry.svg
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             --output assets/tutorial-001/FT001-02_series_resistance.png             code/tutorial-001/exports/FT001-02_series_resistance.svg
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             --output assets/tutorial-001/FT001-03_interface_validation.png             /tmp/tutorial001-figures/ft003/FT001-03_interface_validation.svg
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             --output assets/tutorial-001/FT001-04_temperature_and_heatflow.png             /tmp/tutorial001-figures/ft004/FT001-04_temperature_and_heatflow.svg
+          rsvg-convert --width 1920 --keep-aspect-ratio --background-color white             --output assets/tutorial-001/FT001-05_contrast_sweep.png             /tmp/tutorial001-figures/ft005/FT001-05_contrast_sweep.svg
+          rm -rf code/tutorial-001/exports
+
+      - name: Update public manifest and README
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import struct
+          import subprocess
+          from pathlib import Path
+
+          def blob(path):
+              return subprocess.check_output(["git","hash-object",str(path)],text=True).strip()
+
+          def png_size(path):
+              with open(path,"rb") as f:
+                  assert f.read(8)==b"\x89PNG\r\n\x1a\n"
+                  length=struct.unpack(">I",f.read(4))[0]
+                  assert f.read(4)==b"IHDR" and length>=8
+                  return struct.unpack(">II",f.read(8))
+
+          manifest_path=Path("manifest.json")
+          data=json.loads(manifest_path.read_text(encoding="utf-8"))
+          data["assets"]=[x for x in data.get("assets",[]) if x.get("article_id")!="tutorial-001"]
+          data["code"]=[x for x in data.get("code",[]) if x.get("article_id")!="tutorial-001"]
+
+          asset_specs=[
+              ("figures/tutorial-001/exports/FT001-01_composite_plate_geometry.svg","af055f3580c04afe54f09c306e0b1102bf39d045","FT001-01_composite_plate_geometry.png"),
+              ("figures/tutorial-001/exports/FT001-02_series_resistance.svg","12ecfbe9e0f9f25c79793168804517356daeac02","FT001-02_series_resistance.png"),
+              ("figures/tutorial-001/exports/FT001-03_interface_validation.svg","66198f86063d2d6be9e17c4c75ec69cd4befe539","FT001-03_interface_validation.png"),
+              ("figures/tutorial-001/exports/FT001-04_temperature_and_heatflow.svg","48cb8d1f4f211307f7d2d37a7881a7c51ba435e7","FT001-04_temperature_and_heatflow.png"),
+              ("figures/tutorial-001/exports/FT001-05_contrast_sweep.svg","f47697929b4b4cb098ba4f141a10729ab72ad7f9","FT001-05_contrast_sweep.png"),
+          ]
+          for source,source_blob,name in asset_specs:
+              out=Path("assets/tutorial-001")/name
+              w,h=png_size(out)
+              assert w==1920
+              data["assets"].append({
+                  "article_id":"tutorial-001",
+                  "source":source,
+                  "source_blob_sha":source_blob,
+                  "output":str(out),
+                  "output_blob_sha":blob(out),
+                  "width_px":w,
+                  "height_px":h,
+                  "url":f"https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/{name}",
+              })
+
+          source_map={
+              "code/tutorial-001/README.md":("experiments/tutorial-001/README.md","857aa300d8eadcb72c0c30f619ac257705b66157"),
+              "code/tutorial-001/src/composite_heat.py":("experiments/tutorial-001/src/composite_heat.py","be4d7e82ce473c0259017813a2b2b5f580d891fa"),
+              "code/tutorial-001/src/averaging_ablation.py":("experiments/tutorial-001/src/averaging_ablation.py","26d3d447bc04ca8fb414477a697b11aad38bec2f"),
+              "code/tutorial-001/src/inclusion_refinement.py":("experiments/tutorial-001/src/inclusion_refinement.py","88abe32035a3ca5b78f47b75e1d66f4b4b19642a"),
+              "code/tutorial-001/src/conservation_audit.py":("experiments/tutorial-001/src/conservation_audit.py","dd8ffbb1238aa67ecb3d4483c75f5efab8447168"),
+              "code/tutorial-001/src/contrast_sweep.py":("experiments/tutorial-001/src/contrast_sweep.py","bb922b93f4f359c462fde75b7dffc1a9d3b7fe2c"),
+              "code/tutorial-001/src/make_FT001_01.py":("figures/tutorial-001/src/make_FT001_01.py","0f827d058bbfaf2cec25b867000418bd02892bc5"),
+              "code/tutorial-001/src/make_FT001_02.py":("figures/tutorial-001/src/make_FT001_02.py","92d90101987e8d4f322ed3b732764a821b9baad9"),
+              "code/tutorial-001/src/make_FT001_03.py":("figures/tutorial-001/src/make_FT001_03.py","a6410544fa5cde5dd3c48be6e1bf7917f66ebe17"),
+              "code/tutorial-001/src/make_FT001_04.py":("figures/tutorial-001/src/make_FT001_04.py","68b392cf0791b49be000cd28acaff17d75af7a10"),
+              "code/tutorial-001/src/make_FT001_05.py":("figures/tutorial-001/src/make_FT001_05.py","a3f67a8786358a9d10c1323d2f83c8a293c4e54b"),
+          }
+          for p in Path("code/tutorial-001/config").glob("*.json"):
+              source_map[str(p)]=(f"experiments/tutorial-001/config/{p.name}",blob(p))
+          for p in Path("code/tutorial-001/results").rglob("*"):
+              if p.is_file():
+                  rel=p.relative_to("code/tutorial-001/results")
+                  source_map[str(p)]=(f"experiments/tutorial-001/results/{rel.as_posix()}",blob(p))
+
+          files=[]
+          for out,(source,source_blob) in sorted(source_map.items()):
+              out_blob=blob(out)
+              if not out.endswith("README.md"):
+                  assert out_blob==source_blob,(out,out_blob,source_blob)
+              files.append({
+                  "source":source,
+                  "source_blob_sha":source_blob,
+                  "output":out,
+                  "output_blob_sha":out_blob,
+              })
+
+          data["code"].append({
+              "article_id":"tutorial-001",
+              "source":"experiments/tutorial-001",
+              "output":"code/tutorial-001",
+              "entrypoint":"code/tutorial-001/src/composite_heat.py",
+              "command":"python code/tutorial-001/src/composite_heat.py --config code/tutorial-001/config/uniform.json --output reproduced/et001-01",
+              "dependencies":["numpy","scipy"],
+              "files":files,
+              "url":"https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-001",
+          })
+          manifest_path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+
+          readme=Path("README.md")
+          text=readme.read_text(encoding="utf-8")
+          line="- `code/tutorial-001/` — 复合材料中的二维稳态导热；6 组实验、五幅正式图件的生成脚本与全部实际结果；NumPy/SciPy 数值核心，绘图另需 Matplotlib 等。"
+          if line not in text:
+              text=text.rstrip()+"\n"+line+"\n"
+              readme.write_text(text,encoding="utf-8")
+          PY
+
+      - name: Final public-tree checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find assets/tutorial-001 -maxdepth 1 -name '*.png' | wc -l)" -eq 5
+          test ! -e code/tutorial-001/exports
+          test "$(find code/tutorial-001/results -type f | wc -l)" -eq 26
+          grep -q '"article_id": "tutorial-001"' manifest.json
+          grep -q 'code/tutorial-001/' README.md
+
+      - name: Commit synced tutorial and remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/tutorial-001-public-sync.yml
+          git add assets/tutorial-001
+          git add code/tutorial-001
+          git add manifest.json README.md
+          git commit -m "Publish tutorial-001 assets, code and verified results"
+          git push origin HEAD:main

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "ET001-01",
+  "case_name": "uniform_material",
+  "lx": 0.12,
+  "ly": 0.08,
+  "thickness": 0.01,
+  "t_hot": 100.0,
+  "t_cold": 20.0,
+  "qv": 0.0,
+  "case": {
+    "kind": "uniform",
+    "k": 1.0
+  },
+  "grids": [
+    [12, 8],
+    [24, 16],
+    [48, 32]
+  ]
+}

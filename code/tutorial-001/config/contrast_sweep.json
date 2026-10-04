@@ -1,0 +1,19 @@
+{
+  "experiment_id": "ET001-06",
+  "case_name": "inclusion_contrast_sweep",
+  "lx": 0.12,
+  "ly": 0.08,
+  "thickness": 0.01,
+  "t_hot": 100.0,
+  "t_cold": 20.0,
+  "qv": 0.0,
+  "grid": [96, 64],
+  "k_matrix": 1.0,
+  "contrasts": [0.1, 0.3, 1.0, 3.0, 10.0, 30.0, 100.0, 300.0, 1000.0],
+  "inclusion": {
+    "x0": 0.045,
+    "x1": 0.075,
+    "y0": 0.025,
+    "y1": 0.055
+  }
+}

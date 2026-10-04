@@ -1,0 +1,18 @@
+{
+  "experiment_id": "ET001-03",
+  "case_name": "interface_averaging_ablation",
+  "lx": 0.12,
+  "ly": 0.08,
+  "thickness": 0.01,
+  "t_hot": 100.0,
+  "t_cold": 20.0,
+  "interface_x": 0.06,
+  "k_left": 1.0,
+  "contrasts": [1.0, 2.0, 10.0, 100.0],
+  "grids": [
+    [6, 4],
+    [12, 8],
+    [24, 16],
+    [48, 32]
+  ]
+}
