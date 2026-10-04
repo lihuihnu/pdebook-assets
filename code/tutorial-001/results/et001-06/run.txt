@@ -1,0 +1,20 @@
+experiment_id=ET001-06
+config=code/tutorial-001/config/contrast_sweep.json
+python=3.13.15
+grid=96x64
+frozen_core_blob=be4d7e82ce473c0259017813a2b2b5f580d891fa
+frozen_inclusion_driver_blob=88abe32035a3ca5b78f47b75e1d66f4b4b19642a
+frozen_audit_blob=dd8ffbb1238aa67ecb3d4483c75f5efab8447168
+et004_summary_blob=814f1c53834ee194074491b2a8c32d3ee07b5568
+scheme=frozen harmonic TPFA
+conservation_gate=ET001-05 audit_grid threshold 1e-10
+status=PASS
+contrast=0.1 k_inclusion=0.10000000000000001 q_hot=0.44953153744719826 k_eff=0.84287163271349674 global_balance_relative=1.3830506694162844e-14 max_cell_balance_relative=9.7992104392000557e-15 inclusion_balance_relative=7.1246018370809578e-15 adiabatic_boundary_relative=0
+contrast=0.3 k_inclusion=0.29999999999999999 q_hot=0.47936213184811438 k_eff=0.89880399721521442 global_balance_relative=4.5973441735675206e-14 max_cell_balance_relative=8.894977914006311e-15 inclusion_balance_relative=1.5194504761308745e-14 adiabatic_boundary_relative=0
+contrast=1 k_inclusion=1 q_hot=0.53333333333332467 k_eff=0.99999999999998379 global_balance_relative=4.1425196606325125e-14 max_cell_balance_relative=5.8626280913241732e-15 inclusion_balance_relative=3.3363936613461098e-15 adiabatic_boundary_relative=0
+contrast=3 k_inclusion=3 q_hot=0.58531939565297597 k_eff=1.0974738668493298 global_balance_relative=1.5079413242272912e-13 max_cell_balance_relative=7.2818628805551378e-15 inclusion_balance_relative=1.5060445426873826e-13 adiabatic_boundary_relative=0
+contrast=10 k_inclusion=10 q_hot=0.62254623828442279 k_eff=1.1672741967832927 global_balance_relative=3.227878591169722e-14 max_cell_balance_relative=2.8532340153903974e-14 inclusion_balance_relative=7.9465332927294656e-14 adiabatic_boundary_relative=0
+contrast=30 k_inclusion=30 q_hot=0.63770112977143556 k_eff=1.1956896183214416 global_balance_relative=7.4896832214265051e-13 max_cell_balance_relative=9.0248577324082946e-14 inclusion_balance_relative=7.3780430688058689e-13 adiabatic_boundary_relative=0
+contrast=100 k_inclusion=100 q_hot=0.64374510230364845 k_eff=1.2070220668193408 global_balance_relative=2.0971517967485724e-12 max_cell_balance_relative=1.8763989760381964e-13 inclusion_balance_relative=2.1295263620319519e-12 adiabatic_boundary_relative=0
+contrast=300 k_inclusion=300 q_hot=0.64555471897415662 k_eff=1.2104150980765436 global_balance_relative=2.0666111803249061e-11 max_cell_balance_relative=7.2644222373153838e-13 inclusion_balance_relative=2.0654132342750292e-11 adiabatic_boundary_relative=0
+contrast=1000 k_inclusion=1000 q_hot=0.64619729144154125 k_eff=1.2116199214528898 global_balance_relative=4.3589064305766484e-11 max_cell_balance_relative=2.4190661882612311e-12 inclusion_balance_relative=4.3619920070556832e-11 adiabatic_boundary_relative=0

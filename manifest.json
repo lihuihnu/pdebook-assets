@@ -534,6 +534,56 @@
       "height_px": 1248,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/pde-033/fig-002-layer-profile.png",
       "output_blob_sha": "9d5e9e2b00846cd5b7759294ece24ac4ab1e5cc0"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "figures/tutorial-001/exports/FT001-01_composite_plate_geometry.svg",
+      "source_blob_sha": "af055f3580c04afe54f09c306e0b1102bf39d045",
+      "output": "assets/tutorial-001/FT001-01_composite_plate_geometry.png",
+      "output_blob_sha": "fe75f9310df6a81d3568a765e6f3c5299b83e6c2",
+      "width_px": 1920,
+      "height_px": 1336,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-01_composite_plate_geometry.png"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "figures/tutorial-001/exports/FT001-02_series_resistance.svg",
+      "source_blob_sha": "12ecfbe9e0f9f25c79793168804517356daeac02",
+      "output": "assets/tutorial-001/FT001-02_series_resistance.png",
+      "output_blob_sha": "a145fcc3a2faa32f5548511e36667cfa058f2dad",
+      "width_px": 1920,
+      "height_px": 1241,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-02_series_resistance.png"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "figures/tutorial-001/exports/FT001-03_interface_validation.svg",
+      "source_blob_sha": "66198f86063d2d6be9e17c4c75ec69cd4befe539",
+      "output": "assets/tutorial-001/FT001-03_interface_validation.png",
+      "output_blob_sha": "7df709fa162af4cc4f4385c9f18be7de9da6078b",
+      "width_px": 1920,
+      "height_px": 777,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-03_interface_validation.png"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "figures/tutorial-001/exports/FT001-04_temperature_and_heatflow.svg",
+      "source_blob_sha": "48cb8d1f4f211307f7d2d37a7881a7c51ba435e7",
+      "output": "assets/tutorial-001/FT001-04_temperature_and_heatflow.png",
+      "output_blob_sha": "29274e3817be8324ea483fe2b6e7ac0777554fea",
+      "width_px": 1920,
+      "height_px": 723,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-04_temperature_and_heatflow.png"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "figures/tutorial-001/exports/FT001-05_contrast_sweep.svg",
+      "source_blob_sha": "f47697929b4b4cb098ba4f141a10729ab72ad7f9",
+      "output": "assets/tutorial-001/FT001-05_contrast_sweep.png",
+      "output_blob_sha": "11ca81c9f0cd36d651519080591bb73dc67555b7",
+      "width_px": 1920,
+      "height_px": 1112,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-05_contrast_sweep.png"
     }
   ],
   "code": [
@@ -2481,6 +2531,254 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/pde-033"
+    },
+    {
+      "article_id": "tutorial-001",
+      "source": "experiments/tutorial-001",
+      "output": "code/tutorial-001",
+      "entrypoint": "code/tutorial-001/src/composite_heat.py",
+      "command": "python code/tutorial-001/src/composite_heat.py --config code/tutorial-001/config/uniform.json --output reproduced/et001-01",
+      "dependencies": [
+        "numpy==2.3.5",
+        "scipy==1.17.0"
+      ],
+      "files": [
+        {
+          "source": "experiments/tutorial-001/README.md",
+          "source_blob_sha": "857aa300d8eadcb72c0c30f619ac257705b66157",
+          "output": "code/tutorial-001/README.md",
+          "output_blob_sha": "1409bd4a2f0d755dd14155252292e5b27f928bc7"
+        },
+        {
+          "source": "experiments/tutorial-001/config/averaging_ablation.json",
+          "source_blob_sha": "d6c6d720e9ffe17c8fbd8465ca6496293fd514f5",
+          "output": "code/tutorial-001/config/averaging_ablation.json",
+          "output_blob_sha": "d6c6d720e9ffe17c8fbd8465ca6496293fd514f5"
+        },
+        {
+          "source": "experiments/tutorial-001/config/contrast_sweep.json",
+          "source_blob_sha": "16defdffce4e4feb60aece3f52312e179320fb8f",
+          "output": "code/tutorial-001/config/contrast_sweep.json",
+          "output_blob_sha": "16defdffce4e4feb60aece3f52312e179320fb8f"
+        },
+        {
+          "source": "experiments/tutorial-001/config/inclusion.json",
+          "source_blob_sha": "f3ebfc03ab8ae9e577804e4d1c2e032afbb0816d",
+          "output": "code/tutorial-001/config/inclusion.json",
+          "output_blob_sha": "f3ebfc03ab8ae9e577804e4d1c2e032afbb0816d"
+        },
+        {
+          "source": "experiments/tutorial-001/config/layered.json",
+          "source_blob_sha": "334151c99622a4c13fb5ab23522e372c970bf3b7",
+          "output": "code/tutorial-001/config/layered.json",
+          "output_blob_sha": "334151c99622a4c13fb5ab23522e372c970bf3b7"
+        },
+        {
+          "source": "experiments/tutorial-001/config/uniform.json",
+          "source_blob_sha": "87d3158fdf10d5a39b79cd68680a945433f7f519",
+          "output": "code/tutorial-001/config/uniform.json",
+          "output_blob_sha": "87d3158fdf10d5a39b79cd68680a945433f7f519"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-01/cells.csv",
+          "source_blob_sha": "0383eabce154f7db9831e9a5e2b50c4783b88c5e",
+          "output": "code/tutorial-001/results/et001-01/cells.csv",
+          "output_blob_sha": "0383eabce154f7db9831e9a5e2b50c4783b88c5e"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-01/run.txt",
+          "source_blob_sha": "af9bd8bff0cd84fa4c39c1a66c9b342821169663",
+          "output": "code/tutorial-001/results/et001-01/run.txt",
+          "output_blob_sha": "ee8ca0edc1c6bbfdece320c49ce76ad21bcbe4c9"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-01/summary.csv",
+          "source_blob_sha": "db85dc5393028e0493d9ebaa5ef189426cb45456",
+          "output": "code/tutorial-001/results/et001-01/summary.csv",
+          "output_blob_sha": "db85dc5393028e0493d9ebaa5ef189426cb45456"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-02/cells.csv",
+          "source_blob_sha": "48a0a5fc78801239ed625a83ca34c8d3c221c887",
+          "output": "code/tutorial-001/results/et001-02/cells.csv",
+          "output_blob_sha": "48a0a5fc78801239ed625a83ca34c8d3c221c887"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-02/faces.csv",
+          "source_blob_sha": "e02a9b1b13ef5ba90f80596228f90db1d138658b",
+          "output": "code/tutorial-001/results/et001-02/faces.csv",
+          "output_blob_sha": "e02a9b1b13ef5ba90f80596228f90db1d138658b"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-02/layered_profile.csv",
+          "source_blob_sha": "f5e945d28807ceeb417e7bb8616236fa85597b0e",
+          "output": "code/tutorial-001/results/et001-02/layered_profile.csv",
+          "output_blob_sha": "f5e945d28807ceeb417e7bb8616236fa85597b0e"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-02/run.txt",
+          "source_blob_sha": "50a91dcc02d41ff043101aff3e0c39b71d164858",
+          "output": "code/tutorial-001/results/et001-02/run.txt",
+          "output_blob_sha": "83c6d1489fc6f31fb1d385abd6637a5f957ca9f0"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-02/summary.csv",
+          "source_blob_sha": "47d6cf3fd88dd895cde601e97bab674a149d2d9a",
+          "output": "code/tutorial-001/results/et001-02/summary.csv",
+          "output_blob_sha": "47d6cf3fd88dd895cde601e97bab674a149d2d9a"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-03/averaging_ablation.csv",
+          "source_blob_sha": "6393d2bc7dcf5b53f5a4731c2e134eb0e9383ac3",
+          "output": "code/tutorial-001/results/et001-03/averaging_ablation.csv",
+          "output_blob_sha": "35b4ff41d48be54a6f69d0f12cd36e579658666a"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-03/run.txt",
+          "source_blob_sha": "cb075b912fd8642bbabf26b33d089faca108e2ef",
+          "output": "code/tutorial-001/results/et001-03/run.txt",
+          "output_blob_sha": "02d7dc7ad23ea1a299ef4bbfc68f6f00a7de0fb6"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-04/cells.csv",
+          "source_blob_sha": "0c6f11ac951bdcdcffaa6b15927735b0976c83a1",
+          "output": "code/tutorial-001/results/et001-04/cells.csv",
+          "output_blob_sha": "31d8154b7c4f89fde4259299f926ad0c3f84930b"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-04/faces.csv",
+          "source_blob_sha": "c99d0113946203c75de3f4e4a43209b19488bbc5",
+          "output": "code/tutorial-001/results/et001-04/faces.csv",
+          "output_blob_sha": "8a9eea515431939201eaa0492b3822eb49cbbe56"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-04/refinement.csv",
+          "source_blob_sha": "a9d79a50551de4a19b9d2c0a6586983089dbf252",
+          "output": "code/tutorial-001/results/et001-04/refinement.csv",
+          "output_blob_sha": "d28e36a8efbc899783655f34151bca34f45896ae"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-04/run.txt",
+          "source_blob_sha": "187a87a665303e0cf350a7c906cc6a29fb8ef2c0",
+          "output": "code/tutorial-001/results/et001-04/run.txt",
+          "output_blob_sha": "43bbe8c96e20006a0a8eeb1097253e0836acec83"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-04/summary.csv",
+          "source_blob_sha": "814f1c53834ee194074491b2a8c32d3ee07b5568",
+          "output": "code/tutorial-001/results/et001-04/summary.csv",
+          "output_blob_sha": "233abae7f1921be66d8c85fb3060c4d19af72600"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-05/audit_summary.csv",
+          "source_blob_sha": "d41f73e77ac166d7922f30c6b287c9cc7cf1255e",
+          "output": "code/tutorial-001/results/et001-05/audit_summary.csv",
+          "output_blob_sha": "10142c48d9c38a18f9150c66ef822efc56d3031d"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-05/balances.csv",
+          "source_blob_sha": "18f9303394a4136b4d21defb002899b373e6e4ca",
+          "output": "code/tutorial-001/results/et001-05/balances.csv",
+          "output_blob_sha": "a7c39486337e6994a45be5cb70da770aff04389c"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-05/run.txt",
+          "source_blob_sha": "2daa3049085851c136ba2100ffdef24fdcac2614",
+          "output": "code/tutorial-001/results/et001-05/run.txt",
+          "output_blob_sha": "619bb562d72300d0834bb07436d72f3bd9118034"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-06/balances.csv",
+          "source_blob_sha": "cbfb4c3682b7d705af18a890b9a6c1e0b5285a0e",
+          "output": "code/tutorial-001/results/et001-06/balances.csv",
+          "output_blob_sha": "7daacaf7d8bfabb4522aded2ce5c5fcd8cc27722"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-06/cells.csv",
+          "source_blob_sha": "2b941b00c3e651bfee80ee5e2c5a4353f36e99b2",
+          "output": "code/tutorial-001/results/et001-06/cells.csv",
+          "output_blob_sha": "94fb350f59bfafb1bd7cc0bf3e23b9763c2a4f04"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-06/contrast_sweep.csv",
+          "source_blob_sha": "3700c472c370317dc8ba3f8125dfeb3e3b30e252",
+          "output": "code/tutorial-001/results/et001-06/contrast_sweep.csv",
+          "output_blob_sha": "d22b562ed1143bcf0f6d3393a94add758d2fc19a"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-06/faces.csv",
+          "source_blob_sha": "a37cec85f017a21b5e66fc9f090c4f8fd4d8db63",
+          "output": "code/tutorial-001/results/et001-06/faces.csv",
+          "output_blob_sha": "37b31874e448715f061edc03b83d5bb7f740bbac"
+        },
+        {
+          "source": "experiments/tutorial-001/results/et001-06/run.txt",
+          "source_blob_sha": "68f40e8c27127027e552ba2ab00d7e928eb89a21",
+          "output": "code/tutorial-001/results/et001-06/run.txt",
+          "output_blob_sha": "b1a62b8a501b6669b94d426ee51f87cf31f3127a"
+        },
+        {
+          "source": "experiments/tutorial-001/src/averaging_ablation.py",
+          "source_blob_sha": "26d3d447bc04ca8fb414477a697b11aad38bec2f",
+          "output": "code/tutorial-001/src/averaging_ablation.py",
+          "output_blob_sha": "26d3d447bc04ca8fb414477a697b11aad38bec2f"
+        },
+        {
+          "source": "experiments/tutorial-001/src/composite_heat.py",
+          "source_blob_sha": "be4d7e82ce473c0259017813a2b2b5f580d891fa",
+          "output": "code/tutorial-001/src/composite_heat.py",
+          "output_blob_sha": "be4d7e82ce473c0259017813a2b2b5f580d891fa"
+        },
+        {
+          "source": "experiments/tutorial-001/src/conservation_audit.py",
+          "source_blob_sha": "dd8ffbb1238aa67ecb3d4483c75f5efab8447168",
+          "output": "code/tutorial-001/src/conservation_audit.py",
+          "output_blob_sha": "dd8ffbb1238aa67ecb3d4483c75f5efab8447168"
+        },
+        {
+          "source": "experiments/tutorial-001/src/contrast_sweep.py",
+          "source_blob_sha": "bb922b93f4f359c462fde75b7dffc1a9d3b7fe2c",
+          "output": "code/tutorial-001/src/contrast_sweep.py",
+          "output_blob_sha": "bb922b93f4f359c462fde75b7dffc1a9d3b7fe2c"
+        },
+        {
+          "source": "experiments/tutorial-001/src/inclusion_refinement.py",
+          "source_blob_sha": "88abe32035a3ca5b78f47b75e1d66f4b4b19642a",
+          "output": "code/tutorial-001/src/inclusion_refinement.py",
+          "output_blob_sha": "88abe32035a3ca5b78f47b75e1d66f4b4b19642a"
+        },
+        {
+          "source": "figures/tutorial-001/src/make_FT001_01.py",
+          "source_blob_sha": "0f827d058bbfaf2cec25b867000418bd02892bc5",
+          "output": "code/tutorial-001/src/make_FT001_01.py",
+          "output_blob_sha": "0f827d058bbfaf2cec25b867000418bd02892bc5"
+        },
+        {
+          "source": "figures/tutorial-001/src/make_FT001_02.py",
+          "source_blob_sha": "92d90101987e8d4f322ed3b732764a821b9baad9",
+          "output": "code/tutorial-001/src/make_FT001_02.py",
+          "output_blob_sha": "92d90101987e8d4f322ed3b732764a821b9baad9"
+        },
+        {
+          "source": "figures/tutorial-001/src/make_FT001_03.py",
+          "source_blob_sha": "a6410544fa5cde5dd3c48be6e1bf7917f66ebe17",
+          "output": "code/tutorial-001/src/make_FT001_03.py",
+          "output_blob_sha": "a6410544fa5cde5dd3c48be6e1bf7917f66ebe17"
+        },
+        {
+          "source": "figures/tutorial-001/src/make_FT001_04.py",
+          "source_blob_sha": "68b392cf0791b49be000cd28acaff17d75af7a10",
+          "output": "code/tutorial-001/src/make_FT001_04.py",
+          "output_blob_sha": "68b392cf0791b49be000cd28acaff17d75af7a10"
+        },
+        {
+          "source": "figures/tutorial-001/src/make_FT001_05.py",
+          "source_blob_sha": "a3f67a8786358a9d10c1323d2f83c8a293c4e54b",
+          "output": "code/tutorial-001/src/make_FT001_05.py",
+          "output_blob_sha": "a3f67a8786358a9d10c1323d2f83c8a293c4e54b"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-001"
     }
   ]
 }

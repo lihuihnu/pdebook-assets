@@ -1,0 +1,15 @@
+experiment_id=ET001-01
+case_name=uniform_material
+config=code/tutorial-001/config/uniform.json
+python=3.13.15
+numpy=2.3.5
+scipy=1.17.0
+platform=Linux-6.17.0-1022-azure-x86_64-with-glibc2.39
+solver=scipy.sparse.linalg.spsolve
+face_scheme=cell-centered TPFA with distance-weighted harmonic conductance
+top_bottom_boundary=homogeneous Neumann
+left_right_boundary=Dirichlet with center-to-face half-cell distance
+status=PASS
+grid=12x8 max_temperature_error=9.9475983006414026e-14 q_hot=0.53333333333333199 q_cold=0.53333333333333333 q_exact=0.53333333333333333 balance_relative=2.4980018054066022e-15 residual_relative_inf=4.4408920985006262e-16
+grid=24x16 max_temperature_error=2.7000623958883807e-13 q_hot=0.53333333333333344 q_cold=0.53333333333333166 q_exact=0.53333333333333333 balance_relative=3.3306690738754688e-15 residual_relative_inf=7.7715611723760958e-16
+grid=48x32 max_temperature_error=2.5579538487363607e-13 q_hot=0.53333333333332322 q_cold=0.53333333333333244 q_exact=0.53333333333333333 balance_relative=1.7277845820729027e-14 residual_relative_inf=8.8817841970012523e-16

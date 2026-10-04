@@ -1,0 +1,16 @@
+experiment_id=ET001-04
+config=code/tutorial-001/config/inclusion.json
+python=3.13.15
+numpy=2.3.5
+scipy=1.17.0
+platform=Linux-6.17.0-1022-azure-x86_64-with-glibc2.39
+frozen_core_blob=be4d7e82ce473c0259017813a2b2b5f580d891fa
+harmonic_path=imported unchanged from composite_heat.py
+solver=scipy.sparse.linalg.spsolve
+status=PASS
+last_two_q_hot_relative_difference=0.00036965297764410038
+last_two_inclusion_mean_relative_difference=2.5555853729498779e-13
+grid=24x16 unknowns=384 nnz=1840 q_hot=0.62025404171091736 q_cold=0.62025404171090803 inclusion_mean=59.999999999999673 temperature_min=21.897589095721319 temperature_max=98.102410904278685 balance_relative=1.5035570556101008e-14 residual_relative_inf=4.4408920985006262e-15 symmetry_error=6.8212102632969618e-13 max_column_temperature_range=5.2794837800428951 max_abs_internal_y_flux=0.031398974595380096
+grid=48x32 unknowns=1536 nnz=7520 q_hot=0.62192110447489224 q_cold=0.62192110447478488 inclusion_mean=59.999999999996348 temperature_min=20.951589604400052 temperature_max=99.048410395599802 balance_relative=1.7262409284518312e-13 residual_relative_inf=4.8849813083506888e-15 symmetry_error=7.4464878707658499e-12 max_column_temperature_range=5.7470642697006014 max_abs_internal_y_flux=0.021666215515898948
+grid=96x64 unknowns=6144 nnz=30400 q_hot=0.62254623828442279 q_cold=0.62254623828440292 inclusion_mean=59.999999999999119 temperature_min=20.476308860612196 temperature_max=99.523691139387807 balance_relative=3.1922114244164664e-14 residual_relative_inf=9.3258734068513149e-15 symmetry_error=1.9753088054130785e-12 max_column_temperature_range=5.9745536715563432 max_abs_internal_y_flux=0.014145097156943173
+grid=192x128 unknowns=24576 nnz=122240 q_hot=0.62277644945336985 q_cold=0.62277644945397004 inclusion_mean=60.000000000014452 temperature_min=20.238247867115838 temperature_max=99.761752132884368 balance_relative=9.6372714099671473e-13 residual_relative_inf=7.5495165674510645e-15 symmetry_error=2.9757529773632996e-11 max_column_temperature_range=6.0887540059846614 max_abs_internal_y_flux=0.0089652584453239897

@@ -1,0 +1,16 @@
+experiment_id=ET001-05
+source_experiment_id=ET001-04
+source_dir=code/tutorial-001/results/et001-04
+python=3.13.15
+dependencies=python-standard-library-only
+pde_solve=NOT_RUN
+matrix_assembly=NOT_RUN
+flux_recomputation_from_temperature=NOT_RUN
+source_summary_blob=814f1c53834ee194074491b2a8c32d3ee07b5568
+source_cells_blob=0c6f11ac951bdcdcffaa6b15927735b0976c83a1
+source_faces_blob=c99d0113946203c75de3f4e4a43209b19488bbc5
+status=PASS
+grid=24x16 q_hot=0.62025404171091736 q_cold=0.62025404171090814 global_balance_relative=1.4856575668528376e-14 max_cell_balance_relative=1.3746248006554399e-14 inclusion_balance_relative=1.3547675553153511e-14 adiabatic_boundary_relative=0
+grid=48x32 q_hot=0.62192110447489246 q_cold=0.62192110447478477 global_balance_relative=1.7315963811771208e-13 max_cell_balance_relative=1.4845621777316447e-14 inclusion_balance_relative=1.6577357623408287e-13 adiabatic_boundary_relative=0
+grid=96x64 q_hot=0.62254623828442301 q_cold=0.62254623828440292 global_balance_relative=3.227878591169722e-14 max_cell_balance_relative=2.8532340153903974e-14 inclusion_balance_relative=7.9465332927294656e-14 adiabatic_boundary_relative=0
+grid=192x128 q_hot=0.62277644945337018 q_cold=0.62277644945397015 global_balance_relative=9.6337060117392631e-13 max_cell_balance_relative=2.3959197544635709e-14 inclusion_balance_relative=4.1338564078408376e-13 adiabatic_boundary_relative=0

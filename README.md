@@ -81,3 +81,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 
 - `code/pde-032/` — 网格和时间步应该多细；91组热方程计算、时间步接受与重试、一维有限元局部加密，13份CSV与两幅定量图；核心仅Python标准库，绘图另用Matplotlib。
 - `code/pde-033/` — 一个完整的二维对流–扩散算例；11组稳态求解、制造解细化、非零边界、残差预算、共享通量及薄层振荡对照，12份CSV与两幅定量图；核心仅Python标准库，绘图另用Matplotlib。
+- `code/tutorial-001/` — 复合材料中的二维稳态导热；6 组实验、5 份正式图件生成脚本与公开重跑结果；NumPy/SciPy 数值核心。

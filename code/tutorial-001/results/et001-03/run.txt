@@ -1,0 +1,42 @@
+experiment_id=ET001-03
+config=code/tutorial-001/config/averaging_ablation.json
+python=3.13.15
+numpy=2.3.5
+scipy=1.17.0
+platform=Linux-6.17.0-1022-azure-x86_64-with-glibc2.39
+frozen_core_blob=be4d7e82ce473c0259017813a2b2b5f580d891fa
+harmonic_path=imported unchanged from composite_heat.py
+arithmetic_path=deliberate non-default ablation
+status=PASS
+contrast=1 scheme=harmonic_frozen grid=6x4 q_hot=0.53333333333333199 q_exact=0.53333333333333333 rel_error_physical=2.4980018054066022e-15 rel_error_discrete_prediction=2.4980018054066022e-15
+contrast=1 scheme=arithmetic_ablation grid=6x4 q_hot=0.53333333333333199 q_exact=0.53333333333333333 rel_error_physical=2.4980018054066022e-15 rel_error_discrete_prediction=2.4980018054066022e-15
+contrast=1 scheme=harmonic_frozen grid=12x8 q_hot=0.53333333333333199 q_exact=0.53333333333333333 rel_error_physical=2.4980018054066022e-15 rel_error_discrete_prediction=2.4980018054066022e-15
+contrast=1 scheme=arithmetic_ablation grid=12x8 q_hot=0.5333333333333321 q_exact=0.53333333333333333 rel_error_physical=2.2898349882893854e-15 rel_error_discrete_prediction=2.2898349882893854e-15
+contrast=1 scheme=harmonic_frozen grid=24x16 q_hot=0.53333333333333344 q_exact=0.53333333333333333 rel_error_physical=2.0816681711721685e-16 rel_error_discrete_prediction=2.0816681711721685e-16
+contrast=1 scheme=arithmetic_ablation grid=24x16 q_hot=0.53333333333333355 q_exact=0.53333333333333333 rel_error_physical=4.163336342344337e-16 rel_error_discrete_prediction=2.081668171172168e-16
+contrast=1 scheme=harmonic_frozen grid=48x32 q_hot=0.53333333333332322 q_exact=0.53333333333333333 rel_error_physical=1.8943180357666733e-14 rel_error_discrete_prediction=1.8943180357666733e-14
+contrast=1 scheme=arithmetic_ablation grid=48x32 q_hot=0.53333333333332311 q_exact=0.53333333333333333 rel_error_physical=1.915134717478395e-14 rel_error_discrete_prediction=1.9359513991901164e-14
+contrast=2 scheme=harmonic_frozen grid=6x4 q_hot=0.71111111111111125 q_exact=0.71111111111111114 rel_error_physical=1.5612511283791264e-16 rel_error_discrete_prediction=1.5612511283791264e-16
+contrast=2 scheme=arithmetic_ablation grid=6x4 q_hot=0.72452830188679318 q_exact=0.71111111111111114 rel_error_physical=0.018867924528302871 rel_error_discrete_prediction=9.1940344226770776e-16
+contrast=2 scheme=harmonic_frozen grid=12x8 q_hot=0.71111111111110947 q_exact=0.71111111111111114 rel_error_physical=2.3418766925686896e-15 rel_error_discrete_prediction=2.3418766925686896e-15
+contrast=2 scheme=arithmetic_ablation grid=12x8 q_hot=0.71775700934579556 q_exact=0.71111111111111114 rel_error_physical=0.0093457943925249684 rel_error_discrete_prediction=1.5467950994126529e-15
+contrast=2 scheme=harmonic_frozen grid=24x16 q_hot=0.71111111111110858 q_exact=0.71111111111111114 rel_error_physical=3.5908775952719907e-15 rel_error_discrete_prediction=3.5908775952719907e-15
+contrast=2 scheme=arithmetic_ablation grid=24x16 q_hot=0.71441860465116536 q_exact=0.71111111111111114 rel_error_physical=0.0046511627907012444 rel_error_discrete_prediction=3.574253161960546e-15
+contrast=2 scheme=harmonic_frozen grid=48x32 q_hot=0.71111111111109782 q_exact=0.71111111111111114 rel_error_physical=1.8735013540549517e-14 rel_error_discrete_prediction=1.8735013540549517e-14
+contrast=2 scheme=arithmetic_ablation grid=48x32 q_hot=0.71276102088166249 q_exact=0.71111111111111114 rel_error_physical=0.0023201856148378358 rel_error_discrete_prediction=1.1526514696417557e-14
+contrast=10 scheme=harmonic_frozen grid=6x4 q_hot=0.96969696969696995 q_exact=0.96969696969696972 rel_error_physical=2.2898349882893854e-16 rel_error_discrete_prediction=2.2898349882893854e-16
+contrast=10 scheme=arithmetic_ablation grid=6x4 q_hot=1.0914728682170538 q_exact=0.96969696969696972 rel_error_physical=0.12558139534883669 rel_error_discrete_prediction=6.1030725927547657e-16
+contrast=10 scheme=harmonic_frozen grid=12x8 q_hot=0.96969696969697139 q_exact=0.96969696969696972 rel_error_physical=1.717376241217039e-15 rel_error_discrete_prediction=1.717376241217039e-15
+contrast=10 scheme=arithmetic_ablation grid=12x8 q_hot=1.0269876002917573 q_exact=0.96969696969696972 rel_error_physical=0.059080962800874673 rel_error_discrete_prediction=6.4862887788114609e-16
+contrast=10 scheme=harmonic_frozen grid=24x16 q_hot=0.96969696969697028 q_exact=0.96969696969696972 rel_error_physical=5.7245874707234634e-16 rel_error_discrete_prediction=5.7245874707234634e-16
+contrast=10 scheme=arithmetic_ablation grid=24x16 q_hot=0.99752036840240865 q_exact=0.96969696969696972 rel_error_physical=0.028692879914983895 rel_error_discrete_prediction=2.2259656239466028e-16
+contrast=10 scheme=harmonic_frozen grid=48x32 q_hot=0.96969696969695585 q_exact=0.96969696969696972 rel_error_physical=1.4311468676808659e-14 rel_error_discrete_prediction=1.4311468676808659e-14
+contrast=10 scheme=arithmetic_ablation grid=48x32 q_hot=0.98341190850356375 q_exact=0.96969696969696972 rel_error_physical=0.014143530644300087 rel_error_discrete_prediction=1.6256882204049556e-14
+contrast=100 scheme=harmonic_frozen grid=6x4 q_hot=1.0561056105610567 q_exact=1.056105610561056 rel_error_physical=6.307454558651671e-16 rel_error_discrete_prediction=6.307454558651671e-16
+contrast=100 scheme=arithmetic_ablation grid=6x4 q_hot=1.2574652271179845 q_exact=1.056105610561056 rel_error_physical=0.19066238692734166 rel_error_discrete_prediction=1.7658110947047083e-16
+contrast=100 scheme=harmonic_frozen grid=12x8 q_hot=1.0561056105610553 q_exact=1.056105610561056 rel_error_physical=6.307454558651671e-16 rel_error_discrete_prediction=6.307454558651671e-16
+contrast=100 scheme=arithmetic_ablation grid=12x8 q_hot=1.148022839687064 q_exact=1.056105610561056 rel_error_physical=0.087034126328688802 rel_error_discrete_prediction=3.8682959475885981e-16
+contrast=100 scheme=harmonic_frozen grid=24x16 q_hot=1.0561056105610569 q_exact=1.056105610561056 rel_error_physical=8.409939411535562e-16 rel_error_discrete_prediction=8.409939411535562e-16
+contrast=100 scheme=arithmetic_ablation grid=24x16 q_hot=1.1001476451240957 q_exact=1.056105610561056 rel_error_physical=0.041702301476878201 rel_error_discrete_prediction=1.0091582066695471e-15
+contrast=100 scheme=harmonic_frozen grid=48x32 q_hot=1.0561056105610445 q_exact=1.056105610561056 rel_error_physical=1.093292123499623e-14 rel_error_discrete_prediction=1.093292123499623e-14
+contrast=100 scheme=arithmetic_ablation grid=48x32 q_hot=1.0776768428269758 q_exact=1.056105610561056 rel_error_physical=0.020425260551792848 rel_error_discrete_prediction=8.0355624691348203e-15
