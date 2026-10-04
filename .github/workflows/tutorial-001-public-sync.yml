@@ -29,7 +29,7 @@ jobs:
         run: |
           set -euo pipefail
           sudo apt-get update
-          sudo apt-get install -y librsvg2-bin
+          sudo apt-get install -y librsvg2-bin fonts-noto-cjk fonts-stix
           python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.0
 
       - name: Regenerate ET001-01 through ET001-06
