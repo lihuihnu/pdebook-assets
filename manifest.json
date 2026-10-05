@@ -538,9 +538,9 @@
     {
       "article_id": "tutorial-001",
       "source": "figures/tutorial-001/exports/FT001-01_composite_plate_geometry.svg",
-      "source_blob_sha": "af055f3580c04afe54f09c306e0b1102bf39d045",
+      "source_blob_sha": "0d6ab6a98526c97cec85ab3c88091fff845f88d8",
       "output": "assets/tutorial-001/FT001-01_composite_plate_geometry.png",
-      "output_blob_sha": "fe75f9310df6a81d3568a765e6f3c5299b83e6c2",
+      "output_blob_sha": "6f0efa4ba089804bcaa3e417e85587d27dd5851f",
       "width_px": 1920,
       "height_px": 1336,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-01_composite_plate_geometry.png"
@@ -548,9 +548,9 @@
     {
       "article_id": "tutorial-001",
       "source": "figures/tutorial-001/exports/FT001-02_series_resistance.svg",
-      "source_blob_sha": "12ecfbe9e0f9f25c79793168804517356daeac02",
+      "source_blob_sha": "a6712fafe65efa2127486ecf1b143874bb92c560",
       "output": "assets/tutorial-001/FT001-02_series_resistance.png",
-      "output_blob_sha": "a145fcc3a2faa32f5548511e36667cfa058f2dad",
+      "output_blob_sha": "45d8b95023b52162a708a516205439f8e421920d",
       "width_px": 1920,
       "height_px": 1241,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-02_series_resistance.png"
@@ -558,9 +558,9 @@
     {
       "article_id": "tutorial-001",
       "source": "figures/tutorial-001/exports/FT001-03_interface_validation.svg",
-      "source_blob_sha": "66198f86063d2d6be9e17c4c75ec69cd4befe539",
+      "source_blob_sha": "e28141a085e3ec6d8b6d51782db65d205b49ac51",
       "output": "assets/tutorial-001/FT001-03_interface_validation.png",
-      "output_blob_sha": "7df709fa162af4cc4f4385c9f18be7de9da6078b",
+      "output_blob_sha": "c58b5ee5f43ce77e504a7e242d5639c7be7e7948",
       "width_px": 1920,
       "height_px": 777,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-03_interface_validation.png"
@@ -568,9 +568,9 @@
     {
       "article_id": "tutorial-001",
       "source": "figures/tutorial-001/exports/FT001-04_temperature_and_heatflow.svg",
-      "source_blob_sha": "48cb8d1f4f211307f7d2d37a7881a7c51ba435e7",
+      "source_blob_sha": "118c554b3a12bad81d1e508a7cd9d57cc3dabb8b",
       "output": "assets/tutorial-001/FT001-04_temperature_and_heatflow.png",
-      "output_blob_sha": "29274e3817be8324ea483fe2b6e7ac0777554fea",
+      "output_blob_sha": "0a84ce359272d0c9a4f990768770816fc22c6904",
       "width_px": 1920,
       "height_px": 723,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-04_temperature_and_heatflow.png"
@@ -578,9 +578,9 @@
     {
       "article_id": "tutorial-001",
       "source": "figures/tutorial-001/exports/FT001-05_contrast_sweep.svg",
-      "source_blob_sha": "f47697929b4b4cb098ba4f141a10729ab72ad7f9",
+      "source_blob_sha": "5256e48acaedd50b7035627e533ebea0653387b0",
       "output": "assets/tutorial-001/FT001-05_contrast_sweep.png",
-      "output_blob_sha": "11ca81c9f0cd36d651519080591bb73dc67555b7",
+      "output_blob_sha": "2828cfc8c958b1665d592421182bbbe2af0a94f6",
       "width_px": 1920,
       "height_px": 1112,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-001/FT001-05_contrast_sweep.png"
@@ -2749,33 +2749,33 @@
         },
         {
           "source": "figures/tutorial-001/src/make_FT001_01.py",
-          "source_blob_sha": "0f827d058bbfaf2cec25b867000418bd02892bc5",
+          "source_blob_sha": "57f09a79ce83d3c47afa1898929771d027d11649",
           "output": "code/tutorial-001/src/make_FT001_01.py",
-          "output_blob_sha": "0f827d058bbfaf2cec25b867000418bd02892bc5"
+          "output_blob_sha": "57f09a79ce83d3c47afa1898929771d027d11649"
         },
         {
           "source": "figures/tutorial-001/src/make_FT001_02.py",
-          "source_blob_sha": "92d90101987e8d4f322ed3b732764a821b9baad9",
+          "source_blob_sha": "98f99163333b9f867ca16c968cee6f4e12b00d92",
           "output": "code/tutorial-001/src/make_FT001_02.py",
-          "output_blob_sha": "92d90101987e8d4f322ed3b732764a821b9baad9"
+          "output_blob_sha": "98f99163333b9f867ca16c968cee6f4e12b00d92"
         },
         {
           "source": "figures/tutorial-001/src/make_FT001_03.py",
-          "source_blob_sha": "a6410544fa5cde5dd3c48be6e1bf7917f66ebe17",
+          "source_blob_sha": "e2fcd55b2988a067db4c661baa192ec4f11ff491",
           "output": "code/tutorial-001/src/make_FT001_03.py",
-          "output_blob_sha": "a6410544fa5cde5dd3c48be6e1bf7917f66ebe17"
+          "output_blob_sha": "e2fcd55b2988a067db4c661baa192ec4f11ff491"
         },
         {
           "source": "figures/tutorial-001/src/make_FT001_04.py",
-          "source_blob_sha": "68b392cf0791b49be000cd28acaff17d75af7a10",
+          "source_blob_sha": "3abb3121b096db3a42719ca76f2981c829b55b5c",
           "output": "code/tutorial-001/src/make_FT001_04.py",
-          "output_blob_sha": "68b392cf0791b49be000cd28acaff17d75af7a10"
+          "output_blob_sha": "3abb3121b096db3a42719ca76f2981c829b55b5c"
         },
         {
           "source": "figures/tutorial-001/src/make_FT001_05.py",
-          "source_blob_sha": "a3f67a8786358a9d10c1323d2f83c8a293c4e54b",
+          "source_blob_sha": "072622abe575049e4c2dd4b7483d17e4b6323230",
           "output": "code/tutorial-001/src/make_FT001_05.py",
-          "output_blob_sha": "a3f67a8786358a9d10c1323d2f83c8a293c4e54b"
+          "output_blob_sha": "072622abe575049e4c2dd4b7483d17e4b6323230"
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-001"
