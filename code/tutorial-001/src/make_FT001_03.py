@@ -6,6 +6,7 @@ Panel B: arithmetic interface averaging heat-rate relative error for chi=10,100.
 
 No PDE solve is performed. The script only reads committed CSV data.
 Typography:
+- SVG text policy: all glyphs are converted to vector paths so downstream rasterizers cannot substitute CJK variants
 - Chinese: exact Noto Sans CJK SC face extracted from Noto CJK TTC by family name
 - English/plain text: STIX
 - Mathematics: Matplotlib STIX mathtext
@@ -40,7 +41,7 @@ GRAY = "#666666"
 
 rcParams["mathtext.fontset"] = "stix"
 rcParams["axes.unicode_minus"] = False
-rcParams["svg.fonttype"] = "none"
+rcParams["svg.fonttype"] = "path"
 rcParams["svg.hashsalt"] = "tutorial-001-ft001-03"
 
 

@@ -2,6 +2,7 @@
 """Generate tutorial-001 FT001-01 using the exact Simplified Chinese glyph face.
 
 Typography:
+- SVG text policy: all glyphs are converted to vector paths so downstream rasterizers cannot substitute CJK variants
 - Chinese: Noto Sans CJK SC selected by TTC family name (verified face index 2)
 - English/plain dimensions: STIX
 - Mathematics: Matplotlib STIX mathtext
@@ -75,7 +76,7 @@ INK = "#171717"
 
 rcParams["mathtext.fontset"] = "stix"
 rcParams["axes.unicode_minus"] = False
-rcParams["svg.fonttype"] = "none"
+rcParams["svg.fonttype"] = "path"
 rcParams["svg.hashsalt"] = "tutorial-001-ft001-01-sc"
 
 def add_dimension(ax, en_font, p0, p1, label, xy, rotation=0, fs=12):

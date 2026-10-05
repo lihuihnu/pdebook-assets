@@ -5,6 +5,7 @@ The figure shows P -> f -> N, correct center-to-face distances d_P and d_N,
 one shared heat flux F_f, and two half-cell series thermal resistances.
 
 Typography:
+- SVG text policy: all glyphs are converted to vector paths so downstream rasterizers cannot substitute CJK variants
 - Chinese: Noto Sans CJK SC selected by TTC family name (verified face index 2)
 - English/plain text: STIX
 - Mathematics: Matplotlib STIX mathtext
@@ -67,7 +68,7 @@ FLUX = "#C83A3A"
 
 rcParams["mathtext.fontset"] = "stix"
 rcParams["axes.unicode_minus"] = False
-rcParams["svg.fonttype"] = "none"
+rcParams["svg.fonttype"] = "path"
 rcParams["svg.hashsalt"] = "tutorial-001-ft001-02-sc"
 
 def make_figure() -> tuple[int, int]:

@@ -33,7 +33,7 @@ FLOW = "#3569B7"
 
 rcParams["mathtext.fontset"] = "stix"
 rcParams["axes.unicode_minus"] = False
-rcParams["svg.fonttype"] = "none"
+rcParams["svg.fonttype"] = "path"
 rcParams["svg.hashsalt"] = "tutorial-001-ft001-04"
 
 

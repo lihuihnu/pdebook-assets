@@ -1,0 +1,120 @@
+name: Temporary tutorial-001 outlined-SC public refresh
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/tutorial-001-outlined-sc-refresh.yml
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install SVG rasterizer
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+
+      - name: Verify staged SVGs contain no live text
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in _staging/tutorial-001/*.svg; do
+            ! grep -q '<text' "$f"
+            grep -q '<path\|data:image/svg+xml;base64' "$f"
+          done
+
+      - name: Rasterize twice and compare
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/tutorial001-a /tmp/tutorial001-b
+          mkdir -p /tmp/tutorial001-a /tmp/tutorial001-b
+          for src in _staging/tutorial-001/*.svg; do
+            name="$(basename "${src%.svg}.png")"
+            rsvg-convert --width 1920 --keep-aspect-ratio --background-color white --output "/tmp/tutorial001-a/$name" "$src"
+            rsvg-convert --width 1920 --keep-aspect-ratio --background-color white --output "/tmp/tutorial001-b/$name" "$src"
+            cmp "/tmp/tutorial001-a/$name" "/tmp/tutorial001-b/$name"
+          done
+          mkdir -p assets/tutorial-001
+          cp /tmp/tutorial001-a/*.png assets/tutorial-001/
+
+      - name: Update manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, struct, subprocess
+          from pathlib import Path
+
+          source_blobs={
+            "FT001-01_composite_plate_geometry.png":"0d6ab6a98526c97cec85ab3c88091fff845f88d8",
+            "FT001-02_series_resistance.png":"a6712fafe65efa2127486ecf1b143874bb92c560",
+            "FT001-03_interface_validation.png":"e28141a085e3ec6d8b6d51782db65d205b49ac51",
+            "FT001-04_temperature_and_heatflow.png":"118c554b3a12bad81d1e508a7cd9d57cc3dabb8b",
+            "FT001-05_contrast_sweep.png":"5256e48acaedd50b7035627e533ebea0653387b0",
+          }
+          script_blobs={
+            "code/tutorial-001/src/make_FT001_01.py":"57f09a79ce83d3c47afa1898929771d027d11649",
+            "code/tutorial-001/src/make_FT001_02.py":"98f99163333b9f867ca16c968cee6f4e12b00d92",
+            "code/tutorial-001/src/make_FT001_03.py":"e2fcd55b2988a067db4c661baa192ec4f11ff491",
+            "code/tutorial-001/src/make_FT001_04.py":"3abb3121b096db3a42719ca76f2981c829b55b5c",
+            "code/tutorial-001/src/make_FT001_05.py":"072622abe575049e4c2dd4b7483d17e4b6323230",
+          }
+          def blob(path):
+              return subprocess.check_output(["git","hash-object",path],text=True).strip()
+          def png_size(path):
+              with open(path,"rb") as f:
+                  assert f.read(8)==b"\x89PNG\r\n\x1a\n"
+                  n=struct.unpack(">I",f.read(4))[0]
+                  assert f.read(4)==b"IHDR" and n>=8
+                  return struct.unpack(">II",f.read(8))
+
+          p=Path("manifest.json")
+          data=json.loads(p.read_text(encoding="utf-8"))
+          assets=[a for a in data["assets"] if a.get("article_id")=="tutorial-001"]
+          assert len(assets)==5
+          for a in assets:
+              name=Path(a["output"]).name
+              a["source_blob_sha"]=source_blobs[name]
+              a["output_blob_sha"]=blob(a["output"])
+              w,h=png_size(a["output"])
+              assert w==1920
+              a["width_px"]=w
+              a["height_px"]=h
+
+          code=[c for c in data["code"] if c.get("article_id")=="tutorial-001"]
+          assert len(code)==1
+          fmap={f["output"]:f for f in code[0]["files"]}
+          for out,sha in script_blobs.items():
+              assert out in fmap
+              fmap[out]["source_blob_sha"]=sha
+              fmap[out]["output_blob_sha"]=blob(out)
+              assert fmap[out]["output_blob_sha"]==sha
+
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          PY
+
+      - name: Final checks and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find assets/tutorial-001 -maxdepth 1 -name '*.png' | wc -l)" -eq 5
+          test "$(grep -c '"article_id": "tutorial-001"' manifest.json)" -ge 2
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/tutorial-001-outlined-sc-refresh.yml
+          git rm -r _staging/tutorial-001
+          git add assets/tutorial-001 code/tutorial-001/src/make_FT001_*.py manifest.json
+          git commit -m "Refresh tutorial-001 PNGs with outlined SC glyphs"
+          git push origin HEAD:main
