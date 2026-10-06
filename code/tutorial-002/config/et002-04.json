@@ -1,0 +1,6 @@
+{
+  "experiment_id": "ET002-04",
+  "N": 128,
+  "radii": [0.125, 0.25, 0.5, 1.0],
+  "max_global_sum_relative_defect": 1e-10
+}

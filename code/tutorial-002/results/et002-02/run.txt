@@ -1,0 +1,23 @@
+ET002-02
+Authoritative GitHub Actions run: 37270209974
+Job: 111635408467
+Commit under test: fa807eabde6bb40d6517c1ae5b7dc742be5109c4
+Runner: tencent-shanghai-pdebook (self-hosted)
+Machine: VM-0-7-ubuntu
+Python: 3.12.3
+NumPy: 2.3.5
+SciPy: 1.17.0
+Checkout mode: authenticated partial fetch (--filter=blob:none) + sparse checkout
+Partial+sparse checkout time: 6 s
+Result: PASS
+
+H1 observed orders: 1.000000000000002, 1.0000000000000064, 1.0000000000000182, 1.000000000000003
+L2 observed orders: 1.9999999999999993, 1.999999999999997, 2.0000000000000053, 2.000000000000013
+Quadrature refinement relative changes:
+N=32 H1=1.5700924586837853e-16 L2=3.4965416180806635e-15
+N=64 H1=0.0 L2=4.10463581252949e-15
+Independent standard-library CSV checker: PASS
+
+Historical cross-check:
+- GitHub-hosted fallback run 37268688761 / job 111630857999 also passed before the private runner was repaired.
+- The authoritative private-runner convergence.csv and quadrature_check.csv are byte-for-byte identical to the previously committed hosted-run CSVs.

@@ -1,0 +1,48 @@
+ET002-05
+Authoritative GitHub Actions run: 37276061372
+Job: 111653226726
+Commit under test: dbfdb787f051d364930f521095331b43c8dfc8b0
+Runner: tencent-shanghai-pdebook (self-hosted)
+Machine: VM-0-7-ubuntu
+Python: 3.12.3
+NumPy: 2.3.5
+SciPy: 1.17.0
+Result: PASS
+Independent standard-library CSV checker: PASS
+
+Frozen beta: 1.5
+Uniform baseline: verified ET002-03 convergence.csv
+Uniform/graded connectivity: identical at every N
+Matched node/triangle counts: PASS
+
+H1 comparison:
+N=8   uniform=1.9274233059798102e-01 graded=1.5232572097053443e-01 ratio=0.7903075598284275
+N=16  uniform=1.2390894004756395e-01 graded=8.4915564246911449e-02 ratio=0.6853061951326158
+N=32  uniform=7.9117733498630452e-02 graded=4.6521210915165305e-02 ratio=0.5879997929411186
+N=64  uniform=5.0276320106081324e-02 graded=2.5144388380785438e-02 ratio=0.5001238819335153
+N=128 uniform=3.1848139272160035e-02 graded=1.3450819177098847e-02 ratio=0.42234238748311564
+
+Graded H1 orders:
+0.8430586528245013
+0.8681403611712045
+0.8876521883395383
+0.9025424233535124
+
+N>=32 all graded H1 errors lower than uniform: true
+
+Mesh quality:
+graded minimum angle decreases from 28.1479 deg at N=8 to 26.6695 deg at N=128
+graded maximum edge ratio grows from 2.0840 to 2.1186
+no non-positive angles or non-finite shape metrics observed
+
+Worst graded reduced residual: 5.170737203931365e-15
+
+Quadrature refinement:
+N=32 H1 relative change=2.3139132838195143e-08 L2 relative change=6.7567215269776034e-09
+N=64 H1 relative change=1.9807983859887445e-08 L2 relative change=2.627274879373264e-09
+
+Interpretation boundary:
+- beta=3/2 was frozen before seeing ET002-05 results
+- no beta scan was performed
+- observed order trend may be described as moving toward first order, not as a proof of exact first-order recovery
+- this experiment compares the specific frozen graded map with uniform meshes at identical connectivity/DOF

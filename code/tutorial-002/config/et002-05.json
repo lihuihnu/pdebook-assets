@@ -1,0 +1,12 @@
+{
+  "experiment_id": "ET002-05",
+  "beta": 1.5,
+  "uniform_N": [8, 16, 32, 64, 128],
+  "max_reduced_residual_l2": 1e-11,
+  "quadrature_subdivision_levels": 2,
+  "quadrature_refinement_check_N": [32, 64],
+  "quadrature_refinement_levels": 3,
+  "corner_gauss_order": 24,
+  "corner_gauss_refinement_order": 32,
+  "max_quadrature_relative_change": 1e-4
+}

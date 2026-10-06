@@ -1,0 +1,36 @@
+ET002-03
+Authoritative GitHub Actions run: 37271648136
+Job: 111639721426
+Commit under test: d1a9c4dc871e8c3b5c0680b5fff35587b237c9bd
+Runner: tencent-shanghai-pdebook (self-hosted)
+Machine: VM-0-7-ubuntu
+Python: 3.12.3
+NumPy: 2.3.5
+SciPy: 1.17.0
+Checkout mode: authenticated partial fetch (--filter=blob:none) + sparse checkout
+Partial+sparse checkout time: 10 s
+Result: PASS
+
+H1 observed orders:
+U8->U16   0.6373931731791564
+U16->U32  0.6472072792539132
+U32->U64  0.6541220396256365
+U64->U128 0.6586699724207044
+
+Last-two mean H1 order: 0.6563960060231705
+ET002-02 last-two mean H1 order: 1.0000000000000107
+Mean order drop: 0.3436039939768402
+Worst reduced residual: 3.074530230824439e-15
+
+Quadrature refinement:
+N=32 H1 relative change=3.5585179276276167e-10 L2 relative change=3.9698846664524784e-10
+N=64 H1 relative change=3.6273155736236806e-10 L2 relative change=2.588582966045932e-10
+
+Independent standard-library CSV checker: PASS
+Element H1 contribution rows: 32736
+
+Historical quadrature audit:
+- initial run 37271033279 used generic two-level/three-level Dunavant integration on every triangle
+- its H1 refinement changes were about 4.31e-3 and 4.23e-3, so the pre-registered 1e-4 quadrature gate failed
+- per article-contract Amendment A1, only origin-adjacent error integration was strengthened using Duffy s=z^3 + tensor Gauss-Legendre
+- PDE, FEM core, mesh family, exact solution and scientific acceptance windows were unchanged

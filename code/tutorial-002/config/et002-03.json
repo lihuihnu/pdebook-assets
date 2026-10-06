@@ -1,0 +1,15 @@
+{
+  "experiment_id": "ET002-03",
+  "lambda": 0.6666666666666666,
+  "uniform_N": [8, 16, 32, 64, 128],
+  "max_reduced_residual_l2": 1e-11,
+  "h1_order_window": [0.50, 0.85],
+  "min_mean_order_drop_vs_et002_02": 0.15,
+  "quadrature_subdivision_levels": 2,
+  "quadrature_refinement_check_N": [32, 64],
+  "quadrature_refinement_levels": 3,
+  "corner_gauss_order": 24,
+  "corner_gauss_refinement_order": 32,
+  "max_quadrature_relative_change": 1e-4,
+  "max_element_sum_relative_defect": 1e-10
+}

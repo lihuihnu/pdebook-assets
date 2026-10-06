@@ -1,0 +1,36 @@
+ET002-04
+Authoritative GitHub Actions run: 37272960823
+Job: 111643698860
+Runner: tencent-shanghai-pdebook (self-hosted)
+Machine: VM-0-7-ubuntu
+Execution mode: read-only CSV spatial aggregation
+PDE solve invoked: NO
+NumPy/SciPy required by ET002-04 driver: NO
+Result: PASS
+Independent standard-library CSV checker: PASS
+
+Frozen input materialization:
+- run 37272703141
+- smooth H1 identity relative difference: 1.5700924586838087e-16
+- smooth L2 identity relative difference: 0.0
+- smooth residual absolute difference: 0.0
+- singular H1 identity relative difference: 0.0
+- singular L2 identity relative difference: 0.0
+- singular residual absolute difference: 0.0
+- singular U128 element contribution max absolute difference: 0.0
+- singular U128 element contribution max relative difference: 0.0
+
+Cumulative centroid-radius fractions C(R):
+R=0.125 smooth=0.012451171874999832 singular=0.9332792141173629 delta=0.9208280422423631
+R=0.25  smooth=0.04931640624999937  singular=0.9656470005151194 delta=0.9163305942651201
+R=0.5   smooth=0.19677734374999833  singular=0.9858610447739955 delta=0.7890837010239972
+R=1.0   smooth=0.785644531250003    singular=0.9985298574897792 delta=0.21288532623977618
+
+Global element-sum defects:
+smooth=4.130029651605759e-14
+singular=1.2826949700712194e-15
+
+Boundary of interpretation:
+- C(R) uses triangle-centroid classification exactly as frozen in the article contract.
+- It is not the exact integral over the disk r<R.
+- No minimum concentration percentage was pre-registered as a pass criterion.

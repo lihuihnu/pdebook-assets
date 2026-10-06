@@ -1,0 +1,10 @@
+{
+  "experiment_id": "ET002-02",
+  "uniform_N": [8, 16, 32, 64, 128],
+  "max_reduced_residual_l2": 1e-11,
+  "h1_order_window": [0.85, 1.15],
+  "quadrature_subdivision_levels": 2,
+  "quadrature_refinement_check_N": [32, 64],
+  "quadrature_refinement_levels": 3,
+  "max_quadrature_relative_change": 1e-4
+}
