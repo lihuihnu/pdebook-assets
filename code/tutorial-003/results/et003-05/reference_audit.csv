@@ -1,0 +1,2 @@
+N,T,fourier_tolerance,fourier_modes,fourier_tight_tolerance,fourier_modes_tight,fourier_refinement_linf,spatial_l2_baseline,spatial_linf_baseline,semidiscrete_total_variation,continuous_total_variation
+400,0.01,1e-14,18,1e-16,19,5.551115123125783e-17,3.249641870163996e-06,5.964897264176816e-06,1.0410054761837464,1.0409997552328754

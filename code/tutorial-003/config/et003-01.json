@@ -1,0 +1,7 @@
+{
+  "N_values": [16, 32, 64],
+  "r_values": [0.25, 1.0, 10.0],
+  "methods": ["backward_euler", "crank_nicolson", "rannacher_r1"],
+  "max_spectrum_relative_error": 5e-12,
+  "max_amplification_abs_error": 5e-12
+}

@@ -83,3 +83,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/pde-033/` — 一个完整的二维对流–扩散算例；11组稳态求解、制造解细化、非零边界、残差预算、共享通量及薄层振荡对照，12份CSV与两幅定量图；核心仅Python标准库，绘图另用Matplotlib。
 - `code/tutorial-001/` — 复合材料中的二维稳态导热；6 组实验、5 份正式图件生成脚本与公开重跑结果；NumPy/SciPy 数值核心。
 - `code/tutorial-002/` — L 形区域上的 Poisson 方程；P1 三角形有限元、重入角奇异基准、误差空间统计与同自由度分级网格比较；NumPy/SciPy 数值核心。
+- `code/tutorial-003/` — 一维热方程中 BE/CN/R1 的高频阻尼与非光滑初值；五组冻结数值实验、原始 CSV、独立检查器及配套图件；NumPy/SciPy 数值核心。

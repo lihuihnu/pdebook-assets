@@ -1,0 +1,11 @@
+{
+  "N": 400,
+  "T": 0.01,
+  "M_values": [10, 20, 40, 80, 160, 320, 640],
+  "methods": ["backward_euler", "crank_nicolson", "rannacher_r1"],
+  "monotonicity_tolerance": 1e-12,
+  "fourier_tolerance": 1e-14,
+  "fourier_tight_tolerance": 1e-16,
+  "fourier_max_modes": 200000,
+  "max_fourier_refinement_linf": 5e-14
+}

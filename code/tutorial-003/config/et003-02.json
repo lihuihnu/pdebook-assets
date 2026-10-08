@@ -1,0 +1,13 @@
+{
+  "N": 400,
+  "T": 0.1,
+  "M_values": [10, 20, 40, 80, 160, 320],
+  "methods": ["backward_euler", "crank_nicolson", "rannacher_r1"],
+  "max_semidiscrete_reference_crosscheck": 5e-13,
+  "check_last_n_orders": 2,
+  "order_windows": {
+    "backward_euler": [0.97, 1.03],
+    "crank_nicolson": [1.98, 2.02],
+    "rannacher_r1": [1.98, 2.03]
+  }
+}
