@@ -1,0 +1,31 @@
+{
+  "experiment_id": "ET004-04",
+  "scientific_contract": "notes/tutorial-004/experiment-spec.md",
+  "status": "preregistered_before_formal_execution",
+  "N": 256,
+  "h": 1.0,
+  "T": 16.0,
+  "dt_levels": [0.2, 0.1, 0.05, 0.025],
+  "finer_reference_dt": 0.0125,
+  "model": "regularized",
+  "sigma_pixels": 1.5,
+  "kappa_intensity_per_pixel": 0.075,
+  "gaussian_mode": "reflect",
+  "gaussian_truncate": 4.0,
+  "noise_seed": 20261008,
+  "noise_std": 0.08,
+  "clean_float64_sha256": "5d7f522502e18c6c467d1661621bebbaf46fa9e435659df11e58992ad0068e8b",
+  "noisy_float64_sha256": "d1262e02d8cb9d9aa7f557b60560ea6cee340b61c7d8855bb4d7b270eb9aa987",
+  "prior_npz_sha256": "70ec34d9b716616b68d2cac9301981a1a141e61bdbdac242887114d401ada1f1",
+  "prior_experiment_source_sha": "a11951473222756c327d688c3c4afebee074c7c2",
+  "allowed_invariants": {
+    "max_mean_drift": 1e-12,
+    "max_range_violation": 1e-12,
+    "max_centered_ss_increase_per_step": 1e-9,
+    "max_flux_update_residual_per_step": 1e-12,
+    "max_independent_loop_difference": 1e-12
+  },
+  "expected_behavior_not_a_pass_gate": "first-order temporal self-convergence on a fixed spatial grid",
+  "no_numeric_clipping": true,
+  "snapshot_encoding": "compressed lossless float64 npz"
+}

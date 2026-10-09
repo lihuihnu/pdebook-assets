@@ -1,0 +1,75 @@
+{
+  "config_sha256": "87bbae7599754bd8873e686d38dd1469ca1ec6997d6326fbc0a98a39dde95622",
+  "crop": {
+    "cols": [
+      128,
+      384
+    ],
+    "dtype": "uint8",
+    "float64_div255_pixel_sha256": "7182af0d7b64f881548ed45085460cc927e1a5bf1bc949df5a49998572a68866",
+    "name": "camera_clean_cc0.png",
+    "png_bytes": 39599,
+    "png_sha256": "3d1f326fdd01f1c7b87a995d0bfe7e3cb22db43fe9f059ed08ce8c27cd7a6fec",
+    "rows": [
+      128,
+      384
+    ],
+    "shape": [
+      256,
+      256
+    ],
+    "uint8_pixel_sha256": "685445e0c73e742f8c7b9262e59192536d26cfecceabd3c3502539bfb5732626"
+  },
+  "experiment_id": "ET004-05",
+  "fixture_extraction_runtime": {
+    "numpy": "2.3.5",
+    "pillow": "11.3.0",
+    "python": "3.12.3",
+    "scikit_image": "0.25.2"
+  },
+  "license_boundary": "real CC0 photograph used as reference for ADDITIONAL SYNTHETIC Gaussian noise; source is not physical noise-free truth",
+  "license_gate": "PASS",
+  "noisy": {
+    "bit_generator": "PCG64",
+    "float64_pixel_sha256": "c655fdd02a01480fb10c6dadcb2c1a17a6022b2836fec46b57d5942f95f6d0ef",
+    "intensity_clip_applied": false,
+    "maximum": 1.3011442629847112,
+    "minimum": -0.26594857375914716,
+    "normal_mean": 0.0,
+    "normal_std": 0.08,
+    "seed": 20261009
+  },
+  "original": {
+    "dtype": "uint8",
+    "name": "camera_original_cc0_512.png",
+    "pil_mode": "L",
+    "raw_png_bytes": 139512,
+    "raw_png_sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+    "shape": [
+      512,
+      512
+    ],
+    "uint8_pixel_sha256": "5cb24482a53416f99052258be2b1ee38cd31c559a70c8a8b321cba231b332e21"
+  },
+  "pde_numeric_runtime": {
+    "numpy": "2.3.5",
+    "pillow": "11.3.0",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "scipy": "1.17.0"
+  },
+  "source": {
+    "camera_function_docstring_sha256": "b3f058b06fb528436902898642d45057d59a40d2a93167452ea756a4e7e6c1cb",
+    "data_function": "skimage.data.camera()",
+    "license": "CC0",
+    "license_evidence_url": "https://scikit-image.org/docs/0.25.x/api/skimage.data.html",
+    "package": "scikit-image",
+    "package_camera_asset_path": "/home/ubuntu/github-runners/pdebook/_work/_temp/et00405_scikit/skimage/data/camera.png",
+    "package_module_path": "/home/ubuntu/github-runners/pdebook/_work/_temp/et00405_scikit/skimage/__init__.py",
+    "photographer": "Lav Varshney",
+    "source_asset_url": "https://github.com/scikit-image/scikit-image/blob/v0.25.2/skimage/data/camera.png",
+    "source_release_url": "https://github.com/scikit-image/scikit-image/releases/tag/v0.25.2",
+    "version": "0.25.2"
+  },
+  "source_commit": "94eb858dfac7888d9fdcc9874a740273df2031a8"
+}

@@ -1,0 +1,125 @@
+{
+  "experiment_id": "ET004-02",
+  "contract": "notes/tutorial-004/experiment-spec.md",
+  "status": "preregistered_before_formal_execution",
+  "image": {
+    "N": 256,
+    "h": 1,
+    "background": 0.2,
+    "rectangle": {
+      "i": [
+        30,
+        110
+      ],
+      "j": [
+        40,
+        125
+      ],
+      "brightness": 0.78
+    },
+    "circle": {
+      "center_i": 181,
+      "center_j": 174,
+      "radius_inclusive": 35,
+      "brightness": 0.58
+    },
+    "gradient": {
+      "i": [
+        150,
+        246
+      ],
+      "j": [
+        25,
+        90
+      ],
+      "start": 0.25,
+      "end": 0.7,
+      "denominator": 95
+    }
+  },
+  "noise": {
+    "kind": "iid_normal",
+    "mean": 0,
+    "std": 0.08,
+    "bit_generator": "PCG64",
+    "seed": 20261008,
+    "no_clip": true
+  },
+  "solver": {
+    "dt": 0.2,
+    "sigma_pixels": 1.5,
+    "kappa_intensity_per_pixel": 0.075,
+    "methods": [
+      "heat",
+      "regularized"
+    ],
+    "gaussian_mode": "reflect",
+    "truncate": 4
+  },
+  "outputs": {
+    "t": [
+      0,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "edge_profile_at": 16,
+    "edge_x_indices": [
+      20,
+      45
+    ],
+    "flat_roi": {
+      "i": [
+        50,
+        90
+      ],
+      "j": [
+        65,
+        105
+      ]
+    },
+    "edge_roi": {
+      "i": [
+        24,
+        36
+      ],
+      "j": [
+        65,
+        105
+      ]
+    },
+    "jump": {
+      "left_i": 29,
+      "right_i": 30,
+      "j": [
+        65,
+        105
+      ],
+      "denominator": 0.58
+    }
+  },
+  "matched_flat_rmse": {
+    "threshold_inclusive": 0.04,
+    "candidates": [
+      0,
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "invariants": {
+    "max_mean_drift": 1e-12,
+    "max_range_violation": 1e-12,
+    "max_centered_ss_increase": 1e-9
+  },
+  "encoding": {
+    "dtype": "float64",
+    "no_clipping_for_analysis": true,
+    "snapshot": "npz_compressed_lossless",
+    "csv": "utf-8"
+  }
+}
