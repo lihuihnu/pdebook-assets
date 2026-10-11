@@ -1,0 +1,39 @@
+{
+  "config_path": "experiments/tutorial-005/config/ET005-03.json",
+  "config_sha256": "aae96d792307ac91e7250930889e8f8f6a171e910e461cd1ef2d2de708f0cb7a",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "entropy_jumps_theoretical": {
+    "physical_boundary_entropy_flux_difference": 0.6666666666666666,
+    "uncorrected_Roe_transonic_stationary": 0.6666666666666666
+  },
+  "experiment_id": "ET005-03",
+  "methods": [
+    "Godunov",
+    "Roe_no_entropy_fix"
+  ],
+  "numpy": "2.3.5",
+  "output_counts": {
+    "metrics.csv": 8,
+    "snapshots.csv": 1600,
+    "step_budget.csv": 128
+  },
+  "output_sha256": {
+    "metrics.csv": "ec1e9500cb232a3e00e6f6c7b8bf8a3dcc91957677dd34a94584783bceb81be4",
+    "snapshots.csv": "4c321f877af5d523b3e0e0ffaeec5c07a260077063109e038384396b975cde2e",
+    "step_budget.csv": "75928f60ed69465667004ae0f4178ddaacea36b1a8c9a0cf773bb58fcb2bd1cb"
+  },
+  "python": "3.12.3",
+  "requested_times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "run_started_utc": "2026-10-10T09:52:10.224863+00:00",
+  "source_git_sha": "8aa50d45528be1a448be1cd8e6c40c028f54295c",
+  "status": "computed_unvalidated",
+  "steps_per_method": {
+    "Godunov": 64,
+    "Roe_no_entropy_fix": 64
+  }
+}

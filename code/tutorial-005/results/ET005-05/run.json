@@ -1,0 +1,99 @@
+{
+  "alpha_LF": 1.0,
+  "cfl_requested": [
+    0.4,
+    0.7,
+    0.9
+  ],
+  "config_path": "experiments/tutorial-005/config/ET005-05.json",
+  "config_sha256": "3019d1efd14ef4aa238d2c8d1d88f0088f3e9d0866cf01a87dce20a8031f55cb",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-05",
+  "methods": [
+    "Godunov",
+    "LF_alpha1"
+  ],
+  "numpy": "2.3.5",
+  "output_counts": {
+    "cfl_flux_metrics.csv": 6,
+    "snapshots.csv": 1200,
+    "step_budget.csv": 512
+  },
+  "output_sha256": {
+    "cfl_flux_metrics.csv": "cbfd68a31108f144a73153f01c1d96c5c2301ab58bfe55f3e81e42f0ce21f3fa",
+    "snapshots.csv": "6d79387315e5f0a7396244dc3c24cfd96ab62b3841a37d499b9d8277fa8f0eb7",
+    "step_budget.csv": "7f390cdcc46467cc5f8a3af7026a5bfa61079a65f2be3b05a19253718fe692fb"
+  },
+  "python": "3.12.3",
+  "requested_times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "run_started_utc": "2026-10-10T10:46:48.077363+00:00",
+  "source_git_sha": "7b55fb8d6ad9b7bf938247ccfbda3889df2c9bb3",
+  "status": "computed_unvalidated",
+  "step_schedules": {
+    "Godunov:CFL=0.4": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 25,
+        "0.25": 63,
+        "0.5": 126
+      },
+      "dt_count": 126,
+      "steps": 126
+    },
+    "Godunov:CFL=0.7": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 15,
+        "0.25": 37,
+        "0.5": 73
+      },
+      "dt_count": 73,
+      "steps": 73
+    },
+    "Godunov:CFL=0.9": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 12,
+        "0.25": 29,
+        "0.5": 57
+      },
+      "dt_count": 57,
+      "steps": 57
+    },
+    "LF_alpha1:CFL=0.4": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 25,
+        "0.25": 63,
+        "0.5": 126
+      },
+      "dt_count": 126,
+      "steps": 126
+    },
+    "LF_alpha1:CFL=0.7": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 15,
+        "0.25": 37,
+        "0.5": 73
+      },
+      "dt_count": 73,
+      "steps": 73
+    },
+    "LF_alpha1:CFL=0.9": {
+      "checkpoints_steps": {
+        "0.0": 0,
+        "0.1": 12,
+        "0.25": 29,
+        "0.5": 57
+      },
+      "dt_count": 57,
+      "steps": 57
+    }
+  }
+}

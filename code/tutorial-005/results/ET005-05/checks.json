@@ -1,0 +1,146 @@
+{
+  "archived_ET00502_hashes": {
+    "metrics.csv": "e06f7fbea74a43440cbfc268893c6d6064844b524887287276b3566a62bf6fa8",
+    "snapshots.csv": "b09f0e4184314e116acdc6b4f1606498bb53203857e01162fc4d337280182700"
+  },
+  "config_sha256": "3019d1efd14ef4aa238d2c8d1d88f0088f3e9d0866cf01a87dce20a8031f55cb",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-05",
+  "independent_verifier": "scalar_201_face_per_step_plus_geometric_exact_cell_means",
+  "max_boundary_flux_replay_error": 0.0,
+  "max_independent_FVM_state_error": 0.0,
+  "max_independent_exact_mean_error": 2.1316282072803006e-14,
+  "max_mass_budget_defect": 1.4432899320127035e-15,
+  "metric_rows": 6,
+  "output_sha256": {
+    "cfl_flux_metrics.csv": "cbfd68a31108f144a73153f01c1d96c5c2301ab58bfe55f3e81e42f0ce21f3fa",
+    "snapshots.csv": "6d79387315e5f0a7396244dc3c24cfd96ab62b3841a37d499b9d8277fa8f0eb7",
+    "step_budget.csv": "7f390cdcc46467cc5f8a3af7026a5bfa61079a65f2be3b05a19253718fe692fb"
+  },
+  "snapshot_rows": 1200,
+  "source_git_sha": "7b55fb8d6ad9b7bf938247ccfbda3889df2c9bb3",
+  "status": "PASS",
+  "step_budget_rows": 512,
+  "verified_pairs": [
+    {
+      "L1_cellavg": 0.0051803053754551935,
+      "cfl_requested": 0.4,
+      "checkpoint_step_counts": [
+        0,
+        25,
+        63,
+        126
+      ],
+      "mass": 1.249999999999998,
+      "mass_defect": -1.2212453270876722e-15,
+      "method": "Godunov",
+      "quadratic_content": 0.622980338033737,
+      "shock_x_half": 0.25026056288741655,
+      "shock_x_half_error": 0.00026056288741654887,
+      "steps": 126,
+      "transition_cells": 2,
+      "transition_segments": 1,
+      "transition_width": 0.02
+    },
+    {
+      "L1_cellavg": 0.004140030577110115,
+      "cfl_requested": 0.7,
+      "checkpoint_step_counts": [
+        0,
+        15,
+        37,
+        73
+      ],
+      "mass": 1.249999999999999,
+      "mass_defect": -3.3306690738754696e-16,
+      "method": "Godunov",
+      "quadratic_content": 0.6233291635986649,
+      "shock_x_half": 0.2500886035853128,
+      "shock_x_half_error": 8.860358531281864e-05,
+      "steps": 73,
+      "transition_cells": 2,
+      "transition_segments": 1,
+      "transition_width": 0.02
+    },
+    {
+      "L1_cellavg": 0.0034552055980916585,
+      "cfl_requested": 0.9,
+      "checkpoint_step_counts": [
+        0,
+        12,
+        29,
+        57
+      ],
+      "mass": 1.2499999999999991,
+      "mass_defect": -1.1102230246251565e-16,
+      "method": "Godunov",
+      "quadratic_content": 0.6235642346666933,
+      "shock_x_half": 0.2500227623745921,
+      "shock_x_half_error": 2.2762374592089074e-05,
+      "steps": 57,
+      "transition_cells": 2,
+      "transition_segments": 1,
+      "transition_width": 0.02
+    },
+    {
+      "L1_cellavg": 0.012443034011730074,
+      "cfl_requested": 0.4,
+      "checkpoint_step_counts": [
+        0,
+        25,
+        63,
+        126
+      ],
+      "mass": 1.249999999999998,
+      "mass_defect": -1.2212453270876722e-15,
+      "method": "LF_alpha1",
+      "quadratic_content": 0.6204913318199093,
+      "shock_x_half": 0.24910216086364592,
+      "shock_x_half_error": -0.0008978391363540783,
+      "steps": 126,
+      "transition_cells": 4,
+      "transition_segments": 1,
+      "transition_width": 0.04
+    },
+    {
+      "L1_cellavg": 0.011436121364037679,
+      "cfl_requested": 0.7,
+      "checkpoint_step_counts": [
+        0,
+        15,
+        37,
+        73
+      ],
+      "mass": 1.249999999999999,
+      "mass_defect": -3.3306690738754696e-16,
+      "method": "LF_alpha1",
+      "quadratic_content": 0.6208503091201878,
+      "shock_x_half": 0.24913488060388764,
+      "shock_x_half_error": -0.0008651193961123627,
+      "steps": 73,
+      "transition_cells": 4,
+      "transition_segments": 1,
+      "transition_width": 0.04
+    },
+    {
+      "L1_cellavg": 0.010763255779298929,
+      "cfl_requested": 0.9,
+      "checkpoint_step_counts": [
+        0,
+        12,
+        29,
+        57
+      ],
+      "mass": 1.2499999999999991,
+      "mass_defect": -1.1102230246251565e-16,
+      "method": "LF_alpha1",
+      "quadratic_content": 0.6210881899752534,
+      "shock_x_half": 0.2491890079090427,
+      "shock_x_half_error": -0.0008109920909573076,
+      "steps": 57,
+      "transition_cells": 4,
+      "transition_segments": 1,
+      "transition_width": 0.04
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "actual_steps": 200,
+  "config_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-01",
+  "max_independent_FVM_discrepancy": 0.0,
+  "max_independent_reference_discrepancy": 2.7977620220553945e-14,
+  "max_mass_defect": 1.1102230246251565e-16,
+  "metrics_sha256": "84af36c388fa3cd8abcdb6132b4b0852ccfdb255aab889af99ffbab4dfaa0c8e",
+  "post_break_times": [
+    0.7,
+    0.8
+  ],
+  "reference_cellavg_sha256": "a156fe1c7c43947f3e04c08df63895ed2f79ac5e7d2e1ac6bab07696572bb54f",
+  "reference_rows": 600,
+  "smooth_reference_times": [
+    0.0,
+    0.3,
+    0.6
+  ],
+  "snapshots": 1000,
+  "snapshots_sha256": "5acc9424cf53d0a8526ca46f3e9c3b48ced3e6adc01478140917c05500e51392",
+  "source_git_sha": "b4aca8e92386d656b8caeca589d866c723afe1fc",
+  "status": "PASS",
+  "step_budget_sha256": "e861a7b90706fba38d02d6a6efac0facfa1ae820dfbaa138235db5aef6442cf8",
+  "validator_independent": "scalar_face_flux_plus_physical_gauss_48_point"
+}

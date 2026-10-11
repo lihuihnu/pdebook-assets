@@ -1,0 +1,30 @@
+{
+  "break_time_analytic": 0.6366197723675814,
+  "config_path": "experiments/tutorial-005/config/design_v01.json",
+  "config_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-01",
+  "numpy": "2.3.5",
+  "output_counts": {
+    "metrics.csv": 5,
+    "reference_cellavg.csv": 600,
+    "snapshots.csv": 1000,
+    "step_budget.csv": 200
+  },
+  "output_sha256": {
+    "metrics.csv": "84af36c388fa3cd8abcdb6132b4b0852ccfdb255aab889af99ffbab4dfaa0c8e",
+    "reference_cellavg.csv": "a156fe1c7c43947f3e04c08df63895ed2f79ac5e7d2e1ac6bab07696572bb54f",
+    "snapshots.csv": "5acc9424cf53d0a8526ca46f3e9c3b48ced3e6adc01478140917c05500e51392",
+    "step_budget.csv": "e861a7b90706fba38d02d6a6efac0facfa1ae820dfbaa138235db5aef6442cf8"
+  },
+  "python": "3.12.3",
+  "run_started_utc": "2026-10-10T07:31:45.618529+00:00",
+  "source_git_sha": "b4aca8e92386d656b8caeca589d866c723afe1fc",
+  "status": "computed_unvalidated",
+  "time_steps_per_checkpoint": {
+    "0.0": 0,
+    "0.3": 75,
+    "0.6": 150,
+    "0.7": 175,
+    "0.8": 200
+  }
+}

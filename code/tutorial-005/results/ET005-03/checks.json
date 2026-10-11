@@ -1,0 +1,45 @@
+{
+  "T0_5": {
+    "Godunov": {
+      "L1_cellavg_T": 0.022321196518547852,
+      "entropy_balance_T": -0.007468720681921559,
+      "mass_T": 9.947598300641404e-16,
+      "stationary_max_difference_T": null
+    },
+    "Roe_no_entropy_fix": {
+      "L1_cellavg_T": 0.5000000000000024,
+      "entropy_balance_T": 0.33333333333333254,
+      "mass_T": 8.526512829121202e-16,
+      "stationary_max_difference_T": 2.55351295663786e-15
+    }
+  },
+  "config_sha256": "aae96d792307ac91e7250930889e8f8f6a171e910e461cd1ef2d2de708f0cb7a",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-03",
+  "independent_verifier": "scalar_201_face_replay_per_step_plus_piecewise_integral_reference",
+  "max_boundary_flux_replay_error": 6.8833827526759706e-15,
+  "max_independent_FVM_state_error": 2.042810365310288e-14,
+  "max_mass_budget_defect": 2.842170943040401e-16,
+  "methods": [
+    "Godunov",
+    "Roe_no_entropy_fix"
+  ],
+  "metric_rows": 8,
+  "output_sha256": {
+    "metrics.csv": "ec1e9500cb232a3e00e6f6c7b8bf8a3dcc91957677dd34a94584783bceb81be4",
+    "snapshots.csv": "4c321f877af5d523b3e0e0ffaeec5c07a260077063109e038384396b975cde2e",
+    "step_budget.csv": "75928f60ed69465667004ae0f4178ddaacea36b1a8c9a0cf773bb58fcb2bd1cb"
+  },
+  "snapshot_rows": 1600,
+  "source_git_sha": "8aa50d45528be1a448be1cd8e6c40c028f54295c",
+  "status": "PASS",
+  "step_budget_rows": 128,
+  "steps_per_method": 64,
+  "theoretical_stationary_entropy_jump_violation": 0.6666666666666666,
+  "verified_times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ]
+}

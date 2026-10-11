@@ -1,0 +1,34 @@
+{
+  "config_path": "experiments/tutorial-005/config/ET005-02.json",
+  "config_sha256": "06f6b63a886118835c11aa1b502df080539ac971bbe73955d8f9974b07ea2ebd",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-02",
+  "numpy": "2.3.5",
+  "output_counts": {
+    "metrics.csv": 4,
+    "snapshots.csv": 800,
+    "step_budget.csv": 64
+  },
+  "output_sha256": {
+    "metrics.csv": "e06f7fbea74a43440cbfc268893c6d6064844b524887287276b3566a62bf6fa8",
+    "snapshots.csv": "b09f0e4184314e116acdc6b4f1606498bb53203857e01162fc4d337280182700",
+    "step_budget.csv": "a586a828856bf95d19a7fca86bf6531aef71ef7a3959e2e5c0456863c8f42838"
+  },
+  "python": "3.12.3",
+  "requested_times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "run_started_utc": "2026-10-10T09:35:26.084497+00:00",
+  "source_git_sha": "6516c770fad2b19c59cbdb27ccb2e11e40d426cd",
+  "status": "computed_unvalidated",
+  "terminal_target": 0.5,
+  "time_steps_per_checkpoint": {
+    "0.0": 0,
+    "0.1": 13,
+    "0.25": 32,
+    "0.5": 64
+  }
+}

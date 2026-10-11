@@ -1,0 +1,29 @@
+{
+  "L1_cellavg_T": 0.0037858075332190427,
+  "actual_steps": 64,
+  "analytic_mass_T": 1.25,
+  "analytic_shock_speed": 0.5,
+  "analytic_shock_x_T": 0.25,
+  "config_sha256": "06f6b63a886118835c11aa1b502df080539ac971bbe73955d8f9974b07ea2ebd",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-02",
+  "max_boundary_flux_replay_discrepancy": 0.0,
+  "max_independent_FVM_discrepancy": 1.1657341758564144e-14,
+  "max_step_and_cumulative_mass_defect": 2.255140518769849e-16,
+  "output_sha256": {
+    "metrics.csv": "e06f7fbea74a43440cbfc268893c6d6064844b524887287276b3566a62bf6fa8",
+    "snapshots.csv": "b09f0e4184314e116acdc6b4f1606498bb53203857e01162fc4d337280182700",
+    "step_budget.csv": "a586a828856bf95d19a7fca86bf6531aef71ef7a3959e2e5c0456863c8f42838"
+  },
+  "snapshots": 800,
+  "source_git_sha": "6516c770fad2b19c59cbdb27ccb2e11e40d426cd",
+  "status": "PASS",
+  "step_budget_rows": 64,
+  "validator_independent": "scalar_godunov_each_of_N_plus_one_faces_per_step_and_exact_step_integral",
+  "verified_times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ]
+}

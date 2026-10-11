@@ -1,0 +1,34 @@
+{
+  "contract_version": "v0.2-frozen-2026-10-10",
+  "experiment_id": "ET005-05",
+  "case_id": "shock_1_0",
+  "methods": [
+    "Godunov",
+    "LF_alpha1"
+  ],
+  "boundary": "riemann",
+  "domain": [
+    -1,
+    1
+  ],
+  "N": 200,
+  "u_L": 1,
+  "u_R": 0,
+  "LF_alpha": 1,
+  "requested_cfl": [
+    0.4,
+    0.7,
+    0.9
+  ],
+  "a_bound": 1,
+  "times": [
+    0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "snapshot_time": 0.5,
+  "reference_kind": "exact_shock_cellavg",
+  "transition_level_low": 0.1,
+  "transition_level_high": 0.9
+}

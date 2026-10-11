@@ -1,0 +1,124 @@
+{
+  "N200_frozen_crosschecks": {
+    "rarefaction_m1_1": {
+      "abs_terminal_L1_difference": 0.0,
+      "archive": "ET005-03",
+      "max_abs_terminal_U_difference": 0.0,
+      "old_L1_cellavg": 0.022321196518547852
+    },
+    "shock_1_0": {
+      "abs_terminal_L1_difference": 1.9715132304476413e-15,
+      "archive": "ET005-02",
+      "max_abs_terminal_U_difference": 0.0,
+      "old_L1_cellavg": 0.003785807533217071
+    }
+  },
+  "config_sha256": "a3113b3efb2f6afa114e3c4d48eabb1faf62c7e18e943f91d3f0ccbc5e35cea7",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "experiment_id": "ET005-04",
+  "grid_rows": 8,
+  "independent_fvm": "scalar_face_by_face_all_steps",
+  "independent_reference": "piecewise_geometric_integral_for_shock_and_fan",
+  "ledger_rows": 946,
+  "max_boundary_flux_replay_error": 0.0,
+  "max_independent_FVM_state_error": 0.0,
+  "max_step_and_cumulative_mass_defect": 7.771561172376096e-16,
+  "output_sha256": {
+    "grid_errors.csv": "18f1d354070f81edfd9d958edcf06d51e6312d250b425960bc6e3a19d14b6d93",
+    "snapshots.csv": "56444187f9cabe7e3daff708e0875d79f869e0b3db289c712479bb47bb69488d",
+    "step_budget.csv": "ba352479cb440027501e6b677898ccf003ea155022a55196fda04232675816e3"
+  },
+  "snapshot_rows": 3000,
+  "source_git_sha": "e4b56f2177cccfc9eed620d7d43e5eb033c5c9ac",
+  "status": "PASS",
+  "verified_pairs": [
+    {
+      "L1_cellavg": 0.0018005409369641948,
+      "N": 100,
+      "case_id": "shock_1_0",
+      "dx": 0.02,
+      "mass": 1.2499999999999991,
+      "mass_defect": -2.220446049250313e-16,
+      "p_obs": null,
+      "shock_x_half": 0.25054352873644486,
+      "steps": 33
+    },
+    {
+      "L1_cellavg": 0.0037858075332190427,
+      "N": 200,
+      "case_id": "shock_1_0",
+      "dx": 0.01,
+      "mass": 1.2499999999999991,
+      "mass_defect": -1.1102230246251565e-16,
+      "p_obs": -1.0721706667827982,
+      "shock_x_half": 0.2500396928955243,
+      "steps": 64
+    },
+    {
+      "L1_cellavg": 0.001942706518145964,
+      "N": 400,
+      "case_id": "shock_1_0",
+      "dx": 0.005,
+      "mass": 1.2499999999999967,
+      "mass_defect": -7.771561172376096e-16,
+      "p_obs": 0.9625330961580577,
+      "shock_x_half": 0.2500236459352082,
+      "steps": 126
+    },
+    {
+      "L1_cellavg": 0.0008810875333108098,
+      "N": 800,
+      "case_id": "shock_1_0",
+      "dx": 0.0025,
+      "mass": 1.2499999999999893,
+      "mass_defect": 4.440892098500626e-16,
+      "p_obs": 1.1407107129139595,
+      "shock_x_half": 0.25001006789461716,
+      "steps": 250
+    },
+    {
+      "L1_cellavg": 0.03695161734388446,
+      "N": 100,
+      "case_id": "rarefaction_m1_1",
+      "dx": 0.02,
+      "mass": 7.283063041541027e-16,
+      "mass_defect": 2.2648549702353263e-17,
+      "p_obs": null,
+      "shock_x_half": null,
+      "steps": 33
+    },
+    {
+      "L1_cellavg": 0.022321196518547852,
+      "N": 200,
+      "case_id": "rarefaction_m1_1",
+      "dx": 0.01,
+      "mass": 9.947598300641404e-16,
+      "mass_defect": 1.7874590696465053e-16,
+      "p_obs": 0.7272231470927286,
+      "shock_x_half": null,
+      "steps": 64
+    },
+    {
+      "L1_cellavg": 0.013153996975064773,
+      "N": 400,
+      "case_id": "rarefaction_m1_1",
+      "dx": 0.005,
+      "mass": 1.4210854715202005e-15,
+      "mass_defect": 4.733990977001647e-16,
+      "p_obs": 0.7629131206952711,
+      "shock_x_half": null,
+      "steps": 126
+    },
+    {
+      "L1_cellavg": 0.0076144284049569815,
+      "N": 800,
+      "case_id": "rarefaction_m1_1",
+      "dx": 0.0025,
+      "mass": 1.1226575225009583e-14,
+      "mass_defect": 2.3314683517128855e-16,
+      "p_obs": 0.7886935970372794,
+      "shock_x_half": null,
+      "steps": 250
+    }
+  ]
+}

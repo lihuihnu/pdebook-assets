@@ -754,6 +754,66 @@
       "width_px": 3000,
       "height_px": 3000,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-004/FT004-07_camera_denoising_t2.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-01_characteristics.png",
+      "source_blob_sha": "8ce53738d2ad559fd405684b06146b0552b72601",
+      "output": "assets/tutorial-005/FT005-01_characteristics.png",
+      "output_blob_sha": "8ce53738d2ad559fd405684b06146b0552b72601",
+      "width_px": 2520,
+      "height_px": 1575,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-01_characteristics.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-02_smooth_to_shock.png",
+      "source_blob_sha": "130dc3fe78cb62eaca12dc11f1a1ce64c792b791",
+      "output": "assets/tutorial-005/FT005-02_smooth_to_shock.png",
+      "output_blob_sha": "130dc3fe78cb62eaca12dc11f1a1ce64c792b791",
+      "width_px": 2760,
+      "height_px": 1500,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-02_smooth_to_shock.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-03_shock_rarefaction.png",
+      "source_blob_sha": "3665146635b24d0e880b4370681b9600adf5fd2c",
+      "output": "assets/tutorial-005/FT005-03_shock_rarefaction.png",
+      "output_blob_sha": "3665146635b24d0e880b4370681b9600adf5fd2c",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-03_shock_rarefaction.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-04_entropy_counterexample.png",
+      "source_blob_sha": "d9adc2e1960590967d2b0d4485d6b7af34e3e208",
+      "output": "assets/tutorial-005/FT005-04_entropy_counterexample.png",
+      "output_blob_sha": "d9adc2e1960590967d2b0d4485d6b7af34e3e208",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-04_entropy_counterexample.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-05_L1_refinement.png",
+      "source_blob_sha": "4d318d6424460f6bff704b6736c3428bdcae56e7",
+      "output": "assets/tutorial-005/FT005-05_L1_refinement.png",
+      "output_blob_sha": "4d318d6424460f6bff704b6736c3428bdcae56e7",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-05_L1_refinement.png"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "figures/tutorial-005/exports/FT005-06_CFL_flux_sensitivity.png",
+      "source_blob_sha": "88420e1c8bc230470ee2c15c627dd07a44de5638",
+      "output": "assets/tutorial-005/FT005-06_CFL_flux_sensitivity.png",
+      "output_blob_sha": "88420e1c8bc230470ee2c15c627dd07a44de5638",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-06_CFL_flux_sensitivity.png"
     }
   ],
   "code": [
@@ -3551,6 +3611,326 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-004"
+    },
+    {
+      "article_id": "tutorial-005",
+      "source": "experiments/tutorial-005",
+      "output": "code/tutorial-005",
+      "entrypoint": "code/tutorial-005/src/run_ET005_01.py",
+      "command": "python3 -m unittest discover -s code/tutorial-005/tests -p 'test_*.py' -v",
+      "dependencies": [
+        "numpy==2.3.5"
+      ],
+      "files": [
+        {
+          "source": "experiments/tutorial-005/README.md",
+          "source_blob_sha": "19596eccff2673131be8dcdcc138fba612cf79ac",
+          "output": "code/tutorial-005/README.md",
+          "output_blob_sha": "0cc40b4b83e8cee7eb15abcf6d7cc7f4b0d14004",
+          "transformed_for_public_paths": true
+        },
+        {
+          "source": "experiments/tutorial-005/config/design_v01.json",
+          "source_blob_sha": "e64d28c168b0b7a6273e6c8e366b13cd4f51af04",
+          "output": "code/tutorial-005/config/design_v01.json",
+          "output_blob_sha": "e64d28c168b0b7a6273e6c8e366b13cd4f51af04"
+        },
+        {
+          "source": "experiments/tutorial-005/config/ET005-02.json",
+          "source_blob_sha": "fa77466106acc9ce745e2284450aa2dd80388a46",
+          "output": "code/tutorial-005/config/ET005-02.json",
+          "output_blob_sha": "fa77466106acc9ce745e2284450aa2dd80388a46"
+        },
+        {
+          "source": "experiments/tutorial-005/config/ET005-03.json",
+          "source_blob_sha": "6d7c01998eb6480fbebfcddc739b32f8f7aa27f6",
+          "output": "code/tutorial-005/config/ET005-03.json",
+          "output_blob_sha": "6d7c01998eb6480fbebfcddc739b32f8f7aa27f6"
+        },
+        {
+          "source": "experiments/tutorial-005/config/ET005-04.json",
+          "source_blob_sha": "62da604101beff89a2f642c8c7e2aab2326e370e",
+          "output": "code/tutorial-005/config/ET005-04.json",
+          "output_blob_sha": "62da604101beff89a2f642c8c7e2aab2326e370e"
+        },
+        {
+          "source": "experiments/tutorial-005/config/ET005-05.json",
+          "source_blob_sha": "e5515dcbf8a7aff8e8badb72f68ed631854c1dc8",
+          "output": "code/tutorial-005/config/ET005-05.json",
+          "output_blob_sha": "e5515dcbf8a7aff8e8badb72f68ed631854c1dc8"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/checks.json",
+          "source_blob_sha": "29a43330a4238a9952f8b9d6cb815e19429262a6",
+          "output": "code/tutorial-005/results/ET005-01/checks.json",
+          "output_blob_sha": "29a43330a4238a9952f8b9d6cb815e19429262a6"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/metrics.csv",
+          "source_blob_sha": "bf86ae1bc9619abc5f980af17b2d6132aeb4aba5",
+          "output": "code/tutorial-005/results/ET005-01/metrics.csv",
+          "output_blob_sha": "bf86ae1bc9619abc5f980af17b2d6132aeb4aba5"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/reference_cellavg.csv",
+          "source_blob_sha": "69629ac8d8c63a43fd0f1b8098ca9bbd3692fb15",
+          "output": "code/tutorial-005/results/ET005-01/reference_cellavg.csv",
+          "output_blob_sha": "69629ac8d8c63a43fd0f1b8098ca9bbd3692fb15"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/run.json",
+          "source_blob_sha": "f261f9b931ee9d2e4fc385ca674586231d5c548d",
+          "output": "code/tutorial-005/results/ET005-01/run.json",
+          "output_blob_sha": "f261f9b931ee9d2e4fc385ca674586231d5c548d"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/snapshots.csv",
+          "source_blob_sha": "6c356cb59260f978bdc73dbc458c4d11e965a393",
+          "output": "code/tutorial-005/results/ET005-01/snapshots.csv",
+          "output_blob_sha": "6c356cb59260f978bdc73dbc458c4d11e965a393"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-01/step_budget.csv",
+          "source_blob_sha": "7fdd0da2bb55b431e1521384fda5707fe4cb4e7d",
+          "output": "code/tutorial-005/results/ET005-01/step_budget.csv",
+          "output_blob_sha": "7fdd0da2bb55b431e1521384fda5707fe4cb4e7d"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-02/checks.json",
+          "source_blob_sha": "1e0fb42ff6053181ed13562ade786e3290796624",
+          "output": "code/tutorial-005/results/ET005-02/checks.json",
+          "output_blob_sha": "1e0fb42ff6053181ed13562ade786e3290796624"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-02/metrics.csv",
+          "source_blob_sha": "9b0cd248487ba23e94f97ce17ad1d0ce5fe8ab22",
+          "output": "code/tutorial-005/results/ET005-02/metrics.csv",
+          "output_blob_sha": "9b0cd248487ba23e94f97ce17ad1d0ce5fe8ab22"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-02/run.json",
+          "source_blob_sha": "4fc87947d56bf4aef5f4415dc3f98df8f8374dd1",
+          "output": "code/tutorial-005/results/ET005-02/run.json",
+          "output_blob_sha": "4fc87947d56bf4aef5f4415dc3f98df8f8374dd1"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-02/snapshots.csv",
+          "source_blob_sha": "047418fff4c93c13c538e851d361bee04205db69",
+          "output": "code/tutorial-005/results/ET005-02/snapshots.csv",
+          "output_blob_sha": "047418fff4c93c13c538e851d361bee04205db69"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-02/step_budget.csv",
+          "source_blob_sha": "08f68e90b272632887ba47bac8c34433fcd75934",
+          "output": "code/tutorial-005/results/ET005-02/step_budget.csv",
+          "output_blob_sha": "08f68e90b272632887ba47bac8c34433fcd75934"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-03/checks.json",
+          "source_blob_sha": "bf0a927855ae3623eb595d74110e0cf020e91a38",
+          "output": "code/tutorial-005/results/ET005-03/checks.json",
+          "output_blob_sha": "bf0a927855ae3623eb595d74110e0cf020e91a38"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-03/metrics.csv",
+          "source_blob_sha": "d1c1f4645bbd4bc58eabd39289bc0611076051cc",
+          "output": "code/tutorial-005/results/ET005-03/metrics.csv",
+          "output_blob_sha": "d1c1f4645bbd4bc58eabd39289bc0611076051cc"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-03/run.json",
+          "source_blob_sha": "5d4daf9a127d089ae5e8b5bb0564526cd6dedcdd",
+          "output": "code/tutorial-005/results/ET005-03/run.json",
+          "output_blob_sha": "5d4daf9a127d089ae5e8b5bb0564526cd6dedcdd"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-03/snapshots.csv",
+          "source_blob_sha": "028a8dfbb6d66370c6ea1d4d9a1c37b20ffaab69",
+          "output": "code/tutorial-005/results/ET005-03/snapshots.csv",
+          "output_blob_sha": "028a8dfbb6d66370c6ea1d4d9a1c37b20ffaab69"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-03/step_budget.csv",
+          "source_blob_sha": "608fd5d6227eb3c280d20e7c886f4bb115b8bf89",
+          "output": "code/tutorial-005/results/ET005-03/step_budget.csv",
+          "output_blob_sha": "608fd5d6227eb3c280d20e7c886f4bb115b8bf89"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-04/checks.json",
+          "source_blob_sha": "86ac8d9d472d934ecc8474cc3ac269710f70a992",
+          "output": "code/tutorial-005/results/ET005-04/checks.json",
+          "output_blob_sha": "86ac8d9d472d934ecc8474cc3ac269710f70a992"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-04/grid_errors.csv",
+          "source_blob_sha": "3d6351a95f77a2b1ea2be9eaa310f046d9802624",
+          "output": "code/tutorial-005/results/ET005-04/grid_errors.csv",
+          "output_blob_sha": "3d6351a95f77a2b1ea2be9eaa310f046d9802624"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-04/run.json",
+          "source_blob_sha": "d1c4d7c98ebe75cda9abcb3b10847dabe812febd",
+          "output": "code/tutorial-005/results/ET005-04/run.json",
+          "output_blob_sha": "d1c4d7c98ebe75cda9abcb3b10847dabe812febd"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-04/snapshots.csv",
+          "source_blob_sha": "550e2657243bd5e6e59e473bb75be75424019ff5",
+          "output": "code/tutorial-005/results/ET005-04/snapshots.csv",
+          "output_blob_sha": "550e2657243bd5e6e59e473bb75be75424019ff5"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-04/step_budget.csv",
+          "source_blob_sha": "41127fd4b67de0a1deccfb51875c699e44642d27",
+          "output": "code/tutorial-005/results/ET005-04/step_budget.csv",
+          "output_blob_sha": "41127fd4b67de0a1deccfb51875c699e44642d27"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-05/cfl_flux_metrics.csv",
+          "source_blob_sha": "b7fe89d0dc7308e375618854274c7b8decfd1544",
+          "output": "code/tutorial-005/results/ET005-05/cfl_flux_metrics.csv",
+          "output_blob_sha": "b7fe89d0dc7308e375618854274c7b8decfd1544"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-05/checks.json",
+          "source_blob_sha": "be6e44c7d5d906dd5b551192ba579bb0e7edcefc",
+          "output": "code/tutorial-005/results/ET005-05/checks.json",
+          "output_blob_sha": "be6e44c7d5d906dd5b551192ba579bb0e7edcefc"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-05/run.json",
+          "source_blob_sha": "80f9629057a7283d24e197be7c2471070ecfea56",
+          "output": "code/tutorial-005/results/ET005-05/run.json",
+          "output_blob_sha": "80f9629057a7283d24e197be7c2471070ecfea56"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-05/snapshots.csv",
+          "source_blob_sha": "402ca5fa37e78597ee9fe5b626d002fd761504da",
+          "output": "code/tutorial-005/results/ET005-05/snapshots.csv",
+          "output_blob_sha": "402ca5fa37e78597ee9fe5b626d002fd761504da"
+        },
+        {
+          "source": "experiments/tutorial-005/results/ET005-05/step_budget.csv",
+          "source_blob_sha": "77ed7ea3f26f9655baf5140929fafd93ef77c21d",
+          "output": "code/tutorial-005/results/ET005-05/step_budget.csv",
+          "output_blob_sha": "77ed7ea3f26f9655baf5140929fafd93ef77c21d"
+        },
+        {
+          "source": "experiments/tutorial-005/src/burgers_flux.py",
+          "source_blob_sha": "0fd9965b0ac93e2cb09817be393351cb4db73d59",
+          "output": "code/tutorial-005/src/burgers_flux.py",
+          "output_blob_sha": "0fd9965b0ac93e2cb09817be393351cb4db73d59"
+        },
+        {
+          "source": "experiments/tutorial-005/src/burgers_fvm.py",
+          "source_blob_sha": "934db67d4828057345e8b74d7c6ca2ccc96ac539",
+          "output": "code/tutorial-005/src/burgers_fvm.py",
+          "output_blob_sha": "934db67d4828057345e8b74d7c6ca2ccc96ac539"
+        },
+        {
+          "source": "experiments/tutorial-005/src/exact_rarefaction.py",
+          "source_blob_sha": "0d1c345268070319de32a84d99704b7a83d704a6",
+          "output": "code/tutorial-005/src/exact_rarefaction.py",
+          "output_blob_sha": "0d1c345268070319de32a84d99704b7a83d704a6"
+        },
+        {
+          "source": "experiments/tutorial-005/src/exact_references.py",
+          "source_blob_sha": "3f4c61d8f2fb5bd8dffaf027234db737f4f3f0eb",
+          "output": "code/tutorial-005/src/exact_references.py",
+          "output_blob_sha": "3f4c61d8f2fb5bd8dffaf027234db737f4f3f0eb"
+        },
+        {
+          "source": "experiments/tutorial-005/src/run_ET005_01.py",
+          "source_blob_sha": "4e878d15edec0cfeb4d194635c396717a33dd3a8",
+          "output": "code/tutorial-005/src/run_ET005_01.py",
+          "output_blob_sha": "4e878d15edec0cfeb4d194635c396717a33dd3a8"
+        },
+        {
+          "source": "experiments/tutorial-005/src/run_ET005_02.py",
+          "source_blob_sha": "8d1f3ca279e9d800bc0048fb15cb77c64907caa4",
+          "output": "code/tutorial-005/src/run_ET005_02.py",
+          "output_blob_sha": "8d1f3ca279e9d800bc0048fb15cb77c64907caa4"
+        },
+        {
+          "source": "experiments/tutorial-005/src/run_ET005_03.py",
+          "source_blob_sha": "cff2d44cfbd6efa9735f71b0a2384b18a0b9f392",
+          "output": "code/tutorial-005/src/run_ET005_03.py",
+          "output_blob_sha": "cff2d44cfbd6efa9735f71b0a2384b18a0b9f392"
+        },
+        {
+          "source": "experiments/tutorial-005/src/run_ET005_04.py",
+          "source_blob_sha": "efd86d7cfd1952f507fc04eabe3dac2a1832d4cb",
+          "output": "code/tutorial-005/src/run_ET005_04.py",
+          "output_blob_sha": "efd86d7cfd1952f507fc04eabe3dac2a1832d4cb"
+        },
+        {
+          "source": "experiments/tutorial-005/src/run_ET005_05.py",
+          "source_blob_sha": "89d692e18a61b6ac3501419648c3b4ecbdda4322",
+          "output": "code/tutorial-005/src/run_ET005_05.py",
+          "output_blob_sha": "89d692e18a61b6ac3501419648c3b4ecbdda4322"
+        },
+        {
+          "source": "experiments/tutorial-005/src/validate_ET005_01.py",
+          "source_blob_sha": "fc1bdfd62279010a5fd4fbdba20377a29e2d1351",
+          "output": "code/tutorial-005/src/validate_ET005_01.py",
+          "output_blob_sha": "fc1bdfd62279010a5fd4fbdba20377a29e2d1351"
+        },
+        {
+          "source": "experiments/tutorial-005/src/validate_ET005_02.py",
+          "source_blob_sha": "91849a4e6f5dcad54ea0b9c4185c50ec4e2cd28e",
+          "output": "code/tutorial-005/src/validate_ET005_02.py",
+          "output_blob_sha": "91849a4e6f5dcad54ea0b9c4185c50ec4e2cd28e"
+        },
+        {
+          "source": "experiments/tutorial-005/src/validate_ET005_03.py",
+          "source_blob_sha": "1e5f887d9ac423a4e27df66d55da739b44a13632",
+          "output": "code/tutorial-005/src/validate_ET005_03.py",
+          "output_blob_sha": "1e5f887d9ac423a4e27df66d55da739b44a13632"
+        },
+        {
+          "source": "experiments/tutorial-005/src/validate_ET005_04.py",
+          "source_blob_sha": "b8d31bb28e689d89a48673a7ca3c499e377b9e4b",
+          "output": "code/tutorial-005/src/validate_ET005_04.py",
+          "output_blob_sha": "b8d31bb28e689d89a48673a7ca3c499e377b9e4b"
+        },
+        {
+          "source": "experiments/tutorial-005/src/validate_ET005_05.py",
+          "source_blob_sha": "d27aa06cb2b3af3f1332acf4b85010582bc667bf",
+          "output": "code/tutorial-005/src/validate_ET005_05.py",
+          "output_blob_sha": "d27aa06cb2b3af3f1332acf4b85010582bc667bf"
+        },
+        {
+          "source": "experiments/tutorial-005/tests/test_ET005_01.py",
+          "source_blob_sha": "a692f15d0773bf8219e64f2ea9e2e6c43a374bd4",
+          "output": "code/tutorial-005/tests/test_ET005_01.py",
+          "output_blob_sha": "a692f15d0773bf8219e64f2ea9e2e6c43a374bd4"
+        },
+        {
+          "source": "experiments/tutorial-005/tests/test_ET005_02.py",
+          "source_blob_sha": "99a723b9d93733a3d1848ab05473aed95e80961c",
+          "output": "code/tutorial-005/tests/test_ET005_02.py",
+          "output_blob_sha": "99a723b9d93733a3d1848ab05473aed95e80961c"
+        },
+        {
+          "source": "experiments/tutorial-005/tests/test_ET005_03.py",
+          "source_blob_sha": "c9ad9d6f8fb0190b1f716e7c9b13367e623f4dde",
+          "output": "code/tutorial-005/tests/test_ET005_03.py",
+          "output_blob_sha": "c9ad9d6f8fb0190b1f716e7c9b13367e623f4dde"
+        },
+        {
+          "source": "experiments/tutorial-005/tests/test_ET005_04.py",
+          "source_blob_sha": "ea56dc1435b2f548a9681258b79a4680810d5704",
+          "output": "code/tutorial-005/tests/test_ET005_04.py",
+          "output_blob_sha": "ea56dc1435b2f548a9681258b79a4680810d5704"
+        },
+        {
+          "source": "experiments/tutorial-005/tests/test_ET005_05.py",
+          "source_blob_sha": "79837ca1817e4d70905e9aab8a0590716318170b",
+          "output": "code/tutorial-005/tests/test_ET005_05.py",
+          "output_blob_sha": "79837ca1817e4d70905e9aab8a0590716318170b"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-005"
     }
   ]
 }

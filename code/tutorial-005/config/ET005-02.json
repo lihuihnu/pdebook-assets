@@ -1,0 +1,15 @@
+{
+  "contract_version": "v0.2-frozen-2026-10-10",
+  "experiment_id": "ET005-02",
+  "case_id": "shock_1_0",
+  "method": "Godunov",
+  "boundary": "riemann",
+  "domain": [-1.0, 1.0],
+  "N": 200,
+  "u_L": 1.0,
+  "u_R": 0.0,
+  "requested_cfl": 0.8,
+  "a_bound": 1.0,
+  "times": [0.0, 0.1, 0.25, 0.5],
+  "reference_kind": "exact_shock_cellavg"
+}

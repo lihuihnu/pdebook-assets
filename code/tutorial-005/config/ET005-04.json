@@ -1,0 +1,30 @@
+{
+  "contract_version": "v0.2-frozen-2026-10-10",
+  "experiment_id": "ET005-04",
+  "method": "Godunov",
+  "boundary": "riemann",
+  "domain": [
+    -1,
+    1
+  ],
+  "cases": [
+    "shock_1_0",
+    "rarefaction_m1_1"
+  ],
+  "N": [
+    100,
+    200,
+    400,
+    800
+  ],
+  "requested_cfl": 0.8,
+  "a_bound": 1,
+  "times": [
+    0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "reference_kind": "exact_entropy_solution_cellavg",
+  "output_snapshot_time": 0.5
+}

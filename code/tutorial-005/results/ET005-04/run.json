@@ -1,0 +1,48 @@
+{
+  "archive_N": [
+    100,
+    200,
+    400,
+    800
+  ],
+  "archive_cases": [
+    "shock_1_0",
+    "rarefaction_m1_1"
+  ],
+  "checkpoints": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "config_path": "experiments/tutorial-005/config/ET005-04.json",
+  "config_sha256": "a3113b3efb2f6afa114e3c4d48eabb1faf62c7e18e943f91d3f0ccbc5e35cea7",
+  "design_sha256": "2c93f8dd69d752101be9935809f6e461077f482387bdb40adf0a385b9f1410d1",
+  "elapsed_wall_seconds_by_case_N": {
+    "rarefaction_m1_1:N=100": 0.004847713280469179,
+    "rarefaction_m1_1:N=200": 0.010584114119410515,
+    "rarefaction_m1_1:N=400": 0.0227727722376585,
+    "rarefaction_m1_1:N=800": 0.04918804997578263,
+    "shock_1_0:N=100": 0.0051294416189193726,
+    "shock_1_0:N=200": 0.010127546265721321,
+    "shock_1_0:N=400": 0.0229385350830853,
+    "shock_1_0:N=800": 0.04951383592560887
+  },
+  "experiment_id": "ET005-04",
+  "numpy": "2.3.5",
+  "output_counts": {
+    "grid_errors.csv": 8,
+    "snapshots.csv": 3000,
+    "step_budget.csv": 946
+  },
+  "output_sha256": {
+    "grid_errors.csv": "18f1d354070f81edfd9d958edcf06d51e6312d250b425960bc6e3a19d14b6d93",
+    "snapshots.csv": "56444187f9cabe7e3daff708e0875d79f869e0b3db289c712479bb47bb69488d",
+    "step_budget.csv": "ba352479cb440027501e6b677898ccf003ea155022a55196fda04232675816e3"
+  },
+  "python": "3.12.3",
+  "run_started_utc": "2026-10-10T10:15:50.301345+00:00",
+  "source_git_sha": "e4b56f2177cccfc9eed620d7d43e5eb033c5c9ac",
+  "status": "computed_unvalidated",
+  "terminal_time": 0.5
+}
