@@ -1,0 +1,34 @@
+{
+  "N": 200,
+  "beta": null,
+  "boundary": "dirichlet",
+  "boundary_courant": null,
+  "c": 1,
+  "courant": 0.8,
+  "crop": [
+    0,
+    1
+  ],
+  "crop_start": 400,
+  "diagnostics_scope": "full-domain",
+  "domain": [
+    -2,
+    3
+  ],
+  "dt": 0.004,
+  "final_step": 300,
+  "final_time_requested": 1.2,
+  "full_nodes": 1001,
+  "h": 0.005,
+  "kind": "large",
+  "q": null,
+  "run_id": "large-N200",
+  "snapshot_scope": "crop",
+  "snapshot_steps": [
+    0,
+    100,
+    150,
+    225,
+    300
+  ]
+}

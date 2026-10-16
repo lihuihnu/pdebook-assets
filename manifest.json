@@ -814,6 +814,56 @@
       "width_px": 2760,
       "height_px": 1530,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-005/FT005-06_CFL_flux_sensitivity.png"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "figures/tutorial-006/exports/FT006-01_snapshots.png",
+      "source_blob_sha": "e9066d9db9976aff3ac219ab6b6d32bdcd152fd8",
+      "output": "assets/tutorial-006/FT006-01_snapshots.png",
+      "output_blob_sha": "e9066d9db9976aff3ac219ab6b6d32bdcd152fd8",
+      "width_px": 2684,
+      "height_px": 2125,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-01_snapshots.png"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "figures/tutorial-006/exports/FT006-02_boundary_echo.png",
+      "source_blob_sha": "22ce03d0d3bcfc29f3999c9671f9096e4ee22c7f",
+      "output": "assets/tutorial-006/FT006-02_boundary_echo.png",
+      "output_blob_sha": "22ce03d0d3bcfc29f3999c9671f9096e4ee22c7f",
+      "width_px": 2684,
+      "height_px": 1315,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-02_boundary_echo.png"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "figures/tutorial-006/exports/FT006-03_grid_errors.png",
+      "source_blob_sha": "2c0b74d21440f72eb7436a1a9a897a0310338f16",
+      "output": "assets/tutorial-006/FT006-03_grid_errors.png",
+      "output_blob_sha": "2c0b74d21440f72eb7436a1a9a897a0310338f16",
+      "width_px": 2684,
+      "height_px": 1375,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-03_grid_errors.png"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "figures/tutorial-006/exports/FT006-04_reflection_projection.png",
+      "source_blob_sha": "23620a6ab82111900f05a62e98da8a75d42909ad",
+      "output": "assets/tutorial-006/FT006-04_reflection_projection.png",
+      "output_blob_sha": "23620a6ab82111900f05a62e98da8a75d42909ad",
+      "width_px": 2144,
+      "height_px": 1345,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-04_reflection_projection.png"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "figures/tutorial-006/exports/FT006-05_mismatch_residual.png",
+      "source_blob_sha": "7178620c1746215bbb288c3e67eb863f7804c649",
+      "output": "assets/tutorial-006/FT006-05_mismatch_residual.png",
+      "output_blob_sha": "7178620c1746215bbb288c3e67eb863f7804c649",
+      "width_px": 2684,
+      "height_px": 1975,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-05_mismatch_residual.png"
     }
   ],
   "code": [
@@ -3931,6 +3981,422 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-005"
+    },
+    {
+      "article_id": "tutorial-006",
+      "source": "experiments/tutorial-006",
+      "output": "code/tutorial-006",
+      "entrypoint": "code/tutorial-006/run_experiments.py",
+      "command": "python3 -m unittest discover -s code/tutorial-006/tests -p 'test_*.py' -v",
+      "dependencies": [
+        "numpy==2.3.5"
+      ],
+      "files": [
+        {
+          "source": "experiments/tutorial-006/README.md",
+          "source_blob_sha": "2c32c0935a51b55fca7210db6382c69dfbb6eee1",
+          "output": "code/tutorial-006/README.md",
+          "output_blob_sha": "6ec6aad576567e2cf0d43b2b9f2d536036c5f147",
+          "transformed_for_public_paths": true
+        },
+        {
+          "source": "experiments/tutorial-006/run_experiments.py",
+          "source_blob_sha": "deab725d4ca3ee85bd998889b7455d09623c2254",
+          "output": "code/tutorial-006/run_experiments.py",
+          "output_blob_sha": "deab725d4ca3ee85bd998889b7455d09623c2254"
+        },
+        {
+          "source": "experiments/tutorial-006/config/design.json",
+          "source_blob_sha": "f47dfd47b460199cd2b491ecaab24514ae7af2bb",
+          "output": "code/tutorial-006/config/design.json",
+          "output_blob_sha": "f47dfd47b460199cd2b491ecaab24514ae7af2bb"
+        },
+        {
+          "source": "experiments/tutorial-006/src/wave.py",
+          "source_blob_sha": "2b6c844a121db59fea611518fb6c4197e36a8cb2",
+          "output": "code/tutorial-006/src/wave.py",
+          "output_blob_sha": "2b6c844a121db59fea611518fb6c4197e36a8cb2"
+        },
+        {
+          "source": "experiments/tutorial-006/src/validate.py",
+          "source_blob_sha": "859d986950eedd143759416215ec60da7a166915",
+          "output": "code/tutorial-006/src/validate.py",
+          "output_blob_sha": "859d986950eedd143759416215ec60da7a166915"
+        },
+        {
+          "source": "experiments/tutorial-006/tests/test_wave.py",
+          "source_blob_sha": "30f3dcb9e59c6394f9ad53408957d6a58e065298",
+          "output": "code/tutorial-006/tests/test_wave.py",
+          "output_blob_sha": "30f3dcb9e59c6394f9ad53408957d6a58e065298"
+        },
+        {
+          "source": "experiments/tutorial-006/results/metrics.csv",
+          "source_blob_sha": "293486812d35b72a43a3059e4d5ce3ff50918d39",
+          "output": "code/tutorial-006/results/metrics.csv",
+          "output_blob_sha": "293486812d35b72a43a3059e4d5ce3ff50918d39"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N1600/diagnostics.csv",
+          "source_blob_sha": "d0dd873f3ff35a7aceb8100c55fd4ea7a20ccb22",
+          "output": "code/tutorial-006/results/raw/dirichlet-N1600/diagnostics.csv",
+          "output_blob_sha": "d0dd873f3ff35a7aceb8100c55fd4ea7a20ccb22"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N1600/run.json",
+          "source_blob_sha": "1733b71836e4dc47af484d0aa6d094521935fa19",
+          "output": "code/tutorial-006/results/raw/dirichlet-N1600/run.json",
+          "output_blob_sha": "1733b71836e4dc47af484d0aa6d094521935fa19"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N1600/snapshots.csv",
+          "source_blob_sha": "5e33fd70ee0e144b7dcdda163dece9fec37358db",
+          "output": "code/tutorial-006/results/raw/dirichlet-N1600/snapshots.csv",
+          "output_blob_sha": "5e33fd70ee0e144b7dcdda163dece9fec37358db"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N200/diagnostics.csv",
+          "source_blob_sha": "c1720cbf8cf683e106e3ef992a4eafef7c36d724",
+          "output": "code/tutorial-006/results/raw/dirichlet-N200/diagnostics.csv",
+          "output_blob_sha": "c1720cbf8cf683e106e3ef992a4eafef7c36d724"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N200/run.json",
+          "source_blob_sha": "435e620f0d4c66fcaf571fe3bb1afa3deda34a25",
+          "output": "code/tutorial-006/results/raw/dirichlet-N200/run.json",
+          "output_blob_sha": "435e620f0d4c66fcaf571fe3bb1afa3deda34a25"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N200/snapshots.csv",
+          "source_blob_sha": "114fc5cbf2b7e8e2e301e0b62caa93b73c403cf5",
+          "output": "code/tutorial-006/results/raw/dirichlet-N200/snapshots.csv",
+          "output_blob_sha": "114fc5cbf2b7e8e2e301e0b62caa93b73c403cf5"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N400/diagnostics.csv",
+          "source_blob_sha": "edb1361cbcf91a2b0387197aecb1c8fe3ecc5ca2",
+          "output": "code/tutorial-006/results/raw/dirichlet-N400/diagnostics.csv",
+          "output_blob_sha": "edb1361cbcf91a2b0387197aecb1c8fe3ecc5ca2"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N400/run.json",
+          "source_blob_sha": "e335ee4250ddf115b7959fa662f2f38dfca0e3ae",
+          "output": "code/tutorial-006/results/raw/dirichlet-N400/run.json",
+          "output_blob_sha": "e335ee4250ddf115b7959fa662f2f38dfca0e3ae"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N400/snapshots.csv",
+          "source_blob_sha": "cfa819ef51d54c46eb48b2c93a133fe91f2bacdd",
+          "output": "code/tutorial-006/results/raw/dirichlet-N400/snapshots.csv",
+          "output_blob_sha": "cfa819ef51d54c46eb48b2c93a133fe91f2bacdd"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N800/diagnostics.csv",
+          "source_blob_sha": "c7de3805a605fef29ba7881e7b0dbf18c395d6cb",
+          "output": "code/tutorial-006/results/raw/dirichlet-N800/diagnostics.csv",
+          "output_blob_sha": "c7de3805a605fef29ba7881e7b0dbf18c395d6cb"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N800/run.json",
+          "source_blob_sha": "3e156d6719cb79ed947a54d5ca1e2e2a84c21828",
+          "output": "code/tutorial-006/results/raw/dirichlet-N800/run.json",
+          "output_blob_sha": "3e156d6719cb79ed947a54d5ca1e2e2a84c21828"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/dirichlet-N800/snapshots.csv",
+          "source_blob_sha": "d5373bd24d3785d21c36cb8f054bd0dde61e6927",
+          "output": "code/tutorial-006/results/raw/dirichlet-N800/snapshots.csv",
+          "output_blob_sha": "d5373bd24d3785d21c36cb8f054bd0dde61e6927"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N1600/diagnostics.csv",
+          "source_blob_sha": "8585a6e4f890034572a62d84bd6a8072fcb905a9",
+          "output": "code/tutorial-006/results/raw/large-N1600/diagnostics.csv",
+          "output_blob_sha": "8585a6e4f890034572a62d84bd6a8072fcb905a9"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N1600/run.json",
+          "source_blob_sha": "e267f25462246b23cd69e3f9bbaae801e31b7f60",
+          "output": "code/tutorial-006/results/raw/large-N1600/run.json",
+          "output_blob_sha": "e267f25462246b23cd69e3f9bbaae801e31b7f60"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N1600/snapshots.csv",
+          "source_blob_sha": "a22f1605a8defc8ae226d68381356ae318f59f07",
+          "output": "code/tutorial-006/results/raw/large-N1600/snapshots.csv",
+          "output_blob_sha": "a22f1605a8defc8ae226d68381356ae318f59f07"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N200/diagnostics.csv",
+          "source_blob_sha": "5ac8ed5f25e3bcaccc581b4965620650e43a5170",
+          "output": "code/tutorial-006/results/raw/large-N200/diagnostics.csv",
+          "output_blob_sha": "5ac8ed5f25e3bcaccc581b4965620650e43a5170"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N200/run.json",
+          "source_blob_sha": "cb3bdd166bf24001945f7ce86d061e64c0b62198",
+          "output": "code/tutorial-006/results/raw/large-N200/run.json",
+          "output_blob_sha": "cb3bdd166bf24001945f7ce86d061e64c0b62198"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N200/snapshots.csv",
+          "source_blob_sha": "38d73f61130609765f40810c0f52b3f9e7312187",
+          "output": "code/tutorial-006/results/raw/large-N200/snapshots.csv",
+          "output_blob_sha": "38d73f61130609765f40810c0f52b3f9e7312187"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N400/diagnostics.csv",
+          "source_blob_sha": "83d7298b23e4792bda637b274c3009c255aef4ae",
+          "output": "code/tutorial-006/results/raw/large-N400/diagnostics.csv",
+          "output_blob_sha": "83d7298b23e4792bda637b274c3009c255aef4ae"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N400/run.json",
+          "source_blob_sha": "34e5a3860925bee840d0e2a847990919cb066ca4",
+          "output": "code/tutorial-006/results/raw/large-N400/run.json",
+          "output_blob_sha": "34e5a3860925bee840d0e2a847990919cb066ca4"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N400/snapshots.csv",
+          "source_blob_sha": "39fc7327ec8d66f869416f7ccbc0b4197824cc6a",
+          "output": "code/tutorial-006/results/raw/large-N400/snapshots.csv",
+          "output_blob_sha": "39fc7327ec8d66f869416f7ccbc0b4197824cc6a"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N800/diagnostics.csv",
+          "source_blob_sha": "a7408f3de4296258d5b1a3bfb4b72ed1df0e80b1",
+          "output": "code/tutorial-006/results/raw/large-N800/diagnostics.csv",
+          "output_blob_sha": "a7408f3de4296258d5b1a3bfb4b72ed1df0e80b1"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N800/run.json",
+          "source_blob_sha": "bac275e8f74b11648ee9b85b5527b28100d5805b",
+          "output": "code/tutorial-006/results/raw/large-N800/run.json",
+          "output_blob_sha": "bac275e8f74b11648ee9b85b5527b28100d5805b"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/large-N800/snapshots.csv",
+          "source_blob_sha": "2afb6d63fafa29163fc289dddf2b82e6e35a8b3a",
+          "output": "code/tutorial-006/results/raw/large-N800/snapshots.csv",
+          "output_blob_sha": "2afb6d63fafa29163fc289dddf2b82e6e35a8b3a"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N1600/diagnostics.csv",
+          "source_blob_sha": "0e2d1628282ca285202f53bb03a8996c815874fa",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N1600/diagnostics.csv",
+          "output_blob_sha": "0e2d1628282ca285202f53bb03a8996c815874fa"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N1600/run.json",
+          "source_blob_sha": "f0838c62cd6dd18bd2e25a8a6b68da43803d8ac2",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N1600/run.json",
+          "output_blob_sha": "f0838c62cd6dd18bd2e25a8a6b68da43803d8ac2"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N1600/snapshots.csv",
+          "source_blob_sha": "42d8f4b63cfbc0e3976b1846217d60497ffd697f",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N1600/snapshots.csv",
+          "output_blob_sha": "42d8f4b63cfbc0e3976b1846217d60497ffd697f"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N200/diagnostics.csv",
+          "source_blob_sha": "ab843b247c68204796721f0f0ed77b6f903b4c98",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N200/diagnostics.csv",
+          "output_blob_sha": "ab843b247c68204796721f0f0ed77b6f903b4c98"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N200/run.json",
+          "source_blob_sha": "f6dcb7e076235fea990e380ca50ed73bd8f7db67",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N200/run.json",
+          "output_blob_sha": "f6dcb7e076235fea990e380ca50ed73bd8f7db67"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N200/snapshots.csv",
+          "source_blob_sha": "fb4a892c95eee1401397e5535b601e78ff2c97bf",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N200/snapshots.csv",
+          "output_blob_sha": "fb4a892c95eee1401397e5535b601e78ff2c97bf"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N400/diagnostics.csv",
+          "source_blob_sha": "248a8d6f936b5e87d5f06eb12587e6b2869c1f3d",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N400/diagnostics.csv",
+          "output_blob_sha": "248a8d6f936b5e87d5f06eb12587e6b2869c1f3d"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N400/run.json",
+          "source_blob_sha": "75d0c4e8ae33e80a5bec656e73b1036b324a3a5f",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N400/run.json",
+          "output_blob_sha": "75d0c4e8ae33e80a5bec656e73b1036b324a3a5f"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N400/snapshots.csv",
+          "source_blob_sha": "3bf2b096e6cd20b4efad1087723b8367cc7bd00a",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N400/snapshots.csv",
+          "output_blob_sha": "3bf2b096e6cd20b4efad1087723b8367cc7bd00a"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N800/diagnostics.csv",
+          "source_blob_sha": "27a0f82e1b69964e9e31c203bd47d522a8c45f06",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N800/diagnostics.csv",
+          "output_blob_sha": "27a0f82e1b69964e9e31c203bd47d522a8c45f06"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N800/run.json",
+          "source_blob_sha": "eace5c3ca3516f8d4c0a0f6ba46d5dccd8d70ccc",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N800/run.json",
+          "output_blob_sha": "eace5c3ca3516f8d4c0a0f6ba46d5dccd8d70ccc"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-0p5-N800/snapshots.csv",
+          "source_blob_sha": "4a1fd09951bf151279e22a4949f91347dadbcccb",
+          "output": "code/tutorial-006/results/raw/mur-beta-0p5-N800/snapshots.csv",
+          "output_blob_sha": "4a1fd09951bf151279e22a4949f91347dadbcccb"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N1600/diagnostics.csv",
+          "source_blob_sha": "813755cab6d1339e4964131164764fdb50f19867",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N1600/diagnostics.csv",
+          "output_blob_sha": "813755cab6d1339e4964131164764fdb50f19867"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N1600/run.json",
+          "source_blob_sha": "92277cc5a7f7d3a99e6879807d943dcb9244a549",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N1600/run.json",
+          "output_blob_sha": "92277cc5a7f7d3a99e6879807d943dcb9244a549"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N1600/snapshots.csv",
+          "source_blob_sha": "ee18897a7c96bb5b6ec8838fe28f73900d90e972",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N1600/snapshots.csv",
+          "output_blob_sha": "ee18897a7c96bb5b6ec8838fe28f73900d90e972"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N200/diagnostics.csv",
+          "source_blob_sha": "e289c82c96346f58ef575175b1d78c4840607670",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N200/diagnostics.csv",
+          "output_blob_sha": "e289c82c96346f58ef575175b1d78c4840607670"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N200/run.json",
+          "source_blob_sha": "10d93f45f35244f9695b95925c8ca95cb5886115",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N200/run.json",
+          "output_blob_sha": "10d93f45f35244f9695b95925c8ca95cb5886115"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N200/snapshots.csv",
+          "source_blob_sha": "4b64d40e1ce7d1676d135628c1132dddf5194ba0",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N200/snapshots.csv",
+          "output_blob_sha": "4b64d40e1ce7d1676d135628c1132dddf5194ba0"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N400/diagnostics.csv",
+          "source_blob_sha": "de03a4e1336132e929d2e6c6ce797e65ed354313",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N400/diagnostics.csv",
+          "output_blob_sha": "de03a4e1336132e929d2e6c6ce797e65ed354313"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N400/run.json",
+          "source_blob_sha": "f21fe5774eb1414cd6a80e8715fcf5542220c323",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N400/run.json",
+          "output_blob_sha": "f21fe5774eb1414cd6a80e8715fcf5542220c323"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N400/snapshots.csv",
+          "source_blob_sha": "0bf185e65a74c3571fd988ed7be00acf33df5f73",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N400/snapshots.csv",
+          "output_blob_sha": "0bf185e65a74c3571fd988ed7be00acf33df5f73"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N800/diagnostics.csv",
+          "source_blob_sha": "ac412bdf60d88c466810e821cda2bf5692de21e7",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N800/diagnostics.csv",
+          "output_blob_sha": "ac412bdf60d88c466810e821cda2bf5692de21e7"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N800/run.json",
+          "source_blob_sha": "e313feed4ac6e1e9930391d30b1d73e20fb42421",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N800/run.json",
+          "output_blob_sha": "e313feed4ac6e1e9930391d30b1d73e20fb42421"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-1-N800/snapshots.csv",
+          "source_blob_sha": "8598ba28ac8a1abbe1ddc7481dff193a83cb3dc5",
+          "output": "code/tutorial-006/results/raw/mur-beta-1-N800/snapshots.csv",
+          "output_blob_sha": "8598ba28ac8a1abbe1ddc7481dff193a83cb3dc5"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N1600/diagnostics.csv",
+          "source_blob_sha": "c15388c3aa579e7e16920ab745d9947dbdc24f27",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N1600/diagnostics.csv",
+          "output_blob_sha": "c15388c3aa579e7e16920ab745d9947dbdc24f27"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N1600/run.json",
+          "source_blob_sha": "b0b8ce3d329a10345292c259331a50d93e7c24d8",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N1600/run.json",
+          "output_blob_sha": "b0b8ce3d329a10345292c259331a50d93e7c24d8"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N1600/snapshots.csv",
+          "source_blob_sha": "b066d45c6622c134f5ff3975ddfb20f1cfa53a9e",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N1600/snapshots.csv",
+          "output_blob_sha": "b066d45c6622c134f5ff3975ddfb20f1cfa53a9e"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N200/diagnostics.csv",
+          "source_blob_sha": "4ba7abfca8cc6aa2a3bea6ba7656ff035e96b551",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N200/diagnostics.csv",
+          "output_blob_sha": "4ba7abfca8cc6aa2a3bea6ba7656ff035e96b551"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N200/run.json",
+          "source_blob_sha": "41aa61ff35133d6f1deaf627402b92a183815e78",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N200/run.json",
+          "output_blob_sha": "41aa61ff35133d6f1deaf627402b92a183815e78"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N200/snapshots.csv",
+          "source_blob_sha": "4d8c7f6fea37f3c8048ca9a76f702fc2ba8e69cd",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N200/snapshots.csv",
+          "output_blob_sha": "4d8c7f6fea37f3c8048ca9a76f702fc2ba8e69cd"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N400/diagnostics.csv",
+          "source_blob_sha": "4cb8502b659f821a1843e6b776bab4d7da3a8008",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N400/diagnostics.csv",
+          "output_blob_sha": "4cb8502b659f821a1843e6b776bab4d7da3a8008"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N400/run.json",
+          "source_blob_sha": "0eb210fd6c5d3b9752635e2ed65b9195b35b1a1c",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N400/run.json",
+          "output_blob_sha": "0eb210fd6c5d3b9752635e2ed65b9195b35b1a1c"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N400/snapshots.csv",
+          "source_blob_sha": "e4ed86321c77928d798f624c6aa5838d3913c4e7",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N400/snapshots.csv",
+          "output_blob_sha": "e4ed86321c77928d798f624c6aa5838d3913c4e7"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N800/diagnostics.csv",
+          "source_blob_sha": "a9f9d44061d8cc0ad8e5947dc0a26e5991743a0c",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N800/diagnostics.csv",
+          "output_blob_sha": "a9f9d44061d8cc0ad8e5947dc0a26e5991743a0c"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N800/run.json",
+          "source_blob_sha": "882d30d7aafbad4e3af458eff1316a3ebe7a6e5e",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N800/run.json",
+          "output_blob_sha": "882d30d7aafbad4e3af458eff1316a3ebe7a6e5e"
+        },
+        {
+          "source": "experiments/tutorial-006/results/raw/mur-beta-2-N800/snapshots.csv",
+          "source_blob_sha": "5e8c1acf927e2009f973e84bb3646751d77f4792",
+          "output": "code/tutorial-006/results/raw/mur-beta-2-N800/snapshots.csv",
+          "output_blob_sha": "5e8c1acf927e2009f973e84bb3646751d77f4792"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-006"
     }
   ]
 }

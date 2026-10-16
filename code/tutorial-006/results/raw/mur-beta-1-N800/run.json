@@ -1,0 +1,34 @@
+{
+  "N": 800,
+  "beta": 1,
+  "boundary": "mur",
+  "boundary_courant": 0.8,
+  "c": 1,
+  "courant": 0.8,
+  "crop": [
+    0,
+    1
+  ],
+  "crop_start": 0,
+  "diagnostics_scope": "full-domain",
+  "domain": [
+    0,
+    1
+  ],
+  "dt": 0.001,
+  "final_step": 1200,
+  "final_time_requested": 1.2,
+  "full_nodes": 801,
+  "h": 0.00125,
+  "kind": "short",
+  "q": -0.11111111111111108,
+  "run_id": "mur-beta-1-N800",
+  "snapshot_scope": "crop",
+  "snapshot_steps": [
+    0,
+    400,
+    600,
+    900,
+    1200
+  ]
+}

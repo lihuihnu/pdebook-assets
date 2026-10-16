@@ -1,0 +1,34 @@
+{
+  "N": 1600,
+  "beta": null,
+  "boundary": "dirichlet",
+  "boundary_courant": null,
+  "c": 1,
+  "courant": 0.8,
+  "crop": [
+    0,
+    1
+  ],
+  "crop_start": 0,
+  "diagnostics_scope": "full-domain",
+  "domain": [
+    0,
+    1
+  ],
+  "dt": 0.0005,
+  "final_step": 2400,
+  "final_time_requested": 1.2,
+  "full_nodes": 1601,
+  "h": 0.000625,
+  "kind": "short",
+  "q": null,
+  "run_id": "dirichlet-N1600",
+  "snapshot_scope": "crop",
+  "snapshot_steps": [
+    0,
+    800,
+    1200,
+    1800,
+    2400
+  ]
+}

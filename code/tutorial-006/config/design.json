@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "article_id": "tutorial-006",
+  "status": "frozen-before-first-execution",
+  "model": {
+    "equation": "u_tt = c^2 u_xx",
+    "c": 1,
+    "pulse": {
+      "center": 0.35,
+      "half_width": 0.1,
+      "power": 6,
+      "definition": "g(x)=(1-((x-center)/half_width)^2)^power for |x-center|<half_width, zero otherwise"
+    },
+    "initial_displacement": "g(x)",
+    "initial_velocity": "-c*g'(x)",
+    "short_domain": [
+      0,
+      1
+    ],
+    "large_domain": [
+      -2,
+      3
+    ],
+    "final_time": 1.2
+  },
+  "discretization": {
+    "courant": 0.8,
+    "interval_counts": [
+      200,
+      400,
+      800,
+      1600
+    ],
+    "snapshot_times": [
+      0,
+      0.4,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "interior": "centered second-order three-level",
+    "initialization": "Taylor start with centered discrete Laplacian; endpoints then use the same boundary update",
+    "final_step": "fixed dt, integer step count; never clip the final step",
+    "large_domain_crop": "integer global grid indices 0..N; offset 2*N from the large domain"
+  },
+  "boundaries": [
+    {
+      "name": "dirichlet",
+      "kind": "dirichlet",
+      "speed_ratio": null
+    },
+    {
+      "name": "mur-beta-0p5",
+      "kind": "mur",
+      "speed_ratio": 0.5
+    },
+    {
+      "name": "mur-beta-1",
+      "kind": "mur",
+      "speed_ratio": 1
+    },
+    {
+      "name": "mur-beta-2",
+      "kind": "mur",
+      "speed_ratio": 2
+    }
+  ],
+  "diagnostics": {
+    "norm": "composite trapezoid on nodal values; L2 displacement is not energy",
+    "large_domain_diagnostics": "full domain; saved snapshots are the exact short-domain crop",
+    "boundary_exact": "g(x-c*t)+R*g(2-x-c*t), R=-1 for Dirichlet, otherwise (beta-1)/(beta+1); valid for this pulse and time horizon",
+    "reflection_projection": "final-time signed projection of (short-large) onto g(2-x-c*T)",
+    "reflection_fit": "L2 residual after fitting the signed reflected displacement amplitude",
+    "reporting": "retain all results; no prescribed convergence or reflection-success threshold",
+    "floating_point": "float64; output CSV formatted with 17 significant digits"
+  }
+}
