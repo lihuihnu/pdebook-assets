@@ -86,3 +86,4 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/tutorial-003/` — 一维热方程中 BE/CN/R1 的高频阻尼与非光滑初值；五组冻结数值实验、原始 CSV、独立检查器及配套图件；NumPy/SciPy 数值核心。
 - `code/tutorial-004/` — 二维照片的普通热扩散与梯度正则化非线性扩散；五组冻结实验数据、CC0 摄影素材、九组参数和时间步读者复现、七幅公开 PNG；NumPy/SciPy 数值核心。
 - `code/tutorial-005/` — 一维无黏性 Burgers 特征线、激波与稀疏波；Godunov、未经熵修正 Roe、全局固定 α=1 的 LF、两类网格细化与 CFL 扫描；五组冻结实验、独立验证及六幅 PNG，数值核心依赖 NumPy。
+- `code/tutorial-006/` — 一维波动方程的开放域截断、固定端回波与 Mur 吸收边界；四级网格的 20 组真实计算、61 份数值结果、独立验证及五幅公开 PNG；数值核心依赖 NumPy。
