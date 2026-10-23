@@ -87,3 +87,7 @@ Metadata, including source/output blob identities where applicable, is recorded 
 - `code/tutorial-004/` — 二维照片的普通热扩散与梯度正则化非线性扩散；五组冻结实验数据、CC0 摄影素材、九组参数和时间步读者复现、七幅公开 PNG；NumPy/SciPy 数值核心。
 - `code/tutorial-005/` — 一维无黏性 Burgers 特征线、激波与稀疏波；Godunov、未经熵修正 Roe、全局固定 α=1 的 LF、两类网格细化与 CFL 扫描；五组冻结实验、独立验证及六幅 PNG，数值核心依赖 NumPy。
 - `code/tutorial-006/` — 一维波动方程的开放域截断、固定端回波与 Mur 吸收边界；四级网格的 20 组真实计算、61 份数值结果、独立验证及五幅公开 PNG；数值核心依赖 NumPy。
+
+## CI 与网络巡检规范（2026-10-23）
+
+每次根据具体问题重写对应测试流文件，采用最小充分验证。详见 [CI 规范](docs/CI_POLICY.md) 与 [网络状态](docs/NETWORK_STATUS.md)。本次规范更新旧的固定全量选测约定；项目已有权限、科学判据及 Runner 限制继续有效。
