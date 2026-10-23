@@ -91,3 +91,5 @@ Metadata, including source/output blob identities where applicable, is recorded 
 ## CI 与网络巡检规范（2026-10-23）
 
 每次根据具体问题重写对应测试流文件，采用最小充分验证。详见 [CI 规范](docs/CI_POLICY.md) 与 [网络状态](docs/NETWORK_STATUS.md)。本次规范更新旧的固定全量选测约定；项目已有权限、科学判据及 Runner 限制继续有效。
+
+GitHub、网站与超算连接的已验证使用方式及回滚见 [网络使用方法](docs/NETWORK_USAGE.md)。
