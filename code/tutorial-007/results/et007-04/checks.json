@@ -1,0 +1,347 @@
+{
+  "ET007_01_02_03_frozen_summary_sha256": {
+    "ET007-01": "1788ec0ae48ead3903d6d09cb1bf8b999aa31b42d5f37728061fb2eefbd88233",
+    "ET007-02": "bec0f2916cfecdab732eb4d48d81c8a9cd814353e337db7ea4384dad41b543d8",
+    "ET007-03": "df816b6eb9ff4de8c9d1e8d182a1279bb3926448dbb399f81f9d1d53d44d9fa2"
+  },
+  "angle_case_provenance": [
+    {
+      "case_id": "sinesine-p00-N64-M0",
+      "origin_stage": "ET007-01"
+    },
+    {
+      "case_id": "sinesine-p00-N64-M1",
+      "origin_stage": "ET007-01"
+    },
+    {
+      "case_id": "sinesine-p00-N128-M0",
+      "origin_stage": "ET007-01"
+    },
+    {
+      "case_id": "sinesine-p00-N128-M1",
+      "origin_stage": "ET007-01"
+    },
+    {
+      "case_id": "sinesine-p15-N64-M0",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p15-N64-M1",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p15-N128-M0",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p15-N128-M1",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p30-N64-M0",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p30-N64-M1",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p30-N128-M0",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p30-N128-M1",
+      "origin_stage": "ET007-04"
+    },
+    {
+      "case_id": "sinesine-p45-N64-M0",
+      "origin_stage": "ET007-03"
+    },
+    {
+      "case_id": "sinesine-p45-N64-M1",
+      "origin_stage": "ET007-03"
+    },
+    {
+      "case_id": "sinesine-p45-N128-M0",
+      "origin_stage": "ET007-03"
+    },
+    {
+      "case_id": "sinesine-p45-N128-M1",
+      "origin_stage": "ET007-03"
+    }
+  ],
+  "angular_comparison_points": 16,
+  "article_id": "tutorial-007",
+  "article_unique_case_count": 28,
+  "comparisons_for_0_15_30_45": [
+    {
+      "M0_flux_x_error_linf": 0.003153393224355483,
+      "M0_temperature_L2": 0.00010041090486177879,
+      "M1_flux_x_error_linf": 0.003153393224355483,
+      "M1_temperature_L2": 0.00010041090486177879,
+      "N": 64,
+      "theta_deg": 0
+    },
+    {
+      "M0_flux_x_error_linf": 0.0007884848731691818,
+      "M0_temperature_L2": 2.5100457989606692e-05,
+      "M1_flux_x_error_linf": 0.0007884848731691818,
+      "M1_temperature_L2": 2.5100457989606692e-05,
+      "N": 128,
+      "theta_deg": 0
+    },
+    {
+      "M0_flux_x_error_linf": 7.046821440561111,
+      "M0_temperature_L2": 0.038861318883852504,
+      "M1_flux_x_error_linf": 0.0060178376272546075,
+      "M1_temperature_L2": 9.529718625603233e-05,
+      "N": 64,
+      "theta_deg": 15
+    },
+    {
+      "M0_flux_x_error_linf": 7.1257281110875805,
+      "M0_temperature_L2": 0.038877731501118847,
+      "M1_flux_x_error_linf": 0.0015189909494779386,
+      "M1_temperature_L2": 2.3816286876852535e-05,
+      "N": 128,
+      "theta_deg": 15
+    },
+    {
+      "M0_flux_x_error_linf": 11.249411835405724,
+      "M0_temperature_L2": 0.06608848553397106,
+      "M1_flux_x_error_linf": 0.008115079149149551,
+      "M1_temperature_L2": 8.912640147888451e-05,
+      "N": 64,
+      "theta_deg": 30
+    },
+    {
+      "M0_flux_x_error_linf": 11.73352523136676,
+      "M0_temperature_L2": 0.06611141000212961,
+      "M1_flux_x_error_linf": 0.0020504131926202263,
+      "M1_temperature_L2": 2.227423194264631e-05,
+      "N": 128,
+      "theta_deg": 30
+    },
+    {
+      "M0_flux_x_error_linf": 13.476747520465306,
+      "M0_temperature_L2": 0.07584511011155211,
+      "M1_flux_x_error_linf": 0.008932992937083384,
+      "M1_temperature_L2": 9.060525037657085e-05,
+      "N": 64,
+      "theta_deg": 45
+    },
+    {
+      "M0_flux_x_error_linf": 13.803713389677162,
+      "M0_temperature_L2": 0.07586998155991108,
+      "M1_flux_x_error_linf": 0.002301014962016623,
+      "M1_temperature_L2": 2.266505197195225e-05,
+      "N": 128,
+      "theta_deg": 45
+    }
+  ],
+  "config_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "full_all_four_stage_review_finished": false,
+  "independent_methods": {
+    "M0": "exact finite-grid DST-I",
+    "M1": "matrix-free nine-point operator + CG"
+  },
+  "internal_Omega_h_discrete_flux_budget_checked": true,
+  "new_real_solve_cases": 8,
+  "new_stage_summaries": [
+    {
+      "case_id": "sinesine-p15-N64-M0",
+      "reference": {
+        "iterations": 0,
+        "reference_method": "independent 2D DST-I diagonalization",
+        "residual_linf_relative": 2.737044142796057e-13
+      },
+      "verified_T_error_l2": 0.03886131888385256,
+      "verified_qx_error_linf": 7.046821440561075,
+      "verified_qy_error_linf": 6.987933841939781
+    },
+    {
+      "case_id": "sinesine-p15-N64-M1",
+      "reference": {
+        "iterations": 300,
+        "reference_method": "independent matrix-free 9-point CG",
+        "residual_linf_relative": 1.8417126298010768e-12
+      },
+      "verified_T_error_l2": 9.529718624946895e-05,
+      "verified_qx_error_linf": 0.006017837627197764,
+      "verified_qy_error_linf": 0.003688378389897551
+    },
+    {
+      "case_id": "sinesine-p15-N128-M0",
+      "reference": {
+        "iterations": 0,
+        "reference_method": "independent 2D DST-I diagonalization",
+        "residual_linf_relative": 1.2441704723709478e-12
+      },
+      "verified_T_error_l2": 0.03887773150111941,
+      "verified_qx_error_linf": 7.125728111087634,
+      "verified_qy_error_linf": 7.030185283130956
+    },
+    {
+      "case_id": "sinesine-p15-N128-M1",
+      "reference": {
+        "iterations": 604,
+        "reference_method": "independent matrix-free 9-point CG",
+        "residual_linf_relative": 1.3322114044821208e-11
+      },
+      "verified_T_error_l2": 2.3816286832752374e-05,
+      "verified_qx_error_linf": 0.0015189909484512043,
+      "verified_qy_error_linf": 0.0009298138241158327
+    },
+    {
+      "case_id": "sinesine-p30-N64-M0",
+      "reference": {
+        "iterations": 0,
+        "reference_method": "independent 2D DST-I diagonalization",
+        "residual_linf_relative": 2.740971035396912e-13
+      },
+      "verified_T_error_l2": 0.06608848553397122,
+      "verified_qx_error_linf": 11.249411835405699,
+      "verified_qy_error_linf": 11.947408988701028
+    },
+    {
+      "case_id": "sinesine-p30-N64-M1",
+      "reference": {
+        "iterations": 297,
+        "reference_method": "independent matrix-free 9-point CG",
+        "residual_linf_relative": 2.266209719953521e-12
+      },
+      "verified_T_error_l2": 8.91264014756582e-05,
+      "verified_qx_error_linf": 0.008115079149209947,
+      "verified_qy_error_linf": 0.007189598956424348
+    },
+    {
+      "case_id": "sinesine-p30-N128-M0",
+      "reference": {
+        "iterations": 0,
+        "reference_method": "independent 2D DST-I diagonalization",
+        "residual_linf_relative": 1.207519474762966e-12
+      },
+      "verified_T_error_l2": 0.06611141000213032,
+      "verified_qx_error_linf": 11.733525231366754,
+      "verified_qy_error_linf": 12.096754005927872
+    },
+    {
+      "case_id": "sinesine-p30-N128-M1",
+      "reference": {
+        "iterations": 605,
+        "reference_method": "independent matrix-free 9-point CG",
+        "residual_linf_relative": 1.098070433156131e-11
+      },
+      "verified_T_error_l2": 2.2274231922334663e-05,
+      "verified_qx_error_linf": 0.002050413192176137,
+      "verified_qy_error_linf": 0.0018282249152701269
+    }
+  ],
+  "physical_Omega_outer_boundary_not_validated": true,
+  "production_solver_imported": false,
+  "production_source_commit": "3e18b4a009da8802ceb0dd77de927d5dbcf37b9d",
+  "refinement_orders_64_to_128": [
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M0",
+      "real_observed_orders": {
+        "T_error_l2": 2.0001303645663975,
+        "T_error_linf": 2.000130364498898,
+        "q_x_error_linf": 1.9997501008317204,
+        "q_y_error_linf": 1.9997500996076127
+      },
+      "theta_deg": 0
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M1",
+      "real_observed_orders": {
+        "T_error_l2": 2.0001303645663975,
+        "T_error_linf": 2.000130364498898,
+        "q_x_error_linf": 1.9997501008317204,
+        "q_y_error_linf": 1.9997500996076127
+      },
+      "theta_deg": 0
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M0",
+      "real_observed_orders": {
+        "T_error_l2": -0.0006091765148330382,
+        "T_error_linf": 0.0002019303004144517,
+        "q_x_error_linf": -0.01606477904564153,
+        "q_y_error_linf": -0.008696762913755708
+      },
+      "theta_deg": 15
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M1",
+      "real_observed_orders": {
+        "T_error_l2": 2.000485113120481,
+        "T_error_linf": 2.0004936594071934,
+        "q_x_error_linf": 1.986131906597181,
+        "q_y_error_linf": 1.9879728894554707
+      },
+      "theta_deg": 15
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M0",
+      "real_observed_orders": {
+        "T_error_l2": -0.0005003486080641846,
+        "T_error_linf": -0.0025035219434450234,
+        "q_x_error_linf": -0.060786949645743334,
+        "q_y_error_linf": -0.017922194809045534
+      },
+      "theta_deg": 30
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M1",
+      "real_observed_orders": {
+        "T_error_l2": 2.0004771717975043,
+        "T_error_linf": 1.9992709605899583,
+        "q_x_error_linf": 1.9846904996852417,
+        "q_y_error_linf": 1.9754677312209838
+      },
+      "theta_deg": 30
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M0",
+      "real_observed_orders": {
+        "T_error_l2": -0.00047301708924718516,
+        "T_error_linf": -0.00041070751774397867,
+        "q_x_error_linf": -0.034584065751614324,
+        "q_y_error_linf": -0.03458406575161531
+      },
+      "theta_deg": 45
+    },
+    {
+      "N0": 64,
+      "N1": 128,
+      "method": "M1",
+      "real_observed_orders": {
+        "T_error_l2": 1.999125184333392,
+        "T_error_linf": 1.998475419906033,
+        "q_x_error_linf": 1.9568732567585045,
+        "q_y_error_linf": 1.9568732567831082
+      },
+      "theta_deg": 45
+    }
+  ],
+  "reused_verified_case_rows": 8,
+  "science_accuracy_trends_not_forced": true,
+  "scientific_source_reuse_checked": true,
+  "stage": "ET007-04",
+  "status": "PASS",
+  "true_physical_tensor_source_used_for_both_methods": true
+}

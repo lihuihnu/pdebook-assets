@@ -864,6 +864,46 @@
       "width_px": 2684,
       "height_px": 1975,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-006/FT006-05_mismatch_residual.png"
+    },
+    {
+      "article_id": "tutorial-007",
+      "source": "figures/tutorial-007/exports/FT007-01_rotated_tensor_flux.png",
+      "source_blob_sha": "2ce1dbbc4ba2f8411c210424690f0d376f7a9aa6",
+      "output": "assets/tutorial-007/FT007-01_rotated_tensor_flux.png",
+      "output_blob_sha": "2ce1dbbc4ba2f8411c210424690f0d376f7a9aa6",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-007/FT007-01_rotated_tensor_flux.png"
+    },
+    {
+      "article_id": "tutorial-007",
+      "source": "figures/tutorial-007/exports/FT007-02_affine_T_vs_qy.png",
+      "source_blob_sha": "a5bd4c83efb6a72144454887d8bedf54e6e12ede",
+      "output": "assets/tutorial-007/FT007-02_affine_T_vs_qy.png",
+      "output_blob_sha": "a5bd4c83efb6a72144454887d8bedf54e6e12ede",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-007/FT007-02_affine_T_vs_qy.png"
+    },
+    {
+      "article_id": "tutorial-007",
+      "source": "figures/tutorial-007/exports/FT007-03_sinesine_refinement.png",
+      "source_blob_sha": "f3b7e2aacb1a169e88cadeb6c4c71faa67c975a4",
+      "output": "assets/tutorial-007/FT007-03_sinesine_refinement.png",
+      "output_blob_sha": "f3b7e2aacb1a169e88cadeb6c4c71faa67c975a4",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-007/FT007-03_sinesine_refinement.png"
+    },
+    {
+      "article_id": "tutorial-007",
+      "source": "figures/tutorial-007/exports/FT007-04_rotation_scan.png",
+      "source_blob_sha": "77bd904042210290488ca3b23e230dee1bfdb951",
+      "output": "assets/tutorial-007/FT007-04_rotation_scan.png",
+      "output_blob_sha": "77bd904042210290488ca3b23e230dee1bfdb951",
+      "width_px": 2760,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-007/FT007-04_rotation_scan.png"
     }
   ],
   "code": [
@@ -4397,6 +4437,483 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-006"
+    },
+    {
+      "article_id": "tutorial-007",
+      "source": "experiments/tutorial-007",
+      "output": "code/tutorial-007",
+      "entrypoint": "code/tutorial-007/run_experiments.py",
+      "command": "python3 -m unittest discover -s code/tutorial-007/tests -p 'test_*.py' -v",
+      "dependencies": [
+        "numpy",
+        "scipy"
+      ],
+      "files": [
+        {
+          "source": "experiments/tutorial-007/README.md",
+          "source_blob_sha": "76da7e347162ca2653f880bc08f760984eaf3e1c",
+          "output": "code/tutorial-007/README.md",
+          "output_blob_sha": "d9fa7dd1077148989f3258dbe669a0cad6ac19fc",
+          "transformed_for_public_paths": true
+        },
+        {
+          "source": "experiments/tutorial-007/config/design_v01.json",
+          "source_blob_sha": "992d834ded64ca6621baec6c757540c87faaafd5",
+          "output": "code/tutorial-007/config/design_v01.json",
+          "output_blob_sha": "992d834ded64ca6621baec6c757540c87faaafd5"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/checks.json",
+          "source_blob_sha": "10c8cf09a46290c30afecfb3047b0c5987478756",
+          "output": "code/tutorial-007/results/et007-01/checks.json",
+          "output_blob_sha": "10c8cf09a46290c30afecfb3047b0c5987478756"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N128-M0/run.json",
+          "source_blob_sha": "af420dbc2d4b96d79727928aa4dd615158634683",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N128-M0/run.json",
+          "output_blob_sha": "af420dbc2d4b96d79727928aa4dd615158634683"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N128-M1/run.json",
+          "source_blob_sha": "3c9c31d6be906203642b388cd7046622aa69e880",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N128-M1/run.json",
+          "output_blob_sha": "3c9c31d6be906203642b388cd7046622aa69e880"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N16-M0/run.json",
+          "source_blob_sha": "2253bdb0901f311fa9a2fe3ea41d8d70dc4ee929",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N16-M0/run.json",
+          "output_blob_sha": "2253bdb0901f311fa9a2fe3ea41d8d70dc4ee929"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N16-M1/run.json",
+          "source_blob_sha": "d1deeaa58c6ef19aff46ffe3d86bc2f7f43e3cb5",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N16-M1/run.json",
+          "output_blob_sha": "d1deeaa58c6ef19aff46ffe3d86bc2f7f43e3cb5"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N32-M0/run.json",
+          "source_blob_sha": "060c7e45a2db4bbe698157df1049f24175cca41d",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N32-M0/run.json",
+          "output_blob_sha": "060c7e45a2db4bbe698157df1049f24175cca41d"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N32-M1/run.json",
+          "source_blob_sha": "e90ac6c4a512011c2dcfb53f10030db313f42c66",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N32-M1/run.json",
+          "output_blob_sha": "e90ac6c4a512011c2dcfb53f10030db313f42c66"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/flux_x.csv",
+          "source_blob_sha": "b41f4077b25550f541b6dc39403e4e1f1ca1f027",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/flux_x.csv",
+          "output_blob_sha": "b41f4077b25550f541b6dc39403e4e1f1ca1f027"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/flux_y.csv",
+          "source_blob_sha": "8abb754cf4645edb89eb69c8df8fa0c3b6535991",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/flux_y.csv",
+          "output_blob_sha": "8abb754cf4645edb89eb69c8df8fa0c3b6535991"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/run.json",
+          "source_blob_sha": "a8e6b3599a07bbe9d858a237cdbd41f75eec68c0",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/run.json",
+          "output_blob_sha": "a8e6b3599a07bbe9d858a237cdbd41f75eec68c0"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/temperature.csv",
+          "source_blob_sha": "ddcb9cea27439a4894e1f7a0bb592a74327bea01",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M0/temperature.csv",
+          "output_blob_sha": "ddcb9cea27439a4894e1f7a0bb592a74327bea01"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/flux_x.csv",
+          "source_blob_sha": "b41f4077b25550f541b6dc39403e4e1f1ca1f027",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/flux_x.csv",
+          "output_blob_sha": "b41f4077b25550f541b6dc39403e4e1f1ca1f027"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/flux_y.csv",
+          "source_blob_sha": "8abb754cf4645edb89eb69c8df8fa0c3b6535991",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/flux_y.csv",
+          "output_blob_sha": "8abb754cf4645edb89eb69c8df8fa0c3b6535991"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/run.json",
+          "source_blob_sha": "7bee00d2d9bc0d9d3de64aa97fc3c9e26054ccd9",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/run.json",
+          "output_blob_sha": "7bee00d2d9bc0d9d3de64aa97fc3c9e26054ccd9"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/temperature.csv",
+          "source_blob_sha": "ddcb9cea27439a4894e1f7a0bb592a74327bea01",
+          "output": "code/tutorial-007/results/et007-01/raw/sinesine-p00-N64-M1/temperature.csv",
+          "output_blob_sha": "ddcb9cea27439a4894e1f7a0bb592a74327bea01"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-01/summary.csv",
+          "source_blob_sha": "3cfb5a1a3bc4a957573cef1c28f4d85649b7280b",
+          "output": "code/tutorial-007/results/et007-01/summary.csv",
+          "output_blob_sha": "3cfb5a1a3bc4a957573cef1c28f4d85649b7280b"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/checks.json",
+          "source_blob_sha": "7618c87cfa3ebeee7763fcb2d45c6f7763ae27cb",
+          "output": "code/tutorial-007/results/et007-02/checks.json",
+          "output_blob_sha": "7618c87cfa3ebeee7763fcb2d45c6f7763ae27cb"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N32-M0/run.json",
+          "source_blob_sha": "9b11db501d0ac7c0a552bff460e5d3747d7eb88c",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N32-M0/run.json",
+          "output_blob_sha": "9b11db501d0ac7c0a552bff460e5d3747d7eb88c"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N32-M1/run.json",
+          "source_blob_sha": "29923b144e94b170eac1ce242fd4c9027b205346",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N32-M1/run.json",
+          "output_blob_sha": "29923b144e94b170eac1ce242fd4c9027b205346"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/flux_x.csv",
+          "source_blob_sha": "4048b92929aac7bec98332cd0cb760b770ab4562",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/flux_x.csv",
+          "output_blob_sha": "4048b92929aac7bec98332cd0cb760b770ab4562"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/flux_y.csv",
+          "source_blob_sha": "d30e237f876be9e43300a9b2a1bd98b52c67dc34",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/flux_y.csv",
+          "output_blob_sha": "d30e237f876be9e43300a9b2a1bd98b52c67dc34"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/run.json",
+          "source_blob_sha": "bc49eac55f965d3247019d30a1caeac5e6b1eb2e",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/run.json",
+          "output_blob_sha": "bc49eac55f965d3247019d30a1caeac5e6b1eb2e"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/temperature.csv",
+          "source_blob_sha": "08f9dd3d6d3b54be1f11b2a29fd016ab4b6e9c06",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M0/temperature.csv",
+          "output_blob_sha": "08f9dd3d6d3b54be1f11b2a29fd016ab4b6e9c06"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/flux_x.csv",
+          "source_blob_sha": "66f65d74f81588663bfc27ed35439aacb3f503f9",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/flux_x.csv",
+          "output_blob_sha": "66f65d74f81588663bfc27ed35439aacb3f503f9"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/flux_y.csv",
+          "source_blob_sha": "3fab7db24fe08a867a007b60b0a20ad58b0b0771",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/flux_y.csv",
+          "output_blob_sha": "3fab7db24fe08a867a007b60b0a20ad58b0b0771"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/run.json",
+          "source_blob_sha": "63be3712e1f199ea3ce560030f88d9bf54638fb2",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/run.json",
+          "output_blob_sha": "63be3712e1f199ea3ce560030f88d9bf54638fb2"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/temperature.csv",
+          "source_blob_sha": "1e599e025507ea8b086428a8c125867b57c96ace",
+          "output": "code/tutorial-007/results/et007-02/raw/affine-p45-N64-M1/temperature.csv",
+          "output_blob_sha": "1e599e025507ea8b086428a8c125867b57c96ace"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-02/summary.csv",
+          "source_blob_sha": "ed7e9077fa9c22c81ae6e2f5abf3a7501d607e71",
+          "output": "code/tutorial-007/results/et007-02/summary.csv",
+          "output_blob_sha": "ed7e9077fa9c22c81ae6e2f5abf3a7501d607e71"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/checks.json",
+          "source_blob_sha": "a829e43350594f749c43269fcb2b0442ac9c6f61",
+          "output": "code/tutorial-007/results/et007-03/checks.json",
+          "output_blob_sha": "a829e43350594f749c43269fcb2b0442ac9c6f61"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/flux_x.csv",
+          "source_blob_sha": "d357c0b93f06bcc38198f86b54d6fa29f97b80c3",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/flux_x.csv",
+          "output_blob_sha": "d357c0b93f06bcc38198f86b54d6fa29f97b80c3"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/flux_y.csv",
+          "source_blob_sha": "82cc23ffbe273d407b7041e3578030410753b973",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/flux_y.csv",
+          "output_blob_sha": "82cc23ffbe273d407b7041e3578030410753b973"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/run.json",
+          "source_blob_sha": "ad5a82f168e1ab702176064737031449e177568c",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/run.json",
+          "output_blob_sha": "ad5a82f168e1ab702176064737031449e177568c"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/temperature.csv",
+          "source_blob_sha": "e34e01302e7c40e34f184597b752af3513abf5ec",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M0/temperature.csv",
+          "output_blob_sha": "e34e01302e7c40e34f184597b752af3513abf5ec"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/flux_x.csv",
+          "source_blob_sha": "298d485e08aab4e1e0f2009d974bc0c7f36d5e94",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/flux_x.csv",
+          "output_blob_sha": "298d485e08aab4e1e0f2009d974bc0c7f36d5e94"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/flux_y.csv",
+          "source_blob_sha": "65fff65e4336c953ba29fe7afd90d88b5b05bd19",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/flux_y.csv",
+          "output_blob_sha": "65fff65e4336c953ba29fe7afd90d88b5b05bd19"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/run.json",
+          "source_blob_sha": "17ab07396ba5e7bec278ffb58eb72497d559108c",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/run.json",
+          "output_blob_sha": "17ab07396ba5e7bec278ffb58eb72497d559108c"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/temperature.csv",
+          "source_blob_sha": "486ca31924de40b50a4709400ca2a8fed38f7a16",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N128-M1/temperature.csv",
+          "output_blob_sha": "486ca31924de40b50a4709400ca2a8fed38f7a16"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N16-M0/run.json",
+          "source_blob_sha": "b16aa43760a7aef08b492f01ad60fdf7ee14e417",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N16-M0/run.json",
+          "output_blob_sha": "b16aa43760a7aef08b492f01ad60fdf7ee14e417"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N16-M1/run.json",
+          "source_blob_sha": "8518b10a2bff6248617f593067a3721b46bbcabc",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N16-M1/run.json",
+          "output_blob_sha": "8518b10a2bff6248617f593067a3721b46bbcabc"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N32-M0/run.json",
+          "source_blob_sha": "9274a07b2be7934eb0602bc13c747962c68ce788",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N32-M0/run.json",
+          "output_blob_sha": "9274a07b2be7934eb0602bc13c747962c68ce788"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N32-M1/run.json",
+          "source_blob_sha": "85109bf592fd8b381813715d3962a2c7fb20ec36",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N32-M1/run.json",
+          "output_blob_sha": "85109bf592fd8b381813715d3962a2c7fb20ec36"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/flux_x.csv",
+          "source_blob_sha": "1ff1adccab871e351e9c33afe9d37bd58c7c35fb",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/flux_x.csv",
+          "output_blob_sha": "1ff1adccab871e351e9c33afe9d37bd58c7c35fb"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/flux_y.csv",
+          "source_blob_sha": "aa4176a9d080647cd1a854f9cd06121bc5808397",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/flux_y.csv",
+          "output_blob_sha": "aa4176a9d080647cd1a854f9cd06121bc5808397"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/run.json",
+          "source_blob_sha": "4b202dc5186281a7c82cc9b6b8ae4f5ae8234863",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/run.json",
+          "output_blob_sha": "4b202dc5186281a7c82cc9b6b8ae4f5ae8234863"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/temperature.csv",
+          "source_blob_sha": "94e5679a414fe5e0a70736879b027836ea504a49",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M0/temperature.csv",
+          "output_blob_sha": "94e5679a414fe5e0a70736879b027836ea504a49"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/flux_x.csv",
+          "source_blob_sha": "0ec8efb6e9effc8e008eb796732b7c2f6d135e7a",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/flux_x.csv",
+          "output_blob_sha": "0ec8efb6e9effc8e008eb796732b7c2f6d135e7a"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/flux_y.csv",
+          "source_blob_sha": "71cf6d93d8c3795675e2dc26902791e7a6dc0f51",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/flux_y.csv",
+          "output_blob_sha": "71cf6d93d8c3795675e2dc26902791e7a6dc0f51"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/run.json",
+          "source_blob_sha": "781d571f49780d2c1366f2525cd92d5fe0c95343",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/run.json",
+          "output_blob_sha": "781d571f49780d2c1366f2525cd92d5fe0c95343"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/temperature.csv",
+          "source_blob_sha": "be65c403dc4e250135a0b314b74cf580d58b9eb6",
+          "output": "code/tutorial-007/results/et007-03/raw/sinesine-p45-N64-M1/temperature.csv",
+          "output_blob_sha": "be65c403dc4e250135a0b314b74cf580d58b9eb6"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-03/summary.csv",
+          "source_blob_sha": "bf5c42d88698063bd95ca41c7bb77e230f0bfd40",
+          "output": "code/tutorial-007/results/et007-03/summary.csv",
+          "output_blob_sha": "bf5c42d88698063bd95ca41c7bb77e230f0bfd40"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/angle_comparison.csv",
+          "source_blob_sha": "11f1f8a2c7e2cbe0bfcec1f17f57f626ac50ff10",
+          "output": "code/tutorial-007/results/et007-04/angle_comparison.csv",
+          "output_blob_sha": "11f1f8a2c7e2cbe0bfcec1f17f57f626ac50ff10"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/checks.json",
+          "source_blob_sha": "729911d8f957268ce584baa2d927245277dddb67",
+          "output": "code/tutorial-007/results/et007-04/checks.json",
+          "output_blob_sha": "729911d8f957268ce584baa2d927245277dddb67"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p15-N128-M0/run.json",
+          "source_blob_sha": "b4f8c46084b9bf8b191b0319e846f02991f9323e",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p15-N128-M0/run.json",
+          "output_blob_sha": "b4f8c46084b9bf8b191b0319e846f02991f9323e"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p15-N128-M1/run.json",
+          "source_blob_sha": "9a2ca1a3bdc5ce1d465cf94408f81b893a0dee84",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p15-N128-M1/run.json",
+          "output_blob_sha": "9a2ca1a3bdc5ce1d465cf94408f81b893a0dee84"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p15-N64-M0/run.json",
+          "source_blob_sha": "fe6714e1dc6fdb24bd7b7b96b38fef105363cb84",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p15-N64-M0/run.json",
+          "output_blob_sha": "fe6714e1dc6fdb24bd7b7b96b38fef105363cb84"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p15-N64-M1/run.json",
+          "source_blob_sha": "9613ef30d0ed3cfea73066ee07e8d696c243a197",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p15-N64-M1/run.json",
+          "output_blob_sha": "9613ef30d0ed3cfea73066ee07e8d696c243a197"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p30-N128-M0/run.json",
+          "source_blob_sha": "3f42b6d447bd3595563d4b40b03749f3cadfa64b",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p30-N128-M0/run.json",
+          "output_blob_sha": "3f42b6d447bd3595563d4b40b03749f3cadfa64b"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p30-N128-M1/run.json",
+          "source_blob_sha": "c00356b7fe940d75da8602fbd3791b4eb82c7028",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p30-N128-M1/run.json",
+          "output_blob_sha": "c00356b7fe940d75da8602fbd3791b4eb82c7028"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p30-N64-M0/run.json",
+          "source_blob_sha": "8a295820f244096a693965f2339964533db3eb62",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p30-N64-M0/run.json",
+          "output_blob_sha": "8a295820f244096a693965f2339964533db3eb62"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/raw/sinesine-p30-N64-M1/run.json",
+          "source_blob_sha": "6a45f35dc64779851c6b80d57422515b9eab180e",
+          "output": "code/tutorial-007/results/et007-04/raw/sinesine-p30-N64-M1/run.json",
+          "output_blob_sha": "6a45f35dc64779851c6b80d57422515b9eab180e"
+        },
+        {
+          "source": "experiments/tutorial-007/results/et007-04/summary.csv",
+          "source_blob_sha": "d05507f6764d64c69b0fa944693997289ee0eba0",
+          "output": "code/tutorial-007/results/et007-04/summary.csv",
+          "output_blob_sha": "d05507f6764d64c69b0fa944693997289ee0eba0"
+        },
+        {
+          "source": "experiments/tutorial-007/results/summary.csv",
+          "source_blob_sha": "e19dc0ed0f87de0947268ed976421f0c24eb8ecf",
+          "output": "code/tutorial-007/results/summary.csv",
+          "output_blob_sha": "e19dc0ed0f87de0947268ed976421f0c24eb8ecf"
+        },
+        {
+          "source": "experiments/tutorial-007/run_et007_02.py",
+          "source_blob_sha": "de731b45081137c946d91a947eb3dd6515569567",
+          "output": "code/tutorial-007/run_et007_02.py",
+          "output_blob_sha": "de731b45081137c946d91a947eb3dd6515569567"
+        },
+        {
+          "source": "experiments/tutorial-007/run_et007_03.py",
+          "source_blob_sha": "761fef17e607b83dc25155eb3500849addc0a26f",
+          "output": "code/tutorial-007/run_et007_03.py",
+          "output_blob_sha": "761fef17e607b83dc25155eb3500849addc0a26f"
+        },
+        {
+          "source": "experiments/tutorial-007/run_et007_04.py",
+          "source_blob_sha": "834c60ffacfc159d0113193f917b39632d23766b",
+          "output": "code/tutorial-007/run_et007_04.py",
+          "output_blob_sha": "834c60ffacfc159d0113193f917b39632d23766b"
+        },
+        {
+          "source": "experiments/tutorial-007/run_experiments.py",
+          "source_blob_sha": "6df2ff9b17cf29d3540d57edab17008970f12518",
+          "output": "code/tutorial-007/run_experiments.py",
+          "output_blob_sha": "6df2ff9b17cf29d3540d57edab17008970f12518"
+        },
+        {
+          "source": "experiments/tutorial-007/src/model.py",
+          "source_blob_sha": "b457ad1b5e6c32723a8f25c08490bae23af35597",
+          "output": "code/tutorial-007/src/model.py",
+          "output_blob_sha": "b457ad1b5e6c32723a8f25c08490bae23af35597"
+        },
+        {
+          "source": "experiments/tutorial-007/src/validate.py",
+          "source_blob_sha": "843b55b5f9fe0b25bcc071d4bd181a429f550242",
+          "output": "code/tutorial-007/src/validate.py",
+          "output_blob_sha": "843b55b5f9fe0b25bcc071d4bd181a429f550242"
+        },
+        {
+          "source": "experiments/tutorial-007/src/validate_et007_02.py",
+          "source_blob_sha": "381458cd0b53fbec0b7fc08c58c759810f09d7aa",
+          "output": "code/tutorial-007/src/validate_et007_02.py",
+          "output_blob_sha": "381458cd0b53fbec0b7fc08c58c759810f09d7aa"
+        },
+        {
+          "source": "experiments/tutorial-007/src/validate_et007_03.py",
+          "source_blob_sha": "83ff9ec7584970156eacd23fbdecc19ec3680dd0",
+          "output": "code/tutorial-007/src/validate_et007_03.py",
+          "output_blob_sha": "83ff9ec7584970156eacd23fbdecc19ec3680dd0"
+        },
+        {
+          "source": "experiments/tutorial-007/src/validate_et007_04.py",
+          "source_blob_sha": "591ccdf473b27df70e2a76273bbae16f659b6c3e",
+          "output": "code/tutorial-007/src/validate_et007_04.py",
+          "output_blob_sha": "591ccdf473b27df70e2a76273bbae16f659b6c3e"
+        },
+        {
+          "source": "experiments/tutorial-007/tests/test_anisotropy.py",
+          "source_blob_sha": "47b4f4618b7e01d771dd62dbac60b0f141cb67fe",
+          "output": "code/tutorial-007/tests/test_anisotropy.py",
+          "output_blob_sha": "47b4f4618b7e01d771dd62dbac60b0f141cb67fe"
+        },
+        {
+          "source": "experiments/tutorial-007/tests/test_et007_02.py",
+          "source_blob_sha": "87a9ae4b760c20444ec20c9704c203992ee8fde5",
+          "output": "code/tutorial-007/tests/test_et007_02.py",
+          "output_blob_sha": "87a9ae4b760c20444ec20c9704c203992ee8fde5"
+        },
+        {
+          "source": "experiments/tutorial-007/tests/test_et007_03.py",
+          "source_blob_sha": "965c2929c678d8958a773c93c5d95c5b1eb96c3b",
+          "output": "code/tutorial-007/tests/test_et007_03.py",
+          "output_blob_sha": "965c2929c678d8958a773c93c5d95c5b1eb96c3b"
+        },
+        {
+          "source": "experiments/tutorial-007/tests/test_et007_04.py",
+          "source_blob_sha": "3303b930c40844aebc81b43391e8258e29b20f5e",
+          "output": "code/tutorial-007/tests/test_et007_04.py",
+          "output_blob_sha": "3303b930c40844aebc81b43391e8258e29b20f5e"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-007"
     }
   ]
 }

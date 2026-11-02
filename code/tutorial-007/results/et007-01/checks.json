@@ -1,0 +1,47 @@
+{
+  "actual_cases": 8,
+  "aligned_pairs": [
+    {
+      "N": 16,
+      "methods_analytically_equivalent": true
+    },
+    {
+      "N": 32,
+      "methods_analytically_equivalent": true
+    },
+    {
+      "N": 64,
+      "methods_analytically_equivalent": true
+    },
+    {
+      "N": 128,
+      "methods_analytically_equivalent": true
+    }
+  ],
+  "all_metrics_checked_against_exact_discrete_mode": true,
+  "article_id": "tutorial-007",
+  "config_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "expected_cases": 28,
+  "production_solver_imported": false,
+  "run_source_commit": "5df2df5b0120662bd81a97ac60a078dfa3cfcd9f",
+  "saved_field_checks": [
+    {
+      "N": 64,
+      "face_count": 8064,
+      "global_dual_budget_absolute": 7.815970093361102e-13,
+      "local_balance_linf": 1.3117978925336615e-14,
+      "nodal_max_discrete_solution_error": 2.298161660974074e-14
+    },
+    {
+      "N": 64,
+      "face_count": 8064,
+      "global_dual_budget_absolute": 7.815970093361102e-13,
+      "local_balance_linf": 1.3117978925336615e-14,
+      "nodal_max_discrete_solution_error": 2.298161660974074e-14
+    }
+  ],
+  "science_csv_count": 7,
+  "separately_derived_discrete_eigenmode": "A_N=(pi*h/(2*sin(pi*h/2)))^2",
+  "stage": "ET007-01",
+  "status": "PASS"
+}

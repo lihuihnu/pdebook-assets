@@ -1,0 +1,24 @@
+{
+  "N": 64,
+  "article_id": "tutorial-007",
+  "case_id": "affine-p45-N64-M1",
+  "configuration_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "control_volume_scope": "Omega_h_not_physical_boundary",
+  "experiment": "ET007-02",
+  "field": "affine",
+  "matrix_scaling": "unscaled_Lh_dirichlet_eliminated",
+  "method": "M1",
+  "scientific_csv_sha256": {
+    "flux_x.csv": "f6495b5389dc5c940cab323d9c97f2a703bf09c874da8ee5f67b38b9e5d27e13",
+    "flux_y.csv": "865002322086ebfac262641211cdc92c9f7edcdf17df9692b16d7003262ae441",
+    "temperature.csv": "eded4f49cd6d6cca60bd5d0f1a43da15bd747df17fb7e22ba31357fa1444ad8c"
+  },
+  "source_commit": "e6a20bf1b34ec2c28870b6e7c156dbab1a3b81ed",
+  "source_sha256": {
+    "run_et007_02.py": "2a708ad123bbf7de0a6cf297b3ba628df91256d2c178ee78003766b53547044d",
+    "run_experiments.py": "4b877a0e9519820a146272de92569ec779c3a6faa452f50d342c445c2026728d",
+    "src/model.py": "3794c0ab8c89053d1cbd2a3603454311efed8c29d4fc2ac497c39c1986313218"
+  },
+  "status": "solved",
+  "theta_deg": 45.0
+}

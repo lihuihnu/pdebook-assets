@@ -1,0 +1,25 @@
+{
+  "N": 64,
+  "article_id": "tutorial-007",
+  "case_id": "sinesine-p45-N64-M1",
+  "config_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "control_volume_scope": "Omega_h_not_physical_boundary",
+  "experiment": "ET007-03",
+  "field": "sinesine",
+  "matrix_scaling": "unscaled_Lh_Dirichlet_eliminated",
+  "method": "M1",
+  "same_full_continuous_source_for_both_methods": true,
+  "scientific_csv_sha256": {
+    "flux_x.csv": "9d13711636e2d1839caa1540eaa48a95fbe649e95d3074b0bad1908f6138bfac",
+    "flux_y.csv": "c24819acf1de9d258815b843571f7fa8f3c9f61574cac55f5aa3e14daa8e2cfa",
+    "temperature.csv": "e296e598d745aec06883fafa6e7b4f77938dc2574f239c2df9ebe34043486227"
+  },
+  "source_commit": "6f7b68c72a50c93a05a376e25a695616d46da19f",
+  "source_sha256": {
+    "run_et007_03.py": "f64418ac04b4e972602e084ce18d73dd4d9c2963deb6f156cb6df9483dc2cdda",
+    "run_experiments.py": "4b877a0e9519820a146272de92569ec779c3a6faa452f50d342c445c2026728d",
+    "src/model.py": "3794c0ab8c89053d1cbd2a3603454311efed8c29d4fc2ac497c39c1986313218"
+  },
+  "status": "solved",
+  "theta_deg": 45.0
+}

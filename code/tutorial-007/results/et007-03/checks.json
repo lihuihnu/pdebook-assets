@@ -1,0 +1,205 @@
+{
+  "M0_reference": "orthonormal 2D DST-I eigenvalue solution",
+  "M1_reference": "matrix-free CG on independently coded nine-point Dirichlet operator",
+  "actual_cases": 8,
+  "article_id": "tutorial-007",
+  "convergence_not_forced": true,
+  "experiment": "ET007-03",
+  "frozen_config_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "independent_solutions": [
+    {
+      "case_id": "sinesine-p45-N16-M0",
+      "reference_T_error_l2": 0.07533761059128635,
+      "reference_qx_error_linf": 11.656086344075147,
+      "reference_qy_error_linf": 11.65608634407515,
+      "reference_solver": {
+        "method": "DST-I/finite-grid eigenvalues",
+        "scaled_residual_linf": 9.882679712152189e-15
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N16-M1",
+      "reference_T_error_l2": 0.0014400284846286184,
+      "reference_qx_error_linf": 0.11477398731979171,
+      "reference_qy_error_linf": 0.11477398731979171,
+      "reference_solver": {
+        "independent_iterations": 51,
+        "method": "matrix-free independent nine-point CG",
+        "scaled_residual_linf": 9.424542242052419e-14
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N32-M0",
+      "reference_T_error_l2": 0.07574507251397578,
+      "reference_qx_error_linf": 12.842656554916122,
+      "reference_qy_error_linf": 12.842656554916118,
+      "reference_solver": {
+        "method": "DST-I/finite-grid eigenvalues",
+        "scaled_residual_linf": 3.6127411927867605e-14
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N32-M1",
+      "reference_T_error_l2": 0.0003616738691891717,
+      "reference_qx_error_linf": 0.03343970931378415,
+      "reference_qy_error_linf": 0.03343970931377527,
+      "reference_solver": {
+        "independent_iterations": 116,
+        "method": "matrix-free independent nine-point CG",
+        "scaled_residual_linf": 3.2985897847183464e-13
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N64-M0",
+      "reference_T_error_l2": 0.07584511011155197,
+      "reference_qx_error_linf": 13.476747520465288,
+      "reference_qy_error_linf": 13.476747520465302,
+      "reference_solver": {
+        "method": "DST-I/finite-grid eigenvalues",
+        "scaled_residual_linf": 2.3954044865216565e-13
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N64-M1",
+      "reference_T_error_l2": 9.0605250375968e-05,
+      "reference_qx_error_linf": 0.008932992937159767,
+      "reference_qy_error_linf": 0.008932992937159767,
+      "reference_solver": {
+        "independent_iterations": 249,
+        "method": "matrix-free independent nine-point CG",
+        "scaled_residual_linf": 1.8214891329066726e-12
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N128-M0",
+      "reference_T_error_l2": 0.07586998155991144,
+      "reference_qx_error_linf": 13.803713389677156,
+      "reference_qy_error_linf": 13.803713389677158,
+      "reference_solver": {
+        "method": "DST-I/finite-grid eigenvalues",
+        "scaled_residual_linf": 1.0126801535505352e-12
+      }
+    },
+    {
+      "case_id": "sinesine-p45-N128-M1",
+      "reference_T_error_l2": 2.26650519726046e-05,
+      "reference_qx_error_linf": 0.0023010149619597797,
+      "reference_qy_error_linf": 0.0023010149619633324,
+      "reference_solver": {
+        "independent_iterations": 511,
+        "method": "matrix-free independent nine-point CG",
+        "scaled_residual_linf": 9.30359394994608e-12
+      }
+    }
+  ],
+  "metrics_compared_independently_for_all_eight_cases": true,
+  "observed_refinement_orders_from_real_summary": [
+    {
+      "N_coarse": 16,
+      "N_fine": 32,
+      "method": "M0",
+      "observed_orders": {
+        "T_error_l2": -0.007781761726346515,
+        "T_error_linf": -0.0005701563650018994,
+        "q_x_error_linf": -0.13986019105594366,
+        "q_y_error_linf": -0.13986019105594294
+      }
+    },
+    {
+      "N_coarse": 32,
+      "N_fine": 64,
+      "method": "M0",
+      "observed_orders": {
+        "T_error_l2": -0.0019041307870642777,
+        "T_error_linf": -0.00541278536314928,
+        "q_x_error_linf": -0.06952869779480327,
+        "q_y_error_linf": -0.06952869779480277
+      }
+    },
+    {
+      "N_coarse": 64,
+      "N_fine": 128,
+      "method": "M0",
+      "observed_orders": {
+        "T_error_l2": -0.00047301708924718516,
+        "T_error_linf": -0.00041070751774397867,
+        "q_x_error_linf": -0.034584065751614324,
+        "q_y_error_linf": -0.03458406575161531
+      }
+    },
+    {
+      "N_coarse": 16,
+      "N_fine": 32,
+      "method": "M1",
+      "observed_orders": {
+        "T_error_l2": 1.993336076667513,
+        "T_error_linf": 1.9793763893250043,
+        "q_x_error_linf": 1.7791614913713143,
+        "q_y_error_linf": 1.7791614913737028
+      }
+    },
+    {
+      "N_coarse": 32,
+      "N_fine": 64,
+      "method": "M1",
+      "observed_orders": {
+        "T_error_l2": 1.9970228087077413,
+        "T_error_linf": 1.9886180355426388,
+        "q_x_error_linf": 1.9043467799771585,
+        "q_y_error_linf": 1.9043467799714167
+      }
+    },
+    {
+      "N_coarse": 64,
+      "N_fine": 128,
+      "method": "M1",
+      "observed_orders": {
+        "T_error_l2": 1.999125184333392,
+        "T_error_linf": 1.998475419906033,
+        "q_x_error_linf": 1.9568732567585045,
+        "q_y_error_linf": 1.9568732567831082
+      }
+    }
+  ],
+  "planned_full_cases": 28,
+  "production_solver_imported": false,
+  "production_source_commit": "6f7b68c72a50c93a05a376e25a695616d46da19f",
+  "raw_field_reviews": [
+    {
+      "case_id": "sinesine-p45-N64-M0",
+      "dual_face_count": 8064,
+      "max_difference_from_independent_solution": 1.0325074129013956e-14,
+      "max_qx_difference_from_independent_solution": 5.480060849549773e-13,
+      "max_qy_difference_from_independent_solution": 5.071498776487715e-13,
+      "node_count": 4225
+    },
+    {
+      "case_id": "sinesine-p45-N64-M1",
+      "dual_face_count": 8064,
+      "max_difference_from_independent_solution": 8.104628079763643e-15,
+      "max_qx_difference_from_independent_solution": 1.0338396805309458e-12,
+      "max_qy_difference_from_independent_solution": 1.1572964808692632e-12,
+      "node_count": 4225
+    },
+    {
+      "case_id": "sinesine-p45-N128-M0",
+      "dual_face_count": 32512,
+      "max_difference_from_independent_solution": 5.4511950509095186e-14,
+      "max_qx_difference_from_independent_solution": 1.3278267374516872e-12,
+      "max_qy_difference_from_independent_solution": 1.2523315717771766e-12,
+      "node_count": 16641
+    },
+    {
+      "case_id": "sinesine-p45-N128-M1",
+      "dual_face_count": 32512,
+      "max_difference_from_independent_solution": 1.099120794378905e-14,
+      "max_qx_difference_from_independent_solution": 2.936317855528614e-12,
+      "max_qy_difference_from_independent_solution": 3.4665603720895888e-12,
+      "node_count": 16641
+    }
+  ],
+  "same_true_full_tensor_source": true,
+  "scientific_csv_count": 13,
+  "scope": "internal Omega_h dual conservation, not full physical boundary flux",
+  "status": "PASS"
+}

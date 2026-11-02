@@ -1,0 +1,19 @@
+{
+  "N": 16,
+  "article_id": "tutorial-007",
+  "case_id": "sinesine-p00-N16-M1",
+  "config_sha256": "5f5129c7fc1bdefb2be34cdeb651c201fbc7527c7dac57a85d866695734a860f",
+  "dual_control_region": "Omega_h",
+  "experiment": "ET007-01",
+  "field": "sinesine",
+  "matrix_kind": "interior_unscaled_Lh_dirichlet_eliminated",
+  "method": "M1",
+  "scientific_csv_sha256": {},
+  "source_commit": "5df2df5b0120662bd81a97ac60a078dfa3cfcd9f",
+  "source_sha256": {
+    "run_experiments.py": "4b877a0e9519820a146272de92569ec779c3a6faa452f50d342c445c2026728d",
+    "src/model.py": "3794c0ab8c89053d1cbd2a3603454311efed8c29d4fc2ac497c39c1986313218"
+  },
+  "status": "solved",
+  "theta_deg": 0.0
+}
