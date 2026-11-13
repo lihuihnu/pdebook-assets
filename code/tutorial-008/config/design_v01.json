@@ -1,0 +1,939 @@
+{
+  "schema_version": "1.0",
+  "article_id": "tutorial-008",
+  "design_version": "v0.1",
+  "design_date": "2026-11-04",
+  "design_stage": "mathematics_pass_experiments_not_run",
+  "title": "为什么精度更高的格式，反而算出了负浓度？",
+  "model": {
+    "dimensionless": true,
+    "L": 1,
+    "v": 1,
+    "c_left": 0,
+    "c_right": 1,
+    "source": 0,
+    "steady": true,
+    "constant_coefficients": true,
+    "grid": "uniform nodal with inner-node dual control volumes",
+    "p_definition": "v*h/D",
+    "p_global_definition": "v*L/D",
+    "base_global_pe": 60,
+    "base_N": 12,
+    "base_D": "1/60"
+  },
+  "methods": {
+    "M0": "central second-order advective flux",
+    "M1": "positive-velocity first-order upwind flux",
+    "M2": "constant-flux exponential fitting"
+  },
+  "stages": [
+    {
+      "stage_id": "ET008-01",
+      "type": "baseline",
+      "global_peclet": 60,
+      "N_values": [
+        12
+      ]
+    },
+    {
+      "stage_id": "ET008-02",
+      "type": "mesh_peclet_sweep",
+      "N": 12,
+      "p_values": [
+        0.5,
+        1,
+        1.5,
+        1.9,
+        2,
+        2.1,
+        2.5,
+        3,
+        5
+      ]
+    },
+    {
+      "stage_id": "ET008-03",
+      "type": "upwind_equivalent_diffusivity",
+      "global_peclet": 60,
+      "N_values": [
+        12,
+        24,
+        60
+      ]
+    },
+    {
+      "stage_id": "ET008-04",
+      "type": "fixed_physics_refinement",
+      "global_peclet": 60,
+      "N_values": [
+        12,
+        18,
+        24,
+        30,
+        48,
+        60,
+        96,
+        192,
+        384
+      ]
+    }
+  ],
+  "expected_counts": {
+    "ET008-01": {
+      "comparison_points": 3,
+      "new_unique_cases": 3,
+      "reused": 0
+    },
+    "ET008-02": {
+      "comparison_points": 27,
+      "new_unique_cases": 24,
+      "reused": 3
+    },
+    "ET008-03": {
+      "comparison_points": 9,
+      "new_unique_cases": 6,
+      "reused": 3
+    },
+    "ET008-04": {
+      "comparison_points": 27,
+      "new_unique_cases": 18,
+      "reused": 9
+    }
+  },
+  "expected_unique_count": 51,
+  "unique_cases": [
+    {
+      "case_id": "P0600-N0012-M0",
+      "source_stage": "ET008-01",
+      "stage_membership": [
+        "ET008-01",
+        "ET008-02",
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.016666666666666666,
+      "p": 5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0600-N0012-M1",
+      "source_stage": "ET008-01",
+      "stage_membership": [
+        "ET008-01",
+        "ET008-02",
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.016666666666666666,
+      "p": 5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0600-N0012-M2",
+      "source_stage": "ET008-01",
+      "stage_membership": [
+        "ET008-01",
+        "ET008-02",
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.016666666666666666,
+      "p": 5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0060-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 6,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.16666666666666666,
+      "p": 0.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0060-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 6,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.16666666666666666,
+      "p": 0.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0060-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 6,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.16666666666666666,
+      "p": 0.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0120-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 12,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.08333333333333333,
+      "p": 1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0120-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 12,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.08333333333333333,
+      "p": 1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0120-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 12,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.08333333333333333,
+      "p": 1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0180-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 18,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.05555555555555555,
+      "p": 1.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0180-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 18,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.05555555555555555,
+      "p": 1.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0180-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 18,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.05555555555555555,
+      "p": 1.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0228-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 22.8,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.043859649122807015,
+      "p": 1.9,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0228-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 22.8,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.043859649122807015,
+      "p": 1.9,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0228-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 22.8,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.043859649122807015,
+      "p": 1.9,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0240-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 24,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.041666666666666664,
+      "p": 2,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0240-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 24,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.041666666666666664,
+      "p": 2,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0240-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 24,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.041666666666666664,
+      "p": 2,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0252-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 25.2,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03968253968253968,
+      "p": 2.1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0252-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 25.2,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03968253968253968,
+      "p": 2.1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0252-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 25.2,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03968253968253968,
+      "p": 2.1,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0300-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 30,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03333333333333333,
+      "p": 2.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0300-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 30,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03333333333333333,
+      "p": 2.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0300-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 30,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.03333333333333333,
+      "p": 2.5,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0360-N0012-M0",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 36,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.027777777777777776,
+      "p": 3,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0360-N0012-M1",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 36,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.027777777777777776,
+      "p": 3,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0360-N0012-M2",
+      "source_stage": "ET008-02",
+      "stage_membership": [
+        "ET008-02"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 36,
+      "N": 12,
+      "h": 0.08333333333333333,
+      "D": 0.027777777777777776,
+      "p": 3,
+      "unknowns": 11
+    },
+    {
+      "case_id": "P0600-N0024-M0",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 24,
+      "h": 0.041666666666666664,
+      "D": 0.016666666666666666,
+      "p": 2.5,
+      "unknowns": 23
+    },
+    {
+      "case_id": "P0600-N0024-M1",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 24,
+      "h": 0.041666666666666664,
+      "D": 0.016666666666666666,
+      "p": 2.5,
+      "unknowns": 23
+    },
+    {
+      "case_id": "P0600-N0024-M2",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 24,
+      "h": 0.041666666666666664,
+      "D": 0.016666666666666666,
+      "p": 2.5,
+      "unknowns": 23
+    },
+    {
+      "case_id": "P0600-N0060-M0",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 60,
+      "h": 0.016666666666666666,
+      "D": 0.016666666666666666,
+      "p": 1,
+      "unknowns": 59
+    },
+    {
+      "case_id": "P0600-N0060-M1",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 60,
+      "h": 0.016666666666666666,
+      "D": 0.016666666666666666,
+      "p": 1,
+      "unknowns": 59
+    },
+    {
+      "case_id": "P0600-N0060-M2",
+      "source_stage": "ET008-03",
+      "stage_membership": [
+        "ET008-03",
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 60,
+      "h": 0.016666666666666666,
+      "D": 0.016666666666666666,
+      "p": 1,
+      "unknowns": 59
+    },
+    {
+      "case_id": "P0600-N0018-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 18,
+      "h": 0.05555555555555555,
+      "D": 0.016666666666666666,
+      "p": 3.333333333333,
+      "unknowns": 17
+    },
+    {
+      "case_id": "P0600-N0018-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 18,
+      "h": 0.05555555555555555,
+      "D": 0.016666666666666666,
+      "p": 3.333333333333,
+      "unknowns": 17
+    },
+    {
+      "case_id": "P0600-N0018-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 18,
+      "h": 0.05555555555555555,
+      "D": 0.016666666666666666,
+      "p": 3.333333333333,
+      "unknowns": 17
+    },
+    {
+      "case_id": "P0600-N0030-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 30,
+      "h": 0.03333333333333333,
+      "D": 0.016666666666666666,
+      "p": 2,
+      "unknowns": 29
+    },
+    {
+      "case_id": "P0600-N0030-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 30,
+      "h": 0.03333333333333333,
+      "D": 0.016666666666666666,
+      "p": 2,
+      "unknowns": 29
+    },
+    {
+      "case_id": "P0600-N0030-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 30,
+      "h": 0.03333333333333333,
+      "D": 0.016666666666666666,
+      "p": 2,
+      "unknowns": 29
+    },
+    {
+      "case_id": "P0600-N0048-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 48,
+      "h": 0.020833333333333332,
+      "D": 0.016666666666666666,
+      "p": 1.25,
+      "unknowns": 47
+    },
+    {
+      "case_id": "P0600-N0048-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 48,
+      "h": 0.020833333333333332,
+      "D": 0.016666666666666666,
+      "p": 1.25,
+      "unknowns": 47
+    },
+    {
+      "case_id": "P0600-N0048-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 48,
+      "h": 0.020833333333333332,
+      "D": 0.016666666666666666,
+      "p": 1.25,
+      "unknowns": 47
+    },
+    {
+      "case_id": "P0600-N0096-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 96,
+      "h": 0.010416666666666666,
+      "D": 0.016666666666666666,
+      "p": 0.625,
+      "unknowns": 95
+    },
+    {
+      "case_id": "P0600-N0096-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 96,
+      "h": 0.010416666666666666,
+      "D": 0.016666666666666666,
+      "p": 0.625,
+      "unknowns": 95
+    },
+    {
+      "case_id": "P0600-N0096-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 96,
+      "h": 0.010416666666666666,
+      "D": 0.016666666666666666,
+      "p": 0.625,
+      "unknowns": 95
+    },
+    {
+      "case_id": "P0600-N0192-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 192,
+      "h": 0.005208333333333333,
+      "D": 0.016666666666666666,
+      "p": 0.3125,
+      "unknowns": 191
+    },
+    {
+      "case_id": "P0600-N0192-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 192,
+      "h": 0.005208333333333333,
+      "D": 0.016666666666666666,
+      "p": 0.3125,
+      "unknowns": 191
+    },
+    {
+      "case_id": "P0600-N0192-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 192,
+      "h": 0.005208333333333333,
+      "D": 0.016666666666666666,
+      "p": 0.3125,
+      "unknowns": 191
+    },
+    {
+      "case_id": "P0600-N0384-M0",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M0",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 384,
+      "h": 0.0026041666666666665,
+      "D": 0.016666666666666666,
+      "p": 0.15625,
+      "unknowns": 383
+    },
+    {
+      "case_id": "P0600-N0384-M1",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M1",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 384,
+      "h": 0.0026041666666666665,
+      "D": 0.016666666666666666,
+      "p": 0.15625,
+      "unknowns": 383
+    },
+    {
+      "case_id": "P0600-N0384-M2",
+      "source_stage": "ET008-04",
+      "stage_membership": [
+        "ET008-04"
+      ],
+      "method": "M2",
+      "L": 1,
+      "v": 1,
+      "P": 60,
+      "N": 384,
+      "h": 0.0026041666666666665,
+      "D": 0.016666666666666666,
+      "p": 0.15625,
+      "unknowns": 383
+    }
+  ],
+  "identity_policy": "First stage is source of truth; reuse by SHA; never re-solve or overwrite in later stages",
+  "execution_policy": "Design-only: no numerical solver runs or fabricated result files; ET008-01 next after design review"
+}

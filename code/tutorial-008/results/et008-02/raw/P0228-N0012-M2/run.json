@@ -1,0 +1,20 @@
+{
+  "case_id": "P0228-N0012-M2",
+  "stage": "ET008-02",
+  "method": "M2",
+  "N": 12,
+  "L": 1,
+  "v": 1,
+  "D": 0.043859649122807015,
+  "P": 22.8,
+  "p": 1.9,
+  "h": 0.08333333333333333,
+  "solver": "ET008-01 Thomas core; ET008-02 stage assembly",
+  "python_version": "3.14.4",
+  "status": "success",
+  "config_sha256": "828ab1f649be32acaf7822c678bfe6a77905d17aa1b1e63296617e2cf92994eb",
+  "source_sha256": "fbafdac514ff5893b9ee174310c0318498517c84b9c9c80307f90d850267c9a0",
+  "core_sha256": "d64f8bec5f0dbee653b5f6cb64927ab8ec7c74eb8141119728b176006adbf761",
+  "nodes_sha256": "15ccde22112add7b0512f022a3d05678c9b1501ba0ad0ae43f5906e38769d741",
+  "flux_sha256": "9888b513dc35c817b31bfed30413a55f45659da390818985ef4c26f4acdd6eed"
+}

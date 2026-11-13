@@ -1,0 +1,20 @@
+{
+  "case_id": "P0360-N0012-M1",
+  "stage": "ET008-02",
+  "method": "M1",
+  "N": 12,
+  "L": 1,
+  "v": 1,
+  "D": 0.027777777777777776,
+  "P": 36.0,
+  "p": 3.0,
+  "h": 0.08333333333333333,
+  "solver": "ET008-01 Thomas core; ET008-02 stage assembly",
+  "python_version": "3.14.4",
+  "status": "success",
+  "config_sha256": "828ab1f649be32acaf7822c678bfe6a77905d17aa1b1e63296617e2cf92994eb",
+  "source_sha256": "fbafdac514ff5893b9ee174310c0318498517c84b9c9c80307f90d850267c9a0",
+  "core_sha256": "d64f8bec5f0dbee653b5f6cb64927ab8ec7c74eb8141119728b176006adbf761",
+  "nodes_sha256": "55057ce7f7b90f8ffe6d7a782487fbebe7f1c4843294a3a6ebee7e4ec5ba1667",
+  "flux_sha256": "c2865ffe7320423e333e193a2fa5850be5ca33fd7c7cc7017720ed3f0f02c8d0"
+}

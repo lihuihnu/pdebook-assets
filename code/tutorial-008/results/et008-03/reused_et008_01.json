@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_stage": "ET008-01",
+  "source_commit_sha": "7635e320b8fc68d820d49b188446b74febb6a627",
+  "source_summary_git_blob": "6239ea268affa50aa95eb057fd7a366c963f0e7f",
+  "source_checks_git_blob": "974e5962391eefc32f53a712c760b5ed0e7946db",
+  "reused_case_ids": [
+    "P0600-N0012-M0",
+    "P0600-N0012-M1",
+    "P0600-N0012-M2"
+  ],
+  "new_PDE_solves_at_N12": 0,
+  "baseline_raw_unchanged": true
+}

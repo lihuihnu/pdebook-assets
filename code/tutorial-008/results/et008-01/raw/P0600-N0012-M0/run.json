@@ -1,0 +1,19 @@
+{
+  "case_id": "P0600-N0012-M0",
+  "stage": "ET008-01",
+  "method": "M0",
+  "N": 12,
+  "P": 60.0,
+  "p": 5.0,
+  "L": 1,
+  "v": 1,
+  "D": 0.016666666666666666,
+  "h": 0.08333333333333333,
+  "python_version": "3.14.4",
+  "solver": "explicit Thomas tridiagonal",
+  "config_sha256": "828ab1f649be32acaf7822c678bfe6a77905d17aa1b1e63296617e2cf92994eb",
+  "source_sha256": "d64f8bec5f0dbee653b5f6cb64927ab8ec7c74eb8141119728b176006adbf761",
+  "nodes_sha256": "b79fd34cf5ceb5cb6a65a0e48c4652e95efbf1c97a13c0dea3095ad2caf1d798",
+  "flux_sha256": "cc3701c8e2321cf30405fc0cad0d95e2b756719611a6e7a98727dfc28667c8a0",
+  "status": "success"
+}

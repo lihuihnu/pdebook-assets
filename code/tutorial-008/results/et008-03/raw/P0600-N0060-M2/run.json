@@ -1,0 +1,20 @@
+{
+  "stage": "ET008-03",
+  "case_id": "P0600-N0060-M2",
+  "method": "M2",
+  "status": "success",
+  "N": 60,
+  "L": 1,
+  "v": 1,
+  "D": 0.016666666666666666,
+  "P": 60.0,
+  "p": 1.0,
+  "h": 0.016666666666666666,
+  "solver": "frozen ET008-01 Thomas tridiagonal core",
+  "python_version": "3.14.4",
+  "config_sha256": "828ab1f649be32acaf7822c678bfe6a77905d17aa1b1e63296617e2cf92994eb",
+  "source_sha256": "5869955eecf2590837b12debbd33b3cb71f6d2d379c599dc1a12cef599dc604d",
+  "core_sha256": "d64f8bec5f0dbee653b5f6cb64927ab8ec7c74eb8141119728b176006adbf761",
+  "nodes_sha256": "d8a108959c987658b97c946f30ffbe87bef76225667f2f83ef0a5d7b8f091113",
+  "flux_sha256": "6517c4ba07386dbb36042b27ea8faddf59abc2c979d6e136ee1dd73bfd8579e1"
+}

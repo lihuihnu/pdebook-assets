@@ -1,0 +1,20 @@
+{
+  "stage": "ET008-04",
+  "case_id": "P0600-N0384-M2",
+  "method": "M2",
+  "N": 384,
+  "L": 1,
+  "v": 1,
+  "D": 0.016666666666666666,
+  "P": 60.0,
+  "p": 0.15625,
+  "h": 0.0026041666666666665,
+  "solver": "ET008-01 frozen Thomas/face core",
+  "python_version": "3.14.4",
+  "config_sha256": "828ab1f649be32acaf7822c678bfe6a77905d17aa1b1e63296617e2cf92994eb",
+  "source_sha256": "81afd104c473c9beaae129862205040e563921003d17166acd18c1cbd6befe9e",
+  "core_sha256": "d64f8bec5f0dbee653b5f6cb64927ab8ec7c74eb8141119728b176006adbf761",
+  "nodes_sha256": "2a7acb139f0be923947ee2ab5d8ec3b6f3a2d6dd1ac39163223465a5a90235cc",
+  "flux_sha256": "aa73c6d6a46ba7a6b20f12f3f0cd2ee5e8d58e5151235eade59d8255bbee82e1",
+  "status": "success"
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "ET008-01",
+  "status": "PASS",
+  "unique_cases_checked": 3,
+  "independent_checker_sha256": "c71f88b26dea8f6299be289e7e010d6d6ca3537966ba45c77a099f5de76f5dd5",
+  "cases": [
+    {
+      "case_id": "P0600-N0012-M0",
+      "method": "M0",
+      "max_discrete_node_error": 2.7755575615628914e-17,
+      "max_independent_flux_difference": 1.3877787807814457e-17,
+      "algebraic_residual_rel": 3.854941057726238e-18,
+      "flux_balance_rel": 6.938893903907228e-18,
+      "c_11": -0.4286262811706461,
+      "c_min": -0.4286262811706461,
+      "error_linf": 0.4353642281697316,
+      "status": "PASS"
+    },
+    {
+      "case_id": "P0600-N0012-M1",
+      "method": "M1",
+      "max_discrete_node_error": 2.7755575615628914e-17,
+      "max_independent_flux_difference": 2.7755575615628914e-17,
+      "algebraic_residual_rel": 1.8503717077085943e-16,
+      "flux_balance_rel": 6.938893903907228e-18,
+      "c_11": 0.16666666628383864,
+      "c_min": 0.0,
+      "error_linf": 0.1599287192847532,
+      "status": "PASS"
+    },
+    {
+      "case_id": "P0600-N0012-M2",
+      "method": "M2",
+      "max_discrete_node_error": 1.3010426069826053e-17,
+      "max_independent_flux_difference": 8.673617379884035e-19,
+      "algebraic_residual_rel": 1.3877787807814457e-17,
+      "flux_balance_rel": 8.673617379884035e-19,
+      "c_11": 0.006737946999085468,
+      "c_min": 0.0,
+      "error_linf": 1.3010426069826053e-17,
+      "status": "PASS"
+    }
+  ]
+}

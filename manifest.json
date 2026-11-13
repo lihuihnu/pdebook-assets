@@ -904,6 +904,56 @@
       "width_px": 2760,
       "height_px": 1530,
       "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-007/FT007-04_rotation_scan.png"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "figures/tutorial-008/exports/FT008-01_baseline_profiles.png",
+      "source_blob_sha": "3c14fb4179970626f02a59a9f62c10c373b59930",
+      "output": "assets/tutorial-008/FT008-01_baseline_profiles.png",
+      "output_blob_sha": "3c14fb4179970626f02a59a9f62c10c373b59930",
+      "width_px": 3120,
+      "height_px": 1350,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-008/FT008-01_baseline_profiles.png"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "figures/tutorial-008/exports/FT008-02_dual_control_volume.png",
+      "source_blob_sha": "7fe34fcbbfebf6e2c679b18ffed627aa70726dc5",
+      "output": "assets/tutorial-008/FT008-02_dual_control_volume.png",
+      "output_blob_sha": "7fe34fcbbfebf6e2c679b18ffed627aa70726dc5",
+      "width_px": 3120,
+      "height_px": 1530,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-008/FT008-02_dual_control_volume.png"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "figures/tutorial-008/exports/FT008-03_peclet_threshold.png",
+      "source_blob_sha": "c673d3a49db354e6db4e199229232d75329f6e25",
+      "output": "assets/tutorial-008/FT008-03_peclet_threshold.png",
+      "output_blob_sha": "c673d3a49db354e6db4e199229232d75329f6e25",
+      "width_px": 3120,
+      "height_px": 1380,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-008/FT008-03_peclet_threshold.png"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "figures/tutorial-008/exports/FT008-04_fitted_diffusion.png",
+      "source_blob_sha": "eb4ec4d7f31f39e9750be9d7a7befa2de2e79c1b",
+      "output": "assets/tutorial-008/FT008-04_fitted_diffusion.png",
+      "output_blob_sha": "eb4ec4d7f31f39e9750be9d7a7befa2de2e79c1b",
+      "width_px": 3960,
+      "height_px": 1410,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-008/FT008-04_fitted_diffusion.png"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "figures/tutorial-008/exports/FT008-05_mesh_convergence.png",
+      "source_blob_sha": "f62cc342e8a8e12b676cc4ac5420dc586492715e",
+      "output": "assets/tutorial-008/FT008-05_mesh_convergence.png",
+      "output_blob_sha": "f62cc342e8a8e12b676cc4ac5420dc586492715e",
+      "width_px": 3840,
+      "height_px": 1470,
+      "url": "https://raw.githubusercontent.com/lihuihnu/pdebook-assets/main/assets/tutorial-008/FT008-05_mesh_convergence.png"
     }
   ],
   "code": [
@@ -4914,6 +4964,1110 @@
         }
       ],
       "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-007"
+    },
+    {
+      "article_id": "tutorial-008",
+      "source": "experiments/tutorial-008",
+      "output": "code/tutorial-008",
+      "entrypoint": "code/tutorial-008/src/run_et008_01.py",
+      "command": "python3 code/tutorial-008/src/run_et008_01.py --config code/tutorial-008/config/design_v01.json --output /tmp/tutorial-008-et008-01",
+      "dependencies": [],
+      "files": [
+        {
+          "source": "experiments/tutorial-008/README.md",
+          "source_blob_sha": "81131cc644c2209567a81997821b36ae6080fd6d",
+          "output": "code/tutorial-008/README.md",
+          "output_blob_sha": "2fa47bddc7eae187b9dba0b0d6b9f64c5198a33a",
+          "transformed_for_public_paths": true
+        },
+        {
+          "source": "experiments/tutorial-008/config/design_v01.json",
+          "source_blob_sha": "f465173432ff1d74db67f78c44516bdaed1d9803",
+          "output": "code/tutorial-008/config/design_v01.json",
+          "output_blob_sha": "f465173432ff1d74db67f78c44516bdaed1d9803"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/checks.json",
+          "source_blob_sha": "974e5962391eefc32f53a712c760b5ed0e7946db",
+          "output": "code/tutorial-008/results/et008-01/checks.json",
+          "output_blob_sha": "974e5962391eefc32f53a712c760b5ed0e7946db"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M0/flux.csv",
+          "source_blob_sha": "a7e8e8862ccfdaea391552a0793a67b44674ce23",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M0/flux.csv",
+          "output_blob_sha": "a7e8e8862ccfdaea391552a0793a67b44674ce23"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M0/nodes.csv",
+          "source_blob_sha": "42867a4af6be9a230b4528dfd83f6d8732f313b3",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M0/nodes.csv",
+          "output_blob_sha": "42867a4af6be9a230b4528dfd83f6d8732f313b3"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M0/run.json",
+          "source_blob_sha": "15700cff8756a25c9e2af498350f3368a2e5f1e6",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M0/run.json",
+          "output_blob_sha": "15700cff8756a25c9e2af498350f3368a2e5f1e6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M1/flux.csv",
+          "source_blob_sha": "812e8e93d2071ec0c85ed04e51c347a448e62e1c",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M1/flux.csv",
+          "output_blob_sha": "812e8e93d2071ec0c85ed04e51c347a448e62e1c"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M1/nodes.csv",
+          "source_blob_sha": "02a8c12d2b0f28bc756a932bf2c8d0ca7ac62838",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M1/nodes.csv",
+          "output_blob_sha": "02a8c12d2b0f28bc756a932bf2c8d0ca7ac62838"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M1/run.json",
+          "source_blob_sha": "5e5d8c26b993f5363b567e897d0e637062e304bb",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M1/run.json",
+          "output_blob_sha": "5e5d8c26b993f5363b567e897d0e637062e304bb"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M2/flux.csv",
+          "source_blob_sha": "6a56423ae6d33c1d530ce8cb177635cab552c1d2",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M2/flux.csv",
+          "output_blob_sha": "6a56423ae6d33c1d530ce8cb177635cab552c1d2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M2/nodes.csv",
+          "source_blob_sha": "5bb889abee1450cd3253fc2301a282e7fa715b98",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M2/nodes.csv",
+          "output_blob_sha": "5bb889abee1450cd3253fc2301a282e7fa715b98"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/raw/P0600-N0012-M2/run.json",
+          "source_blob_sha": "68fa44cec3b164f1b182bce81913955de6e04e8d",
+          "output": "code/tutorial-008/results/et008-01/raw/P0600-N0012-M2/run.json",
+          "output_blob_sha": "68fa44cec3b164f1b182bce81913955de6e04e8d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/source_commit_sha.txt",
+          "source_blob_sha": "3f32d769fafad71090b8250af8cff7b0e3585158",
+          "output": "code/tutorial-008/results/et008-01/source_commit_sha.txt",
+          "output_blob_sha": "3f32d769fafad71090b8250af8cff7b0e3585158"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-01/summary.csv",
+          "source_blob_sha": "6239ea268affa50aa95eb057fd7a366c963f0e7f",
+          "output": "code/tutorial-008/results/et008-01/summary.csv",
+          "output_blob_sha": "6239ea268affa50aa95eb057fd7a366c963f0e7f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/checks.json",
+          "source_blob_sha": "bf386d80b042abf013c0583fe6c9c04227be3a84",
+          "output": "code/tutorial-008/results/et008-02/checks.json",
+          "output_blob_sha": "bf386d80b042abf013c0583fe6c9c04227be3a84"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/comparison.csv",
+          "source_blob_sha": "e4d274c3f98201784c9debcd76623bf2915c69ff",
+          "output": "code/tutorial-008/results/et008-02/comparison.csv",
+          "output_blob_sha": "e4d274c3f98201784c9debcd76623bf2915c69ff"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M0/flux.csv",
+          "source_blob_sha": "70d009826889df5510130e086d245aa4f1a56478",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M0/flux.csv",
+          "output_blob_sha": "70d009826889df5510130e086d245aa4f1a56478"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M0/nodes.csv",
+          "source_blob_sha": "81b963ed3ae807500539da1ff74c4524f484a844",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M0/nodes.csv",
+          "output_blob_sha": "81b963ed3ae807500539da1ff74c4524f484a844"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M0/run.json",
+          "source_blob_sha": "b053af244c30af9022eb9043cab5083df245568a",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M0/run.json",
+          "output_blob_sha": "b053af244c30af9022eb9043cab5083df245568a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M1/flux.csv",
+          "source_blob_sha": "569bb69dc953ecb2d7024282217a0c66ebccb4c8",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M1/flux.csv",
+          "output_blob_sha": "569bb69dc953ecb2d7024282217a0c66ebccb4c8"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M1/nodes.csv",
+          "source_blob_sha": "b3be00a8ff18079f88e6ba98d1108bea9b3be55a",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M1/nodes.csv",
+          "output_blob_sha": "b3be00a8ff18079f88e6ba98d1108bea9b3be55a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M1/run.json",
+          "source_blob_sha": "0fbe6ed2b5a8443b375e663b4ab03d9da948470e",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M1/run.json",
+          "output_blob_sha": "0fbe6ed2b5a8443b375e663b4ab03d9da948470e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M2/flux.csv",
+          "source_blob_sha": "bcd07d50b8938c4c339547e47462548c74d5dde3",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M2/flux.csv",
+          "output_blob_sha": "bcd07d50b8938c4c339547e47462548c74d5dde3"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M2/nodes.csv",
+          "source_blob_sha": "e914fe974d1e61f41c5f5472c132d5079d4b6a34",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M2/nodes.csv",
+          "output_blob_sha": "e914fe974d1e61f41c5f5472c132d5079d4b6a34"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0060-N0012-M2/run.json",
+          "source_blob_sha": "7a18546f74820b924bc28dff1238dbfc1bde4232",
+          "output": "code/tutorial-008/results/et008-02/raw/P0060-N0012-M2/run.json",
+          "output_blob_sha": "7a18546f74820b924bc28dff1238dbfc1bde4232"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M0/flux.csv",
+          "source_blob_sha": "f9e776f32a48c6f4d09b44b33404a2897e592bb6",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M0/flux.csv",
+          "output_blob_sha": "f9e776f32a48c6f4d09b44b33404a2897e592bb6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M0/nodes.csv",
+          "source_blob_sha": "314754c17d6949cb28ae5f6c2abf0a8d961e77cb",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M0/nodes.csv",
+          "output_blob_sha": "314754c17d6949cb28ae5f6c2abf0a8d961e77cb"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M0/run.json",
+          "source_blob_sha": "ac91baea051f1112b03654a4788e5e10a39e0485",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M0/run.json",
+          "output_blob_sha": "ac91baea051f1112b03654a4788e5e10a39e0485"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M1/flux.csv",
+          "source_blob_sha": "087eed26b064c5987b258061bb8638370ef0e258",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M1/flux.csv",
+          "output_blob_sha": "087eed26b064c5987b258061bb8638370ef0e258"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M1/nodes.csv",
+          "source_blob_sha": "e27f0f98c0841a0d8ce8a8d4c0d302a4f9ac746b",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M1/nodes.csv",
+          "output_blob_sha": "e27f0f98c0841a0d8ce8a8d4c0d302a4f9ac746b"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M1/run.json",
+          "source_blob_sha": "7ace011058fceaf918f93ef9f9d71c16968b27d2",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M1/run.json",
+          "output_blob_sha": "7ace011058fceaf918f93ef9f9d71c16968b27d2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M2/flux.csv",
+          "source_blob_sha": "341a175e20a834228be85dad6aa9ea1d75849f25",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M2/flux.csv",
+          "output_blob_sha": "341a175e20a834228be85dad6aa9ea1d75849f25"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M2/nodes.csv",
+          "source_blob_sha": "8d9513df008d9850b814ae02176f531ca3e2ec57",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M2/nodes.csv",
+          "output_blob_sha": "8d9513df008d9850b814ae02176f531ca3e2ec57"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0120-N0012-M2/run.json",
+          "source_blob_sha": "671b40e855715ec61e2979b7741e5be07e44ea23",
+          "output": "code/tutorial-008/results/et008-02/raw/P0120-N0012-M2/run.json",
+          "output_blob_sha": "671b40e855715ec61e2979b7741e5be07e44ea23"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M0/flux.csv",
+          "source_blob_sha": "21f523a61a329369c58f11865750ebe238bcc061",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M0/flux.csv",
+          "output_blob_sha": "21f523a61a329369c58f11865750ebe238bcc061"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M0/nodes.csv",
+          "source_blob_sha": "99ae1d1b2284b8a90db6e26ae7f7b0b4deb637ee",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M0/nodes.csv",
+          "output_blob_sha": "99ae1d1b2284b8a90db6e26ae7f7b0b4deb637ee"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M0/run.json",
+          "source_blob_sha": "b3cd1635cb5eaab0923279d7d26575cd265e25b0",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M0/run.json",
+          "output_blob_sha": "b3cd1635cb5eaab0923279d7d26575cd265e25b0"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M1/flux.csv",
+          "source_blob_sha": "5370c7e053c9a7b26e467ad5c076c1073fe10923",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M1/flux.csv",
+          "output_blob_sha": "5370c7e053c9a7b26e467ad5c076c1073fe10923"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M1/nodes.csv",
+          "source_blob_sha": "69ad6fb7adba5c84b00b9540d169d65de32ee064",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M1/nodes.csv",
+          "output_blob_sha": "69ad6fb7adba5c84b00b9540d169d65de32ee064"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M1/run.json",
+          "source_blob_sha": "9ddfffa00cf8edea096e6204c8709e7b946c3698",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M1/run.json",
+          "output_blob_sha": "9ddfffa00cf8edea096e6204c8709e7b946c3698"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M2/flux.csv",
+          "source_blob_sha": "f3446beb5a5bc3f998f0d904f654f145c61fb24a",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M2/flux.csv",
+          "output_blob_sha": "f3446beb5a5bc3f998f0d904f654f145c61fb24a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M2/nodes.csv",
+          "source_blob_sha": "ff012892105387e21cc46f8dc49bc79df10da0ca",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M2/nodes.csv",
+          "output_blob_sha": "ff012892105387e21cc46f8dc49bc79df10da0ca"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0180-N0012-M2/run.json",
+          "source_blob_sha": "84d68fe0437c5f6c51e5bf5d9111aa66e3c4e316",
+          "output": "code/tutorial-008/results/et008-02/raw/P0180-N0012-M2/run.json",
+          "output_blob_sha": "84d68fe0437c5f6c51e5bf5d9111aa66e3c4e316"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M0/flux.csv",
+          "source_blob_sha": "4cbeb137876b4f3d49865d2e0a74991a5f484e86",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M0/flux.csv",
+          "output_blob_sha": "4cbeb137876b4f3d49865d2e0a74991a5f484e86"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M0/nodes.csv",
+          "source_blob_sha": "f8221f8302ca26fddb0949ac896d8937bd182ac1",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M0/nodes.csv",
+          "output_blob_sha": "f8221f8302ca26fddb0949ac896d8937bd182ac1"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M0/run.json",
+          "source_blob_sha": "00c5175b36c0e8f6ba31eb0dd92d8c828b099c3b",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M0/run.json",
+          "output_blob_sha": "00c5175b36c0e8f6ba31eb0dd92d8c828b099c3b"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M1/flux.csv",
+          "source_blob_sha": "64645f41cb0966904252019df46eb94ba0773ed5",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M1/flux.csv",
+          "output_blob_sha": "64645f41cb0966904252019df46eb94ba0773ed5"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M1/nodes.csv",
+          "source_blob_sha": "d5f92a04a724a90927f151f8c973a131d4d25b58",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M1/nodes.csv",
+          "output_blob_sha": "d5f92a04a724a90927f151f8c973a131d4d25b58"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M1/run.json",
+          "source_blob_sha": "959803d181a546710a1b095a14cf90f56a2df23e",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M1/run.json",
+          "output_blob_sha": "959803d181a546710a1b095a14cf90f56a2df23e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M2/flux.csv",
+          "source_blob_sha": "9159b40f2e723d3140df4d9f62de5d056adec052",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M2/flux.csv",
+          "output_blob_sha": "9159b40f2e723d3140df4d9f62de5d056adec052"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M2/nodes.csv",
+          "source_blob_sha": "07fe01ca1f83da2c9887ebf08e393f40a14b9cce",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M2/nodes.csv",
+          "output_blob_sha": "07fe01ca1f83da2c9887ebf08e393f40a14b9cce"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0228-N0012-M2/run.json",
+          "source_blob_sha": "fcc3360eac783bdf1517c67ba98b6350a81287f8",
+          "output": "code/tutorial-008/results/et008-02/raw/P0228-N0012-M2/run.json",
+          "output_blob_sha": "fcc3360eac783bdf1517c67ba98b6350a81287f8"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M0/flux.csv",
+          "source_blob_sha": "b61db2d26ae437a43b7e5155e7cb488b5543eda4",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M0/flux.csv",
+          "output_blob_sha": "b61db2d26ae437a43b7e5155e7cb488b5543eda4"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M0/nodes.csv",
+          "source_blob_sha": "2b5e9b1cd6f28fc118eb350354f013315010b89c",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M0/nodes.csv",
+          "output_blob_sha": "2b5e9b1cd6f28fc118eb350354f013315010b89c"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M0/run.json",
+          "source_blob_sha": "6df3b1bfbf99807db5c0680c1763aa4a32140d26",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M0/run.json",
+          "output_blob_sha": "6df3b1bfbf99807db5c0680c1763aa4a32140d26"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M1/flux.csv",
+          "source_blob_sha": "f9e776f32a48c6f4d09b44b33404a2897e592bb6",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M1/flux.csv",
+          "output_blob_sha": "f9e776f32a48c6f4d09b44b33404a2897e592bb6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M1/nodes.csv",
+          "source_blob_sha": "461b316bfd835026403444488bd534b9eb561606",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M1/nodes.csv",
+          "output_blob_sha": "461b316bfd835026403444488bd534b9eb561606"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M1/run.json",
+          "source_blob_sha": "9390640eca10e474f1b7a27fcb0a88e169c17647",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M1/run.json",
+          "output_blob_sha": "9390640eca10e474f1b7a27fcb0a88e169c17647"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M2/flux.csv",
+          "source_blob_sha": "e21db953dabe47884146ae144f4f1274bc2e9113",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M2/flux.csv",
+          "output_blob_sha": "e21db953dabe47884146ae144f4f1274bc2e9113"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M2/nodes.csv",
+          "source_blob_sha": "1b457d1ea71e47933626811d218e857ddec9be70",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M2/nodes.csv",
+          "output_blob_sha": "1b457d1ea71e47933626811d218e857ddec9be70"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0240-N0012-M2/run.json",
+          "source_blob_sha": "65390a4b17dd2d7c51cd83b81d133d00cdb44a78",
+          "output": "code/tutorial-008/results/et008-02/raw/P0240-N0012-M2/run.json",
+          "output_blob_sha": "65390a4b17dd2d7c51cd83b81d133d00cdb44a78"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M0/flux.csv",
+          "source_blob_sha": "eedb850e8003a6f7a68cc5b1efacfb3e8feb6db9",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M0/flux.csv",
+          "output_blob_sha": "eedb850e8003a6f7a68cc5b1efacfb3e8feb6db9"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M0/nodes.csv",
+          "source_blob_sha": "fc1f98af8e6f2d94ab76d03e009664fceb22cb1e",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M0/nodes.csv",
+          "output_blob_sha": "fc1f98af8e6f2d94ab76d03e009664fceb22cb1e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M0/run.json",
+          "source_blob_sha": "a922ab27be09f6146bffe36dd3cfcb6bee1bfec8",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M0/run.json",
+          "output_blob_sha": "a922ab27be09f6146bffe36dd3cfcb6bee1bfec8"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M1/flux.csv",
+          "source_blob_sha": "8d6b1a385fcdca88de9b79751b09bbc1115bcb21",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M1/flux.csv",
+          "output_blob_sha": "8d6b1a385fcdca88de9b79751b09bbc1115bcb21"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M1/nodes.csv",
+          "source_blob_sha": "5138ed42d866e1d559e2f8c5e29419fbfda51553",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M1/nodes.csv",
+          "output_blob_sha": "5138ed42d866e1d559e2f8c5e29419fbfda51553"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M1/run.json",
+          "source_blob_sha": "5936f6b060e6175ab8045ccfd7f86a15fd8875f6",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M1/run.json",
+          "output_blob_sha": "5936f6b060e6175ab8045ccfd7f86a15fd8875f6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M2/flux.csv",
+          "source_blob_sha": "3c1da62d93ff43c2ecc696dfb025a99b10b22e88",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M2/flux.csv",
+          "output_blob_sha": "3c1da62d93ff43c2ecc696dfb025a99b10b22e88"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M2/nodes.csv",
+          "source_blob_sha": "1f0549d609310879ee72eb88d94e42cb148f36be",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M2/nodes.csv",
+          "output_blob_sha": "1f0549d609310879ee72eb88d94e42cb148f36be"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0252-N0012-M2/run.json",
+          "source_blob_sha": "790dc9e81b7c5a971839afe0221904a8409cbdb6",
+          "output": "code/tutorial-008/results/et008-02/raw/P0252-N0012-M2/run.json",
+          "output_blob_sha": "790dc9e81b7c5a971839afe0221904a8409cbdb6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M0/flux.csv",
+          "source_blob_sha": "c456fb53794384a15d7884ff3c68dac19d0f8086",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M0/flux.csv",
+          "output_blob_sha": "c456fb53794384a15d7884ff3c68dac19d0f8086"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M0/nodes.csv",
+          "source_blob_sha": "602e26cb5c168fe706cff247ac54e492e464b873",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M0/nodes.csv",
+          "output_blob_sha": "602e26cb5c168fe706cff247ac54e492e464b873"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M0/run.json",
+          "source_blob_sha": "0ef4104297957e1c5042116d5461c47e1d5b59f7",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M0/run.json",
+          "output_blob_sha": "0ef4104297957e1c5042116d5461c47e1d5b59f7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M1/flux.csv",
+          "source_blob_sha": "82e9f7ebc999100fde52c71223c633d8492cce1b",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M1/flux.csv",
+          "output_blob_sha": "82e9f7ebc999100fde52c71223c633d8492cce1b"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M1/nodes.csv",
+          "source_blob_sha": "cd596ec21d17855e5359d46e0c0512d380c84a54",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M1/nodes.csv",
+          "output_blob_sha": "cd596ec21d17855e5359d46e0c0512d380c84a54"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M1/run.json",
+          "source_blob_sha": "393460e5de22f2ec3d5fffce6a95dbff0543bb48",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M1/run.json",
+          "output_blob_sha": "393460e5de22f2ec3d5fffce6a95dbff0543bb48"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M2/flux.csv",
+          "source_blob_sha": "fbcc6261cfe7d9e5c662f9f6af732b8029164b38",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M2/flux.csv",
+          "output_blob_sha": "fbcc6261cfe7d9e5c662f9f6af732b8029164b38"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M2/nodes.csv",
+          "source_blob_sha": "7101069996182edfaa6cf434c1dba855c38a906f",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M2/nodes.csv",
+          "output_blob_sha": "7101069996182edfaa6cf434c1dba855c38a906f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0300-N0012-M2/run.json",
+          "source_blob_sha": "13edb747726bc080b7363f4079c735d2e56d721f",
+          "output": "code/tutorial-008/results/et008-02/raw/P0300-N0012-M2/run.json",
+          "output_blob_sha": "13edb747726bc080b7363f4079c735d2e56d721f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M0/flux.csv",
+          "source_blob_sha": "2734592a9aaf6481eba3becfd68a620119f7cb09",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M0/flux.csv",
+          "output_blob_sha": "2734592a9aaf6481eba3becfd68a620119f7cb09"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M0/nodes.csv",
+          "source_blob_sha": "f31793d3483fb59bbc86bd1cb246cfb450c0f07d",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M0/nodes.csv",
+          "output_blob_sha": "f31793d3483fb59bbc86bd1cb246cfb450c0f07d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M0/run.json",
+          "source_blob_sha": "7883742d8ee5a3d8034e133c6a3e06a0faee650d",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M0/run.json",
+          "output_blob_sha": "7883742d8ee5a3d8034e133c6a3e06a0faee650d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M1/flux.csv",
+          "source_blob_sha": "e7a1fd28b94e68bed736d4f9b050f53d2bed224d",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M1/flux.csv",
+          "output_blob_sha": "e7a1fd28b94e68bed736d4f9b050f53d2bed224d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M1/nodes.csv",
+          "source_blob_sha": "befec7f60aa507c0349033039879bb2ec31e6f0e",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M1/nodes.csv",
+          "output_blob_sha": "befec7f60aa507c0349033039879bb2ec31e6f0e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M1/run.json",
+          "source_blob_sha": "62ff4a347c6eac47a46f49c1fa03895ac8d9c056",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M1/run.json",
+          "output_blob_sha": "62ff4a347c6eac47a46f49c1fa03895ac8d9c056"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M2/flux.csv",
+          "source_blob_sha": "bbc4d337271b921dc6ed1c1e84db3c31a61f84d7",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M2/flux.csv",
+          "output_blob_sha": "bbc4d337271b921dc6ed1c1e84db3c31a61f84d7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M2/nodes.csv",
+          "source_blob_sha": "6a5a3d0bb41344e94422e3d93bf0fbc739a354ff",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M2/nodes.csv",
+          "output_blob_sha": "6a5a3d0bb41344e94422e3d93bf0fbc739a354ff"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/raw/P0360-N0012-M2/run.json",
+          "source_blob_sha": "f93e8996772c85c4aa138cc408391bab5a1207e1",
+          "output": "code/tutorial-008/results/et008-02/raw/P0360-N0012-M2/run.json",
+          "output_blob_sha": "f93e8996772c85c4aa138cc408391bab5a1207e1"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/reused_et008_01.json",
+          "source_blob_sha": "f1cabb0110088b0c50c776f231f5281acb92a8f5",
+          "output": "code/tutorial-008/results/et008-02/reused_et008_01.json",
+          "output_blob_sha": "f1cabb0110088b0c50c776f231f5281acb92a8f5"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/source_commit_sha.txt",
+          "source_blob_sha": "d9c1513ec0411179c4b914c98d4df04f5467b5e2",
+          "output": "code/tutorial-008/results/et008-02/source_commit_sha.txt",
+          "output_blob_sha": "d9c1513ec0411179c4b914c98d4df04f5467b5e2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-02/summary.csv",
+          "source_blob_sha": "12a917366258b783504f389b7dda28191febaad5",
+          "output": "code/tutorial-008/results/et008-02/summary.csv",
+          "output_blob_sha": "12a917366258b783504f389b7dda28191febaad5"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/checks.json",
+          "source_blob_sha": "01dc0ba92db8f1fbfc7975bd74559aa0e759b20c",
+          "output": "code/tutorial-008/results/et008-03/checks.json",
+          "output_blob_sha": "01dc0ba92db8f1fbfc7975bd74559aa0e759b20c"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/comparison.csv",
+          "source_blob_sha": "b66a7ebba327dd7fb23fbcebce899fcf0bdda8fb",
+          "output": "code/tutorial-008/results/et008-03/comparison.csv",
+          "output_blob_sha": "b66a7ebba327dd7fb23fbcebce899fcf0bdda8fb"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M0/flux.csv",
+          "source_blob_sha": "e05147044cd24a3528d73cb14c32c83227f04ac0",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M0/flux.csv",
+          "output_blob_sha": "e05147044cd24a3528d73cb14c32c83227f04ac0"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M0/nodes.csv",
+          "source_blob_sha": "974ef4a9925fd90b5715a99a8b87e2bccc29b0ad",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M0/nodes.csv",
+          "output_blob_sha": "974ef4a9925fd90b5715a99a8b87e2bccc29b0ad"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M0/run.json",
+          "source_blob_sha": "389a819fec898abf7c3e396f7433c2e9fb0532eb",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M0/run.json",
+          "output_blob_sha": "389a819fec898abf7c3e396f7433c2e9fb0532eb"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M1/flux.csv",
+          "source_blob_sha": "6217393bc09bddcae90244ea7e8e3a3b57a1e20e",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M1/flux.csv",
+          "output_blob_sha": "6217393bc09bddcae90244ea7e8e3a3b57a1e20e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M1/nodes.csv",
+          "source_blob_sha": "e4386cd2a3a317a8ce215049e76c30dab0117103",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M1/nodes.csv",
+          "output_blob_sha": "e4386cd2a3a317a8ce215049e76c30dab0117103"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M1/run.json",
+          "source_blob_sha": "0b6c4697655492204d152f1335c8cf303f9b4e79",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M1/run.json",
+          "output_blob_sha": "0b6c4697655492204d152f1335c8cf303f9b4e79"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M2/flux.csv",
+          "source_blob_sha": "13b8198b799e1694735c14440b5ba99c957b08de",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M2/flux.csv",
+          "output_blob_sha": "13b8198b799e1694735c14440b5ba99c957b08de"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M2/nodes.csv",
+          "source_blob_sha": "7ed9ca3f16cd31af33fe63f67e16ab9ef77a93d6",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M2/nodes.csv",
+          "output_blob_sha": "7ed9ca3f16cd31af33fe63f67e16ab9ef77a93d6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0024-M2/run.json",
+          "source_blob_sha": "5213d6ce9745005b136cd6066bfd634d8f5ac1c7",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0024-M2/run.json",
+          "output_blob_sha": "5213d6ce9745005b136cd6066bfd634d8f5ac1c7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M0/flux.csv",
+          "source_blob_sha": "7ddd36724523eec8010521e0b03a1a5471f2ccaf",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M0/flux.csv",
+          "output_blob_sha": "7ddd36724523eec8010521e0b03a1a5471f2ccaf"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M0/nodes.csv",
+          "source_blob_sha": "2435f10540216b364fad918ae2120581e5be1dc7",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M0/nodes.csv",
+          "output_blob_sha": "2435f10540216b364fad918ae2120581e5be1dc7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M0/run.json",
+          "source_blob_sha": "79403e3b344060b43200a6b513a05c24dcb4279a",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M0/run.json",
+          "output_blob_sha": "79403e3b344060b43200a6b513a05c24dcb4279a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M1/flux.csv",
+          "source_blob_sha": "64c204cb58c102babb3287b980e5aae7751a880d",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M1/flux.csv",
+          "output_blob_sha": "64c204cb58c102babb3287b980e5aae7751a880d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M1/nodes.csv",
+          "source_blob_sha": "07dff01d573dd0de8f84001c70162a6556e23fb0",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M1/nodes.csv",
+          "output_blob_sha": "07dff01d573dd0de8f84001c70162a6556e23fb0"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M1/run.json",
+          "source_blob_sha": "24fe6c1a0c0b2d7f3dcb0d4f42a1fc1e3f668d60",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M1/run.json",
+          "output_blob_sha": "24fe6c1a0c0b2d7f3dcb0d4f42a1fc1e3f668d60"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M2/flux.csv",
+          "source_blob_sha": "3ee31ed44e7ae51970cc7dd339f1f834cfac03d9",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M2/flux.csv",
+          "output_blob_sha": "3ee31ed44e7ae51970cc7dd339f1f834cfac03d9"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M2/nodes.csv",
+          "source_blob_sha": "3865af6fee9f7015212fdd6c5ba212b79e94b78d",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M2/nodes.csv",
+          "output_blob_sha": "3865af6fee9f7015212fdd6c5ba212b79e94b78d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/raw/P0600-N0060-M2/run.json",
+          "source_blob_sha": "556b0cac7504aa6de085040f75a6aa757a1096cf",
+          "output": "code/tutorial-008/results/et008-03/raw/P0600-N0060-M2/run.json",
+          "output_blob_sha": "556b0cac7504aa6de085040f75a6aa757a1096cf"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/reused_et008_01.json",
+          "source_blob_sha": "4e387c3d1375cdedc65229a6ef284f2b821b2efb",
+          "output": "code/tutorial-008/results/et008-03/reused_et008_01.json",
+          "output_blob_sha": "4e387c3d1375cdedc65229a6ef284f2b821b2efb"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/source_commit_sha.txt",
+          "source_blob_sha": "b9911bd3ce789d0fed4945b631618fab735dec11",
+          "output": "code/tutorial-008/results/et008-03/source_commit_sha.txt",
+          "output_blob_sha": "b9911bd3ce789d0fed4945b631618fab735dec11"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-03/summary.csv",
+          "source_blob_sha": "9645df86cd4d64f4e0b35e298c8f54e0a4d3e181",
+          "output": "code/tutorial-008/results/et008-03/summary.csv",
+          "output_blob_sha": "9645df86cd4d64f4e0b35e298c8f54e0a4d3e181"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/checks.json",
+          "source_blob_sha": "1d32beb50acb27f5f27446a5531214092398f6a7",
+          "output": "code/tutorial-008/results/et008-04/checks.json",
+          "output_blob_sha": "1d32beb50acb27f5f27446a5531214092398f6a7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/comparison.csv",
+          "source_blob_sha": "b1b8fae121651bffef35d571d039e923f9ee2cab",
+          "output": "code/tutorial-008/results/et008-04/comparison.csv",
+          "output_blob_sha": "b1b8fae121651bffef35d571d039e923f9ee2cab"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/orders.csv",
+          "source_blob_sha": "f6906a9e9f016a2bceb75fd85f32bd58f9e755e7",
+          "output": "code/tutorial-008/results/et008-04/orders.csv",
+          "output_blob_sha": "f6906a9e9f016a2bceb75fd85f32bd58f9e755e7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M0/flux.csv",
+          "source_blob_sha": "5ece41a02552d1ba99443ac3941375955806e189",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M0/flux.csv",
+          "output_blob_sha": "5ece41a02552d1ba99443ac3941375955806e189"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M0/nodes.csv",
+          "source_blob_sha": "71e9619e814a855539129a55fce2c7476262da61",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M0/nodes.csv",
+          "output_blob_sha": "71e9619e814a855539129a55fce2c7476262da61"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M0/run.json",
+          "source_blob_sha": "8c4332c1a480529f6b973ba36d23c8667e7740ac",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M0/run.json",
+          "output_blob_sha": "8c4332c1a480529f6b973ba36d23c8667e7740ac"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M1/flux.csv",
+          "source_blob_sha": "62d1da8ce0a188ddc46f61c98bd94553905d04ab",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M1/flux.csv",
+          "output_blob_sha": "62d1da8ce0a188ddc46f61c98bd94553905d04ab"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M1/nodes.csv",
+          "source_blob_sha": "bf469ec73db129696ddbff3506f38725234401d1",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M1/nodes.csv",
+          "output_blob_sha": "bf469ec73db129696ddbff3506f38725234401d1"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M1/run.json",
+          "source_blob_sha": "4c2ed5f26dbb82ce423c5674b717bc14d6d727df",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M1/run.json",
+          "output_blob_sha": "4c2ed5f26dbb82ce423c5674b717bc14d6d727df"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M2/flux.csv",
+          "source_blob_sha": "cc787e31310791743e9558bd83a05f61f67ea40c",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M2/flux.csv",
+          "output_blob_sha": "cc787e31310791743e9558bd83a05f61f67ea40c"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M2/nodes.csv",
+          "source_blob_sha": "f4a3d24ecbc268fab3b8d08a0a89a8c60166f5e4",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M2/nodes.csv",
+          "output_blob_sha": "f4a3d24ecbc268fab3b8d08a0a89a8c60166f5e4"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0018-M2/run.json",
+          "source_blob_sha": "c75c54df28378196f783919f81331d98b4d1e501",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0018-M2/run.json",
+          "output_blob_sha": "c75c54df28378196f783919f81331d98b4d1e501"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M0/flux.csv",
+          "source_blob_sha": "726851093b4fde4db73b931f002e2521216882e4",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M0/flux.csv",
+          "output_blob_sha": "726851093b4fde4db73b931f002e2521216882e4"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M0/nodes.csv",
+          "source_blob_sha": "e0954dd95893cbd5e77b0e6cf6d576f6fee09372",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M0/nodes.csv",
+          "output_blob_sha": "e0954dd95893cbd5e77b0e6cf6d576f6fee09372"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M0/run.json",
+          "source_blob_sha": "832f15214063ee2f7e3f6ac72c9550b56bb1564a",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M0/run.json",
+          "output_blob_sha": "832f15214063ee2f7e3f6ac72c9550b56bb1564a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M1/flux.csv",
+          "source_blob_sha": "48c2155b8111b48513b0143d2254164a5c98241f",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M1/flux.csv",
+          "output_blob_sha": "48c2155b8111b48513b0143d2254164a5c98241f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M1/nodes.csv",
+          "source_blob_sha": "eb04f72075d5d4cabd1d249b083b137195df7e02",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M1/nodes.csv",
+          "output_blob_sha": "eb04f72075d5d4cabd1d249b083b137195df7e02"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M1/run.json",
+          "source_blob_sha": "02a323132b776edf4b2f58d0633caa4f81e9bb99",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M1/run.json",
+          "output_blob_sha": "02a323132b776edf4b2f58d0633caa4f81e9bb99"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M2/flux.csv",
+          "source_blob_sha": "33b39e5b4437cd38760569f8309f5aa8132268f2",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M2/flux.csv",
+          "output_blob_sha": "33b39e5b4437cd38760569f8309f5aa8132268f2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M2/nodes.csv",
+          "source_blob_sha": "3e4ca99b3d1ada958c6bbc0852376c2107caa4cf",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M2/nodes.csv",
+          "output_blob_sha": "3e4ca99b3d1ada958c6bbc0852376c2107caa4cf"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0030-M2/run.json",
+          "source_blob_sha": "df61be9ba30f3b1d54fdd1487be2f6f4640a7d33",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0030-M2/run.json",
+          "output_blob_sha": "df61be9ba30f3b1d54fdd1487be2f6f4640a7d33"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M0/flux.csv",
+          "source_blob_sha": "c8f3e08eb6c3e3f7779b9ce53b846019f31fe9db",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M0/flux.csv",
+          "output_blob_sha": "c8f3e08eb6c3e3f7779b9ce53b846019f31fe9db"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M0/nodes.csv",
+          "source_blob_sha": "c07e05d9499dd240dbe3b857b304c48afbe89b01",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M0/nodes.csv",
+          "output_blob_sha": "c07e05d9499dd240dbe3b857b304c48afbe89b01"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M0/run.json",
+          "source_blob_sha": "d3c052b5e772a1194eb67d44ebdff959b34ee56e",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M0/run.json",
+          "output_blob_sha": "d3c052b5e772a1194eb67d44ebdff959b34ee56e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M1/flux.csv",
+          "source_blob_sha": "2c900f9a7bd6249d1724cbe9da611a1263249ba1",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M1/flux.csv",
+          "output_blob_sha": "2c900f9a7bd6249d1724cbe9da611a1263249ba1"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M1/nodes.csv",
+          "source_blob_sha": "58776d7b7c0375be93acf44b6a5b83311962ae32",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M1/nodes.csv",
+          "output_blob_sha": "58776d7b7c0375be93acf44b6a5b83311962ae32"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M1/run.json",
+          "source_blob_sha": "b4563d6f312c3cb4c29adb4807bd6a87e57c4b13",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M1/run.json",
+          "output_blob_sha": "b4563d6f312c3cb4c29adb4807bd6a87e57c4b13"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M2/flux.csv",
+          "source_blob_sha": "b3ce04e7a4fd3a5d23ffaddd91faca60ce3955cf",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M2/flux.csv",
+          "output_blob_sha": "b3ce04e7a4fd3a5d23ffaddd91faca60ce3955cf"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M2/nodes.csv",
+          "source_blob_sha": "28329c8f6e3b091a68c60d602c5f7b107dc9caba",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M2/nodes.csv",
+          "output_blob_sha": "28329c8f6e3b091a68c60d602c5f7b107dc9caba"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0048-M2/run.json",
+          "source_blob_sha": "39646113ba4fe31441cd300763394e7fec2d236e",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0048-M2/run.json",
+          "output_blob_sha": "39646113ba4fe31441cd300763394e7fec2d236e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M0/flux.csv",
+          "source_blob_sha": "ec95de21a682ffe77dda0c4bfc18ea2375c99612",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M0/flux.csv",
+          "output_blob_sha": "ec95de21a682ffe77dda0c4bfc18ea2375c99612"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M0/nodes.csv",
+          "source_blob_sha": "4f6ef47959285db9a2df848a1f8b4ca1445821dc",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M0/nodes.csv",
+          "output_blob_sha": "4f6ef47959285db9a2df848a1f8b4ca1445821dc"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M0/run.json",
+          "source_blob_sha": "ae4a59f5ff27af8e4bc16437e8b46a51a489bb1a",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M0/run.json",
+          "output_blob_sha": "ae4a59f5ff27af8e4bc16437e8b46a51a489bb1a"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M1/flux.csv",
+          "source_blob_sha": "ad41b60ebba68cc10cbb7cc8d127cb9e4987de6f",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M1/flux.csv",
+          "output_blob_sha": "ad41b60ebba68cc10cbb7cc8d127cb9e4987de6f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M1/nodes.csv",
+          "source_blob_sha": "8558e8222d7abef75d1f250c87c9910fc9d18edc",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M1/nodes.csv",
+          "output_blob_sha": "8558e8222d7abef75d1f250c87c9910fc9d18edc"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M1/run.json",
+          "source_blob_sha": "59e092a29e50985e8141b99ac51e4bdcc4aac302",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M1/run.json",
+          "output_blob_sha": "59e092a29e50985e8141b99ac51e4bdcc4aac302"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M2/flux.csv",
+          "source_blob_sha": "8ef07cdd7a9fcee2475f36bd27c0e4077db05f29",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M2/flux.csv",
+          "output_blob_sha": "8ef07cdd7a9fcee2475f36bd27c0e4077db05f29"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M2/nodes.csv",
+          "source_blob_sha": "cb1d2acc9a2729d32d2e3db0efbf4c356ec03f86",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M2/nodes.csv",
+          "output_blob_sha": "cb1d2acc9a2729d32d2e3db0efbf4c356ec03f86"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0096-M2/run.json",
+          "source_blob_sha": "ff67ad14715d50fec74c9bdd3412859fe394c1c7",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0096-M2/run.json",
+          "output_blob_sha": "ff67ad14715d50fec74c9bdd3412859fe394c1c7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M0/flux.csv",
+          "source_blob_sha": "121f8fdb82e6a92bb1a7d804e0dfc84ec5248eff",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M0/flux.csv",
+          "output_blob_sha": "121f8fdb82e6a92bb1a7d804e0dfc84ec5248eff"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M0/nodes.csv",
+          "source_blob_sha": "48279fa6aeee9d6610c2e21e70912f8b5fec4de2",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M0/nodes.csv",
+          "output_blob_sha": "48279fa6aeee9d6610c2e21e70912f8b5fec4de2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M0/run.json",
+          "source_blob_sha": "7d7fcbc5b1ebd15b89659ff57bdcd90bb7104813",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M0/run.json",
+          "output_blob_sha": "7d7fcbc5b1ebd15b89659ff57bdcd90bb7104813"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M1/flux.csv",
+          "source_blob_sha": "9bfe9266bd5df1a8683da2db6dfba01bed2a7e46",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M1/flux.csv",
+          "output_blob_sha": "9bfe9266bd5df1a8683da2db6dfba01bed2a7e46"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M1/nodes.csv",
+          "source_blob_sha": "50af62ce22ed0898215895d60abc73425fca898f",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M1/nodes.csv",
+          "output_blob_sha": "50af62ce22ed0898215895d60abc73425fca898f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M1/run.json",
+          "source_blob_sha": "31b3f0b240d4dfcecd56b9873222fcc478117e6e",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M1/run.json",
+          "output_blob_sha": "31b3f0b240d4dfcecd56b9873222fcc478117e6e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M2/flux.csv",
+          "source_blob_sha": "0040c6a29be7f91b9a5a884ca77b01c3efb4f2c5",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M2/flux.csv",
+          "output_blob_sha": "0040c6a29be7f91b9a5a884ca77b01c3efb4f2c5"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M2/nodes.csv",
+          "source_blob_sha": "657aebe54654f6b4f5578c446b5f7089d7aa4a7f",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M2/nodes.csv",
+          "output_blob_sha": "657aebe54654f6b4f5578c446b5f7089d7aa4a7f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0192-M2/run.json",
+          "source_blob_sha": "f71bf3c225710f0bddd716da86064a3a1ef38a74",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0192-M2/run.json",
+          "output_blob_sha": "f71bf3c225710f0bddd716da86064a3a1ef38a74"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M0/flux.csv",
+          "source_blob_sha": "4499f74bce47f95ec3db805e7b005d1cc72771a0",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M0/flux.csv",
+          "output_blob_sha": "4499f74bce47f95ec3db805e7b005d1cc72771a0"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M0/nodes.csv",
+          "source_blob_sha": "80c5a915e0758264514ee0c88ecbf0b2cb38945f",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M0/nodes.csv",
+          "output_blob_sha": "80c5a915e0758264514ee0c88ecbf0b2cb38945f"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M0/run.json",
+          "source_blob_sha": "15fa2024fabb2e9319391002bed96575c744212e",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M0/run.json",
+          "output_blob_sha": "15fa2024fabb2e9319391002bed96575c744212e"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M1/flux.csv",
+          "source_blob_sha": "8b6704ee5ccb4e3c23aff46704eb63b678b979b6",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M1/flux.csv",
+          "output_blob_sha": "8b6704ee5ccb4e3c23aff46704eb63b678b979b6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M1/nodes.csv",
+          "source_blob_sha": "00b79b9454e55d8e226ab6cf49debcfc9fa3f203",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M1/nodes.csv",
+          "output_blob_sha": "00b79b9454e55d8e226ab6cf49debcfc9fa3f203"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M1/run.json",
+          "source_blob_sha": "90ede74a3e83bb084569395d9d9088d63c79bee2",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M1/run.json",
+          "output_blob_sha": "90ede74a3e83bb084569395d9d9088d63c79bee2"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M2/flux.csv",
+          "source_blob_sha": "3bf8d45b6764028666abd2136446d04fbe04130d",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M2/flux.csv",
+          "output_blob_sha": "3bf8d45b6764028666abd2136446d04fbe04130d"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M2/nodes.csv",
+          "source_blob_sha": "5f45b5d54a24dbdea912c0ca972aa610b05a21b1",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M2/nodes.csv",
+          "output_blob_sha": "5f45b5d54a24dbdea912c0ca972aa610b05a21b1"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/raw/P0600-N0384-M2/run.json",
+          "source_blob_sha": "ebaa58be5825517d4b2d0915697defc8616aa0a6",
+          "output": "code/tutorial-008/results/et008-04/raw/P0600-N0384-M2/run.json",
+          "output_blob_sha": "ebaa58be5825517d4b2d0915697defc8616aa0a6"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/reused_histories.json",
+          "source_blob_sha": "79d0605e170a7f910fb2f1837fa120878d00ccb7",
+          "output": "code/tutorial-008/results/et008-04/reused_histories.json",
+          "output_blob_sha": "79d0605e170a7f910fb2f1837fa120878d00ccb7"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/source_commit_sha.txt",
+          "source_blob_sha": "56ff8e56321d27f03e5298af41bd220b7514be47",
+          "output": "code/tutorial-008/results/et008-04/source_commit_sha.txt",
+          "output_blob_sha": "56ff8e56321d27f03e5298af41bd220b7514be47"
+        },
+        {
+          "source": "experiments/tutorial-008/results/et008-04/summary.csv",
+          "source_blob_sha": "1a199d973987877ee36f6baec553902197d61841",
+          "output": "code/tutorial-008/results/et008-04/summary.csv",
+          "output_blob_sha": "1a199d973987877ee36f6baec553902197d61841"
+        },
+        {
+          "source": "experiments/tutorial-008/src/run_et008_01.py",
+          "source_blob_sha": "c6268f394cd42762fb62da5ee71c545efb6555e8",
+          "output": "code/tutorial-008/src/run_et008_01.py",
+          "output_blob_sha": "c6268f394cd42762fb62da5ee71c545efb6555e8"
+        },
+        {
+          "source": "experiments/tutorial-008/src/run_et008_02.py",
+          "source_blob_sha": "48fe0555a31090929452b72c617da49f5a13ea05",
+          "output": "code/tutorial-008/src/run_et008_02.py",
+          "output_blob_sha": "48fe0555a31090929452b72c617da49f5a13ea05"
+        },
+        {
+          "source": "experiments/tutorial-008/src/run_et008_03.py",
+          "source_blob_sha": "dd47caecf402b21468a208ee3c13c310c4ea1985",
+          "output": "code/tutorial-008/src/run_et008_03.py",
+          "output_blob_sha": "dd47caecf402b21468a208ee3c13c310c4ea1985"
+        },
+        {
+          "source": "experiments/tutorial-008/src/run_et008_04.py",
+          "source_blob_sha": "b7c3d2ce3ef2b35205fc857bd2f53c166232588b",
+          "output": "code/tutorial-008/src/run_et008_04.py",
+          "output_blob_sha": "b7c3d2ce3ef2b35205fc857bd2f53c166232588b"
+        },
+        {
+          "source": "experiments/tutorial-008/src/validate_et008_01.py",
+          "source_blob_sha": "58df690a9e1dfe036f50fc85c423f6233ce7c27b",
+          "output": "code/tutorial-008/src/validate_et008_01.py",
+          "output_blob_sha": "58df690a9e1dfe036f50fc85c423f6233ce7c27b"
+        },
+        {
+          "source": "experiments/tutorial-008/src/validate_et008_02.py",
+          "source_blob_sha": "3502868fb4a529445a80b816ef6dec2949874b15",
+          "output": "code/tutorial-008/src/validate_et008_02.py",
+          "output_blob_sha": "3502868fb4a529445a80b816ef6dec2949874b15"
+        },
+        {
+          "source": "experiments/tutorial-008/src/validate_et008_03.py",
+          "source_blob_sha": "b9747371ad9f908b4eb25eae672636dd0ec32b18",
+          "output": "code/tutorial-008/src/validate_et008_03.py",
+          "output_blob_sha": "b9747371ad9f908b4eb25eae672636dd0ec32b18"
+        },
+        {
+          "source": "experiments/tutorial-008/src/validate_et008_04.py",
+          "source_blob_sha": "bf31c4a4655e7faa5fb12fac3989a2c9218d7c34",
+          "output": "code/tutorial-008/src/validate_et008_04.py",
+          "output_blob_sha": "bf31c4a4655e7faa5fb12fac3989a2c9218d7c34"
+        }
+      ],
+      "url": "https://github.com/lihuihnu/pdebook-assets/tree/main/code/tutorial-008"
     }
   ]
 }

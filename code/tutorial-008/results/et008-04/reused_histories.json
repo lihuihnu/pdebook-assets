@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "old_PDE_solves_repeated": 0,
+  "reused_case_count": 9,
+  "reused_ids": [
+    "P0600-N0012-M0",
+    "P0600-N0012-M1",
+    "P0600-N0012-M2",
+    "P0600-N0024-M0",
+    "P0600-N0024-M1",
+    "P0600-N0024-M2",
+    "P0600-N0060-M0",
+    "P0600-N0060-M1",
+    "P0600-N0060-M2"
+  ],
+  "source_summary_git_blobs": {
+    "ET008-01": "6239ea268affa50aa95eb057fd7a366c963f0e7f",
+    "ET008-03": "9645df86cd4d64f4e0b35e298c8f54e0a4d3e181"
+  },
+  "source_checks_git_blobs": {
+    "ET008-01": "974e5962391eefc32f53a712c760b5ed0e7946db",
+    "ET008-03": "01dc0ba92db8f1fbfc7975bd74559aa0e759b20c"
+  },
+  "source_commits": {
+    "ET008-01": "7635e320b8fc68d820d49b188446b74febb6a627",
+    "ET008-03": "e25b13791e62df4357af1aab9eda3ad41ebdb69a"
+  },
+  "raw_hashes_verified": true
+}
